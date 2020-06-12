@@ -1,8 +1,0 @@
-# Book settings
-title: vOLT virtual Online Library Tutorials
-author: Engineering & Physical Sciences Librarians
-logo: EPS-Logo.png
-
-latex:
-  latex_documents:
-    targetname: book.tex
