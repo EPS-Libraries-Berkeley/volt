@@ -1,5 +1,15 @@
-file: README
-sections:
-- file: 01_Introduction/Orientation
-- file: 02_Research_Workflows/Introduction_Research_Workflows
-- file: 03_LaTeX/Basics
+- file: Introduction/Welcome
+
+- header: Research Workflows
+- file: Research_Workflows/Introduction_Research_Workflows
+
+- header: LaTeX
+- file: LaTeX/Intro_to_LaTeX
+  sections:
+  - file: LaTeX/Basics
+  - file: LaTeX/Tables_and_Figures
+
+- header: Other
+- file: README.md
+
+
