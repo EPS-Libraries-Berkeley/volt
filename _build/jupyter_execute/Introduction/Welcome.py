@@ -11,6 +11,7 @@ Welcome to the Engineering & Physical Sciences Libraries.
 :caption: Research Workflows
 
 ../Research_Workflows/Introduction_Research_Workflows
+../Research_Workflows/Research_Workflows_Part2
 ```
 
 
