@@ -13,6 +13,7 @@
   sections:
   - file: LaTeX/Basics
   - file: LaTeX/Tables_and_Figures
+  - file: LaTeX/Test_Notebook
 
 - header: Other
 - file: README.md
