@@ -14,6 +14,7 @@
   sections:
   - file: LaTeX/Basics
   - file: LaTeX/Tables_and_Figures
+  - file: LaTeX/Equations_and_Formulas
 
 - header: Other
 - file: README.md
