@@ -6,7 +6,7 @@
 - file: Research_Workflows/Finding_articles
 
 - header: Search
-- file: Search/Searching_for_articles
+- file: Search/APIs
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
