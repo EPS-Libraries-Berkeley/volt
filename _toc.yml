@@ -4,6 +4,7 @@
 - file: Research_Workflows/Introduction_Research_Workflows
 - file: Research_Workflows/Research_Workflows_Part2
 - file: Research_Workflows/Finding_articles
+- file: Research_Workflows/digital-mapping
 
 - header: Search
 - file: Search/Search
@@ -14,6 +15,7 @@
   - file: LaTeX/Basics
   - file: LaTeX/Tables_and_Figures
   - file: LaTeX/Test_Notebook
+  - file: LaTeX/Equations_and_Formulas
 
 - header: Other
 - file: README.md
