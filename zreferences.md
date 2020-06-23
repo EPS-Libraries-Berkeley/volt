@@ -1,6 +1,5 @@
 # References
 
-```{bibliography} ../references.bib
-:all:
+```{bibliography} ./references.bib
 ```
     
