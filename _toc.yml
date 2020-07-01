@@ -9,6 +9,7 @@
 
 - header: Search
 - file: Search/Search
+- file: Search/exploring_article_databases
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
