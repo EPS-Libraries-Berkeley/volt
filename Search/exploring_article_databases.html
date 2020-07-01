@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Introduction to LaTeX: Basics &#8212; vOLT virtual Online Library Tutorials</title>
+    <title>Exploring article databases &#8212; vOLT virtual Online Library Tutorials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -31,8 +31,8 @@
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tables and Figures" href="Tables_and_Figures.html" />
-    <link rel="prev" title="Introduction to Latex" href="Intro_to_LaTeX.html" />
+    <link rel="next" title="Introduction to Latex" href="../LaTeX/Intro_to_LaTeX.html" />
+    <link rel="prev" title="Search" href="Search.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -92,27 +92,16 @@
 <p class="margin-caption">Search</p>
 </li>
   <li class="">
-    <a href="../Search/Search.html">Search</a>
+    <a href="Search.html">Search</a>
   </li>
-  <li class="">
-    <a href="../Search/exploring_article_databases.html">Exploring article databases</a>
+  <li class="active">
+    <a href="">Exploring article databases</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">LaTeX</p>
 </li>
-  <li class="active">
-    <a href="Intro_to_LaTeX.html">Introduction to Latex</a>
-  <ul class="nav sidenav_l2">
-    <li class="active">
-      <a href="">Introduction to LaTeX: Basics</a>
-    </li>
-    <li class="">
-      <a href="Tables_and_Figures.html">Tables and Figures</a>
-    </li>
-    <li class="">
-      <a href="Equations_and_Formulas.html">Equations and Formulas</a>
-    </li>
-  </ul>
+  <li class="">
+    <a href="../LaTeX/Intro_to_LaTeX.html">Introduction to Latex</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">Other</p>
@@ -161,7 +150,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/LaTeX/Basics.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Search/exploring_article_databases.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -190,35 +179,19 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#what-is-latex" class="nav-link">What is LaTeX?</a>
+            <a href="#exercise-database-comparison" class="nav-link">EXERCISE: Database Comparison</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#latex-using-overleaf" class="nav-link">LaTeX using Overleaf</a>
+            <a href="#example" class="nav-link">Example</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#structure-of-a-document" class="nav-link">Structure of a document</a>
+            <a href="#your-turn" class="nav-link">Your turn</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#note" class="nav-link">Note:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#basic-commands" class="nav-link">Basic Commands</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#make-title" class="nav-link">Make Title</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#basic-math" class="nav-link">Basic Math</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#exercise-1" class="nav-link">EXERCISE 1</a>
+            <a href="#questions" class="nav-link">Questions</a>
         </li>
     
     </ul>
@@ -232,136 +205,107 @@
         
               <div>
                 
-  <div class="section" id="introduction-to-latex-basics">
-<h1>Introduction to LaTeX: Basics<a class="headerlink" href="#introduction-to-latex-basics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-is-latex">
-<h2>What is LaTeX?<a class="headerlink" href="#what-is-latex" title="Permalink to this headline">¶</a></h2>
-<p>LaTeX is a typesetting system that allows you to focus on your content instead of formatting - formatting is done separately from entry.</p>
-<p>You tell LaTeX “what it is” not “how it looks.”</p>
+  <div class="section" id="exploring-article-databases">
+<h1>Exploring article databases<a class="headerlink" href="#exploring-article-databases" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exercise-database-comparison">
+<h2>EXERCISE: Database Comparison<a class="headerlink" href="#exercise-database-comparison" title="Permalink to this headline">¶</a></h2>
+<p>Article databases provide additional functionality to guide subject-specific queries. In this exercise, you will select two databases from the “A-Z Databases” list for Engineering on the Library’s website (<a class="reference external" href="https://guides.lib.berkeley.edu/az.php?s=4516">https://guides.lib.berkeley.edu/az.php?s=4516</a>) and evaluate their relevance to your topic.</p>
+<p>You can also use Google Scholar (<a class="reference external" href="https://scholar.google.com">https://scholar.google.com</a>) for comparison. Use the same keyword search in both databases.</p>
 </div>
-<div class="section" id="latex-using-overleaf">
-<h2>LaTeX using Overleaf<a class="headerlink" href="#latex-using-overleaf" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Create documents via a cloud-based account</p></li>
-<li><p>Source code or rich text format</p></li>
-<li><p>Collaborating and sharing documents</p></li>
-<li><p>Versioning and track changes</p></li>
-<li><p>Templates for a variety of documents and publishers</p></li>
-<li><p>Link with other tools in your research workflow</p></li>
-<li><p>Pro account with your berkeley.edu address</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#image of side by side document goes here</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="structure-of-a-document">
-<h2>Structure of a document<a class="headerlink" href="#structure-of-a-document" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Our example query is: <strong>permafrost melt</strong></p>
+<p>We have searched for those keywords in a database called GeoRef (<a class="reference external" href="https://libproxy.berkeley.edu/login?qurl=http://search.proquest.com/georef/advanced?accountid=14496">https://libproxy.berkeley.edu/login?qurl=http://search.proquest.com/georef/advanced?accountid=14496</a>).</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Term</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p>Example</p></th>
+<th class="head"><p>Database 1</p></th>
+<th class="head"><p>Database 2</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Command</p></td>
-<td><p>Control sequence which performs an action</p></td>
-<td><p>\newpage</p></td>
+<tr class="row-even"><td><p>Database Name</p></td>
+<td><p>GeoRef</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>Preamble</p></td>
-<td><p>Block of commands that define the type of document you are writing,  the language you are writing in, the packages you would like to use. Comes before \begin{document}</p></td>
-<td><p>\documentclass{article}</p></td>
+<tr class="row-odd"><td><p>Relevance of results</p></td>
+<td><p>Limited results (32 articles), but all are relevant</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p>Package</p></td>
-<td><p>Enable you to create bibliographies, insert images and figures, and write formulas.</p></td>
-<td><p>\usepackage{amsmath}</p></td>
+<tr class="row-even"><td><p>Types of publications (journal articles, conference papers, patents, books)</p></td>
+<td><p>Journals articles, conference abstracts</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>Environment</p></td>
-<td><p>Block of code with specific behavior depending on its type</p></td>
-<td><p>\begin{} &amp; \end{}</p></td>
+<tr class="row-odd"><td><p>Search functionalities (keyword, structure search, CAS number)</p></td>
+<td><p>limit to peer review</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p>Body</p></td>
-<td><p>Content of document enclosed inside an environment</p></td>
-<td><p>\begin{document}</p></td>
+<tr class="row-even"><td><p>Features (sorting, format, ability to export/save, citation information)</p></td>
+<td><p>sorting, export, no citation info</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Ease of getting the full text</p></td>
+<td><p>easy - UC elinks</p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="note">
-<h2><em>Note</em>:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="your-turn">
+<h2>Your turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
+<p>What is your topic? Try searching your topic in two databases.<br />
+Get examples here: <a class="reference external" href="https://guides.lib.berkeley.edu/az.php?s=4516">https://guides.lib.berkeley.edu/az.php?s=4516</a></p>
+<p>List your topic here: ___________________________________________________________</p>
+<p>Edit the table below with your observations.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Database 1</p></th>
+<th class="head"><p>Database 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Database Name</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Relevance of results</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Types of publications (journal articles, conference papers, patents, books)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Search functionalities (keyword, structure search, CAS number)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Features (sorting, format, ability to export/save, citation information)</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Ease of getting the full text</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Comments:
-Use % to create a comment. Nothing on the line after the % will be typeset.</p></li>
-<li><p>Restricted Characters:
-Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
+<li><p>What did you notice about the two databases?</p></li>
+<li><p>Which features are most useful?</p></li>
+<li><p>How do the library-subscribed databases differ from Google Scholar?</p></li>
 </ul>
-</div>
-<div class="section" id="basic-commands">
-<h2>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Bold</strong>: \textbf{example}</p></li>
-<li><p><em>Italics</em>: \textit{example}</p></li>
-<li><p>Underline: \underline{example}</p></li>
-</ul>
-<p>Font typefaces: Change in preamble. More information:
-https://v2.overleaf.com/learn/Font_typefaces</p>
-</div>
-<div class="section" id="make-title">
-<h2>Make Title<a class="headerlink" href="#make-title" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>The simplest option is to use the \maketitle command which draws from the following declarations within the preamble:<br />
-\author<br />
-\date<br />
-\thanks<br />
-\title</p></li>
-<li><p>OR use the<br />
-\begin{titlepage}<br />
-…<br />
-\end{titlepage}<br />
-environment.</p></li>
-</ol>
-<p>The titlepage environment creates a title page, i.e. a page with no printed page number or heading. It also causes the following page to be numbered page one.
-Formatting is left to you, but commands like \centering, \vspace, and \vfill are helpful.</p>
-</div>
-<div class="section" id="basic-math">
-<h2>Basic Math<a class="headerlink" href="#basic-math" title="Permalink to this headline">¶</a></h2>
-<p>\require{verb}</p>
-<p>To display math inline with text, place formula or symbol in between $:</p>
-<p>\verb|<span class="math notranslate nohighlight">\(x + y = z\)</span>|</p>
-<p><span class="math notranslate nohighlight">\(x + y = z\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Display mode \mathtt{\[ x + y = z \]}, will center the equation on its own line:</span>
-<span class="c1">#\[ x + y = z \]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="exercise-1">
-<h2><em>EXERCISE 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
-<p><em>Objective:<br />
-Practice several basic LaTeX commands in a new project.</em></p>
-<ol class="simple">
-<li><p>Open new project in Overleaf</p></li>
-<li><p>Create title page</p>
-<ol class="simple">
-<li><p>Add [title page] to make preamble command \documentclass[titlepage]{article}</p></li>
-<li><p>After \title, add “class LaTeX assignment”</p></li>
-<li><p>After \author, add your name</p></li>
-<li><p>Confirm that the date is correct or edit if needed</p></li>
-<li><p>Create <strong>Title Page</strong> using command \maketitle inserted after \begin{document}</p></li>
-</ol>
-</li>
-<li><p>Add a new section labeled “Practice” using the \section* command.</p></li>
-<li><p>Add the following paragraph under that section using “inline” math commands:</p></li>
-</ol>
-<p>Commands needed:
-#add commands</p>
 </div>
 </div>
 
@@ -374,8 +318,8 @@ Practice several basic LaTeX commands in a new project.</em></p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Intro_to_LaTeX.html" title="previous page">Introduction to Latex</a>
-    <a class='right-next' id="next-link" href="Tables_and_Figures.html" title="next page">Tables and Figures</a>
+    <a class='left-prev' id="prev-link" href="Search.html" title="previous page">Search</a>
+    <a class='right-next' id="next-link" href="../LaTeX/Intro_to_LaTeX.html" title="next page">Introduction to Latex</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
