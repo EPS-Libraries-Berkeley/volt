@@ -12,3 +12,4 @@ latex:
 
 execute:
   execute_notebooks         : auto
+
