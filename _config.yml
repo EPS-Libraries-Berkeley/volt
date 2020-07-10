@@ -9,3 +9,6 @@ sphinx:
 latex:
   latex_documents:
     targetname: book.tex
+
+execute:
+  execute_notebooks         : auto
