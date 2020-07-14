@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Part 2 &#8212; vOLT virtual Online Library Tutorials</title>
+    <title>Introduction to Searching with APIs &#8212; vOLT virtual Online Library Tutorials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -31,8 +31,8 @@
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Finding articles" href="Finding_articles.html" />
-    <link rel="prev" title="Introduction to Research Workflows" href="Introduction_Research_Workflows.html" />
+    <link rel="next" title="Introduction to Latex" href="../LaTeX/Intro_to_LaTeX.html" />
+    <link rel="prev" title="Exploring article databases" href="exploring_article_databases.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -74,31 +74,31 @@
 <p class="margin-caption">Research Workflows</p>
 </li>
   <li class="">
-    <a href="Introduction_Research_Workflows.html">Introduction to Research Workflows</a>
-  </li>
-  <li class="active">
-    <a href="">Part 2</a>
+    <a href="../Research_Workflows/Introduction_Research_Workflows.html">Introduction to Research Workflows</a>
   </li>
   <li class="">
-    <a href="Finding_articles.html">Finding articles</a>
+    <a href="../Research_Workflows/Research_Workflows_Part2.html">Part 2</a>
   </li>
   <li class="">
-    <a href="Data_Management.html">Data_Management</a>
+    <a href="../Research_Workflows/Finding_articles.html">Finding articles</a>
   </li>
   <li class="">
-    <a href="digital-mapping.html">Digital Mapping</a>
+    <a href="../Research_Workflows/Data_Management.html">Data_Management</a>
+  </li>
+  <li class="">
+    <a href="../Research_Workflows/digital-mapping.html">Digital Mapping</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">Search</p>
 </li>
   <li class="">
-    <a href="../Search/Search.html">Search</a>
+    <a href="Search.html">Search</a>
   </li>
   <li class="">
-    <a href="../Search/exploring_article_databases.html">Exploring article databases</a>
+    <a href="exploring_article_databases.html">Exploring article databases</a>
   </li>
-  <li class="">
-    <a href="../Search/apis.html">Introduction to Searching with APIs</a>
+  <li class="active">
+    <a href="">Introduction to Searching with APIs</a>
   </li>
 <li class="navbar-special">
 <p class="margin-caption">LaTeX</p>
@@ -153,7 +153,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Research_Workflows/Research_Workflows_Part2.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Search/apis.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -174,9 +174,20 @@
 
     </div>
     <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#what-is-crossref" class="nav-link">1. What is Crossref?</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#what-is-arxiv" class="nav-link">2. What is arXiV?</a>
+        </li>
     
     </ul>
 </nav>
@@ -189,9 +200,34 @@
         
               <div>
                 
-  <div class="section" id="part-2">
-<h1>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">¶</a></h1>
-<p>Here we will talk about the next steps in establishing a research workflow.</p>
+  <div class="section" id="introduction-to-searching-with-apis">
+<h1>Introduction to Searching with APIs<a class="headerlink" href="#introduction-to-searching-with-apis" title="Permalink to this headline">¶</a></h1>
+<p>Searching for scientific articles using an API (application programming interface) allows you to extract data from publisher platforms and databases. With an API, you can create programmatic searches of a citation database, extract statistical data, or query and manipulate your results within a Notebook.</p>
+<p>In this chapter, we will look at two APIs, CrossRef and arXiv.</p>
+<div class="section" id="what-is-crossref">
+<h2>1. What is Crossref?<a class="headerlink" href="#what-is-crossref" title="Permalink to this headline">¶</a></h2>
+<p>Crossref is a non-profit organization that helps to provides access to scientific literature. According to their <a class="reference external" href="https://www.crossref.org/">website</a>, Crossref “makes research outputs easy to find, cite, link, and assess”.</p>
+<p>Crossref data on scientific publications essentially consists of three elements:
+<br>
+1) Metadata about a publication
+<br>
+2) A URL link to the article
+<br>
+3) A document identifier (doi)
+<br></p>
+<p>At present Crossref contains information on 80 million scientific publications including articles, books and book chapters.</p>
+<p>In the accompanying exercise, you will explore the Crossref dataset and learn to:</p>
+<ul class="simple">
+<li><p>Create a topic query and explore the structure of Crossref data</p></li>
+<li><p>Visualize the results of your query to determine which titles are most likely to publish articles on your query</p></li>
+<li><p>Determine which articles are most cited</p></li>
+<li><p>Pair multiple queries to understand topic trends</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/EPS-Libraries-Berkeley/exercises/blob/master/Crossref%20Library%20Module.ipynb">Find notebook here</a></p>
+</div>
+<div class="section" id="what-is-arxiv">
+<h2>2. What is arXiV?<a class="headerlink" href="#what-is-arxiv" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -203,8 +239,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Introduction_Research_Workflows.html" title="previous page">Introduction to Research Workflows</a>
-    <a class='right-next' id="next-link" href="Finding_articles.html" title="next page">Finding articles</a>
+    <a class='left-prev' id="prev-link" href="exploring_article_databases.html" title="previous page">Exploring article databases</a>
+    <a class='right-next' id="next-link" href="../LaTeX/Intro_to_LaTeX.html" title="next page">Introduction to Latex</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
