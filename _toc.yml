@@ -10,9 +10,7 @@
 - header: Search
 - file: Search/Search
 - file: Search/exploring_article_databases
-- file: Search/apis.ipynb
-  sections: 
-  - file: Search/crossref_analysis_1
+- file: Search/apis
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
