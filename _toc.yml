@@ -11,6 +11,8 @@
 - file: Search/searching_for_resources
 - file: Search/exploring_article_databases
 - file: Search/apis
+  sections:
+  - file: Search/arxiv_api
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
