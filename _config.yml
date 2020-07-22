@@ -10,5 +10,8 @@ latex:
   latex_documents:
     targetname: book.tex
 
-execute_notebooks: auto
+execute:
+  execute_notebooks: auto
+  exclude_patterns:
+    - 'crossref_library_module'
 
