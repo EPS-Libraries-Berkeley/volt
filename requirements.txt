@@ -6,6 +6,5 @@ nbinteract
 scipy
 arxiv
 requests
-csv
 datetime
 jupyter-book
