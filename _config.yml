@@ -11,7 +11,6 @@ latex:
     targetname: book.tex
 
 execute:
-  execute_notebooks: auto
   exclude_patterns:
-    - 'crossref_library_module'
+    - 'crossref_library_module.ipynb'
 
