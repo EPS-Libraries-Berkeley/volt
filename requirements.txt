@@ -1,1 +1,12 @@
+
+pandas
+numpy
+matplotlib
+nbinteract
+scipy
+arxiv
+requests
+json
+csv
+datetime
 jupyter-book
