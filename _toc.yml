@@ -13,6 +13,7 @@
 - file: Search/apis
   sections:
   - file: Search/arxiv_api
+  - file: Search/crossref_library_module
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
