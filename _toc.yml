@@ -23,7 +23,7 @@
   - file: LaTeX/Equations_and_Formulas
 
 - header: Special Topics
-- file: Research_Workflows/digital-mapping
+- file: Research_Workflows/digital-mapping.md
 
 - header: Other
 - file: README.md
