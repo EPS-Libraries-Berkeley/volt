@@ -254,6 +254,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example">
+   Example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#structure-of-a-document">
    Structure of a document
   </a>
@@ -316,13 +321,11 @@
 <li><p>Link with other tools in your research workflow</p></li>
 <li><p>Pro account with your berkeley.edu address</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#image of side by side document goes here</span>
-</pre></div>
 </div>
-</div>
-</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Look at the template below to get a sense of how Overleaf works. On the left side, you’ll see the content written in LaTeX. On the right side, the rendered document.</p>
+<p><img alt="Template_image" src="../_images/template.png" /></p>
 </div>
 <div class="section" id="structure-of-a-document">
 <h2>Structure of a document<a class="headerlink" href="#structure-of-a-document" title="Permalink to this headline">¶</a></h2>
@@ -336,23 +339,23 @@
 <tbody>
 <tr class="row-even"><td><p>Command</p></td>
 <td><p>Control sequence which performs an action</p></td>
-<td><p>\newpage</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\newpage</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Preamble</p></td>
 <td><p>Block of commands that define the type of document you are writing,  the language you are writing in, the packages you would like to use. Comes before \begin{document}</p></td>
-<td><p>\documentclass{article}</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\documentclass{article}</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>Package</p></td>
 <td><p>Enable you to create bibliographies, insert images and figures, and write formulas.</p></td>
-<td><p>\usepackage{amsmath}</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\usepackage{amsmath}</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Environment</p></td>
 <td><p>Block of code with specific behavior depending on its type</p></td>
-<td><p>\begin{} &amp; \end{}</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\begin{}</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">\end{}</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>Body</p></td>
 <td><p>Content of document enclosed inside an environment</p></td>
-<td><p>\begin{document}</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -369,9 +372,9 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 <div class="section" id="basic-commands">
 <h2>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Bold</strong>: \textbf{example}</p></li>
-<li><p><em>Italics</em>: \textit{example}</p></li>
-<li><p>Underline: \underline{example}</p></li>
+<li><p><strong>Bold</strong>: <code class="docutils literal notranslate"><span class="pre">\textbf{example}</span></code></p></li>
+<li><p><em>Italics</em>: <code class="docutils literal notranslate"><span class="pre">\textit{example}</span></code></p></li>
+<li><p>Underline: <code class="docutils literal notranslate"><span class="pre">\underline{example}</span></code></p></li>
 </ul>
 <p>Font typefaces: Change in preamble. More information:
 https://v2.overleaf.com/learn/Font_typefaces</p>
@@ -380,33 +383,24 @@ https://v2.overleaf.com/learn/Font_typefaces</p>
 <h2>Make Title<a class="headerlink" href="#make-title" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>The simplest option is to use the \maketitle command which draws from the following declarations within the preamble:<br />
-\author<br />
-\date<br />
-\thanks<br />
-\title</p></li>
+<code class="docutils literal notranslate"><span class="pre">\author</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\date</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\thanks</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\title</span></code></p></li>
 <li><p>OR use the<br />
-\begin{titlepage}<br />
-…<br />
-\end{titlepage}<br />
+<code class="docutils literal notranslate"><span class="pre">\begin{titlepage}</span> <span class="pre">...</span> <span class="pre">\end{titlepage}</span></code><br />
 environment.</p></li>
 </ol>
 <p>The titlepage environment creates a title page, i.e. a page with no printed page number or heading. It also causes the following page to be numbered page one.
-Formatting is left to you, but commands like \centering, \vspace, and \vfill are helpful.</p>
+Formatting is left to you, but commands like <code class="docutils literal notranslate"><span class="pre">\centering</span></code>, <code class="docutils literal notranslate"><span class="pre">\vspace</span></code>, and <code class="docutils literal notranslate"><span class="pre">\vfill</span></code> are helpful.</p>
 </div>
 <div class="section" id="basic-math">
 <h2>Basic Math<a class="headerlink" href="#basic-math" title="Permalink to this headline">¶</a></h2>
-<p>\require{verb}</p>
 <p>To display math inline with text, place formula or symbol in between $:</p>
-<p>\verb|<span class="math notranslate nohighlight">\(x + y = z\)</span>|</p>
+<p><code class="docutils literal notranslate"><span class="pre">$x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z$</span></code></p>
 <p><span class="math notranslate nohighlight">\(x + y = z\)</span></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Display mode \mathtt{\[ x + y = z \]}, will center the equation on its own line:</span>
-<span class="c1">#\[ x + y = z \]</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p>Display mode <code class="docutils literal notranslate"><span class="pre">\[</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">\]</span></code> will center the equation on its own line:
+<span class="math notranslate nohighlight">\($x + y = z\)</span>$</p>
 </div>
 <div class="section" id="exercise-1">
 <h2><em>EXERCISE 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
@@ -416,18 +410,39 @@ Practice several basic LaTeX commands in a new project.</em></p>
 <li><p>Open new project in Overleaf</p></li>
 <li><p>Create title page</p>
 <ol class="simple">
-<li><p>Add [title page] to make preamble command \documentclass[titlepage]{article}</p></li>
-<li><p>After \title, add “class LaTeX assignment”</p></li>
-<li><p>After \author, add your name</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">[title</span> <span class="pre">page]</span></code> to make preamble command <code class="docutils literal notranslate"><span class="pre">\documentclass[titlepage]{article}</span></code></p></li>
+<li><p>After <code class="docutils literal notranslate"><span class="pre">\title</span></code>, add “class LaTeX assignment”</p></li>
+<li><p>After <code class="docutils literal notranslate"><span class="pre">\author</span></code>, add your name</p></li>
 <li><p>Confirm that the date is correct or edit if needed</p></li>
-<li><p>Create <strong>Title Page</strong> using command \maketitle inserted after \begin{document}</p></li>
+<li><p>Create <strong>Title Page</strong> using command <code class="docutils literal notranslate"><span class="pre">\maketitle</span></code> inserted after <code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></li>
 </ol>
 </li>
-<li><p>Add a new section labeled “Practice” using the \section* command.</p></li>
+<li><p>Add a new section labeled “Practice” using the <code class="docutils literal notranslate"><span class="pre">\section*</span></code> command.</p></li>
 <li><p>Add the following paragraph under that section using “inline” math commands:</p></li>
 </ol>
-<p>Commands needed:
-#add commands</p>
+<blockquote>
+<div><p>For rainfall a threshold of &gt;1 mm/hr was used; for modeled OLR a threshold of &lt;167 W/m2, equivalent to a SEVIRI &gt;TB of &lt;233 K (−40 °C) using equation 1, was used.</p>
+</div></blockquote>
+<blockquote>
+<div><p>It has previously been shown that MCSs account for about 90% of the rainfall in the central Sahel.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Source</strong>: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018EA000491</p>
+</div></blockquote>
+<ol class="simple">
+<li><p>Make a numbered list of four items, for example, California Road Trip destinations:
+Yosemite
+Big Sur
+Lake Tahoe
+Death Valley</p></li>
+</ol>
+<p><em>Commands we learned:</em>
+<code class="docutils literal notranslate"><span class="pre">\section{}</span></code> <code class="docutils literal notranslate"><span class="pre">\%</span></code>, <code class="docutils literal notranslate"><span class="pre">$...$</span></code>
+Degree can be represented several ways:
+<code class="docutils literal notranslate"><span class="pre">$^\circ$</span></code> OR  <code class="docutils literal notranslate"><span class="pre">\textcelsius\</span></code> OR <code class="docutils literal notranslate"><span class="pre">\si{degree}</span></code>
+Subscripts and superscripts are written using the symbols ^ and _</p>
+<p>New environment needed:
+<code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code></p>
 </div>
 </div>
 
