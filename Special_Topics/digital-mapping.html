@@ -31,8 +31,6 @@
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Searching for resources" href="../Search/searching_for_resources.html" />
-    <link rel="prev" title="Data_Management" href="Data_Management.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -77,30 +75,25 @@
   Research Workflows
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="Introduction_Research_Workflows.html">
+  <a class="reference internal" href="../Research_Workflows/Introduction_Research_Workflows.html">
    Introduction to Research Workflows
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Research_Workflows_Part2.html">
+  <a class="reference internal" href="../Research_Workflows/Research_Workflows_Part2.html">
    Part 2
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Finding_articles.html">
+  <a class="reference internal" href="../Research_Workflows/Finding_articles.html">
    Finding articles
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Data_Management.html">
+  <a class="reference internal" href="../Research_Workflows/Data_Management.html">
    Data_Management
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Digital Mapping
   </a>
  </li>
 </ul>
@@ -123,6 +116,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../Search/apis.html">
    Introduction to Searching with APIs
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Organizing
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Organizing/Reference_Management_and_Citations.html">
+   Reference Management and Citations
   </a>
  </li>
 </ul>
@@ -191,9 +196,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Research_Workflows/digital-mapping.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Special_Topics/digital-mapping.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -218,7 +223,26 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-digital-mapping">
+   What is digital mapping?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#components-of-digital-mapping">
+   Components of digital mapping
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geographic-data-vs-geospatial-data">
+     Geographic data vs. geospatial data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -229,7 +253,25 @@
                 
   <div class="section" id="digital-mapping">
 <h1>Digital Mapping<a class="headerlink" href="#digital-mapping" title="Permalink to this headline">¶</a></h1>
-<p>This is where some information about digital mapping will go.</p>
+<p>This tutorial will give a short introduction to some digital mapping concepts, tools, and data.</p>
+<div class="section" id="what-is-digital-mapping">
+<h2>What is digital mapping?<a class="headerlink" href="#what-is-digital-mapping" title="Permalink to this headline">¶</a></h2>
+<p>Digital mapping uses computer software (either desktop or web based) to create digital maps. The basic components of digital mapping are <strong>geospatial data</strong> and specialized software called <strong>GIS</strong> ( <strong>G</strong>eographic <strong>I</strong>nformation <strong>S</strong>ystems ). We’ll look at each of the these in more detail below.</p>
+</div>
+<div class="section" id="components-of-digital-mapping">
+<h2>Components of digital mapping<a class="headerlink" href="#components-of-digital-mapping" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="geographic-data-vs-geospatial-data">
+<h3>Geographic data vs. geospatial data<a class="headerlink" href="#geographic-data-vs-geospatial-data" title="Permalink to this headline">¶</a></h3>
+<p><strong>Geographic data</strong> is data about locations on or near the surface of the earth. It can scale from the very local all the way up to a global level.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because geographic data only includes data on or near the surface of the earth it does not include data about outer space or other planets!</p>
+</div>
+<a class="reference internal image-reference" href="Special_Topics/../images/potw2013a.jpg"><img alt="Hubble Space Telescope image of a Cannibal Galaxy" src="Special_Topics/../images/potw2013a.jpg" style="height: 100px;" /></a>
+<p>Image source: <span class="xref myst">https://www.nasa.gov/mission_pages/hubble/multimedia/index.html</span></p>
+<p><strong>Geospatial data</strong> on the other hand is data…</p>
+</div>
+</div>
 </div>
 
 
@@ -241,8 +283,6 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Data_Management.html" title="previous page">Data_Management</a>
-    <a class='right-next' id="next-link" href="../Search/searching_for_resources.html" title="next page">Searching for resources</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
