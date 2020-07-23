@@ -123,6 +123,18 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
+  Organizing
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Organizing/Reference_Management_and_Citations.html">
+   Reference Management and Citations
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
   LaTeX
  </span>
 </p>
@@ -230,7 +242,26 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-basic-equations">
+   Getting Started: Basic Equations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inline-vs-display-style">
+     Inline vs Display Style
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-operators-subscripts-superscripts-more">
+     Simple Operators, Subscripts, Superscripts &amp; More
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -241,7 +272,63 @@
                 
   <div class="section" id="equations-and-formulas">
 <h1>Equations and Formulas<a class="headerlink" href="#equations-and-formulas" title="Permalink to this headline">¶</a></h1>
-<p>This is where the LaTeX Equations and Formulas content will go.</p>
+<p><em>Objective: Learn the basic commands for rendering mathematics in LaTeX.</em></p>
+<div class="section" id="getting-started-basic-equations">
+<h2>Getting Started: Basic Equations<a class="headerlink" href="#getting-started-basic-equations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="inline-vs-display-style">
+<h3>Inline vs Display Style<a class="headerlink" href="#inline-vs-display-style" title="Permalink to this headline">¶</a></h3>
+<p>To add math to your LaTeX documents, you first have to enter math mode. Math can be displayed inline or in math blocks (called display style). To render equations in inline style, enclose them in a pair of dollar signs <code class="docutils literal notranslate"><span class="pre">$...$</span></code>.</p>
+<p><em>Inline:</em> Using <code class="docutils literal notranslate"><span class="pre">$x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z$</span></code> will display the equation <span class="math notranslate nohighlight">\(x + y = z\)</span> in the line.</p>
+<p>To render equations in display style, LaTeX offers several options. We suggest using <code class="docutils literal notranslate"><span class="pre">\[...\]</span></code> to start.</p>
+<p><em>Display:</em> Using <code class="docutils literal notranslate"><span class="pre">\[</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">\]</span></code> will display the equation centered on its own line as below. <span class="math notranslate nohighlight">\($x + y = z\)</span>$</p>
+</div>
+<div class="section" id="simple-operators-subscripts-superscripts-more">
+<h3>Simple Operators, Subscripts, Superscripts &amp; More<a class="headerlink" href="#simple-operators-subscripts-superscripts-more" title="Permalink to this headline">¶</a></h3>
+<p>To render simple equations, you will also need to know syntax and commands for some operators, relations, subscripts, superscripts, and fractions.</p>
+<p><strong>Operators &amp; Relations:</strong>
++, -, +, &gt;, &lt; work as expected.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Command</p></th>
+<th class="text-align:center head"><p>Result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\times</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\times\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\cdot</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\cdot\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\div</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\div\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\pm</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\pm\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\geq</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\geq\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\leq</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\leq\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\neq</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\neq\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">\approx</span></code></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\approx\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Subscript:</strong> use the underscore (_) / <strong>Superscript</strong>: use the carret (^)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the subscript or superscript includes more than one character, enclose it in
+curly brackets–otherwise the command applies only to the first character.</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">$x^n+1$</span></code> gives <span class="math notranslate nohighlight">\(x^n+1\)</span> &amp;  <code class="docutils literal notranslate"><span class="pre">$x^{n+1}$</span></code> gives <span class="math notranslate nohighlight">\(x^{n+1}\)</span></p>
+</div>
+</div>
 </div>
 
 
