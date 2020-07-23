@@ -13,6 +13,11 @@
   sections:
   - file: Search/arxiv_api
   - file: Search/crossref_library_module
+  
+  
+- header: Organizing
+- file: Organizing/Reference_Management_and_Citations
+
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
