@@ -14,3 +14,6 @@ execute:
   exclude_patterns:
     - 'crossref_library_module.ipynb'
 
+html:
+  home_page_in_navbar: false
+
