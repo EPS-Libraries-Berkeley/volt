@@ -5,7 +5,6 @@
 - file: Research_Workflows/Research_Workflows_Part2
 - file: Research_Workflows/Finding_articles
 - file: Research_Workflows/Data_Management
-- file: Research_Workflows/digital-mapping
 
 - header: Search
 - file: Search/searching_for_resources
@@ -14,6 +13,11 @@
   sections:
   - file: Search/arxiv_api
   - file: Search/crossref_library_module
+  
+  
+- header: Organizing
+- file: Organizing/Reference_Management_and_Citations
+
 
 - header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
@@ -22,6 +26,9 @@
   - file: LaTeX/Tables_and_Figures
   - file: LaTeX/Test_Notebook
   - file: LaTeX/Equations_and_Formulas
+
+- header: Special Topics
+- file: Special_Topics/digital-mapping.md
 
 - header: Other
 - file: README.md
