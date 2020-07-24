@@ -25,7 +25,7 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/mystnb.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -65,111 +65,33 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
   <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Introduction/Welcome.html">
-   Welcome
-  </a>
- </li>
+  <li class="">
+    <a href="../Introduction/Welcome.html">Welcome</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Research Workflows</p>
+</li>
+  <li class="active">
+    <a href="">Introduction to Research Workflows</a>
+  </li>
+  <li class="">
+    <a href="Research_Workflows_Part2.html">Part 2</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">LaTeX</p>
+</li>
+  <li class="">
+    <a href="../LaTeX/Intro_to_LaTeX.html">Introduction to Latex</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Other</p>
+</li>
+  <li class="">
+    <a href="../README.html">volt</a>
+  </li>
 </ul>
-<p class="caption">
- <span class="caption-text">
-  Research Workflows
- </span>
-</p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Introduction to Research Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Research_Workflows_Part2.html">
-   Part 2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Finding_articles.html">
-   Finding articles
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Data_Management.html">
-   Data_Management
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Search
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Search/searching_for_resources.html">
-   Searching for resources
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Search/exploring_article_databases.html">
-   Exploring article databases
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Search/apis.html">
-   Introduction to Searching with APIs
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Organizing
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Organizing/Reference_Management_and_Citations.html">
-   Reference Management and Citations
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  LaTeX
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../LaTeX/Intro_to_LaTeX.html">
-   Introduction to Latex
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Special Topics
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Special_Topics/digital-mapping.html">
-   Digital Mapping
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Other
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   volt
-  </a>
- </li>
-</ul>
-
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -192,60 +114,45 @@
     </div>
     <div class="col pl-2 topbar-main">
         
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation" title="Toggle navigation" data-toggle="tooltip" data-placement="left">
             <i class="fas fa-bars"></i>
             <i class="fas fa-arrow-left"></i>
             <i class="fas fa-arrow-up"></i>
         </button>
         
         <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i class="fas fa-download"></i></button>
 
-    
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+            
+            <div class="dropdown-buttons">
+                <!-- ipynb file if we had a myst markdown file -->
+                
+                <!-- Download raw file -->
+                <a class="dropdown-buttons" href="../_sources/Research_Workflows/Introduction_Research_Workflows.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.ipynb</button></a>
+                <!-- Download PDF via print -->
+                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+            </div>
+            
+        </div>
+
+        <!-- Edit this page -->
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Research_Workflows/Introduction_Research_Workflows.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-    
-</div>
-        <!-- Source interaction buttons -->
-
 
         <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
-
+        
     </div>
-
-    <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> On this page
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
-</ul>
 
-        </nav>
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
     </div>
 </div>
     <div id="main-content" class="row">
@@ -261,15 +168,13 @@
 <p>Real workflows are never this simple.</p>
 <p>This is an example of more complex, iterative model. You can see how multiple cycles nest within the larger cycle as each aspect of the workflow requires revisions, edits, clarifying experiments, etc.</p>
 <p><img alt="Multicycle Workflow" src="../_images/multicycle_workflow.png" /></p>
+<p><span class="bibtex" id="id1">[bosman_kramer_2016]</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#add more content about research workflows, how to open, and layout of next chapters</span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
