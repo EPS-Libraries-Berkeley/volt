@@ -3,12 +3,6 @@ title: vOLT virtual Online Library Tutorials
 author: Engineering & Physical Sciences Librarians
 logo: EPS-Logo.png
 
-sphinx:
-  extra_extensions: ""
-
-latex:
-  latex_documents:
-    targetname: book.tex
 
 execute:
   exclude_patterns:
@@ -16,4 +10,12 @@ execute:
 
 html:
   home_page_in_navbar: false
+  baseurl: https://eps-libraries-berkeley.github.io/volt
+
+sphinx:
+  extra_extensions: ""
+
+latex:
+  latex_documents:
+    targetname: book.tex
 
