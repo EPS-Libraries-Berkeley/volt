@@ -8,5 +8,4 @@ arxiv
 requests
 datetime
 habanero
-collections
 jupyter-book
