@@ -17,7 +17,7 @@
 - file: Organizing/Reference_Management_and_Citations
 - file: Organizing/Data_Management
 
-- header: Writing
+- header: LaTeX
 - file: LaTeX/Intro_to_LaTeX
   sections:
   - file: LaTeX/Basics
@@ -33,13 +33,7 @@
 
 
 
-- header: LaTeX
-- file: LaTeX/Intro_to_LaTeX
-  sections:
-  - file: LaTeX/Basics
-  - file: LaTeX/Tables_and_Figures
-  - file: LaTeX/Test_Notebook
-  - file: LaTeX/Equations_and_Formulas
+
 
 
 
