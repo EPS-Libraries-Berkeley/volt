@@ -15,5 +15,5 @@ execute:
     - 'crossref_library_module.ipynb'
 
 html:
-  home_page_in_navbar: false
+  home_page_in_navbar: true
 
