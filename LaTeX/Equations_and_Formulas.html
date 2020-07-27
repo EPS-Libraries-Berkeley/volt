@@ -269,7 +269,34 @@
      Simple Operators, Subscripts, Superscripts &amp; More
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-1">
+     Exercise 1
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps-greek-letters-integrals-more">
+   Next Steps: Greek Letters, Integrals &amp; More
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#greek-letters">
+     Greek Letters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limits-integrals-products-sums">
+     Limits, Integrals, Products &amp; Sums
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2">
+   Exercise 2
+  </a>
  </li>
 </ul>
 
@@ -301,7 +328,7 @@ x + y = z
 <h3>Simple Operators, Subscripts, Superscripts &amp; More<a class="headerlink" href="#simple-operators-subscripts-superscripts-more" title="Permalink to this headline">¶</a></h3>
 <p>To render simple equations, you will also need to know syntax and commands for some operators, relations, subscripts, superscripts, and fractions.</p>
 <p><strong>Operators &amp; Relations:</strong><br/>
-+, -, +, &gt;, &lt; work as expected. Here are some other commands:</p>
++, -, =, &gt;, &lt; work as expected. Here are some other commands:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p>Command</p></th>
@@ -339,7 +366,156 @@ x + y = z
 <p>If the subscript or superscript includes more than one character, enclose it in
 curly brackets–otherwise the command applies only to the first character.</p>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">$x^n+1$</span></code> gives <span class="math notranslate nohighlight">\(x^n+1\)</span> &amp;  <code class="docutils literal notranslate"><span class="pre">$x^{n+1}$</span></code> gives <span class="math notranslate nohighlight">\(x^{n+1}\)</span></p>
+<p><strong>Example:</strong> <code class="docutils literal notranslate"><span class="pre">$x^n+1$</span></code> gives <span class="math notranslate nohighlight">\(x^n+1\)</span> but <code class="docutils literal notranslate"><span class="pre">$x^{n+1}$</span></code> gives <span class="math notranslate nohighlight">\(x^{n+1}\)</span></p>
+<p><strong>Fractions:</strong><br />
+To display a fraction, use the command <code class="docutils literal notranslate"><span class="pre">\frac</span></code> followed by the numerator in
+curly brackets then the denominator in curly brackets.</p>
+<p><strong>Example:</strong> <code class="docutils literal notranslate"><span class="pre">\frac{1}{x}</span></code> gives <span class="math notranslate nohighlight">\(\frac{1}{x}\)</span></p>
+</div>
+<div class="section" id="exercise-1">
+<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<p>Open a blank document in <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a> and recreate this text in your document using LaTeX commands:</p>
+<p>A quadratic equation is an equation of the form <span class="math notranslate nohighlight">\(ax^2 + bx + c = 0\)</span> and such equations can be solved using the quadratic formula:</p>
+<div class="math notranslate nohighlight">
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</div>
+<p><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\frac{}{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\pm</span></code>, <code class="docutils literal notranslate"><span class="pre">\sqrt{}</span></code></p>
+<p><strong>Challenge Exercise</strong></p>
+<p>Recreate these equations in your document:</p>
+<div class="math notranslate nohighlight">
+\[
+a^2_1 + a^2_2 = a^2_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+v(x,t) = x - \sqrt{x^2 + e^{a-2t}}
+\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Getting compile errors or having problems getting it to render correctly? Compare your LaTeX code with the <a href="https://docs.google.com/document/d/1Fvn1SPIcY-aK1LFQW1HJiu9kHE3q7ivPPFC33VNEJOk/edit?usp=sharing">solutions</a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="next-steps-greek-letters-integrals-more">
+<h2>Next Steps: Greek Letters, Integrals &amp; More<a class="headerlink" href="#next-steps-greek-letters-integrals-more" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="greek-letters">
+<h3>Greek Letters<a class="headerlink" href="#greek-letters" title="Permalink to this headline">¶</a></h3>
+<p>Many equations and formulas use Greek letters. The command is simple - just the backslash and name of the letter, for example, <code class="docutils literal notranslate"><span class="pre">\alpha</span></code>. Capitalize the command to get the capital version of the letter. Here are some more examples:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Result</p></th>
+<th class="head"><p>Command</p></th>
+<th class="head"><p>Result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\alpha</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\mu</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\beta</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\pi</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\Gamma</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Gamma\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\rho</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\rho\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\delta</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\delta\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\sigma</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sigma\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\Delta</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Delta\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Phi</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Phi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\lambda</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lambda\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\omega</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\omega\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\Lambda</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Lambda\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Omega</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\Omega\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Greek letters that are the same in English are an exception, for example, use A for Alpha, B for Beta, Z for Zeta. For more commands, see the Overleaf <a href="https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols#Greek_letters">list of Greek letters</a>.</p>
+</div>
+</div>
+<div class="section" id="limits-integrals-products-sums">
+<h3>Limits, Integrals, Products &amp; Sums<a class="headerlink" href="#limits-integrals-products-sums" title="Permalink to this headline">¶</a></h3>
+<p>There are also commands for common operations that take upper and lower bounds:</p>
+<p><strong>Limits:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="p">[</span> 
+<span class="n">lim_</span><span class="p">{</span><span class="n">x</span> \<span class="n">to</span> \<span class="n">infty</span><span class="p">}</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> 
+\<span class="p">]</span>
+</pre></div>
+</div>
+<p>results in</p>
+<div class="math notranslate nohighlight">
+\[
+lim_{x \to \infty} f(x) 
+\]</div>
+<p><strong>Integrals</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="p">[</span> 
+\<span class="n">int_</span><span class="p">{</span><span class="n">a</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="n">b</span><span class="p">}</span> <span class="n">x</span><span class="o">^</span><span class="mi">2</span> <span class="n">dx</span> 
+\<span class="p">]</span>
+</pre></div>
+</div>
+<p>results in</p>
+<div class="math notranslate nohighlight">
+\[
+\int_{a}^{b} x^2 dx 
+\]</div>
+<p><strong>Products</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="p">[</span> 
+\<span class="n">prod_</span><span class="p">{</span><span class="n">i</span><span class="o">=</span><span class="n">a</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="n">b</span><span class="p">}</span> <span class="n">f</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+\<span class="p">]</span>
+</pre></div>
+</div>
+<p>results in</p>
+<div class="math notranslate nohighlight">
+\[
+\prod_{i=a}^{b} f(i)
+\]</div>
+<p><strong>Sums</strong></p>
+<p>What about summation (<span class="math notranslate nohighlight">\(\sum\)</span>)?</p>
+</div>
+</div>
+<div class="section" id="exercise-2">
+<h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
+<p>Recreate these equations in your <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a> document:</p>
+<div class="math notranslate nohighlight">
+\[
+e^{i\pi} = -1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+f(x) = \sum_{i=0}^{\infty} \frac{f^{(i)}(0)}{i!} x^i
+\]</div>
+<p><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\pi</span></code>, <code class="docutils literal notranslate"><span class="pre">\infty</span></code>, <code class="docutils literal notranslate"><span class="pre">\frac{}{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\sum_{}^{}</span></code></p>
+<p><strong>Challenge Exercise</strong></p>
+<p>Recreate this text in your document:</p>
+<p>Suppose that the measurable sets <span class="math notranslate nohighlight">\(A_1,A_2,...\)</span> are “almost disjoint” in the sense that <span class="math notranslate nohighlight">\(\mu(A_i \cap A_j) = 0\)</span> if <span class="math notranslate nohighlight">\(i \neq j\)</span>. Prove that</p>
+<div class="math notranslate nohighlight">
+\[
+\mu(\cup_{k=1}^{\infty} A_k) = \sum_{k \geq 1} \mu(A_k)
+\]</div>
+<p><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\mu</span></code>, <code class="docutils literal notranslate"><span class="pre">\cap</span></code>, <code class="docutils literal notranslate"><span class="pre">\neq</span></code>, <code class="docutils literal notranslate"><span class="pre">\cup</span></code>, <code class="docutils literal notranslate"><span class="pre">\infty</span></code>, <code class="docutils literal notranslate"><span class="pre">\sum_{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\geq</span></code></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Need help getting it to render properly? Compare your LaTeX code with the <a href="https://docs.google.com/document/d/1CnFnTH8h51tw9xiL_SeCI8xqIbxB6WHLB8rBIoDnvI0/edit?usp=sharing">solutions</a>.</p>
 </div>
 </div>
 </div>
