@@ -33,7 +33,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="&lt;no title&gt;" href="Test_Notebook.html" />
-    <link rel="prev" title="Introduction to LaTeX: Basics" href="Basics.html" />
+    <link rel="prev" title="LaTeX Basics" href="Basics.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -43,7 +43,7 @@
 <meta property="og:url"         content="https://eps-libraries-berkeley.github.io/volt/LaTeX/Tables_and_Figures.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Tables and Figures" />
-<meta property="og:description" content="Tables and Figures  Objective: Learn the basic commands to create and edit tables.  Create basic table  Use the tabularx package to create a simple table of the" />
+<meta property="og:description" content="Tables and Figures  Objective: Learn the basic commands to create and edit tables.  Tables  Basic tables can be created with a combination of the commands below" />
 <meta property="og:image"       content="https://eps-libraries-berkeley.github.io/volt/_static/EPS-Logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -149,7 +149,7 @@
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="Basics.html">
-     Introduction to LaTeX: Basics
+     LaTeX Basics
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -255,8 +255,44 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-basic-table">
-   Create basic table
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1-two-column-table">
+     Example 1: two column table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2-vertical-and-horizontal-lines-are-added">
+     Example 2: vertical and horizontal lines are added
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3-with-caption-and-centering">
+     Example 3: With caption and centering
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1">
+   <em>
+    EXERCISE 1
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-challenges">
+     Additional Challenges
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figures">
+   Figures
   </a>
  </li>
 </ul>
@@ -272,9 +308,33 @@
   <div class="section" id="tables-and-figures">
 <h1>Tables and Figures<a class="headerlink" href="#tables-and-figures" title="Permalink to this headline">¶</a></h1>
 <p><em>Objective: Learn the basic commands to create and edit tables.</em></p>
-<div class="section" id="create-basic-table">
-<h2>Create basic table<a class="headerlink" href="#create-basic-table" title="Permalink to this headline">¶</a></h2>
-<p>Use the tabularx package to create a simple table of the US Women’s Soccer Team’s 2019 World Cup Starting Roster: https://www.ussoccer.com/players</p>
+<div class="section" id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Basic tables can be created with a combination of the commands below and the <strong>use package</strong>: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
+<p>|Basic Commands|Description|
+|—–||
+|<code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code> | column alignment|
+|<code class="docutils literal notranslate"><span class="pre">&amp;</span></code> |ampersand separates columns|
+| <code class="docutils literal notranslate"><span class="pre">\\</span></code> | double backslash begins new row|
+| <code class="docutils literal notranslate"><span class="pre">\hline</span></code> |horizontal line|
+| | |	vertical line|</p>
+<div class="section" id="example-1-two-column-table">
+<h3>Example 1: two column table<a class="headerlink" href="#example-1-two-column-table" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Basic" src="../_images/tables_basic.png" /></p>
+</div>
+<div class="section" id="example-2-vertical-and-horizontal-lines-are-added">
+<h3>Example 2: vertical and horizontal lines are added<a class="headerlink" href="#example-2-vertical-and-horizontal-lines-are-added" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Lines" src="../_images/tables_lines.png" /></p>
+</div>
+<div class="section" id="example-3-with-caption-and-centering">
+<h3>Example 3: With caption and centering<a class="headerlink" href="#example-3-with-caption-and-centering" title="Permalink to this headline">¶</a></h3>
+<p>Note the addition the <code class="docutils literal notranslate"><span class="pre">\caption</span></code> and <code class="docutils literal notranslate"><span class="pre">\centering</span></code> commands.</p>
+<p><img alt="Caption" src="../_images/tables_caption.png" /></p>
+</div>
+</div>
+<div class="section" id="exercise-1">
+<h2><em>EXERCISE 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">tabularx</span></code> package to create a simple table of the US Women’s Soccer Team’s 2019 World Cup Starting Roster: https://www.ussoccer.com/players</p>
 <p>Begin with a header row and two columns.</p>
 <ul class="simple">
 <li><p>Your two column headers will be: Position and Last Name – Left align the text of the left column</p></li>
@@ -282,12 +342,12 @@
 <li><p>Add vertical and horizontal lines</p></li>
 </ul>
 <p>Add a caption “2019 Team Roster” and center the table.<br />
-Note: Using the \caption{} command will add the phrase “Table 1” in front of caption.</p>
-<p>Use package needed: tabularx</p>
+Note: Using the <code class="docutils literal notranslate"><span class="pre">\caption{}</span></code> command will add the phrase “Table 1” in front of caption.</p>
+<p>Use package needed: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
 <p>Commands needed:<br />
-&amp; = column separator<br />
-\ = begin new row<br />
-l, r, c = column alignment</p>
+<code class="docutils literal notranslate"><span class="pre">&amp;</span></code> = column separator<br />
+<code class="docutils literal notranslate"><span class="pre">\\</span></code> = begin new row<br />
+<code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code> = column alignment</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Position</p></th>
@@ -318,6 +378,12 @@ l, r, c = column alignment</p>
 </tr>
 </tbody>
 </table>
+<div class="section" id="additional-challenges">
+<h3>Additional Challenges<a class="headerlink" href="#additional-challenges" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="figures">
+<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -330,7 +396,7 @@ l, r, c = column alignment</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Basics.html" title="previous page">Introduction to LaTeX: Basics</a>
+    <a class='left-prev' id="prev-link" href="Basics.html" title="previous page">LaTeX Basics</a>
     <a class='right-next' id="next-link" href="Test_Notebook.html" title="next page">&lt;no title&gt;</a>
 
     </div>
