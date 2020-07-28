@@ -22,7 +22,6 @@
   sections:
   - file: LaTeX/Basics
   - file: LaTeX/Tables_and_Figures
-  - file: LaTeX/Test_Notebook
   - file: LaTeX/Equations_and_Formulas
 
 - header: Special Topics
