@@ -274,18 +274,18 @@
      Example 3: With caption and centering
     </a>
    </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercise-1">
-   <em>
-    EXERCISE 1
-   </em>
-  </a>
-  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#additional-challenges">
-     Additional Challenges
+    <a class="reference internal nav-link" href="#exercise-1">
+     <em>
+      Exercise 1
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-2">
+     <em>
+      Exercise 2
+     </em>
     </a>
    </li>
   </ul>
@@ -294,6 +294,32 @@
   <a class="reference internal nav-link" href="#figures">
    Figures
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-1-upload-a-figure">
+     <em>
+      Exercise 1: Upload a figure
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-placement">
+     Figure Placement
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-2-designate-figure-position">
+     <em>
+      Exercise 2: Designate figure position
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#syncing-and-uploading-figures-hosted-elsewhere">
+     Syncing and Uploading figures hosted elsewhere
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -331,9 +357,8 @@
 <p>Note the addition the <code class="docutils literal notranslate"><span class="pre">\caption</span></code> and <code class="docutils literal notranslate"><span class="pre">\centering</span></code> commands.</p>
 <p><img alt="Caption" src="../_images/tables_caption.png" /></p>
 </div>
-</div>
 <div class="section" id="exercise-1">
-<h2><em>EXERCISE 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
+<h3><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">tabularx</span></code> package to create a simple table of the US Women’s Soccer Team’s 2019 World Cup Starting Roster: https://www.ussoccer.com/players</p>
 <p>Begin with a header row and two columns.</p>
 <ul class="simple">
@@ -378,12 +403,75 @@ Note: Using the <code class="docutils literal notranslate"><span class="pre">\ca
 </tr>
 </tbody>
 </table>
-<div class="section" id="additional-challenges">
-<h3>Additional Challenges<a class="headerlink" href="#additional-challenges" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="exercise-2">
+<h3><em>Exercise 2</em><a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<p>Create a table like the one below with columns spanning multiple rows or rows spanning multiple columns.</p>
+<p><img alt="Multiple Columns" src="../_images/tables_multi.png" /></p>
+<p><em>Questions?</em><br />
+Consult the answer key in the Overleaf Project to troubleshoot: https://www.overleaf.com/read/vkpyvmhgzsgm</p>
+<p>Information sources:</p>
+<ul class="simple">
+<li><p>Roster: https://www.ussoccer.com/players</p></li>
+<li><p>Tables info: https://en.wikibooks.org/wiki/LaTeX/Tables</p></li>
+<li><p>Multicolumn/Multirow: https://en.wikibooks.org/wiki/LaTeX/Tables</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="figures">
 <h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h2>
+<p><em>Objective:</em> Learn to upload and position figures in Overleaf.</p>
+<div class="section" id="exercise-1-upload-a-figure">
+<h3><em>Exercise 1: Upload a figure</em><a class="headerlink" href="#exercise-1-upload-a-figure" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>To upload image, choose an image of your own, or find file at: https://github.com/samteplitzky/EPS-Latex-Workshop</p></li>
+<li><p>Download keyboard_cat.jpg, and upload file to the Overleaf project.</p></li>
+<li><p>Place image with these commands:<br />
+<code class="docutils literal notranslate"><span class="pre">\usepackage{graphicx}</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.4\textwidth]{keyboard_cat.jpg}</span></code></p></li>
+</ol>
+<p><img alt="cat" src="LaTeX/images/keyboard_cat.jpg" /></p>
+</div>
+<div class="section" id="figure-placement">
+<h3>Figure Placement<a class="headerlink" href="#figure-placement" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Specifier</p></th>
+<th class="head"><p>Permission</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>h</p></td>
+<td><p>Place the float here: approximately, not exactly, at the same point it occurs in the source text</p></td>
+</tr>
+<tr class="row-odd"><td><p>t</p></td>
+<td><p>Position at the top of the page</p></td>
+</tr>
+<tr class="row-even"><td><p>b</p></td>
+<td><p>Position at the bottom of the page</p></td>
+</tr>
+<tr class="row-odd"><td><p>p</p></td>
+<td><p>Put on a special page for floats only</p></td>
+</tr>
+<tr class="row-even"><td><p>!</p></td>
+<td><p>Override internal parameters LaTeX uses for determining “good” float positions</p></td>
+</tr>
+<tr class="row-odd"><td><p>H</p></td>
+<td><p>Places the float at precisely the location in the LaTeX code. Requires the float package. This is somewhat equivalent to h!</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="exercise-2-designate-figure-position">
+<h3><em>Exercise 2: Designate figure position</em><a class="headerlink" href="#exercise-2-designate-figure-position" title="Permalink to this headline">¶</a></h3>
+<p>Use b, t, h to see where figure moves. You might need to add additional text in the document to see how the figure placement varies.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{figure}[b]</span>&#160; <span class="pre">\centering</span>&#160;&#160;&#160;&#160; <span class="pre">\includegraphics[width=0.6\textwidth]{keyboard_cat.jpg}</span>&#160;&#160; <span class="pre">\end{figure}</span> </code></p>
+</div>
+<div class="section" id="syncing-and-uploading-figures-hosted-elsewhere">
+<h3>Syncing and Uploading figures hosted elsewhere<a class="headerlink" href="#syncing-and-uploading-figures-hosted-elsewhere" title="Permalink to this headline">¶</a></h3>
+<p>Google Drive: https://www.overleaf.com/help/247-how-can-i-upload-files-from-google-drive#.W4WtwhPwZE5<br />
+GitHub/Dropbox: https://www.overleaf.com/help/343#.W4WtgxPwZE4</p>
+</div>
 </div>
 </div>
 
