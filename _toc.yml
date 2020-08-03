@@ -1,28 +1,40 @@
 - file: Welcome
 
-- file: Introduction/eps_libraries
-- file: Introduction/research_workflows
+- part: Introduction
+  chapters:
+  - file: Introduction/eps_libraries
+  - file: Introduction/research_workflows
 
-- file: Search/searching_for_resources
-- file: Search/exploring_article_databases
-- file: Search/apis
-  sections:
+- part: Searching
+  chapters:
+  - file: Search/searching_for_resources
+  - file: Search/exploring_article_databases
+  - file: Search/apis
+    sections:
     - file: Search/arxiv_api
     - file: Search/crossref_library_module
   
-- file: Organizing/Finding_articles
-- file: Organizing/Reference_Management_and_Citations
-- file: Organizing/Data_Management
+- part: Organizing
+  chapters:
+  - file: Organizing/Finding_articles
+  - file: Organizing/Reference_Management_and_Citations
+  - file: Organizing/Data_Management
 
-- file: LaTeX/Intro_to_LaTeX
-  sections:
+- part: Writing
+  chapters:
+  - file: LaTeX/Intro_to_LaTeX
+    sections:
     - file: LaTeX/Basics
     - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Equations_and_Formulas
 
-- file: Special_Topics/digital-mapping.md
+- part: Special Topics
+  chapters:  
+  - file: Special_Topics/digital-mapping.md
 
-- file: README.md
+- part: Other
+  chapters:
+  - file: README.md
 
 
 
