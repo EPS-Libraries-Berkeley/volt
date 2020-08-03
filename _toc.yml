@@ -21,7 +21,7 @@
   - file: Organizing/Data_Management
 
 - part: Writing
-  chapters:	
+  chapters:
   - file: LaTeX/Intro_to_LaTeX
     sections:
       - file: LaTeX/Basics
