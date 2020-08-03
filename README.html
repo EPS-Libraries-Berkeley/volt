@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>volt &#8212; vOLT virtual Online Library Tutorials</title>
+    <title>11. volt &#8212; vOLT virtual Online Library Tutorials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
@@ -29,10 +30,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/README.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Digital Mapping" href="Special_Topics/digital-mapping.html" />
+    <link rel="prev" title="10. Digital Mapping" href="Special_Topics/digital-mapping.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -74,100 +82,60 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <p class="caption">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav sidenav_l1">
+  <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Introduction/eps_libraries.html">
-   EPS Libraries
+   1. EPS Libraries
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Introduction/research_workflows.html">
-   Research Workflows
+   2. Research Workflows
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Search
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Search/searching_for_resources.html">
-   Searching for resources
+   3. Searching for resources
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Search/exploring_article_databases.html">
-   Exploring article databases
+   4. Exploring article databases
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Search/apis.html">
-   Introduction to Searching with APIs
+   5. Introduction to Searching with APIs
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Organizing
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Organizing/Finding_articles.html">
-   Finding articles
+   6. Finding articles
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Organizing/Reference_Management_and_Citations.html">
-   Reference Management and Citations
+   7. Reference Management and Citations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Organizing/Data_Management.html">
-   Data_Management
+   8. Data Management
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  LaTeX
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="LaTeX/Intro_to_LaTeX.html">
-   Introduction to Latex
+   9. Introduction to Latex
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Special Topics
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Special_Topics/digital-mapping.html">
-   Digital Mapping
+   10. Digital Mapping
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Other
- </span>
-</p>
-<ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   volt
+   11. volt
   </a>
  </li>
 </ul>
@@ -245,10 +213,29 @@
               <div>
                 
   <div class="section" id="volt">
-<h1>volt<a class="headerlink" href="#volt" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">11. </span>volt<a class="headerlink" href="#volt" title="Permalink to this headline">¶</a></h1>
 <p>EPS book repository</p>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -258,7 +245,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Special_Topics/digital-mapping.html" title="previous page">Digital Mapping</a>
+    <a class='left-prev' id="prev-link" href="Special_Topics/digital-mapping.html" title="previous page"><span class="section-number">10. </span>Digital Mapping</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

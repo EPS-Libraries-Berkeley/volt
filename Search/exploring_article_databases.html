@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Exploring article databases &#8212; vOLT virtual Online Library Tutorials</title>
+    <title>4. Exploring article databases &#8212; vOLT virtual Online Library Tutorials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
@@ -29,11 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/Search/exploring_article_databases.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction to Searching with APIs" href="apis.html" />
-    <link rel="prev" title="Searching for resources" href="searching_for_resources.html" />
+    <link rel="next" title="5. Introduction to Searching with APIs" href="apis.html" />
+    <link rel="prev" title="3. Searching for resources" href="searching_for_resources.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -75,100 +83,60 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <p class="caption">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
-<ul class="nav sidenav_l1">
+  <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Introduction/eps_libraries.html">
-   EPS Libraries
+   1. EPS Libraries
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Introduction/research_workflows.html">
-   Research Workflows
+   2. Research Workflows
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Search
- </span>
-</p>
-<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="searching_for_resources.html">
-   Searching for resources
+   3. Searching for resources
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Exploring article databases
+   4. Exploring article databases
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="apis.html">
-   Introduction to Searching with APIs
+   5. Introduction to Searching with APIs
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Organizing
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Organizing/Finding_articles.html">
-   Finding articles
+   6. Finding articles
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Organizing/Reference_Management_and_Citations.html">
-   Reference Management and Citations
+   7. Reference Management and Citations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Organizing/Data_Management.html">
-   Data_Management
+   8. Data Management
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  LaTeX
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../LaTeX/Intro_to_LaTeX.html">
-   Introduction to Latex
+   9. Introduction to Latex
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Special Topics
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Special_Topics/digital-mapping.html">
-   Digital Mapping
+   10. Digital Mapping
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Other
- </span>
-</p>
-<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../README.html">
-   volt
+   11. volt
   </a>
  </li>
 </ul>
@@ -239,22 +207,22 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-database-comparison">
-   EXERCISE: Database Comparison
+   4.1. EXERCISE: Database Comparison
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#example">
-   Example
+   4.2. Example
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#your-turn">
-   Your turn
+   4.3. Your turn
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#questions">
-   Questions
+   4.4. Questions
   </a>
  </li>
 </ul>
@@ -268,14 +236,14 @@
               <div>
                 
   <div class="section" id="exploring-article-databases">
-<h1>Exploring article databases<a class="headerlink" href="#exploring-article-databases" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>Exploring article databases<a class="headerlink" href="#exploring-article-databases" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="exercise-database-comparison">
-<h2>EXERCISE: Database Comparison<a class="headerlink" href="#exercise-database-comparison" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.1. </span>EXERCISE: Database Comparison<a class="headerlink" href="#exercise-database-comparison" title="Permalink to this headline">¶</a></h2>
 <p>Article databases provide additional functionality to guide subject-specific queries. In this exercise, you will select two databases from the “A-Z Databases” list for Engineering on the Library’s website (<a class="reference external" href="https://guides.lib.berkeley.edu/az.php?s=4516">https://guides.lib.berkeley.edu/az.php?s=4516</a>) and evaluate their relevance to your topic.</p>
 <p>You can also use Google Scholar (<a class="reference external" href="https://scholar.google.com">https://scholar.google.com</a>) for comparison. Use the same keyword search in both databases.</p>
 </div>
 <div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.2. </span>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>Our example query is: <strong>permafrost melt</strong></p>
 <p>We have searched for those keywords in a database called GeoRef (<a class="reference external" href="https://libproxy.berkeley.edu/login?qurl=http://search.proquest.com/georef/advanced?accountid=14496">https://libproxy.berkeley.edu/login?qurl=http://search.proquest.com/georef/advanced?accountid=14496</a>).</p>
 <p><img alt="GeoRef Example" src="../_images/georef_screenshot.jpg" /></p>
@@ -308,7 +276,7 @@
 </table>
 </div>
 <div class="section" id="your-turn">
-<h2>Your turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.3. </span>Your turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
 <p>What is your topic?</p>
 <p>Try searching your topic in two databases.<br />
 Get examples here: <a class="reference external" href="https://guides.lib.berkeley.edu/az.php?s=4516">https://guides.lib.berkeley.edu/az.php?s=4516</a></p>
@@ -322,7 +290,7 @@ Get examples here: <a class="reference external" href="https://guides.lib.berkel
 <!-- Google embed ends -->
 </div></div>
 <div class="section" id="questions">
-<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.4. </span>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>What did you notice about the two databases?</p></li>
 <li><p>Which features are most useful?</p></li>
@@ -331,6 +299,25 @@ Get examples here: <a class="reference external" href="https://guides.lib.berkel
 </div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Search"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -340,8 +327,8 @@ Get examples here: <a class="reference external" href="https://guides.lib.berkel
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="searching_for_resources.html" title="previous page">Searching for resources</a>
-    <a class='right-next' id="next-link" href="apis.html" title="next page">Introduction to Searching with APIs</a>
+    <a class='left-prev' id="prev-link" href="searching_for_resources.html" title="previous page"><span class="section-number">3. </span>Searching for resources</a>
+    <a class='right-next' id="next-link" href="apis.html" title="next page"><span class="section-number">5. </span>Introduction to Searching with APIs</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
