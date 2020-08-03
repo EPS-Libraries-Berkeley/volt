@@ -1,10 +1,12 @@
 - file: Welcome
 
-- header: Introduction
+- part: Introduction
+  chapters:
 - file: Introduction/eps_libraries
 - file: Introduction/research_workflows
 
-- header: Search
+- part: Search
+  chapters:
 - file: Search/searching_for_resources
 - file: Search/exploring_article_databases
 - file: Search/apis
@@ -12,22 +14,22 @@
   - file: Search/arxiv_api
   - file: Search/crossref_library_module
   
-- header: Organizing
+- part: Organizing
 - file: Organizing/Finding_articles
 - file: Organizing/Reference_Management_and_Citations
 - file: Organizing/Data_Management
 
-- header: LaTeX
+- part: LaTeX
 - file: LaTeX/Intro_to_LaTeX
   sections:
   - file: LaTeX/Basics
   - file: LaTeX/Tables_and_Figures
   - file: LaTeX/Equations_and_Formulas
 
-- header: Special Topics
+- part: Special Topics
 - file: Special_Topics/digital-mapping.md
 
-- header: Other
+- part: Other
 - file: README.md
 
 
