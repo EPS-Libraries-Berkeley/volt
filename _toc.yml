@@ -23,6 +23,7 @@
 - part: Writing
   chapters:
   - file: LaTeX/Intro_to_LaTeX
+    expand_sections: true
     sections:
     - file: LaTeX/Basics
     - file: LaTeX/Tables_and_Figures
