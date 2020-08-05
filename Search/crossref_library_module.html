@@ -54,7 +54,7 @@
 <meta property="og:description" content="CrossRef API  Searching for scientific articles using an API (application programming interface) allows you to extract data from publisher platforms and databas" />
 <meta property="og:image"       content="https://eps-libraries-berkeley.github.io/volt/_static/EPS-Logo.png" />
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary" />
 
 
   </head>
@@ -83,7 +83,12 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="current nav sidenav_l1">
+  <p class="caption">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Introduction/eps_libraries.html">
    EPS Libraries
@@ -94,6 +99,13 @@
    Research Workflows
   </a>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Searching
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="searching_for_resources.html">
    Searching for resources
@@ -106,7 +118,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="reference internal" href="apis.html">
-   Introduction to Searching with APIs
+   Introduction to searching with APIs
   </a>
   <ul class="current">
    <li class="toctree-l2">
@@ -116,27 +128,32 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="arxiv_api.html#install-packages">
-     0. Install Packages
+     Install Packages
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="arxiv_api.html#query-the-api">
-     1. Query the API
+     Query the API
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="arxiv_api.html#organize-and-analyze-your-results">
-     2. Organize and analyze your results
+     Organize and analyze your results
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="arxiv_api.html#visualize-your-results">
-     3. Visualize your results
+     Visualize your results
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="arxiv_api.html#identify-and-download-papers">
-     4. Identify and download papers
+     Identify and download papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="arxiv_api.html#bibliography">
+     Bibliography
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -146,12 +163,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="#visualization">
-     2. Visualization
+     Visualization
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="#citations">
-     3. Citations
+     Citations
     </a>
    </li>
    <li class="toctree-l2">
@@ -163,6 +180,13 @@
    </li>
   </ul>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Organizing
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Organizing/Finding_articles.html">
    Finding articles
@@ -178,19 +202,57 @@
    Data Management
   </a>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Writing
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../LaTeX/Intro_to_LaTeX.html">
    Introduction to Latex
   </a>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LaTeX/Basics.html">
+     LaTeX Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LaTeX/Tables_and_Figures.html">
+     Tables and Figures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LaTeX/Equations_and_Formulas.html">
+     Equations and Formulas
+    </a>
+   </li>
+  </ul>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Special Topics
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../Special_Topics/digital-mapping.html">
    Digital Mapping
   </a>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../README.html">
-   volt
+   VOLT
   </a>
  </li>
 </ul>
@@ -266,40 +328,40 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#installing-packages">
-   0. Installing Packages
+   Installing Packages
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-using-crossref-api-a-id-1-a">
-   1. Analysis using Crossref API
-   <a id="1">
-   </a>
+  <a class="reference internal nav-link" href="#analysis-using-crossref-api">
+   Analysis using Crossref API
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exploring-a-crossref-query">
-   1.1 Exploring a Crossref query
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#keys-indexes-metadata">
-   1.2 Keys, Indexes, Metadata
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creating-tables">
-   1.3 Creating Tables
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-retrieval">
-   1.4 Data Retrieval
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-on-searches">
-   1.5 More on Searches
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exploring-a-crossref-query">
+     Exploring a Crossref query
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keys-indexes-metadata">
+     Keys, Indexes, Metadata
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-tables">
+     Creating Tables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-retrieval">
+     Data Retrieval
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-on-searches">
+     More on Searches
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -329,7 +391,7 @@
 <p>At present Crossref contains information on 80 million scientific publications including articles, books and book chapters.</p>
 </div>
 <div class="section" id="installing-packages">
-<h2>0. Installing Packages<a class="headerlink" href="#installing-packages" title="Permalink to this headline">¶</a></h2>
+<h2>Installing Packages<a class="headerlink" href="#installing-packages" title="Permalink to this headline">¶</a></h2>
 <p>First we will install packages that will be useful to us as we explore the Crossref API. When importing a package into Jupyter Notebook, we use the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">...</span></code> to download a package into Jupyter Notebook.</p>
 <p>We then use the command <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">(package</span> <span class="pre">name)</span></code> to use our new package in our code.</p>
 <div class="cell docutils container">
@@ -362,14 +424,13 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 </div>
 </div>
 </div>
-<div class="section" id="analysis-using-crossref-api-a-id-1-a">
-<h2>1. Analysis using Crossref API <a id = '1'></a><a class="headerlink" href="#analysis-using-crossref-api-a-id-1-a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="analysis-using-crossref-api">
+<h2>Analysis using Crossref API<a class="headerlink" href="#analysis-using-crossref-api" title="Permalink to this headline">¶</a></h2>
 <p>In the sections below, we will walk through the basics of Crossref.</p>
 <p>Data can be accessed using the python packages <code class="docutils literal notranslate"><span class="pre">habanero</span></code>, <code class="docutils literal notranslate"><span class="pre">crossrefapi</span></code>, and <code class="docutils literal notranslate"><span class="pre">crossref-commons</span></code> installed above. In this
 , we’ll be focusing on the functionality of the <strong>habanero</strong> package.</p>
-</div>
 <div class="section" id="exploring-a-crossref-query">
-<h2>1.1 Exploring a Crossref query<a class="headerlink" href="#exploring-a-crossref-query" title="Permalink to this headline">¶</a></h2>
+<h3>Exploring a Crossref query<a class="headerlink" href="#exploring-a-crossref-query" title="Permalink to this headline">¶</a></h3>
 <p>In the cells below, we walk through using Crossref and exploring the data it gives us. To create an object that takes on the Crossref identity, we assign it to the variable <code class="docutils literal notranslate"><span class="pre">cr</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -412,7 +473,7 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 </div>
 </div>
 <div class="section" id="keys-indexes-metadata">
-<h2>1.2 Keys, Indexes, Metadata<a class="headerlink" href="#keys-indexes-metadata" title="Permalink to this headline">¶</a></h2>
+<h3>Keys, Indexes, Metadata<a class="headerlink" href="#keys-indexes-metadata" title="Permalink to this headline">¶</a></h3>
 <p>A dictionary contains key-value pairs, and we can access the values by calling on the keys. In our <code class="docutils literal notranslate"><span class="pre">permafrost</span></code> dictionary, we can inspect the keys and take a look at the values that it contains.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -19755,7 +19816,7 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 </div>
 </div>
 <div class="section" id="creating-tables">
-<h2>1.3 Creating Tables<a class="headerlink" href="#creating-tables" title="Permalink to this headline">¶</a></h2>
+<h3>Creating Tables<a class="headerlink" href="#creating-tables" title="Permalink to this headline">¶</a></h3>
 <p>When our data exists in dictionaries, it’s a little hard to explore and manipulate. In order to tackle this, we’ll create a dataframe of the information so that we can access it more easily.</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -20022,7 +20083,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="data-retrieval">
-<h2>1.4 Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this headline">¶</a></h2>
+<h3>Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this headline">¶</a></h3>
 <p>We want to be able to retrieve more data from CrossRef. A single CrossRef query can return up to 1,000 results, and since our query has over 42,000 total results, we would need to make 43 queries. Remember at the beginning, we only had 20 results since we only grabbed the first page. The CrossRef API permits fetching results from multiple pages, so by setting <code class="docutils literal notranslate"><span class="pre">cursor</span></code> to <code class="docutils literal notranslate"><span class="pre">*</span></code> and <code class="docutils literal notranslate"><span class="pre">cursor_max</span></code> to 1000 we can grab 1000 queries at once. Querying all 42,000 results would take a long time, so for the purposes of this demonstration we are only using 1000. If you have more time, you could query more results, but be aware that it will take a long time.</p>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
@@ -20102,7 +20163,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="more-on-searches">
-<h2>1.5 More on Searches<a class="headerlink" href="#more-on-searches" title="Permalink to this headline">¶</a></h2>
+<h3>More on Searches<a class="headerlink" href="#more-on-searches" title="Permalink to this headline">¶</a></h3>
 <p>You may be curious about the <code class="docutils literal notranslate"><span class="pre">cr.works</span></code> function that we’ve been using to get our data. This is the function that processes your topical “search”. There are different arguments, and we’ve seen how changing these arguments can help us get more search results than just the first 20.</p>
 <p>Also, before we asked you to limit your search term to a single word. This is not a hard restriction - we simply did this for simplicity. You can query terms that are more specific and include more words - try it out below! Keep in mind that the more specific your search query, the fewer results you may see. Feel free to play around with it.</p>
 <div class="cell docutils container">
@@ -20120,12 +20181,13 @@ Name: publisher, dtype: object
 </div>
 </div>
 </div>
+</div>
 <div class="section" id="visualization">
-<h1>2. Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h1>
+<h1>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h1>
 <p>Visualization is an important part of data analysis. Rather than looking at dictionaries and dataframes, we can see a visual summary of our data. In this section, we’ll go over different types of visualizations we can make based off of the different data we have. We’ll start by looking at the publishers. But first, we need to do some wrangling to get the data in a form that’s useful for us.</p>
 <div class="section" id="grouping-and-sorting-by-journal">
-<h2>2.1 Grouping and Sorting by Journal<a class="headerlink" href="#grouping-and-sorting-by-journal" title="Permalink to this headline">¶</a></h2>
-<p>In section 1.3, we took our query results and converted them from a dictionary to a dataframe. Below, we will do this for our list of 1000 <code class="docutils literal notranslate"><span class="pre">permafrost_items</span></code>, and then we can use the dataframe methods of grouping and sorting to get the counts of articles published by each publisher. We can also group by other columns, such as <code class="docutils literal notranslate"><span class="pre">type</span></code> or <code class="docutils literal notranslate"><span class="pre">language</span></code>.</p>
+<h2>Grouping and Sorting by Journal<a class="headerlink" href="#grouping-and-sorting-by-journal" title="Permalink to this headline">¶</a></h2>
+<p>In an earlier section, we took our query results and converted them from a dictionary to a dataframe. Below, we will do this for our list of 1000 <code class="docutils literal notranslate"><span class="pre">permafrost_items</span></code>, and then we can use the dataframe methods of grouping and sorting to get the counts of articles published by each publisher. We can also group by other columns, such as <code class="docutils literal notranslate"><span class="pre">type</span></code> or <code class="docutils literal notranslate"><span class="pre">language</span></code>.</p>
 <p>In the cell below, we create a dataframe containing all 1000 of our permafrost query results.</p>
 <div class="cell tag_fulll-width docutils container">
 <div class="cell_input docutils container">
@@ -20539,7 +20601,7 @@ Name: publisher, dtype: object
 <p>The <code class="docutils literal notranslate"><span class="pre">journal</span></code> dataframe above shows us that we have about 300 different titles, and a lot of them published only a few articles. The journal that appears most often published about 130 articles on our topic.</p>
 </div>
 <div class="section" id="bar-charts">
-<h2>2.2 Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">¶</a></h2>
+<h2>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have a sorted dataframe with journal titles and the number of articles they each published on permafrost, we can use this dataframe to plot the journals with the 10 highest counts.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -20725,7 +20787,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="citations">
-<h1>3. Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h1>
+<h1>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h1>
 <p>In scientific literature, we are often also interested in the number of references a journal article has, or the number of times the article was cited. Let’s see which articles have been cited the most - we can do this by sorting our dataframe by the <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code> column. Our dataframe has 45 columns, but we’ll just focus on a few. We’ll look at the <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code>, <code class="docutils literal notranslate"><span class="pre">publisher</span></code>, and <code class="docutils literal notranslate"><span class="pre">published-print</span></code> (the date it was published in print).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -20976,7 +21038,7 @@ Name: publisher, dtype: object
 <p><strong>What is the most cited article, and when was it published? Do you think the date it was published has an effect on the number of times the article was referenced?</strong></p>
 <p><em>Replace this line with your answer</em></p>
 <div class="section" id="visualizing-the-number-of-citations">
-<h2>3.1 Visualizing the Number of Citations<a class="headerlink" href="#visualizing-the-number-of-citations" title="Permalink to this headline">¶</a></h2>
+<h2>Visualizing the Number of Citations<a class="headerlink" href="#visualizing-the-number-of-citations" title="Permalink to this headline">¶</a></h2>
 <p>When looking at our <code class="docutils literal notranslate"><span class="pre">most_cited</span></code> table, we can see that the most number of times an article was referenced was 181, and the least was 0. Using a type of visualization called a histogram, we can look at the distribution of time an article was referenced. We’ll do this in the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21037,7 +21099,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="queries-over-time">
-<h2>3.2 Queries Over Time<a class="headerlink" href="#queries-over-time" title="Permalink to this headline">¶</a></h2>
+<h2>Queries Over Time<a class="headerlink" href="#queries-over-time" title="Permalink to this headline">¶</a></h2>
 <p>For our final visualization, we will look at 2 queries over time. To expand our searches to 2 words, we will look at queries for permafrost melt and arctic methane, and look at the number of articles that were published by year. Since running queries takes a long time, and ideally we want to have more years to compare over time, we pre-ran the queries and saved the results into a csv which we’ll load in the cell below.</p>
 <p>The following 8 cells show the code we used to generate the csv files.</p>
 <div class="cell tag_output-scroll docutils container">
