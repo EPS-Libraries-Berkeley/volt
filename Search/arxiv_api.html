@@ -127,36 +127,6 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="#install-packages">
-     Install Packages
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#query-the-api">
-     Query the API
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#organize-and-analyze-your-results">
-     Organize and analyze your results
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#visualize-your-results">
-     Visualize your results
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#identify-and-download-papers">
-     Identify and download papers
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#bibliography">
-     Bibliography
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="crossref_library_module.html">
      CrossRef API
     </a>
@@ -320,7 +290,39 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-packages">
+   Install Packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#query-the-api">
+   Query the API
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#organize-and-analyze-your-results">
+   Organize and analyze your results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-your-results">
+   Visualize your results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identify-and-download-papers">
+   Identify and download papers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliography">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -334,9 +336,8 @@
 <p>The ArXiV API allows programmatic access to the arXiv’s e-print content and metadata. “The goal of the interface is to facilitate new and creative use of the the vast body of material on the arXiv by providing a low barrier to entry for application developers.” https://arxiv.org/help/api</p>
 <p>The API’s user manual (https://arxiv.org/help/api/user-manual) provides helpful documentation for using the API and retrieving article metadata.</p>
 <p>Our examples below will introduce you to the basics of querying the ArXiV API.</p>
-</div>
 <div class="section" id="install-packages">
-<h1>Install Packages<a class="headerlink" href="#install-packages" title="Permalink to this headline">¶</a></h1>
+<h2>Install Packages<a class="headerlink" href="#install-packages" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib</span>
@@ -356,7 +357,7 @@
 </div>
 </div>
 <div class="section" id="query-the-api">
-<h1>Query the API<a class="headerlink" href="#query-the-api" title="Permalink to this headline">¶</a></h1>
+<h2>Query the API<a class="headerlink" href="#query-the-api" title="Permalink to this headline">¶</a></h2>
 <p>Perform a simple query for graphene. We’ll limit results to 100. Take a look at the information you get back and how it is structured.</p>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
@@ -4748,7 +4749,7 @@
 </div>
 </div>
 <div class="section" id="organize-and-analyze-your-results">
-<h1>Organize and analyze your results<a class="headerlink" href="#organize-and-analyze-your-results" title="Permalink to this headline">¶</a></h1>
+<h2>Organize and analyze your results<a class="headerlink" href="#organize-and-analyze-your-results" title="Permalink to this headline">¶</a></h2>
 <p>Create a dataframe to better analyze your results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5163,48 +5164,48 @@
       <td>...</td>
     </tr>
     <tr>
-      <th>3995</th>
-      <td>Density functional theory of spin-polarized di...</td>
-      <td>2000-06-29T15:40:57Z</td>
-      <td>N. Wingreen</td>
-      <td>http://arxiv.org/pdf/cond-mat/0006474v1</td>
+      <th>2795</th>
+      <td>Anomalous Kondo-effect in Quantum Dot at non-z...</td>
+      <td>1998-12-09T13:48:21Z</td>
+      <td>M. Bichler</td>
+      <td>http://arxiv.org/pdf/cond-mat/9812153v2</td>
     </tr>
     <tr>
-      <th>3996</th>
-      <td>Decoherence in Nearly-Isolated Quantum Dots</td>
-      <td>2000-08-03T09:01:54Z</td>
-      <td>J. S. Harris Jr</td>
-      <td>http://arxiv.org/pdf/cond-mat/0008052v2</td>
+      <th>2796</th>
+      <td>Low-Temperature Saturation of the Dephasing Ti...</td>
+      <td>1999-04-20T04:11:11Z</td>
+      <td>J. S. Harris, Jr</td>
+      <td>http://arxiv.org/pdf/cond-mat/9904274v1</td>
     </tr>
     <tr>
-      <th>3997</th>
-      <td>Transport through Quantum Dots: Analytic Resul...</td>
-      <td>2000-10-18T23:23:04Z</td>
-      <td>Andreas Ludwig</td>
-      <td>http://arxiv.org/pdf/cond-mat/0010270v1</td>
+      <th>2797</th>
+      <td>Photon Assisted Tunneling in Quantum Dots</td>
+      <td>1999-04-26T07:49:57Z</td>
+      <td>L. P. Kouwenhoven</td>
+      <td>http://arxiv.org/pdf/cond-mat/9904359v2</td>
     </tr>
     <tr>
-      <th>3998</th>
-      <td>Optical absorption in semiconductor quantum do...</td>
-      <td>2000-10-19T07:43:56Z</td>
-      <td>R. v. Baltz</td>
-      <td>http://arxiv.org/pdf/cond-mat/0010277v2</td>
+      <th>2798</th>
+      <td>Spontaneous symmetry breaking in single and mo...</td>
+      <td>1999-05-26T13:20:19Z</td>
+      <td>Uzi Landman</td>
+      <td>http://arxiv.org/pdf/cond-mat/9905383v2</td>
     </tr>
     <tr>
-      <th>3999</th>
-      <td>Magnetic Thomas-Fermi-Weizsäcker model for qua...</td>
-      <td>2000-10-25T16:43:51Z</td>
-      <td>Antonio Puente</td>
-      <td>http://arxiv.org/pdf/cond-mat/0010401v2</td>
+      <th>2799</th>
+      <td>Spin interactions and switching in vertically ...</td>
+      <td>1999-10-07T15:41:55Z</td>
+      <td>Daniel Loss</td>
+      <td>http://arxiv.org/pdf/cond-mat/9910105v1</td>
     </tr>
   </tbody>
 </table>
-<p>4000 rows × 4 columns</p>
+<p>2800 rows × 4 columns</p>
 </div></div></div>
 </div>
 </div>
 <div class="section" id="visualize-your-results">
-<h1>Visualize your results<a class="headerlink" href="#visualize-your-results" title="Permalink to this headline">¶</a></h1>
+<h2>Visualize your results<a class="headerlink" href="#visualize-your-results" title="Permalink to this headline">¶</a></h2>
 <p>Get a sense of the how your topic has trended over time. When did research on your topic take off?
 Assign datetime functionality to the column “published” which lists when the article was published and then create a bar chart.</p>
 <div class="cell docutils container">
@@ -5237,26 +5238,26 @@ Assign datetime functionality to the column “published” which lists when the
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>author
-Daniel Loss             41
-A. C. Gossard           33
-S. Das Sarma            28
-Jelena Vuckovic         24
-Jürgen König            20
-S. Tarucha              18
-Paweł Machnikowski      18
-L. M. K. Vandersypen    17
-F. M. Peeters           17
-Xuedong Hu              17
-J. J. Finley            16
-J. R. Petta             16
-R. J. Haug              16
-Guido Burkard           16
-Yoshihisa Yamamoto      15
-B. Szafran              15
-A. Imamoglu             15
-Seigo Tarucha           15
-Pawel Hawrylak          15
-Peter Lodahl            15
+A. C. Gossard         25
+Daniel Loss           25
+S. Das Sarma          22
+Jelena Vuckovic       18
+Jürgen König          17
+B. Szafran            14
+Tapash Chakraborty    13
+L. P. Kouwenhoven     13
+Pawel Hawrylak        13
+Xuedong Hu            13
+R. J. Haug            13
+Paweł Machnikowski    12
+F. M. Peeters         12
+Peter Lodahl          11
+Seigo Tarucha         11
+K. Ensslin            11
+J. J. Finley          11
+Guido Burkard         11
+S. Tarucha            11
+Alex Zunger           11
 Name: author, dtype: int64
 </pre></div>
 </div>
@@ -5264,7 +5265,7 @@ Name: author, dtype: int64
 </div>
 </div>
 <div class="section" id="identify-and-download-papers">
-<h1>Identify and download papers<a class="headerlink" href="#identify-and-download-papers" title="Permalink to this headline">¶</a></h1>
+<h2>Identify and download papers<a class="headerlink" href="#identify-and-download-papers" title="Permalink to this headline">¶</a></h2>
 <p>Let’s look at the papers by Tarucha and download the oldest one:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5300,46 +5301,11 @@ Name: author, dtype: int64
   </thead>
   <tbody>
     <tr>
-      <th>3746</th>
-      <td>Excitation Spectra of Circular Few-Electron Qu...</td>
-      <td>1997-08-29 12:27:44</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/cond-mat/9708229v1</td>
-    </tr>
-    <tr>
-      <th>3972</th>
-      <td>Stability of the maximum density droplet in qu...</td>
-      <td>1998-10-14 12:19:42</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/cond-mat/9810159v1</td>
-    </tr>
-    <tr>
-      <th>3392</th>
-      <td>Intermediate Low Spin States in a Few-electron...</td>
-      <td>2005-12-12 06:16:28</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/cond-mat/0512239v1</td>
-    </tr>
-    <tr>
-      <th>3497</th>
-      <td>Large nuclear Overhauser fields detected in ve...</td>
-      <td>2007-05-08 19:51:57</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/0705.1104v2</td>
-    </tr>
-    <tr>
       <th>2146</th>
       <td>Two level anti-crossings high up in the single...</td>
       <td>2007-10-04 15:43:34</td>
       <td>S. Tarucha</td>
       <td>http://arxiv.org/pdf/0710.1035v1</td>
-    </tr>
-    <tr>
-      <th>2861</th>
-      <td>Accurate Model of a Vertical Pillar Quantum Dot</td>
-      <td>2008-04-20 13:54:34</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/0804.3191v1</td>
     </tr>
     <tr>
       <th>766</th>
@@ -5377,13 +5343,6 @@ Name: author, dtype: int64
       <td>http://arxiv.org/pdf/1109.3342v1</td>
     </tr>
     <tr>
-      <th>2918</th>
-      <td>Charge-noise-free Lateral Quantum Dot Devices ...</td>
-      <td>2013-11-12 05:57:56</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/1311.2681v1</td>
-    </tr>
-    <tr>
       <th>1122</th>
       <td>Single Photoelectron Detection after Selective...</td>
       <td>2014-01-19 14:06:29</td>
@@ -5403,13 +5362,6 @@ Name: author, dtype: int64
       <td>2014-12-19 09:33:16</td>
       <td>S. Tarucha</td>
       <td>http://arxiv.org/pdf/1412.6260v1</td>
-    </tr>
-    <tr>
-      <th>3318</th>
-      <td>A fault-tolerant addressable spin qubit in a n...</td>
-      <td>2016-02-25 07:50:29</td>
-      <td>S. Tarucha</td>
-      <td>http://arxiv.org/pdf/1602.07833v1</td>
     </tr>
     <tr>
       <th>71</th>
@@ -5446,12 +5398,13 @@ Name: author, dtype: int64
 <p>Confirm that the pdf has downloaded!</p>
 </div>
 <div class="section" id="bibliography">
-<h1>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h1>
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Tim Head: https://betatim.github.io/posts/analysing-the-arxiv/</p></li>
 <li><p>Lukas Schwab: https://github.com/lukasschwab/arxiv.py</p></li>
 <li><p>ArXiV API user manual: https://arxiv.org/help/api/user-manual</p></li>
 </ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
