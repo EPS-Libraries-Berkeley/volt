@@ -20,7 +20,7 @@ This is an example of more complex, iterative model. You can see how multiple cy
 :height: 300px
 ```
 
-Here is an even more realistic view of what your day to day workflow might look like. Thomas Van Hoey, a graduate student in linguistics, took an honest look at his own workflow, which is probably a better representation of how most of us get through the day {cite}`van hoey_2020`.
+Here is an even more realistic view of what your day to day workflow might look like. Thomas Van Hoey, a graduate student in linguistics, took an honest look at his own workflow, which is probably a better representation of how most of us get through the day :cite:`van hoey_2020`.
 
 
 ```{image} ./images/honest_workflow.png
@@ -30,6 +30,7 @@ Here is an even more realistic view of what your day to day workflow might look 
 
 A workflow does not exist on its own, but is made of choices - which software, applications and products to use; how do they work together effectively; how open and reproducible are they; and what makes sense for a given task, subject domain or project. The following image comes from Bosman and Kramer's 2016 survey {cite}`bosman_kramer_2016` of 20,000 researchers worldwide to give you a sense of how products sync to comprise a hypothetical workflow.
 
+
 ```{image} ./images/hypothetical_workflows.png
 :alt: Hypothetical Workflows!
 :height: 300px
@@ -37,6 +38,9 @@ A workflow does not exist on its own, but is made of choices - which software, a
 
 As you go through these tutorials, we hope you gain a better sense of what tools are available for you here at Berkeley and how you can thoughtfully connect them to your preferred workflows. 
 
-```{bibliography} ./references.bib
+## Bibliography
+
+```{bibliography} references.bib
+:all:
 ```
 
