@@ -20,7 +20,7 @@ This is an example of more complex, iterative model. You can see how multiple cy
 :height: 300px
 ```
 
-Here is an even more realistic view of what your day to day workflow might look like. Thomas Van Hoey, a graduate student in linguistics, took an honest look at his own workflow, which is probably a better representation of how most of us get through the day :cite:`van hoey_2020`.
+Here is an even more realistic view of what your day to day workflow might look like. Thomas Van Hoey, a graduate student in linguistics, took an honest look at his own workflow, which is probably a better representation of how most of us get through the day {cite}`van_hoey_2020`.
 
 
 ```{image} ./images/honest_workflow.png
@@ -41,6 +41,6 @@ As you go through these tutorials, we hope you gain a better sense of what tools
 ## Bibliography
 
 ```{bibliography} references.bib
-:all:
+:style: plain
 ```
 
