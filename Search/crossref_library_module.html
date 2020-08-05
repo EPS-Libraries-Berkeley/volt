@@ -131,23 +131,6 @@
      CrossRef API
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#visualization">
-     Visualization
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#citations">
-     Citations
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#bibliography-a-id-4-a">
-     Bibliography
-     <a id="4">
-     </a>
-    </a>
-   </li>
   </ul>
  </li>
 </ul>
@@ -332,6 +315,52 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualization">
+   Visualization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grouping-and-sorting-by-journal">
+     Grouping and Sorting by Journal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#counts">
+     Counts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bar-charts">
+     Bar Charts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citations">
+   Citations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-number-of-citations">
+     Visualizing the Number of Citations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#queries-over-time">
+     Queries Over Time
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliography-a-id-4-a">
+   Bibliography
+   <a id="4">
+   </a>
+  </a>
  </li>
 </ul>
 
@@ -20151,12 +20180,11 @@ Name: publisher, dtype: object
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="visualization">
-<h1>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h1>
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
 <p>Visualization is an important part of data analysis. Rather than looking at dictionaries and dataframes, we can see a visual summary of our data. In this section, we’ll go over different types of visualizations we can make based off of the different data we have. We’ll start by looking at the publishers. But first, we need to do some wrangling to get the data in a form that’s useful for us.</p>
 <div class="section" id="grouping-and-sorting-by-journal">
-<h2>Grouping and Sorting by Journal<a class="headerlink" href="#grouping-and-sorting-by-journal" title="Permalink to this headline">¶</a></h2>
+<h3>Grouping and Sorting by Journal<a class="headerlink" href="#grouping-and-sorting-by-journal" title="Permalink to this headline">¶</a></h3>
 <p>In an earlier section, we took our query results and converted them from a dictionary to a dataframe. Below, we will do this for our list of 1000 <code class="docutils literal notranslate"><span class="pre">permafrost_items</span></code>, and then we can use the dataframe methods of grouping and sorting to get the counts of articles published by each publisher. We can also group by other columns, such as <code class="docutils literal notranslate"><span class="pre">type</span></code> or <code class="docutils literal notranslate"><span class="pre">language</span></code>.</p>
 <p>In the cell below, we create a dataframe containing all 1000 of our permafrost query results.</p>
 <div class="cell tag_fulll-width docutils container">
@@ -20466,7 +20494,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="counts">
-<h2>Counts<a class="headerlink" href="#counts" title="Permalink to this headline">¶</a></h2>
+<h3>Counts<a class="headerlink" href="#counts" title="Permalink to this headline">¶</a></h3>
 <p>We can take the value_count to determine the number of times a given journal or work appears in our results. This will help us determine where research on our topic is commonly published.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -20571,7 +20599,7 @@ Name: publisher, dtype: object
 <p>The <code class="docutils literal notranslate"><span class="pre">journal</span></code> dataframe above shows us that we have about 300 different titles, and a lot of them published only a few articles. The journal that appears most often published about 130 articles on our topic.</p>
 </div>
 <div class="section" id="bar-charts">
-<h2>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">¶</a></h2>
+<h3>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">¶</a></h3>
 <p>Now that we have a sorted dataframe with journal titles and the number of articles they each published on permafrost, we can use this dataframe to plot the journals with the 10 highest counts.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -20757,7 +20785,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="citations">
-<h1>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h1>
+<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
 <p>In scientific literature, we are often also interested in the number of references a journal article has, or the number of times the article was cited. Let’s see which articles have been cited the most - we can do this by sorting our dataframe by the <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code> column. Our dataframe has 45 columns, but we’ll just focus on a few. We’ll look at the <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code>, <code class="docutils literal notranslate"><span class="pre">publisher</span></code>, and <code class="docutils literal notranslate"><span class="pre">published-print</span></code> (the date it was published in print).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21008,7 +21036,7 @@ Name: publisher, dtype: object
 <p><strong>What is the most cited article, and when was it published? Do you think the date it was published has an effect on the number of times the article was referenced?</strong></p>
 <p><em>Replace this line with your answer</em></p>
 <div class="section" id="visualizing-the-number-of-citations">
-<h2>Visualizing the Number of Citations<a class="headerlink" href="#visualizing-the-number-of-citations" title="Permalink to this headline">¶</a></h2>
+<h3>Visualizing the Number of Citations<a class="headerlink" href="#visualizing-the-number-of-citations" title="Permalink to this headline">¶</a></h3>
 <p>When looking at our <code class="docutils literal notranslate"><span class="pre">most_cited</span></code> table, we can see that the most number of times an article was referenced was 181, and the least was 0. Using a type of visualization called a histogram, we can look at the distribution of time an article was referenced. We’ll do this in the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21069,7 +21097,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="queries-over-time">
-<h2>Queries Over Time<a class="headerlink" href="#queries-over-time" title="Permalink to this headline">¶</a></h2>
+<h3>Queries Over Time<a class="headerlink" href="#queries-over-time" title="Permalink to this headline">¶</a></h3>
 <p>For our final visualization, we will look at 2 queries over time. To expand our searches to 2 words, we will look at queries for permafrost melt and arctic methane, and look at the number of articles that were published by year. Since running queries takes a long time, and ideally we want to have more years to compare over time, we pre-ran the queries and saved the results into a csv which we’ll load in the cell below.</p>
 <p>The following 8 cells show the code we used to generate the csv files.</p>
 <div class="cell tag_output-scroll docutils container">
@@ -21183,13 +21211,14 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="section" id="bibliography-a-id-4-a">
-<h1>Bibliography <a id = '4'></a><a class="headerlink" href="#bibliography-a-id-4-a" title="Permalink to this headline">¶</a></h1>
+<h2>Bibliography <a id = '4'></a><a class="headerlink" href="#bibliography-a-id-4-a" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Paul Oldham - Adapted CrossRef R guide to Python. https://poldham.github.io/abs/crossref.html#introduction</p></li>
 </ul>
 <hr class="docutils" />
 <p>Notebook originally developed by: Keilyn Yuzuki, Anjali Unnithan</p>
 <p>This chapter originated as a Data Science Module: http://data.berkeley.edu/education/modules</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
