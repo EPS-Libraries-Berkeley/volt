@@ -1,6 +1,6 @@
 # EPS Libraries
 
-The Engineering & Physical Sciences Division of the UC Berkeley Library includes five locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>. Our libraries all include study space, printing and scanning, and course reserves for classes in their subject areas.
+The Engineering & Physical Sciences Division of the UC Berkeley Library includes five locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>. Our libraries all include study space, printing and scanning, public access computers, and course reserves for classes in their subject areas.
 
 ```{caution}
 These EPS Library locations are CURRENTLY CLOSED due to the COVID-19 shelter in place order. We look forward to seeing you at these locations in the near future!
@@ -16,7 +16,7 @@ Building Location: 100 Hildebrand Hall
 Phone: (510) 642-3753  
 
 **Features**  
-Power Bank Loans, Public Access Computers    
+Power Bank and Calculator Lending    
 Seminar Rooms 100D, 100E, and 100F  
 Massage Chair  
 Chemistry & Chemical Engineering Book and Journal Collections  
@@ -36,6 +36,9 @@ Building Location: 50 McCone Hall
 Phone: (510) 642-2997  
 
 **Features**  
+Reservable Group Study Room  
+Map Scanning Service  
+GIS Workstations  
 Map Collections    
 Earth Sciences Book and Journal Collections  
 Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
@@ -58,7 +61,7 @@ Building Location: 110 Bechtel Engineering Center
 Phone: (510) 642-3366  
 
 **Features**  
-Public Access Computers  
+Laptop, Power Bank, and Calculator Lending  
 Reservable Group Study Rooms   
 Diversity & Inclusion Book Collection  
 Technical Reports Collection  
@@ -87,12 +90,14 @@ Building Location: 100 Evans Hall
 Phone: (510) 642-3381  
 
 **Features**  
+Power Bank and Calculator Lending  
 Mathematics and Statistics Book and Journal Collections  
 Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a>  
 ```{image} ./images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
 :width: 100px
 ```
+
 ### <a href="https://www.lib.berkeley.edu/libraries/physics-library" target="_blank">Physics-Astronomy Library</a>
 
 ```{image} ./images/LeConte.png
