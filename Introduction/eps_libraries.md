@@ -20,7 +20,7 @@ Power Bank Loans, Public Access Computers
 Seminar Rooms 100D, 100E, and 100F  
 Massage Chair  
 Chemistry & Chemical Engineering Book and Journal Collections  
-Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
+Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
 ```{image} ./images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
 :width: 100px
@@ -38,9 +38,13 @@ Phone: (510) 642-2997
 **Features**  
 Map Collections    
 Earth Sciences Book and Journal Collections  
-Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a>  
+Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
 ```{image} ./images/SusanHeadshot.png
 :alt: Susan's Bitmoji Headshot
+:width: 100px
+```
+```{image} ./images/SamHeadshot.png
+:alt: Sam's Bitmoji Headshot
 :width: 100px
 ```
 
@@ -59,7 +63,7 @@ Reservable Group Study Rooms
 Diversity & Inclusion Book Collection  
 Technical Reports Collection  
 Engineering Book and Journal Collections  
-Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
+Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
 ```{image} ./images/Lisa2Headshot.png
 :alt: Lisa's Bitmoji Headshot
 :width: 100px
@@ -84,7 +88,11 @@ Phone: (510) 642-3381
 
 **Features**  
 Mathematics and Statistics Book and Journal Collections  
-
+Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a>  
+```{image} ./images/BrianHeadshot.png
+:alt: Brian's Bitmoji Headshot
+:width: 100px
+```
 ### <a href="https://www.lib.berkeley.edu/libraries/physics-library" target="_blank">Physics-Astronomy Library</a>
 
 ```{image} ./images/LeConte.png
@@ -96,7 +104,11 @@ Phone: (510) 642-3122
 
 **Features**  
 Physics and Astronomy Book and Journal Collections  
-Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
+Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
+```{image} ./images/KristenHeadshot.png
+:alt: Kristen's Bitmoji Headshot
+:width: 100px
+```  
 ```{image} ./images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
 :width: 100px
