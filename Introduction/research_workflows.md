@@ -2,7 +2,7 @@
 
 It may be helpful to think of your research process as a workflow or cycle composed of smaller iterative cycles nested within your broader approach.
 
-This is an example of a basic, simplified model ({numref}`Figure {1}`) - moving from your initial **discovery** process (including idea generation and searching for information), to **data collection**, then **analysis**, **writing up results**, **publication**, and lastly a consideration of **outreach and impact** of your work.
+This is an example of a basic, simplified model (Figure 1) - moving from your initial **discovery** process (including idea generation and searching for information), to **data collection**, then **analysis**, **writing up results**, **publication**, and lastly a consideration of **outreach and impact** of your work.
 
 ```{figure} ./images/Research_Workflow_Cycles.png
 ---
