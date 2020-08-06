@@ -57,7 +57,7 @@ Hypothetical Workflows
 
 +++
 
-As you go through these tutorials, we hope you gain a better sense of what tools are available for you here at Berkeley and how you can thoughtfully connect them to your preferred workflows. 
+As you go through these tutorials, we hope you gain a better sense of what tools are available for you here at Berkeley and how you can connect them thoughtfully to your preferred workflows. 
 
 
 ## Bibliography
