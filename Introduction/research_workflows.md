@@ -31,6 +31,7 @@ Here is an even more realistic view of what your day to day workflow might look 
 
 
 ```{figure} ./images/honest_workflow.png
+---
 height: 300 px
 name: Honest Workflow
 align: center
@@ -46,8 +47,10 @@ A workflow does not exist on its own, but is made of choices - which software, a
 
 The following image comes from Bosman and Kramer's 2016 survey {cite}`bosman_kramer_2016` of 20,000 researchers worldwide to give you a sense of how products sync to comprise a hypothetical workflow.
 
++++
 
 ```{figure} ./images/hypothetical_workflows.png
+---
 height: 300 px
 name: Hypothetical Workflows
 align: center
