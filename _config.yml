@@ -13,7 +13,7 @@ html:
   baseurl: https://eps-libraries-berkeley.github.io/volt
 
 sphinx:
-  extra_extensions: ""
+  extra_extensions: "sphinxcontrib.bibtex"
 
 latex:
   latex_documents:
