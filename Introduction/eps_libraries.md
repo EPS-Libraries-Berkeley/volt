@@ -1,6 +1,6 @@
 # EPS Libraries
 
-The Engineering & Physical Sciences Division of the UC Berkeley Library includes five locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>.
+The Engineering & Physical Sciences Division of the UC Berkeley Library includes five locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>. Our libraries all include study space, printing and scanning, and course reserves for classes in their subject areas.
 
 ```{caution}
 These EPS Library locations are CURRENTLY CLOSED due to the COVID-19 shelter in place order. We look forward to seeing you at these locations in the near future!
@@ -16,8 +16,10 @@ Building Location: 100 Hildebrand Hall
 Phone: (510) 642-3753  
 
 **Features**  
+Power Bank Loans, Public Access Computers    
+Seminar Rooms 100D, 100E, and 100F  
 Massage Chair  
-Captain Picard Tapestry  
+Chemistry & Chemical Engineering Book and Journal Collections  
 Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
 ```{image} ./images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
@@ -34,7 +36,8 @@ Building Location: 50 McCone Hall
 Phone: (510) 642-2997  
 
 **Features**  
-Maps  
+Map Collections    
+Earth Sciences Book and Journal Collections  
 Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a>  
 ```{image} ./images/SusanHeadshot.png
 :alt: Susan's Bitmoji Headshot
@@ -51,8 +54,11 @@ Building Location: 110 Bechtel Engineering Center
 Phone: (510) 642-3366  
 
 **Features**  
-Reservable Study Rooms  
+Public Access Computers  
+Reservable Group Study Rooms   
 Diversity & Inclusion Book Collection  
+Technical Reports Collection  
+Engineering Book and Journal Collections  
 Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
 ```{image} ./images/Lisa2Headshot.png
 :alt: Lisa's Bitmoji Headshot
@@ -77,7 +83,7 @@ Building Location: 100 Evans Hall
 Phone: (510) 642-3381  
 
 **Features**  
-Study Space  
+Mathematics and Statistics Book and Journal Collections  
 
 ## <a href="https://www.lib.berkeley.edu/libraries/physics-library" target="_blank">Physics-Astronomy Library</a>
 
@@ -89,8 +95,7 @@ Building Location: 351 LeConte Hall
 Phone: (510) 642-3122  
 
 **Features**  
-Quiet Study Space  
-STEMinist Poster Exhibit  
+Physics and Astronomy Book and Journal Collections  
 Librarian Offices: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
 ```{image} ./images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
