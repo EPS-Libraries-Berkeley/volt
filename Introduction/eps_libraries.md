@@ -6,7 +6,7 @@ The Engineering & Physical Sciences Division of the UC Berkeley Library includes
 These EPS Library locations are CURRENTLY CLOSED due to the COVID-19 shelter in place order. We look forward to seeing you at these locations in the near future!
 ```
 
-### <a href="https://www.lib.berkeley.edu/libraries/chemistry-library" target="_blank">Chemistry & Chemical Engineering Library</a>
+## <a href="https://www.lib.berkeley.edu/libraries/chemistry-library" target="_blank">Chemistry & Chemical Engineering Library</a>
 
 ```{image} ./images/Hildebrand.png
 :alt: Chemistry & Chemical Engineering Library Location
@@ -26,7 +26,7 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" 
 :width: 100px
 ```
 
-### <a href="https://www.lib.berkeley.edu/libraries/earth-sciences-library" target="_blank">Earth Sciences & Map Library</a>
+## <a href="https://www.lib.berkeley.edu/libraries/earth-sciences-library" target="_blank">Earth Sciences & Map Library</a>
 
 ```{image} ./images/McCone.png
 :alt: Earth Sciences & Map Library Location
@@ -48,7 +48,7 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849"
 :width: 100px
 ```
 
-### <a href="https://www.lib.berkeley.edu/libraries/engineering-library" target="_blank">Engineering Library</a>
+## <a href="https://www.lib.berkeley.edu/libraries/engineering-library" target="_blank">Engineering Library</a>
 
 ```{image} ./images/Bechtel.png
 :alt: Engineering Library Location
@@ -77,7 +77,7 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" 
 :width: 100px
 ```
 
-### <a href="https://www.lib.berkeley.edu/libraries/math-library" target="_blank">Mathematics Statistics Library</a>
+## <a href="https://www.lib.berkeley.edu/libraries/math-library" target="_blank">Mathematics Statistics Library</a>
 
 ```{image} ./images/Evans.png
 :alt: Mathematics Statistics Library Location
@@ -93,7 +93,9 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" t
 :alt: Brian's Bitmoji Headshot
 :width: 100px
 ```
-### <a href="https://www.lib.berkeley.edu/libraries/physics-library" target="_blank">Physics-Astronomy Library</a>
+
+## <a href="https://www.lib.berkeley.edu/libraries/physics-library" target="_blank">Physics-Astronomy Library</a>
+
 
 ```{image} ./images/LeConte.png
 :alt: Physics-Astronomy Library Location
