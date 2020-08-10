@@ -28,6 +28,7 @@
     - file: LaTeX/Basics
     - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Equations_and_Formulas
+    - file: LaTeX/Bibliographies
 
 - part: Special Topics
   chapters:  
