@@ -32,12 +32,12 @@
 
 - part: Archiving and Sharing
   chapters:
-    - file: Archiving_and_Sharing/What_is_a_repository
-    - file: Archiving_and_Sharing/Repository_resources_and_options
-      sections:
-      - file: Archiving_and_Sharing/Data
-      - file: Archiving_and_Sharing/eScholarship
-	
+  - file: Archiving_and_Sharing/What_is_a_repository
+  - file: Archiving_and_Sharing/Repository_resources_and_options
+    sections:
+    - file: Archiving_and_Sharing/Data
+    - file: Archiving_and_Sharing/eScholarship
+
 - part: Special Topics
   chapters:  
   - file: Special_Topics/digital-mapping.md
