@@ -32,8 +32,8 @@
 
 - part: Archiving and Sharing
   chapters:
-    - file:Archiving_and_Sharing/What_is_a_repository
-    - file:Archiving_and_Sharing/Repository_resources_and_options
+    - file: Archiving_and_Sharing/What_is_a_repository
+    - file: Archiving_and_Sharing/Repository_resources_and_options
       sections:
       - file: Archiving_and_Sharing/Data
       - file: Archiving_and_Sharing/eScholarship
