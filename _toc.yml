@@ -33,6 +33,7 @@
 - part: Archiving and Sharing
   chapters: 
   - file: Archiving_and_Sharing/What_is_repository
+  - file: Archiving_and_Sharing/Repository_resources
 
 - part: Special Topics
   chapters:  
