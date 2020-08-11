@@ -30,6 +30,10 @@
     - file: LaTeX/Equations_and_Formulas
     - file: LaTeX/Bibliographies
 
+- part: Archiving and Sharing
+  chapters: 
+  - file: Archiving_and_Sharing/What_is_repository
+
 - part: Special Topics
   chapters:  
   - file: Special_Topics/digital-mapping.md
