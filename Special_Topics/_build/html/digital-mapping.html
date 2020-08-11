@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Digital Mapping &#8212; My Jupyter Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/togglebutton.js"></script>
+    <script type="text/javascript" src="_static/clipboard.min.js"></script>
+    <script type="text/javascript" src="_static/copybutton.js"></script>
+    <script type="text/javascript" src="_static/mystnb.js"></script>
+    <script type="text/javascript" src="_static/sphinx-book-theme.js"></script>
+    <script type="text/javascript">var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-2 bd-sidebar site-navigation show" id="site-navigation">
+    
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <div class="dropdown-buttons-trigger">
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i class="fas fa-download"></i></button>
+
+            
+            <div class="dropdown-buttons">
+                <!-- ipynb file if we had a myst markdown file -->
+                <a class="dropdown-buttons" href="_sources/digital-mapping.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip" data-placement="left">.ipynb</button></a>
+                <!-- Download raw file -->
+                <a class="dropdown-buttons" href="_sources/digital-mapping.md"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <!-- Download PDF via print -->
+                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+            </div>
+            
+        </div>
+
+        <!-- Source interaction buttons -->
+        
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+        
+        <div class="dropdown-buttons-trigger">
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+            <div class="dropdown-buttons">
+                
+                <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/digital-mapping.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip" data-placement="left"><img class="binder-button-logo" src="_static/images/logo_binder.svg" alt="Interact on binder">Binder</button></a>
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#what-is-digital-mapping" class="nav-link">What is digital mapping?</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#components-of-digital-mapping" class="nav-link">Components of digital mapping</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#geographic-data-vs-geospatial-data" class="nav-link">Geographic data vs. geospatial data</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+    </ul>
+</nav>
+
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="digital-mapping">
+<h1>Digital Mapping<a class="headerlink" href="#digital-mapping" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial will give a short introduction to some digital mapping concepts, tools, and data.</p>
+<div class="section" id="what-is-digital-mapping">
+<h2>What is digital mapping?<a class="headerlink" href="#what-is-digital-mapping" title="Permalink to this headline">¶</a></h2>
+<p>Digital mapping uses computer software (either desktop or web based) to create digital maps. The basic components of digital mapping are <strong>geospatial data</strong> and specialized software called <strong>GIS</strong> ( <strong>G</strong>eographic <strong>I</strong>nformation <strong>S</strong>ystems ). We’ll look at each of the these in more detail below.</p>
+</div>
+<div class="section" id="components-of-digital-mapping">
+<h2>Components of digital mapping<a class="headerlink" href="#components-of-digital-mapping" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="geographic-data-vs-geospatial-data">
+<h3>Geographic data vs. geospatial data<a class="headerlink" href="#geographic-data-vs-geospatial-data" title="Permalink to this headline">¶</a></h3>
+<p><strong>Geographic data</strong> is data about locations on or near the surface of the earth. It can scale from the very local all the way up to a global level.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because geographic data only includes data on or near the surface of the earth it does not include data about outer space or other planets!</p>
+</div>
+<a class="reference internal image-reference" href="_images/no_potw2013a.jpg"><img alt="Hubble Space Telescope image of a Cannibal Galaxy" class="align-center" src="_images/no_potw2013a.jpg" style="height: 100px;" /></a>
+<p><em>Image source: <a class="reference external" href="https://www.nasa.gov/mission_pages/hubble/multimedia/index.html">https://www.nasa.gov/mission_pages/hubble/multimedia/index.html</a></em></p>
+<p>Geographic data uses human-understandable means to describe and represent location. For example, a town name (San Jose) or a street intersection (Hearst &amp; Euclid) both describe locations in ways that humans can interpret relatively easily and set in context. Geographic data can also include <strong>attributes</strong> about a location, for example how many people live in a city or the name of a building.</p>
+<p><strong>Geospatial data</strong> on the other hand encodes location with coordinates. It consists of geometric representations. This type of representation using geospatial coordinates allows a computer to understand the location. Correctly interpreting the town name “San Jose” requires context (which country? which state?), but geospatial coordinates are (relatively) unambiguous. Just like geographic data, geospatial data can also include <strong>attribute</strong> information about a location.</p>
+<p>Geospatial data is powerful! It can be:</p>
+<ul class="simple">
+<li><p>mapped!</p></li>
+<li><p>used to derive spatial measurements like area and distance</p></li>
+<li><p>used for determine spatial relationships like inside, next to, etc.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="to-be-continued">
+<h1>To be continued… :)<a class="headerlink" href="#to-be-continued" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
