@@ -42,4 +42,4 @@ Geospatial data is powerful! It can be:
 * used to derive spatial measurements like area and distance
 * used for determine spatial relationships like inside, next to, etc.
 
-## To be continued... :)
+# To be continued... :)

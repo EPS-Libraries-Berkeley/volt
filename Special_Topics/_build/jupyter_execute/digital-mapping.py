@@ -1,16 +1,3 @@
----
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: '0.8'
-    jupytext_version: 1.4.1+dev
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # Digital Mapping
 
 This tutorial will give a short introduction to some digital mapping concepts, tools, and data.
@@ -42,4 +29,4 @@ Geospatial data is powerful! It can be:
 * used to derive spatial measurements like area and distance
 * used for determine spatial relationships like inside, next to, etc.
 
-## To be continued... :)
+# To be continued... :)

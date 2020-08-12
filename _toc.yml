@@ -31,9 +31,18 @@
     - file: LaTeX/Bibliographies
 
 - part: Archiving and Sharing
+<<<<<<< HEAD
   chapters: 
   - file: Archiving_and_Sharing/What_is_repository
   - file: Archiving_and_Sharing/Repository_resources
+=======
+  chapters:
+  - file: Archiving_and_Sharing/What_is_a_repository
+  - file: Archiving_and_Sharing/Resources
+    sections:
+    - file: Archiving_and_Sharing/Data
+    - file: Archiving_and_Sharing/eScholarship
+>>>>>>> 93f2509cea309f39ba57dfaba632320c4f200f47
 
 - part: Special Topics
   chapters:  
@@ -42,6 +51,8 @@
 - part: About
   chapters:
   - file: README.md
+
+
 
 
 
