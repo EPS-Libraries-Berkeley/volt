@@ -294,6 +294,16 @@
    Bibliography Packages
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#in-text-citations">
+   In-text citations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise">
+   Exercise
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -323,6 +333,44 @@
 </div>
 <div class="section" id="bibliography-packages">
 <h2>Bibliography Packages<a class="headerlink" href="#bibliography-packages" title="Permalink to this headline">¶</a></h2>
+<p>LaTeX uses two common packages to generate in-text citations and bibliographies.</p>
+<ol class="simple">
+<li><p>natbib: works best with author-year citations and numerical citations. This package works well for simple, short bibliographies, but is not supported and less commonly used.</p></li>
+<li><p>biblatex: the most flexible package for generating citations and the package that will be referred to in this document.</p></li>
+</ol>
+<p>Packages required for the preamble:</p>
+<p><code class="docutils literal notranslate"><span class="pre">\usepackage[backend=biber,style=authoryear]{biblatex}</span></code></p>
+<p>The above syntax calls in the biblatex package and the backend (biber), which acts as the interface between the .bib file and the LaTeX document. “Authoryear” denotes the citation style. This can be changed accordingly.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\addbibresource{example.bib}</span></code></p>
+<p>The above command calls in the .bib file, which has the citation information for in-text citations and the bibliography.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code></p>
+<p>The above command inserts the bibliography, which will contain citations referenced in the text.</p>
+</div>
+<div class="section" id="in-text-citations">
+<h2>In-text citations<a class="headerlink" href="#in-text-citations" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">\cite{}</span></code> → bare citation command (according to style)</p>
+<p><code class="docutils literal notranslate"><span class="pre">\parencite{}</span></code> → parenthetical citation</p>
+<p><code class="docutils literal notranslate"><span class="pre">\citeauthor{}</span></code> → prints author names(s)</p>
+<p><code class="docutils literal notranslate"><span class="pre">\textcite{}</span></code> → prints authors or editors followed by a citation label enclosed in ()</p>
+<p><code class="docutils literal notranslate"><span class="pre">\nocite</span> <span class="pre">{*}</span></code> → prints publication in bibliography without citation</p>
+<p><code class="docutils literal notranslate"><span class="pre">\citeyear{}</span></code> → prints only the year field</p>
+<p>Examples:</p>
+<p><code class="docutils literal notranslate"><span class="pre">\cite{knyazeva_duplex_2013}</span></code> → Knyazeva and Pohl 2013</p>
+<p><code class="docutils literal notranslate"><span class="pre">\parencite{singh_erratum:_2013}</span></code> → (Singh et al. 2013)</p>
+<p><code class="docutils literal notranslate"><span class="pre">\citeauthor{campbell_how_2011}</span></code> → Campbell and Cabrera</p>
+<p><code class="docutils literal notranslate"><span class="pre">\textcite{elsabbagh_microstructure_2014}</span></code> → Elsabbagh, Hamouda, and Taha (2014)</p>
+</div>
+<div class="section" id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>Connect a .bib file to a LaTeX document:</p>
+<ul class="simple">
+<li><p>Upload your own .bib file</p></li>
+<li><p>Upload the <span class="xref myst">example .bib file</span> (use link and save to computer)</p></li>
+<li><p>Link Overleaf to your Zotero or Mendeley account</p></li>
+</ul>
+<p>Once connected, insert the <code class="docutils literal notranslate"><span class="pre">Biblatex</span></code> package and call in the .bib file.</p>
+<p>Referencing the above in-text citation examples, insert 4 citations into your practice document. At the end of the document, insert the final bibliography.</p>
+<p>For additional examples and more information, please visit Overleaf’s page on <a class="reference external" href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">bibliography management in LaTeX</a></p>
 </div>
 </div>
 
