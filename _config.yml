@@ -11,14 +11,15 @@ execute:
 html:
   home_page_in_navbar: false
   baseurl: https://eps-libraries-berkeley.github.io/volt
+  use_repository_button     : true
   extra_footer: |
     <p>
     <a rel="license" 
-     href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-     <img src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" style="border-width:0" alt="CCBYNCSA"/>
+     href="http://creativecommons.org/licenses/by-nc/4.0/">
+     <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
     </a>
     <br />
-    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/. 4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
     </p>
 
 sphinx:
@@ -30,5 +31,10 @@ latex:
   latex_documents:
     targetname: book.tex
 
+launch_buttons:
+  notebook_interface        : classic
+
 repository:
   url                       : https://github.com/EPS-Libraries-Berkeley/volt
+  branch                    : master
+
