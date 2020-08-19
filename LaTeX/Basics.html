@@ -323,6 +323,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lists">
+   Lists
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-1">
    <em>
     EXERCISE 1
@@ -433,6 +438,26 @@ Formatting is left to you, but commands like <code class="docutils literal notra
 <div class="math notranslate nohighlight">
 \[x + y = z\]</div>
 </div>
+<div class="section" id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">\begin{itemize}...\end{itemize}</span></code> environment to create unnumbered lists.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{itemize}</span></code>
+<code class="docutils literal notranslate"><span class="pre">\item</span> <span class="pre">Apples</span></code>
+<code class="docutils literal notranslate"><span class="pre">\item</span> <span class="pre">Cherries</span></code>
+<code class="docutils literal notranslate"><span class="pre">\item</span> <span class="pre">Oranges</span></code>
+<code class="docutils literal notranslate"><span class="pre">\item</span> <span class="pre">Peaches</span></code>
+<code class="docutils literal notranslate"><span class="pre">\item</span> <span class="pre">Watermelon</span></code>
+<code class="docutils literal notranslate"><span class="pre">\end{itemize}</span></code></p>
+<p>This code results in:</p>
+<ul class="simple">
+<li><p>Apples</p></li>
+<li><p>Cherries</p></li>
+<li><p>Oranges</p></li>
+<li><p>Peaches</p></li>
+<li><p>Watermelon</p></li>
+</ul>
+<p>Use the similar <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code> environment to create numbered lists.</p>
+</div>
 <div class="section" id="exercise-1">
 <h2><em>EXERCISE 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
 <p><em>Objective:<br />
@@ -451,27 +476,22 @@ Practice several basic LaTeX commands in a new project.</em></p>
 <li><p>Add a new section labeled “Practice” using the <code class="docutils literal notranslate"><span class="pre">\section*</span></code> command.</p></li>
 <li><p>Add the following paragraph under that section using “inline” math commands:</p></li>
 </ol>
-<blockquote>
-<div><p>For rainfall a threshold of &gt;1 mm/hr was used; for modeled OLR a threshold of &lt;167 W/m2, equivalent to a SEVIRI &gt;TB of &lt;233 K (−40 °C) using equation 1, was used.</p>
-</div></blockquote>
-<blockquote>
-<div><p>It has previously been shown that MCSs account for about 90% of the rainfall in the central Sahel.</p>
-</div></blockquote>
-<blockquote>
-<div><p><strong>Source</strong>: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018EA000491</p>
-</div></blockquote>
+<hr class="docutils" />
+<p>We know the initial pressure <span class="math notranslate nohighlight">\(P_0 = 7.00x10^5 Pa\)</span>, the initial temperature <span class="math notranslate nohighlight">\(T_0 = 18.0 ^{\circ}C\)</span>, and the final temperature <span class="math notranslate nohighlight">\(T_f = 35.0 ^{\circ}C\)</span>.</p>
+<p><strong>Question:</strong> What is the final pressure <span class="math notranslate nohighlight">\(P_f\)</span>?</p>
+<hr class="docutils" />
 <ol class="simple">
 <li><p>Make a numbered list of four items, for example, California Road Trip destinations:<br />
-Yosemite<br />
-Big Sur<br />
-Lake Tahoe<br />
+Yosemite <br/>
+Big Sur <br/>
+Lake Tahoe <br/>
 Death Valley</p></li>
 </ol>
 <p><em>Commands we learned:</em>
 <code class="docutils literal notranslate"><span class="pre">\section{}</span></code> <code class="docutils literal notranslate"><span class="pre">\%</span></code>, <code class="docutils literal notranslate"><span class="pre">$...$</span></code>
 Degree can be represented several ways:
 <code class="docutils literal notranslate"><span class="pre">$^\circ$</span></code> OR  <code class="docutils literal notranslate"><span class="pre">\textcelsius\</span></code> OR <code class="docutils literal notranslate"><span class="pre">\si{degree}</span></code>
-Subscripts and superscripts are written using the symbols ^ and _</p>
+Subscripts and superscripts are written using the symbols _ and ^</p>
 <p>New environment needed:
 <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code></p>
 </div>
