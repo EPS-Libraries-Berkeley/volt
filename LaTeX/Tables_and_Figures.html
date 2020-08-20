@@ -298,35 +298,35 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-1-two-column-table">
-     Example 1: two column table
+    <a class="reference internal nav-link" href="#example-creating-a-basic-two-column-table">
+     Example: Creating a basic two column table
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-2-vertical-and-horizontal-lines-are-added">
-     Example 2: vertical and horizontal lines are added
+    <a class="reference internal nav-link" href="#example-adding-vertical-and-horizontal-lines">
+     Example: Adding vertical and horizontal lines
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-3-with-caption-and-centering">
-     Example 3: With caption and centering
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-1">
-     <em>
-      Exercise 1
-     </em>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-2">
-     <em>
-      Exercise 2
-     </em>
+    <a class="reference internal nav-link" href="#example-centering-and-adding-a-caption">
+     Example: Centering and adding a caption
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1">
+   <em>
+    Exercise 1
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2">
+   <em>
+    Exercise 2
+   </em>
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#figures">
@@ -334,10 +334,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-1-upload-a-figure">
-     <em>
-      Exercise 1: Upload a figure
-     </em>
+    <a class="reference internal nav-link" href="#uploading-a-figure">
+     Uploading a figure
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -345,13 +343,22 @@
      Figure Placement
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-2-designate-figure-position">
-     <em>
-      Exercise 2: Designate figure position
-     </em>
-    </a>
-   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-upload-a-figure">
+   <em>
+    Exercise 3: Upload a figure
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-designate-figure-position">
+   <em>
+    Exercise 4: Designate figure position
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#syncing-and-uploading-figures-hosted-elsewhere">
      Syncing and Uploading figures hosted elsewhere
@@ -375,28 +382,46 @@
 <div class="section" id="tables">
 <h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
 <p>Basic tables can be created with a combination of the commands below and the <strong>use package</strong>: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
-<p>|Basic Commands|Description|
-|—–||
-|<code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code> | column alignment|
-|<code class="docutils literal notranslate"><span class="pre">&amp;</span></code> |ampersand separates columns|
-| <code class="docutils literal notranslate"><span class="pre">\\</span></code> | double backslash begins new row|
-| <code class="docutils literal notranslate"><span class="pre">\hline</span></code> |horizontal line|
-| | |	vertical line|</p>
-<div class="section" id="example-1-two-column-table">
-<h3>Example 1: two column table<a class="headerlink" href="#example-1-two-column-table" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic Commands</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code></p></td>
+<td><p>column alignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>ampersand separates columns</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td><p>double backslash begins new row</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\hline</span></code></p></td>
+<td><p>horizontal line</p></td>
+</tr>
+<tr class="row-even"><td><p>|</p></td>
+<td><p>vertical line</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="example-creating-a-basic-two-column-table">
+<h3>Example: Creating a basic two column table<a class="headerlink" href="#example-creating-a-basic-two-column-table" title="Permalink to this headline">¶</a></h3>
 <p><img alt="Basic" src="../_images/tables_basic.png" /></p>
 </div>
-<div class="section" id="example-2-vertical-and-horizontal-lines-are-added">
-<h3>Example 2: vertical and horizontal lines are added<a class="headerlink" href="#example-2-vertical-and-horizontal-lines-are-added" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="example-adding-vertical-and-horizontal-lines">
+<h3>Example: Adding vertical and horizontal lines<a class="headerlink" href="#example-adding-vertical-and-horizontal-lines" title="Permalink to this headline">¶</a></h3>
 <p><img alt="Lines" src="../_images/tables_lines.png" /></p>
 </div>
-<div class="section" id="example-3-with-caption-and-centering">
-<h3>Example 3: With caption and centering<a class="headerlink" href="#example-3-with-caption-and-centering" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="example-centering-and-adding-a-caption">
+<h3>Example: Centering and adding a caption<a class="headerlink" href="#example-centering-and-adding-a-caption" title="Permalink to this headline">¶</a></h3>
 <p>Note the addition the <code class="docutils literal notranslate"><span class="pre">\caption</span></code> and <code class="docutils literal notranslate"><span class="pre">\centering</span></code> commands.</p>
 <p><img alt="Caption" src="../_images/tables_caption.png" /></p>
 </div>
+</div>
 <div class="section" id="exercise-1">
-<h3><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<h2><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">tabularx</span></code> package to create a simple table of the US Women’s Soccer Team’s 2019 World Cup Starting Roster: <a class="reference external" href="https://www.ussoccer.com/players">https://www.ussoccer.com/players</a></p>
 <p>Begin with a header row and two columns.</p>
 <ul class="simple">
@@ -443,35 +468,30 @@ Note: Using the <code class="docutils literal notranslate"><span class="pre">\ca
 </table>
 </div>
 <div class="section" id="exercise-2">
-<h3><em>Exercise 2</em><a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h3>
+<h2><em>Exercise 2</em><a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
 <p>Create a table like the one below with columns spanning multiple rows or rows spanning multiple columns.</p>
 <p><img alt="Multiple Columns" src="../_images/tables_multi.png" /></p>
 <p><em>Questions?</em><br />
 Consult the answer key in the Overleaf Project to troubleshoot: <a class="reference external" href="https://www.overleaf.com/read/vkpyvmhgzsgm">https://www.overleaf.com/read/vkpyvmhgzsgm</a></p>
-<p>Information sources:</p>
+<p>More information sources:</p>
 <ul class="simple">
 <li><p>Roster: <a class="reference external" href="https://www.ussoccer.com/players">https://www.ussoccer.com/players</a></p></li>
 <li><p>Tables info: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
 <li><p>Multicolumn/Multirow: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
 </ul>
 </div>
-</div>
 <div class="section" id="figures">
 <h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h2>
 <p><em>Objective:</em> Learn to upload and position figures in Overleaf.</p>
-<div class="section" id="exercise-1-upload-a-figure">
-<h3><em>Exercise 1: Upload a figure</em><a class="headerlink" href="#exercise-1-upload-a-figure" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>To upload image, choose an image of your own, or find file at: <a class="reference external" href="https://github.com/samteplitzky/EPS-Latex-Workshop">https://github.com/samteplitzky/EPS-Latex-Workshop</a></p></li>
-<li><p>Download keyboard_cat.png, and upload file to the Overleaf project.</p></li>
-<li><p>Place image with these commands:<br />
-<code class="docutils literal notranslate"><span class="pre">\usepackage{graphicx}</span></code><br />
-<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.4\textwidth]{keyboard_cat}</span></code></p></li>
-</ol>
-<p><img alt="cat" src="../_images/keyboard_cat.png" /></p>
+<div class="section" id="uploading-a-figure">
+<h3>Uploading a figure<a class="headerlink" href="#uploading-a-figure" title="Permalink to this headline">¶</a></h3>
+<p>Incorporating images and figures into your Overleaf project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.</p>
+<p>Click on the “upload” icon and navigate to the location of your figure.</p>
+<p><img alt="upload" src="../_images/tables_figure.png" /></p>
 </div>
 <div class="section" id="figure-placement">
 <h3>Figure Placement<a class="headerlink" href="#figure-placement" title="Permalink to this headline">¶</a></h3>
+<p>Use the following specifiers to adjust the placement of your figures.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Specifier</p></th>
@@ -500,16 +520,28 @@ Consult the answer key in the Overleaf Project to troubleshoot: <a class="refere
 </tbody>
 </table>
 </div>
-<div class="section" id="exercise-2-designate-figure-position">
-<h3><em>Exercise 2: Designate figure position</em><a class="headerlink" href="#exercise-2-designate-figure-position" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="exercise-3-upload-a-figure">
+<h2><em>Exercise 3: Upload a figure</em><a class="headerlink" href="#exercise-3-upload-a-figure" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>To upload image, choose an image of your own, or find file at: <a class="reference external" href="https://github.com/samteplitzky/EPS-Latex-Workshop">https://github.com/samteplitzky/EPS-Latex-Workshop</a></p></li>
+<li><p>Download keyboard_cat.png, and upload file to the Overleaf project.</p></li>
+<li><p>Place image with these commands:<br />
+<code class="docutils literal notranslate"><span class="pre">\usepackage{graphicx}</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.4\textwidth]{keyboard_cat}</span></code></p></li>
+</ol>
+<p><img alt="cat" src="../_images/keyboard_cat.png" /></p>
+</div>
+<div class="section" id="exercise-4-designate-figure-position">
+<h2><em>Exercise 4: Designate figure position</em><a class="headerlink" href="#exercise-4-designate-figure-position" title="Permalink to this headline">¶</a></h2>
 <p>Use b, t, h to see where figure moves. You might need to add additional text in the document to see how the figure placement varies.</p>
 <p><code class="docutils literal notranslate"><span class="pre">\begin{figure}[b]</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">\centering</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.6\textwidth]{keyboard_cat}</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">\end{figure}</span></code></p>
-</div>
 <div class="section" id="syncing-and-uploading-figures-hosted-elsewhere">
 <h3>Syncing and Uploading figures hosted elsewhere<a class="headerlink" href="#syncing-and-uploading-figures-hosted-elsewhere" title="Permalink to this headline">¶</a></h3>
+<p>Find more information about syncing and hosting your figures outside of Overleaf.</p>
 <p>Google Drive: <a class="reference external" href="https://www.overleaf.com/help/247-how-can-i-upload-files-from-google-drive#.W4WtwhPwZE5">https://www.overleaf.com/help/247-how-can-i-upload-files-from-google-drive#.W4WtwhPwZE5</a><br />
 GitHub/Dropbox: <a class="reference external" href="https://www.overleaf.com/help/343#.W4WtgxPwZE4">https://www.overleaf.com/help/343#.W4WtgxPwZE4</a></p>
 </div>
