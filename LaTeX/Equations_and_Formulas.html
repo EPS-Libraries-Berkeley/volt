@@ -307,12 +307,14 @@
      Simple Operators, Subscripts, Superscripts &amp; More
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise-1">
-     Exercise 1
-    </a>
-   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1">
+   <em>
+    Exercise 1
+   </em>
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#next-steps-greek-letters-integrals-more">
@@ -333,7 +335,9 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-2">
-   Exercise 2
+   <em>
+    Exercise 2
+   </em>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -393,7 +397,9 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-3">
-   Exercise 3
+   <em>
+    Exercise 3
+   </em>
   </a>
  </li>
 </ul>
@@ -469,8 +475,9 @@ curly brackets–otherwise the command applies only to the first character.</p>
 To display a fraction, use the command <code class="docutils literal notranslate"><span class="pre">\frac</span></code> followed by the numerator and denominator in curly brackets.</p>
 <p><strong>Example:</strong> <code class="docutils literal notranslate"><span class="pre">\frac{1}{x}</span></code> gives <span class="math notranslate nohighlight">\(\frac{1}{x}\)</span></p>
 </div>
+</div>
 <div class="section" id="exercise-1">
-<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h3>
+<h2><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
 <p>Open a blank document in <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a> and recreate this text in your document using LaTeX commands:</p>
 <hr class="docutils" />
 <p>A quadratic equation is an equation of the form <span class="math notranslate nohighlight">\(ax^2 + bx + c = 0\)</span> and such equations can be solved using the quadratic formula:</p>
@@ -495,7 +502,6 @@ v(x,t) = x - \sqrt{x^2 + e^{a-2t}}
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Getting compile errors or having problems getting the equations to render correctly? Compare your LaTeX code with the <a href="https://www.overleaf.com/read/bgmkjvdmbmny">solutions</a>.</p>
-</div>
 </div>
 </div>
 <div class="section" id="next-steps-greek-letters-integrals-more">
@@ -595,7 +601,7 @@ lim_{x \to \infty} f(x)
 </div>
 </div>
 <div class="section" id="exercise-2">
-<h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
+<h2><em>Exercise 2</em><a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
 <p>Recreate these equations in your <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a> document:</p>
 <hr class="docutils" />
 <div class="math notranslate nohighlight">
@@ -647,7 +653,10 @@ f(x) = \sum_{i=0}^{\infty} \frac{f^{(i)}(0)}{i!} x^i
 (I - A \otimes A) vec(X) = vec(Q) \tag{1}
 \end{equation}
 \]</div>
-<p><strong>Note:</strong> Use <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span></code> for unnumbered equations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span></code> for unnumbered equations.</p>
+</div>
 </div>
 <div class="section" id="amsmath-align-environment">
 <h3><em>amsmath</em>: Align Environment<a class="headerlink" href="#amsmath-align-environment" title="Permalink to this headline">¶</a></h3>
@@ -692,7 +701,10 @@ f(n-1) + f(n-2) &amp; \text{otherwise}
 \end{cases}
 \end{equation*}
 \end{split}\]</div>
-<p><strong>Note:</strong> Use the <code class="docutils literal notranslate"><span class="pre">\text{}</span></code> command to include text in math mode.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">\text{}</span></code> command to include text in math mode.</p>
+</div>
 </div>
 <div class="section" id="amssymb">
 <h3><em>amssymb</em><a class="headerlink" href="#amssymb" title="Permalink to this headline">¶</a></h3>
@@ -727,9 +739,9 @@ d &amp; e &amp; f \\
 \end{split}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Compare that to <strong>{pmatrix}</strong> for matrices with parentheses, <strong>{bmatrix}</strong> for matrices with square brackets, and <strong>{vmatrix}</strong> for determinants.</p>
+<p>Compare that to <code class="docutils literal notranslate"><span class="pre">{pmatrix}</span></code> for matrices with parentheses, <code class="docutils literal notranslate"><span class="pre">{bmatrix}</span></code> for matrices with square brackets, and <code class="docutils literal notranslate"><span class="pre">{vmatrix}</span></code> for determinants.</p>
 </div>
-<p><strong>{pmatrix}</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{pmatrix}...\end{pmatrix}</span></code></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{pmatrix}
@@ -737,7 +749,7 @@ a &amp; b &amp; c \\
 d &amp; e &amp; f \\
 \end{pmatrix}
 \end{split}\]</div>
-<p><strong>{bmatrix}</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{bmatrix}...\end{bmatrix}</span></code></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{bmatrix}
@@ -745,7 +757,7 @@ a &amp; b &amp; c \\
 d &amp; e &amp; f \\
 \end{bmatrix}
 \end{split}\]</div>
-<p><strong>{vmatrix}</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{vmatrix}...\end{vmatrix}</span></code></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{vmatrix}
@@ -756,7 +768,7 @@ d &amp; e &amp; f \\
 </div>
 </div>
 <div class="section" id="exercise-3">
-<h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h2>
+<h2><em>Exercise 3</em><a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h2>
 <p><strong>Part A</strong></p>
 <p>Recreate these matrices in your <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a> document:</p>
 <hr class="docutils" />
@@ -785,7 +797,10 @@ u &amp; v &amp; w
 \]</div>
 <hr class="docutils" />
 <p><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\begin{equation*}...\end{equation*}</span></code>, <code class="docutils literal notranslate"><span class="pre">\int_{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\Sigma</span></code>, <code class="docutils literal notranslate"><span class="pre">\sum_{}^{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\frac{}{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\partial</span></code>, <code class="docutils literal notranslate"><span class="pre">\rho</span></code>, <code class="docutils literal notranslate"><span class="pre">\text{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\in</span></code>, <code class="docutils literal notranslate"><span class="pre">\infty</span></code>, <code class="docutils literal notranslate"><span class="pre">\mathbb{}</span></code></p>
-<p><strong>Hint:</strong> To scale the parentheses to the height of the equation, use the commands <code class="docutils literal notranslate"><span class="pre">\left(</span></code> and <code class="docutils literal notranslate"><span class="pre">\right)</span></code>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>To scale the parentheses to the height of the equation, use the commands <code class="docutils literal notranslate"><span class="pre">\left(</span></code> and <code class="docutils literal notranslate"><span class="pre">\right)</span></code>.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Need help getting the text and equations to render properly? Compare your LaTeX code with the <a href="https://www.overleaf.com/read/bgmkjvdmbmny">solutions</a>.</p>
