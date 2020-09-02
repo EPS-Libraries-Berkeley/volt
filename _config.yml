@@ -34,6 +34,7 @@ latex:
 
 launch_buttons:
   notebook_interface        : classic
+  binderhub_url             : https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/master
 
 repository:
   url                       : https://github.com/EPS-Libraries-Berkeley/volt
