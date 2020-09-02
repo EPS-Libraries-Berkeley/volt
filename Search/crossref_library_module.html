@@ -2,9 +2,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrossRef API &#8212; vOLT virtual Online Library Tutorials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -24,12 +25,10 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/mystnb.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -231,6 +230,10 @@
 
  <!-- To handle the deprecated key -->
 
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -294,6 +297,28 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/master/v2/gh/EPS-Libraries-Berkeley/volt/master?urlpath=tree/Search/crossref_library_module.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/master/Search/crossref_library_module.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
 
     </div>
 
@@ -425,23 +450,23 @@
 <p>We then use the command <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">(package</span> <span class="pre">name)</span></code> to use our new package in our code.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># just run this cell
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># just run this cell</span>
 
-!pip install habanero
-#To use Crossref API in Python, we need to import the habanero package
-import habanero
-from habanero import Crossref
-from collections import Counter # for easy counting
-import ast # for string to dictionary conversion
-import pandas as pd # for data manipulation
-import numpy as np # for array manipulation
-import matplotlib.pyplot as plt # for data visualization
-%matplotlib inline 
+<span class="o">!</span>pip install habanero
+<span class="c1">#To use Crossref API in Python, we need to import the habanero package</span>
+<span class="kn">import</span> <span class="nn">habanero</span>
+<span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span> <span class="c1"># for easy counting</span>
+<span class="kn">import</span> <span class="nn">ast</span> <span class="c1"># for string to dictionary conversion</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># for data manipulation</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># for array manipulation</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># for data visualization</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline 
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: habanero in /opt/anaconda3/lib/python3.7/site-packages (0.7.4)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: habanero in /opt/anaconda3/lib/python3.7/site-packages (0.7.4)
 Requirement already satisfied: tqdm in /opt/anaconda3/lib/python3.7/site-packages (from habanero) (4.42.1)
 Requirement already satisfied: requests&gt;=2.7.0 in /opt/anaconda3/lib/python3.7/site-packages (from habanero) (2.22.0)
 Requirement already satisfied: idna&lt;2.9,&gt;=2.5 in /opt/anaconda3/lib/python3.7/site-packages (from requests&gt;=2.7.0-&gt;habanero) (2.8)
@@ -463,7 +488,7 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>In the cells below, we walk through using Crossref and exploring the data it gives us. To create an object that takes on the Crossref identity, we assign it to the variable <code class="docutils literal notranslate"><span class="pre">cr</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span> <span class="c1"># create a crossref object</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span> <span class="c1"># create a crossref object</span>
 </pre></div>
 </div>
 </div>
@@ -472,7 +497,7 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>In order to save this output, we’ll assign it to the variable name <code class="docutils literal notranslate"><span class="pre">permafrost</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># query for the term &quot;permafrost&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># query for the term &quot;permafrost&quot;</span>
 <span class="n">permafrost</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;permafrost&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -481,12 +506,12 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>If we inspect <code class="docutils literal notranslate"><span class="pre">permafrost</span></code>, we can see that it is a dictionary. A dictionary is a type of data structure that is indexed by keys.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">permafrost</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">permafrost</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>dict
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict
 </pre></div>
 </div>
 </div>
@@ -494,7 +519,7 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>In the cell below, try creating your own query for a different search term. Make sure to save it to a variable! For now, limit your search term to a single word.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Example: </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Example: </span>
 <span class="n">your_query_name</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;yourquery&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -506,12 +531,12 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>A dictionary contains key-value pairs, and we can access the values by calling on the keys. In our <code class="docutils literal notranslate"><span class="pre">permafrost</span></code> dictionary, we can inspect the keys and take a look at the values that it contains.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">permafrost</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">permafrost</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;status&#39;, &#39;message-type&#39;, &#39;message-version&#39;, &#39;message&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;status&#39;, &#39;message-type&#39;, &#39;message-version&#39;, &#39;message&#39;]
 </pre></div>
 </div>
 </div>
@@ -519,12 +544,12 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>Above, we can see that there are 4 different keys in our <code class="docutils literal notranslate"><span class="pre">permafrost</span></code> dictionary. We will focus on the values for the message key. In the cell below, we are accessing the values by <em>indexing</em> into the dictionary by the given keys.</p>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;facets&#39;: {},
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;facets&#39;: {},
  &#39;total-results&#39;: 8218,
  &#39;items&#39;: [{&#39;indexed&#39;: {&#39;date-parts&#39;: [[2020, 4, 15]],
     &#39;date-time&#39;: &#39;2020-04-15T02:44:23Z&#39;,
@@ -10147,12 +10172,12 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>This dictionary is nested, meaning that we can have keys that lead to values which are more dictionaries. It seems like the <code class="docutils literal notranslate"><span class="pre">message</span></code> contains most of the information we’re interested in. Below, take a look at the keys of the <code class="docutils literal notranslate"><span class="pre">message</span></code> component of the <code class="docutils literal notranslate"><span class="pre">permafrost</span></code> dictionary.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="c1"># keys of the permafrost message dictionary</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="c1"># keys of the permafrost message dictionary</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;facets&#39;, &#39;total-results&#39;, &#39;items&#39;, &#39;items-per-page&#39;, &#39;query&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;facets&#39;, &#39;total-results&#39;, &#39;items&#39;, &#39;items-per-page&#39;, &#39;query&#39;]
 </pre></div>
 </div>
 </div>
@@ -10160,49 +10185,49 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>Just as we did before, we can inspect what information is contained for different keys of the dictionary. Let’s focus on total results first.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This tells us the total number of results from our query</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This tells us the total number of results from our query</span>
 <span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;total-results&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>8218
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8218
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items-per-page&#39;</span><span class="p">]</span> <span class="c1"># tells us how many items per page </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items-per-page&#39;</span><span class="p">]</span> <span class="c1"># tells us how many items per page </span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>20
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;query&#39;</span><span class="p">]</span> <span class="c1"># details about our query</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;query&#39;</span><span class="p">]</span> <span class="c1"># details about our query</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;start-index&#39;: 0, &#39;search-terms&#39;: &#39;permafrost&#39;}
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;start-index&#39;: 0, &#39;search-terms&#39;: &#39;permafrost&#39;}
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="c1"># the items of our query</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="c1"># the items of our query</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[{&#39;indexed&#39;: {&#39;date-parts&#39;: [[2020, 4, 15]],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;indexed&#39;: {&#39;date-parts&#39;: [[2020, 4, 15]],
    &#39;date-time&#39;: &#39;2020-04-15T02:44:23Z&#39;,
    &#39;timestamp&#39;: 1586918663309},
   &#39;reference-count&#39;: 18,
@@ -19821,24 +19846,24 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>Above, we can see that the <code class="docutils literal notranslate"><span class="pre">items</span></code> contains the majority of information about our query on permafrost. It contains a list of all of the results - we can check this with the <code class="docutils literal notranslate"><span class="pre">type</span></code> command we used earlier. Since we only are looking at the first page, our items list has only 20 items in it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>list
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>20
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20
 </pre></div>
 </div>
 </div>
@@ -19849,7 +19874,7 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>When our data exists in dictionaries, it’s a little hard to explore and manipulate. In order to tackle this, we’ll create a dataframe of the information so that we can access it more easily.</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df_permafrost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_permafrost</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">permafrost</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
 <span class="n">df_permafrost</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> <span class="c1"># show the first 5 rows</span>
 </pre></div>
 </div>
@@ -20025,12 +20050,12 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>There are a bunch of columns in our table, and we can’t see all of them by scrolling. Below, we can look at a list of the columns instead.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df_permafrost</span><span class="o">.</span><span class="n">columns</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_permafrost</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>Index([&#39;indexed&#39;, &#39;reference-count&#39;, &#39;publisher&#39;, &#39;issue&#39;, &#39;license&#39;,
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;indexed&#39;, &#39;reference-count&#39;, &#39;publisher&#39;, &#39;issue&#39;, &#39;license&#39;,
        &#39;content-domain&#39;, &#39;short-container-title&#39;, &#39;DOI&#39;, &#39;type&#39;, &#39;created&#39;,
        &#39;page&#39;, &#39;source&#39;, &#39;is-referenced-by-count&#39;, &#39;title&#39;, &#39;prefix&#39;, &#39;volume&#39;,
        &#39;author&#39;, &#39;member&#39;, &#39;published-online&#39;, &#39;reference&#39;, &#39;container-title&#39;,
@@ -20046,13 +20071,13 @@ Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib
 <p>Container-title seems to stand in for Journal Title. Let’s look at what’s in the container title column:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">journal_titles</span> <span class="o">=</span> <span class="n">df_permafrost</span><span class="p">[</span><span class="s1">&#39;container-title&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">journal_titles</span> <span class="o">=</span> <span class="n">df_permafrost</span><span class="p">[</span><span class="s1">&#39;container-title&#39;</span><span class="p">]</span>
 <span class="n">journal_titles</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0     [Permafrost and Periglacial Processes]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     [Permafrost and Periglacial Processes]
 1                       [Thawing Permafrost]
 2                                        NaN
 3     [Permafrost and Periglacial Processes]
@@ -20080,12 +20105,12 @@ Name: container-title, dtype: object
 <p>We can do the same for the publisher column.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df_permafrost</span><span class="p">[</span><span class="s1">&#39;publisher&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_permafrost</span><span class="p">[</span><span class="s1">&#39;publisher&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0                                 Wiley
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0                                 Wiley
 1     Springer International Publishing
 2                                 Wiley
 3                                 Wiley
@@ -20116,27 +20141,26 @@ Name: publisher, dtype: object
 <p>We want to be able to retrieve more data from CrossRef. A single CrossRef query can return up to 1,000 results, and since our query has over 42,000 total results, we would need to make 43 queries. Remember at the beginning, we only had 20 results since we only grabbed the first page. The CrossRef API permits fetching results from multiple pages, so by setting <code class="docutils literal notranslate"><span class="pre">cursor</span></code> to <code class="docutils literal notranslate"><span class="pre">*</span></code> and <code class="docutils literal notranslate"><span class="pre">cursor_max</span></code> to 1000 we can grab 1000 queries at once. Querying all 42,000 results would take a long time, so for the purposes of this demonstration we are only using 1000. If you have more time, you could query more results, but be aware that it will take a long time.</p>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell will take a while to run</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this cell will take a while to run</span>
 <span class="n">cr_permafrost</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;permafrost&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="stderr docutils container">
-<pre class="stderr literal-block">100%|██████████| 49/49 [00:52&lt;00:00,  1.07s/it]
-</pre>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 49/49 [00:52&lt;00:00,  1.07s/it]
+</pre></div>
 </div>
 </div>
 </div>
 <p>We can check that we have the 1,000 messages, and indeed we do.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_permafrost</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_permafrost</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>1000
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1000
 </pre></div>
 </div>
 </div>
@@ -20144,7 +20168,7 @@ Name: publisher, dtype: object
 <p>Remember before, when you created your own search query? Here, we’ll go through a few steps to get more results for your query. First, we’ll check how many total results your query has. Run the cell below to find out.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#query[&#39;message&#39;][&#39;total-results&#39;]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query[&#39;message&#39;][&#39;total-results&#39;]</span>
 </pre></div>
 </div>
 </div>
@@ -20152,7 +20176,7 @@ Name: publisher, dtype: object
 <p>If there are fewer than 1000 results, then set <code class="docutils literal notranslate"><span class="pre">cursor_max</span></code> to the number of results. If there are more than 1000 results, set <code class="docutils literal notranslate"><span class="pre">cursor_max</span></code> to 1000 so that the code won’t take too long to run. Be sure to fill in <code class="docutils literal notranslate"><span class="pre">query</span></code> with the same search term you used earlier.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Your example</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Your example</span>
 <span class="c1">#cr_query = cr.works(query=&quot;queryname&quot;, cursor = &quot;*&quot;, cursor_max = 1000, progress_bar = True)</span>
 </pre></div>
 </div>
@@ -20161,13 +20185,13 @@ Name: publisher, dtype: object
 <p>In order to get all of the different results from our permafrost query, we need to extract them from <code class="docutils literal notranslate"><span class="pre">cr_permafrost</span></code>. Below, we create a list where each element is one result. <code class="docutils literal notranslate"><span class="pre">cr_permafrost</span></code> is a list consisting of pages, where we have 20 results per page. So <code class="docutils literal notranslate"><span class="pre">cr_permafrost</span></code> has 50 pages of 20 results each, giving us our 1000 results. In order to extract the info and have a list with each element be one results, we need to do some data manipulation.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Confirm the number of pages</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Confirm the number of pages</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">cr_permafrost</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>50
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>50
 </pre></div>
 </div>
 </div>
@@ -20175,7 +20199,7 @@ Name: publisher, dtype: object
 <p>In the cell below, we have 2 list comprehensions to get the results from our query. The first one creates a length 50 list that contains only the items instead of the entire dictionary, for each of the 50 pages. The second list comprehension extracts all of the items from the nested lists so that we have a single 1000 item list where each element is one result.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_permafrost</span><span class="p">]</span> <span class="c1"># get items for all pages</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_permafrost</span><span class="p">]</span> <span class="c1"># get items for all pages</span>
 <span class="n">permafrost_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">permafrost_items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span> <span class="c1"># restructure list</span>
 </pre></div>
 </div>
@@ -20184,7 +20208,7 @@ Name: publisher, dtype: object
 <p>We’ll do the same for your query results so that you can have some fun plotting later in the notebook. Just uncomment and run the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#query_items = [k[&#39;message&#39;][&#39;items&#39;] for k in cr_query] # get items for all pages</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query_items = [k[&#39;message&#39;][&#39;items&#39;] for k in cr_query] # get items for all pages</span>
 <span class="c1">#query_items = [item for sublist in query_items for item in sublist] # restructure list</span>
 </pre></div>
 </div>
@@ -20197,13 +20221,13 @@ Name: publisher, dtype: object
 <p>Also, before we asked you to limit your search term to a single word. This is not a hard restriction - we simply did this for simplicity. You can query terms that are more specific and include more words - try it out below! Keep in mind that the more specific your search query, the fewer results you may see. Feel free to play around with it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">query2</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;labrador retriever&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">query2</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;labrador retriever&#39;</span><span class="p">)</span>
 <span class="n">query2</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;total-results&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>8137
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8137
 </pre></div>
 </div>
 </div>
@@ -20219,7 +20243,7 @@ Name: publisher, dtype: object
 <p>In the cell below, we create a dataframe containing all 1000 of our permafrost query results.</p>
 <div class="cell tag_fulll-width docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">permafrost_items</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">permafrost_items</span><span class="p">)</span>
 <span class="n">permafrost_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -20515,7 +20539,7 @@ Name: publisher, dtype: object
 <p>While we are at it, we’ll convert your search query items into a data frame as well. Adapt the code in the cell to create a dataframe out of your <code class="docutils literal notranslate"><span class="pre">query_items</span></code> list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># example</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example</span>
 <span class="c1">#query_df = pd.DataFrame(query_items)</span>
 <span class="c1">#query_df.head()</span>
 </pre></div>
@@ -20528,7 +20552,7 @@ Name: publisher, dtype: object
 <p>We can take the value_count to determine the number of times a given journal or work appears in our results. This will help us determine where research on our topic is commonly published.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">journal</span> <span class="o">=</span> <span class="n">permafrost_df</span><span class="p">[</span><span class="s1">&#39;container-title&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">rename_axis</span><span class="p">(</span><span class="s1">&#39;titles&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">journal</span> <span class="o">=</span> <span class="n">permafrost_df</span><span class="p">[</span><span class="s1">&#39;container-title&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">rename_axis</span><span class="p">(</span><span class="s1">&#39;titles&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span>
 <span class="n">journal</span>
 </pre></div>
 </div>
@@ -20619,7 +20643,7 @@ Name: publisher, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Try repeating this for your query to see the top 20 titles.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Try repeating this for your query to see the top 20 titles.</span>
 <span class="c1">#query_journals = query_df[&#39;container-title&#39;].str[0].value_counts().rename_axis(&#39;titles&#39;).reset_index(name=&#39;counts&#39;)</span>
 <span class="c1">#query_journals.head(20)</span>
 </pre></div>
@@ -20633,7 +20657,7 @@ Name: publisher, dtype: object
 <p>Now that we have a sorted dataframe with journal titles and the number of articles they each published on permafrost, we can use this dataframe to plot the journals with the 10 highest counts.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_journals_top10</span> <span class="o">=</span> <span class="n">journal</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># get first 10 publishers </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_journals_top10</span> <span class="o">=</span> <span class="n">journal</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># get first 10 publishers </span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> <span class="c1"># set figure size</span>
 
@@ -20657,7 +20681,7 @@ Name: publisher, dtype: object
 <p>Before, we grouped by journal title. Keep in mind that we can group by other tags as well, such as type of article (<code class="docutils literal notranslate"><span class="pre">type</span></code>) or the language the article was published in (<code class="docutils literal notranslate"><span class="pre">language</span></code>). In the cell below, we use another method to group by either <code class="docutils literal notranslate"><span class="pre">type</span></code> or <code class="docutils literal notranslate"><span class="pre">language</span></code> and plot the resulting bar chart. Remember to sort your dataframe as well.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># types</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># types</span>
 
 <span class="n">permafrost_type_counts</span> <span class="o">=</span> <span class="n">permafrost_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;indexed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">permafrost_type_counts</span> <span class="o">=</span> <span class="n">permafrost_type_counts</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">&#39;indexed&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">},</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># rename counts column</span>
@@ -20757,7 +20781,7 @@ Name: publisher, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># types</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># types</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> <span class="c1"># set figure size</span>
 
@@ -20781,7 +20805,7 @@ Name: publisher, dtype: object
 <p>If you’d like, you can use the cells below to create bar charts of <code class="docutils literal notranslate"><span class="pre">publisher</span></code>, <code class="docutils literal notranslate"><span class="pre">language</span></code>, or <code class="docutils literal notranslate"><span class="pre">type</span></code> for your own query by grouping and sorting your <code class="docutils literal notranslate"><span class="pre">query_df</span></code> dataframe! Feel free to reference the cells above for an example with <code class="docutils literal notranslate"><span class="pre">permafrost_df</span></code>.</p>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the ...</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the ...</span>
 
 <span class="c1">#counts = permafrost_df.groupby(&#39;...&#39;).count()[&#39;indexed&#39;].reset_index()</span>
 <span class="c1">#counts = counts.rename({&#39;indexed&#39;:&#39;count&#39;}, axis = 1) # rename counts column</span>
@@ -20794,7 +20818,7 @@ Name: publisher, dtype: object
 </div>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the ...</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the ...</span>
 
 <span class="c1">#plt.figure(figsize=(20,8)) # set figure size</span>
 
@@ -20819,7 +20843,7 @@ Name: publisher, dtype: object
 <p>In scientific literature, we are often also interested in the number of references a journal article has, or the number of times the article was cited. Let’s see which articles have been cited the most - we can do this by sorting our dataframe by the <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code> column. Our dataframe has 45 columns, but we’ll just focus on a few. We’ll look at the <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code>, <code class="docutils literal notranslate"><span class="pre">publisher</span></code>, and <code class="docutils literal notranslate"><span class="pre">published-print</span></code> (the date it was published in print).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">most_cited</span> <span class="o">=</span> <span class="n">permafrost_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">most_cited</span> <span class="o">=</span> <span class="n">permafrost_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">most_cited</span> <span class="o">=</span> <span class="n">most_cited</span><span class="p">[[</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">,</span> <span class="s1">&#39;container-title&#39;</span><span class="p">,</span> <span class="s1">&#39;published-print&#39;</span><span class="p">,</span> <span class="s1">&#39;DOI&#39;</span><span class="p">]]</span>
 <span class="n">most_cited</span>
 </pre></div>
@@ -20948,7 +20972,7 @@ Name: publisher, dtype: object
 <p>Let’s look at the top 10 most cited articles.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">most_cited</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">most_cited</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -21070,7 +21094,7 @@ Name: publisher, dtype: object
 <p>When looking at our <code class="docutils literal notranslate"><span class="pre">most_cited</span></code> table, we can see that the most number of times an article was referenced was 181, and the least was 0. Using a type of visualization called a histogram, we can look at the distribution of time an article was referenced. We’ll do this in the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">most_cited</span><span class="p">[</span><span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span> <span class="c1"># generate histogram</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">most_cited</span><span class="p">[</span><span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span> <span class="c1"># generate histogram</span>
 
 <span class="c1"># labeling</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of Number of Times Cited for Permafrost Articles&#39;</span><span class="p">)</span> <span class="c1"># set title</span>
@@ -21086,7 +21110,7 @@ Name: publisher, dtype: object
 <p>We can see that this histogram is very skewed, with the majority of articles being cited fewer than 50 times. We can adjust the bins in order to see a better distribution, by specifying the sizes of the bins.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">most_cited</span><span class="p">[</span><span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span> <span class="c1"># generate histogram</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">most_cited</span><span class="p">[</span><span class="s1">&#39;is-referenced-by-count&#39;</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span> <span class="c1"># generate histogram</span>
 
 <span class="c1"># labeling</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of Number of Times Cited for Permafrost Articles&#39;</span><span class="p">)</span> <span class="c1"># set title</span>
@@ -21103,7 +21127,7 @@ Name: publisher, dtype: object
 <p>In the cells below, we’ve provided code to look at the number of times each article was cited for your <code class="docutils literal notranslate"><span class="pre">query_df</span></code>. In the following cell, try applying what you’ve just used to find the most cited article, the date it was published, and create a histogram showing the distribution for all articles.</p>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#your example</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#your example</span>
 <span class="c1">#your_most_cited = query_df.sort_values(&#39;is-referenced-by-count&#39;, ascending=False)</span>
 <span class="c1">#your_most_cited = your_most_cited[[&#39;title&#39;, &#39;is-referenced-by-count&#39;, &#39;container-title&#39;, &#39;published-print&#39;, &#39;DOI&#39;]]</span>
 <span class="c1">#your_most_cited</span>
@@ -21113,7 +21137,7 @@ Name: publisher, dtype: object
 </div>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the ...</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the ...</span>
 
 <span class="c1">#plt.hist(...[&#39;is-referenced-by-count&#39;], bins = ...) # generate histogram</span>
 
@@ -21132,20 +21156,19 @@ Name: publisher, dtype: object
 <p>The following 8 cells show the code we used to generate the csv files.</p>
 <div class="cell tag_output-scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cr_permafrost</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;permafrost melt&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr_permafrost</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;permafrost melt&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="stderr docutils container">
-<pre class="stderr literal-block">100%|██████████| 249/249 [03:51&lt;00:00,  1.08it/s]
-</pre>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 249/249 [03:51&lt;00:00,  1.08it/s]
+</pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_permafrost</span><span class="p">]</span> <span class="c1"># get items for all pages</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_permafrost</span><span class="p">]</span> <span class="c1"># get items for all pages</span>
 <span class="n">permafrost_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">permafrost_items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span> <span class="c1"># restructure list</span>
 </pre></div>
 </div>
@@ -21153,34 +21176,33 @@ Name: publisher, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">permafrost_items</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">permafrost_items</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;permafrost_melt_5000.csv&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">permafrost_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;permafrost_melt_5000.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_output-scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cr_arctic</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;arctic methane&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr_arctic</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;arctic methane&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="stderr docutils container">
-<pre class="stderr literal-block">100%|██████████| 249/249 [03:42&lt;00:00,  1.12it/s]
-</pre>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 249/249 [03:42&lt;00:00,  1.12it/s]
+</pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_arctic</span><span class="p">]</span> <span class="c1"># get items for all pages</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cr_arctic</span><span class="p">]</span> <span class="c1"># get items for all pages</span>
 <span class="n">arctic_items</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">arctic_items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span><span class="p">]</span> <span class="c1"># restructure list</span>
 </pre></div>
 </div>
@@ -21188,14 +21210,14 @@ Name: publisher, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">arctic_items</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">arctic_items</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;arctic_methane_5000.csv&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;arctic_methane_5000.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -21203,7 +21225,7 @@ Name: publisher, dtype: object
 <p>Below, we’ll load in our query data and extract the year from the <code class="docutils literal notranslate"><span class="pre">created</span></code> column. Since we read in our data from a csv, our <code class="docutils literal notranslate"><span class="pre">created</span></code> column got converted to strings instead of dictionaries. We use the function <code class="docutils literal notranslate"><span class="pre">ast.literal_eval()</span></code> in order to convert the string back to a dictionary, and then access the year by indexing into <code class="docutils literal notranslate"><span class="pre">date-parts</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;arctic_methane_5000.csv&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;arctic_methane_5000.csv&#39;</span><span class="p">)</span>
 <span class="n">permafrost_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;permafrost_melt_5000.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -21211,7 +21233,7 @@ Name: publisher, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">k</span><span class="p">)[</span><span class="s1">&#39;date-parts&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">arctic_df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]]</span> <span class="c1"># extract year</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">k</span><span class="p">)[</span><span class="s1">&#39;date-parts&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">arctic_df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]]</span> <span class="c1"># extract year</span>
 <span class="n">permafrost_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">k</span><span class="p">)[</span><span class="s1">&#39;date-parts&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">permafrost_df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]]</span> <span class="c1"># extract year</span>
 </pre></div>
 </div>
@@ -21220,7 +21242,7 @@ Name: publisher, dtype: object
 <p>In the cell below, we create a plot comparing the number of articles published for glacier melt and for permafrost melt per year. For <code class="docutils literal notranslate"><span class="pre">year_counts_glacier</span></code> and <code class="docutils literal notranslate"><span class="pre">year_counts_permafrost</span></code>, we use the python package <code class="docutils literal notranslate"><span class="pre">Counter</span></code> to return the counts of articles for each year. We sort by year so that our plot follows sequentially.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">year_counts_arctic</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">((</span><span class="n">Counter</span><span class="p">(</span><span class="n">arctic_years</span><span class="p">))</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span> <span class="c1"># create dictionary of glacier year counts</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year_counts_arctic</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">((</span><span class="n">Counter</span><span class="p">(</span><span class="n">arctic_years</span><span class="p">))</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span> <span class="c1"># create dictionary of glacier year counts</span>
 <span class="n">year_counts_permafrost</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">((</span><span class="n">Counter</span><span class="p">(</span><span class="n">permafrost_years</span><span class="p">))</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span> <span class="c1"># create dictionary of permafrost year counts</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_arctic</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_arctic</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;arctic methane&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_permafrost</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_permafrost</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;permafrost melt&#39;</span><span class="p">)</span>
