@@ -21173,7 +21173,7 @@ Name: publisher, dtype: object
 <p>The following 8 cells show the code we used to generate the csv files.</p>
 <div class="cell tag_output-scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr_permafrost</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;permafrost melt&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr_permafrost</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;permafrost melt&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;score&quot;</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s2">&quot;desc&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -21207,7 +21207,7 @@ Name: publisher, dtype: object
 </div>
 <div class="cell tag_output-scroll docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr_arctic</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;arctic methane&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cr_arctic</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;arctic methane&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="n">progress_bar</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;score&quot;</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s2">&quot;desc&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -21239,6 +21239,64 @@ Name: publisher, dtype: object
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cr_query1 = cr.works(query=&quot;your first query&quot;, cursor = &quot;*&quot;, cursor_max = 100, progress_bar = True, sort=&quot;score&quot;, order=&quot;desc&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query1_items = [k[&#39;message&#39;][&#39;items&#39;] for k in cr_query1] # get items for all pages</span>
+<span class="c1">#query1_items = [item for sublist in query1_items for item in sublist] # restructure list</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query1_df = pd.DataFrame(query1_items)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query1_df.to_csv(&#39;query1.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cr_query2 = cr.works(query=&quot;your second query&quot;, cursor = &quot;*&quot;, cursor_max = 100, progress_bar = True, sort=&quot;score&quot;, order=&quot;desc&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query2_items = [k[&#39;message&#39;][&#39;items&#39;] for k in cr_query2] # get items for all pages</span>
+<span class="c1">#query2_items = [item for sublist in query2_items for item in sublist] # restructure list</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query2_df = pd.DataFrame(query2_items)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query2_df.to_csv(&#39;query2.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
 <p>Below, we’ll load in our query data and extract the year from the <code class="docutils literal notranslate"><span class="pre">created</span></code> column. Since we read in our data from a csv, our <code class="docutils literal notranslate"><span class="pre">created</span></code> column got converted to strings instead of dictionaries. We use the function <code class="docutils literal notranslate"><span class="pre">ast.literal_eval()</span></code> in order to convert the string back to a dictionary, and then access the year by indexing into <code class="docutils literal notranslate"><span class="pre">date-parts</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21250,8 +21308,24 @@ Name: publisher, dtype: object
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query1_df = pd.read_csv(&#39;query1.csv&#39;)</span>
+<span class="c1">#query2_df = pd.read_csv(&#39;query2.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arctic_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">k</span><span class="p">)[</span><span class="s1">&#39;date-parts&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">arctic_df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]]</span> <span class="c1"># extract year</span>
 <span class="n">permafrost_years</span> <span class="o">=</span> <span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">k</span><span class="p">)[</span><span class="s1">&#39;date-parts&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">permafrost_df</span><span class="p">[</span><span class="s1">&#39;created&#39;</span><span class="p">]]</span> <span class="c1"># extract year</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#query1_years = [ast.literal_eval(k)[&#39;date-parts&#39;][0][0] for k in query1_df[&#39;created&#39;]] # extract year</span>
+<span class="c1">#query2_years = [ast.literal_eval(k)[&#39;date-parts&#39;][0][0] for k in query2_df[&#39;created&#39;]] # extract year</span>
 </pre></div>
 </div>
 </div>
@@ -21272,11 +21346,26 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/crossref_library_module_98_0.png" src="../_images/crossref_library_module_98_0.png" />
+<img alt="../_images/crossref_library_module_108_0.png" src="../_images/crossref_library_module_108_0.png" />
 </div>
 </div>
 <p>Our search results show a spike in articles related to methane in the arctic in 2008 and 2011, and a later set of spikes for articles about permafrost melt between 2016-2019. We would have to dig in a bit more to understand the implications of these peaks, but they do give you a place to start when exploring trending topics.</p>
 <p>If you are interested, you could repeat the process of getting queries and edit the above code to compare two search terms that you are interested about.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year_counts_query1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">((</span><span class="n">Counter</span><span class="p">(</span><span class="n">query1_years</span><span class="p">))</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span> <span class="c1"># create dictionary of glacier year counts</span>
+<span class="n">year_counts_query2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">((</span><span class="n">Counter</span><span class="p">(</span><span class="n">query2_years</span><span class="p">))</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span> <span class="c1"># create dictionary of permafrost year counts</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_query1</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_query1</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;query1&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_query2</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span><span class="nb">list</span><span class="p">(</span><span class="n">year_counts_query2</span><span class="o">.</span><span class="n">values</span><span class="p">()),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;query2&#39;</span><span class="p">)</span>
+<span class="c1">#plt.xticks(np.arange(2002, 2019))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Number of articles published by year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Count&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="bibliography-a-id-4-a">
