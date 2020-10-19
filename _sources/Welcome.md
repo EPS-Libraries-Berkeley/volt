@@ -14,6 +14,7 @@ The sections of this guide are designed to help you manage various aspects of th
 ```{image} ./Introduction/images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
 **Open Science Librarian**  
