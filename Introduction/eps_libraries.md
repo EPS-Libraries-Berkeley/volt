@@ -11,6 +11,7 @@ These EPS Library locations are CURRENTLY CLOSED due to the COVID-19 shelter in 
 ```{image} ./images/Hildebrand.png
 :alt: Chemistry & Chemical Engineering Library Location
 :width: 400px
+:align: left
 ```   
 Building Location: 100 Hildebrand Hall  
 Phone: (510) 642-3753  
@@ -32,6 +33,7 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" 
 ```{image} ./images/McCone.png
 :alt: Earth Sciences & Map Library Location
 :width: 400px
+:align: left
 ```
 Building Location: 50 McCone Hall  
 Phone: (510) 642-2997  
@@ -59,6 +61,7 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849"
 ```{image} ./images/Bechtel.png
 :alt: Engineering Library Location
 :width: 400px
+:align: left
 ``` 
 Building Location: 110 Bechtel Engineering Center  
 Phone: (510) 642-3366  
@@ -91,6 +94,7 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" 
 ```{image} ./images/Evans.png
 :alt: Mathematics Statistics Library Location
 :width: 400px
+:align: left
 ```  
 Building Location: 100 Evans Hall  
 Phone: (510) 642-3381  
@@ -110,6 +114,7 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" t
 ```{image} ./images/LeConte.png
 :alt: Physics-Astronomy Library Location
 :width: 400px
+:align: left
 ```   
 Building Location: 351 LeConte Hall  
 Phone: (510) 642-3122  
