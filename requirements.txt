@@ -8,4 +8,4 @@ arxiv
 requests
 datetime
 habanero
-jupyter-book
+jupyter-book >= 0.7.0
