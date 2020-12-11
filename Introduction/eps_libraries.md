@@ -24,6 +24,7 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" 
 ```{image} ./images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 
 ## <a href="https://www.lib.berkeley.edu/libraries/earth-sciences-library" target="_blank">Earth Sciences & Map Library</a>
@@ -45,10 +46,12 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849"
 ```{image} ./images/SusanHeadshot.png
 :alt: Susan's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 ```{image} ./images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 
 ## <a href="https://www.lib.berkeley.edu/libraries/engineering-library" target="_blank">Engineering Library</a>
@@ -70,14 +73,17 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" 
 ```{image} ./images/Lisa2Headshot.png
 :alt: Lisa's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 ```{image} ./images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 ```{image} ./images/AnnaHeadshot.png
 :alt: Anna's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 
 ## <a href="https://www.lib.berkeley.edu/libraries/math-library" target="_blank">Mathematics Statistics Library</a>
@@ -96,6 +102,7 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" t
 ```{image} ./images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 
 ## <a href="https://www.lib.berkeley.edu/libraries/physics-library" target="_blank">Physics-Astronomy Library</a>
@@ -113,9 +120,11 @@ Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000"
 ```{image} ./images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
 :width: 100px
+:align: left
 ```  
 ```{image} ./images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
 :width: 100px
+:align: left
 ```
 
