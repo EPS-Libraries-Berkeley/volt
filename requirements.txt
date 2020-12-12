@@ -9,4 +9,4 @@ requests
 datetime
 habanero
 jupyter-book >= 0.8.0
-nbformat
+Markupsafe = 1.1.1
