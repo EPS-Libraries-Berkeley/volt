@@ -8,5 +8,4 @@ arxiv
 requests
 datetime
 habanero
-jupyter-book >= 0.8.0
-Markupsafe >= 1.1.1
+jupyter-book
