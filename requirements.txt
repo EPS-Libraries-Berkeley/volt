@@ -9,3 +9,4 @@ requests
 datetime
 habanero
 jupyter-book >= 0.8.0
+nbformat >= 5.0
