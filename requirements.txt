@@ -9,3 +9,4 @@ requests
 datetime
 habanero
 jupyter-book
+setuptools<46
