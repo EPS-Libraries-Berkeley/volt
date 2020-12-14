@@ -31,9 +31,6 @@ sphinx:
 latex:
   latex_documents:
     targetname: book.tex
- 
- parse:
-  myst_extended_syntax: false
 
 launch_buttons:
   notebook_interface        : classic
