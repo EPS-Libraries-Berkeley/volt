@@ -9,5 +9,3 @@ requests
 datetime
 habanero
 jupyter-book
-setuptools<46
-markupsafe==1.1.1
