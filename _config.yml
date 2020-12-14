@@ -33,7 +33,7 @@ latex:
     targetname: book.tex
  
  parse:
-  myst_extended_syntax: true
+  myst_extended_syntax: false
 
 launch_buttons:
   notebook_interface        : classic
