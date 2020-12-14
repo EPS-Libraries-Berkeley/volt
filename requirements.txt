@@ -9,3 +9,4 @@ requests
 datetime
 habanero
 jupyter-book
+sphinxcontrib-bibtex<2.0.0
