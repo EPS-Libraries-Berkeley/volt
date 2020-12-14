@@ -10,4 +10,4 @@ datetime
 habanero
 jupyter-book
 setuptools<46
-wheel
+markupsafe==1.1.1
