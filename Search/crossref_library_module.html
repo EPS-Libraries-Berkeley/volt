@@ -473,7 +473,7 @@
 <h2>Installing Packages<a class="headerlink" href="#installing-packages" title="Permalink to this headline">¶</a></h2>
 <p>First we will install packages that will be useful to us as we explore the Crossref API. When importing a package into Jupyter Notebook, we use the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">...</span></code> to download a package into Jupyter Notebook.</p>
 <p>We then use the command <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">(package</span> <span class="pre">name)</span></code> to use our new package in our code.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># just run this cell</span>
 
@@ -492,12 +492,14 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: habanero in /opt/anaconda3/lib/python3.7/site-packages (0.7.4)
-Requirement already satisfied: tqdm in /opt/anaconda3/lib/python3.7/site-packages (from habanero) (4.42.1)
 Requirement already satisfied: requests&gt;=2.7.0 in /opt/anaconda3/lib/python3.7/site-packages (from habanero) (2.22.0)
+Requirement already satisfied: tqdm in /opt/anaconda3/lib/python3.7/site-packages (from habanero) (4.42.1)
+Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib/python3.7/site-packages (from requests&gt;=2.7.0-&gt;habanero) (3.0.4)
 Requirement already satisfied: idna&lt;2.9,&gt;=2.5 in /opt/anaconda3/lib/python3.7/site-packages (from requests&gt;=2.7.0-&gt;habanero) (2.8)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/anaconda3/lib/python3.7/site-packages (from requests&gt;=2.7.0-&gt;habanero) (2019.11.28)
 Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in /opt/anaconda3/lib/python3.7/site-packages (from requests&gt;=2.7.0-&gt;habanero) (1.25.8)
-Requirement already satisfied: chardet&lt;3.1.0,&gt;=3.0.2 in /opt/anaconda3/lib/python3.7/site-packages (from requests&gt;=2.7.0-&gt;habanero) (3.0.4)
+<span class=" -Color -Color-Yellow">WARNING: You are using pip version 20.3.1; however, version 21.1.2 is available.</span>
+<span class=" -Color -Color-Yellow">You should consider upgrading via the &#39;/opt/anaconda3/bin/python -m pip install --upgrade pip&#39; command.</span>
 </pre></div>
 </div>
 </div>
