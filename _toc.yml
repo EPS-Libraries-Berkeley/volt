@@ -1,11 +1,11 @@
-- file: Welcome.md
-
-- part: Introduction
+format: jb-book
+root: Welcome 
+parts:
+- caption: Introduction
   chapters:
   - file: Introduction/eps_libraries
   - file: Introduction/research_workflows
-
-- part: Searching
+- caption: Searching
   chapters:
   - file: Search/searching_for_resources
   - file: Search/exploring_article_databases
@@ -13,35 +13,29 @@
     sections:
     - file: Search/arxiv_api
     - file: Search/crossref_library_module
-  
-- part: Organizing
+- caption: Organizing
   chapters:
   - file: Organizing/Reference_Management_and_Citations
   - file: Organizing/Data_Management
-
-- part: Writing
+- caption: Writing
   chapters:
   - file: LaTeX/Intro_to_LaTeX
-    expand_sections: true
     sections:
     - file: LaTeX/Basics
     - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Equations_and_Formulas
     - file: LaTeX/Bibliographies
-
-- part: Archiving and Sharing
+- caption: Archiving and Sharing
   chapters:
   - file: Archiving_and_Sharing/What_is_a_repository
   - file: Archiving_and_Sharing/Resources
     sections:
     - file: Archiving_and_Sharing/Data
     - file: Archiving_and_Sharing/escholarship
-
-- part: Special Topics
+- caption: Special Topics
   chapters:  
   - file: Special_Topics/digital-mapping.md
-
-- part: About
+- caption: About
   chapters:
   - file: README.md
 
