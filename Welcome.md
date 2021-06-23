@@ -22,7 +22,6 @@ Subject Areas: Earth & Planetary Science, Geology and Geophysics
 ```{image} ./Introduction/images/AnnaHeadshot.png
 :alt: Anna's Bitmoji Headshot
 :width: 100px
-:align: left
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
 **Science Data & Engineering Librarian**  
@@ -31,7 +30,6 @@ Subject Areas: Bioengineering, Electrical Engineering, Materials Science & Engin
 ```{image} ./Introduction/images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
 :width: 100px
-:align: left
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a>  
 **Head, Engineering & Physical Sciences Division**  
@@ -40,7 +38,6 @@ Subject Areas: Computer Science, Logic & the Methodology of Science, Mathematics
 ```{image} ./Introduction/images/SusanHeadshot.png
 :alt: Susan's Bitmoji Headshot
 :width: 100px
-:align: left
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a>  
 **GIS & Map Librarian**  
@@ -49,7 +46,6 @@ Subject Areas: Geography, GIS & Maps
 ```{image} ./Introduction/images/Lisa2Headshot.png
 :alt: Lisa's Bitmoji Headshot
 :width: 100px
-:align: left
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a>  
 **Engineering Librarian**  
@@ -58,7 +54,6 @@ Subject Areas: Applied Science and Technology, Civil and Environmental Engineeri
 ```{image} ./Introduction/images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
 :width: 100px
-:align: left
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
 **Chemical & Physical Sciences Librarian**  

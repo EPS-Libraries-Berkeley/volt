@@ -35,7 +35,7 @@
   - file: Archiving_and_Sharing/Resources
     sections:
     - file: Archiving_and_Sharing/Data
-    - file: Archiving_and_Sharing/eScholarship
+    - file: Archiving_and_Sharing/escholarship
 
 - part: Special Topics
   chapters:  

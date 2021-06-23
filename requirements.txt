@@ -4,8 +4,9 @@ numpy
 matplotlib
 nbinteract
 scipy
-arxiv
+arxiv>=1.1.0
 requests
 datetime
 habanero
 jupyter-book
+sphinxcontrib-bibtex<2.0.0
