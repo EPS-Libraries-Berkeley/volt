@@ -26,7 +26,7 @@ parts:
     - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Equations_and_Formulas
     - file: LaTeX/Bibliographies
-- caption Archiving and Sharing
+- caption: Archiving and Sharing
   chapters:
   - file: Archiving_and_Sharing/What_is_a_repository
   - file: Archiving_and_Sharing/Resources
