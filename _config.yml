@@ -38,5 +38,5 @@ launch_buttons:
 
 repository:
   url                       : https://github.com/EPS-Libraries-Berkeley/volt
-  branch                    : master
+  branch                    : main
 
