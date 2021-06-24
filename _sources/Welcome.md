@@ -51,7 +51,6 @@ Subject Areas: Applied Science and Technology, Civil and Environmental Engineeri
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
 **Chemical & Physical Sciences Librarian**  
 Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engineering, Physics
-
 ### Contributors
 ```{image} ./Introduction/images/AnnaHeadshot.png
 :alt: Anna's Bitmoji Headshot
@@ -60,8 +59,8 @@ Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engi
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
 **Data Services Librarian**    
 
-<a>Erica Newcome</a>
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a>
 **Technical Processing & Collection Projects Assistant**
 
-<a>Bonita Dyess</a>
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>
 **Circulation/Reserves Supervisor**
