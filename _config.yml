@@ -8,6 +8,10 @@ execute:
   exclude_patterns:
     - 'crossref_library_module.ipynb'
 
+# Bibliography settings
+bibtex_bibfiles:
+  - references.bib
+
 html:
   home_page_in_navbar: false
   baseurl: https://eps-libraries-berkeley.github.io/volt
@@ -26,7 +30,6 @@ html:
 sphinx:
   config:
     html_show_copyright: false
-  extra_extensions: "sphinxcontrib.bibtex"
 
 latex:
   latex_documents:
