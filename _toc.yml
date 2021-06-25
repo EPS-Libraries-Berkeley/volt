@@ -9,14 +9,22 @@ parts:
   chapters:
   - file: Search/searching_for_resources
   - file: Search/exploring_article_databases
+  - file: Search/dissertations
   - file: Search/apis
     sections:
     - file: Search/arxiv_api
     - file: Search/crossref_library_module
+- caption: Data
+  chapters:
+  - file: Data/search
+  - file: Data/Data_Management
+  - file: Data/What_is_a_repository
+  - file: Data/Resources
+    sections:
+    - file: Data/archiving_data
 - caption: Organizing
   chapters:
   - file: Organizing/Reference_Management_and_Citations
-  - file: Organizing/Data_Management
 - caption: Writing
   chapters:
   - file: LaTeX/Intro_to_LaTeX
@@ -25,13 +33,15 @@ parts:
     - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Equations_and_Formulas
     - file: LaTeX/Bibliographies
-- caption: Archiving and Sharing
+- caption: Publishing
   chapters:
-  - file: Archiving_and_Sharing/What_is_a_repository
-  - file: Archiving_and_Sharing/Resources
-    sections:
-    - file: Archiving_and_Sharing/Data
-    - file: Archiving_and_Sharing/escholarship
+  - file: Publishing/preprints
+  - file: Publishing/escholarship
+  - file: Publishing/oa
+- caption: Reproducibility
+  chapters:
+  - file: Reproducibility/dryad
+  - file: Reproducibility/zenodo
 - caption: Special Topics
   chapters:  
   - file: Special_Topics/digital-mapping.md
