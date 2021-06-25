@@ -40,8 +40,8 @@ parts:
   - file: Publishing/oa
 - caption: Reproducibility
   chapters:
-  - file: dryad
-  - file: zenodo
+  - file: Reproducibility/dryad
+  - file: Reproducibility/zenodo
 - caption: Special Topics
   chapters:  
   - file: Special_Topics/digital-mapping.md
