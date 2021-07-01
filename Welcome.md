@@ -4,21 +4,12 @@ Welcome to the Engineering & Physical Sciences Libraries' virtual Online Library
 
 The sections of this guide are designed to help you manage various aspects of the research process. If you have questions about this guide or the resources described, you are welcome to <a href="https://www.lib.berkeley.edu/help/ask-science-reference-question" target="_blank">ask a Science Librarian</a>. Additional resources can also be found on the Library's guide to <a href="https://www.lib.berkeley.edu/research-support" target="_blank">Research Support</a> and on the Library's list of <a href="https://www.lib.berkeley.edu/research-support/guides-and-tutorials" target="_blank">Guides and Tutorials</a>.
 
-## Meet your virtual team!
-
-```{image} ./Introduction/images/EPSLibrarians.png
-:alt: EPS Librarians
-:width: 600px
-```  
-<br></br>
-### Contact Us
-
-````{sidebar} Question?
+````{margin} Question?
 ```{admonition} Fill out the form below.
 <iframe 
 	src="https://ucberkeley.libanswers.com/widget_standalone.php?la_widget_id=14976" 
-	width="90%" 
-	height="600px" 
+	width="100%" 
+	height="700px" 
 	frameborder="0" 
 	marginheight="0" 
 	marginwidth="0">
@@ -26,6 +17,16 @@ The sections of this guide are designed to help you manage various aspects of th
 </iframe>
 ```
 ````
+
+## Meet your virtual team!
+
+```{image} ./Introduction/images/EPSLibrarians.png
+:alt: EPS Librarians
+:width: 600px
+```  
+<br></br>
+
+### Contact Us
 
 ```{image} ./Introduction/images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
