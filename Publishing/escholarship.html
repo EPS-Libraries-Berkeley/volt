@@ -387,6 +387,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ten-most-recent-postprints-in-escholarship">
+   Ten Most Recent Postprints in eScholarship
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -397,6 +410,112 @@
                 
   <div class="section" id="escholarship-at-uc-berkeley">
 <h1>eScholarship at UC Berkeley<a class="headerlink" href="#escholarship-at-uc-berkeley" title="Permalink to this headline">¶</a></h1>
+<p><img alt="escholarship_logo" src="../_images/escholarship_logo.png" /></p>
+<p><strong>eScholarship Repository</strong> offers preservation and dissemination services for a wide range of scholarship including working papers, electronic theses and dissertations (ETDs), student capstone projects, and paper/seminar series. eScholarship Repository is also the primary destination for researchers depositing their previously published journal articles in accordance with the Academic Senate’s UC Open Access Policy.</p>
+<p><a class="reference external" href="https://escholarship.org/uc/ucb/about">https://escholarship.org/uc/ucb/about</a></p>
+<p>To deposit your work as a UC Berkeley affiliate, click on the “Deposit” button and follow the instructions according to your affiliation.</p>
+<p><img alt="Deposit_by_affiliation" src="../_images/deposit.png" /></p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="section" id="ten-most-recent-postprints-in-escholarship">
+<h2>Ten Most Recent Postprints in eScholarship<a class="headerlink" href="#ten-most-recent-postprints-in-escholarship" title="Permalink to this headline">¶</a></h2>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;guid&#39;</span><span class="p">:</span><span class="s1">&#39;Link&#39;</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Capturing the Complex Histories of German Worl...</td>
+      <td>Wed, 30 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/48q30649</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>A Co(II)-based Molecular Magnet with a 6 T Coe...</td>
+      <td>Mon, 28 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/7tt0n82b</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Background-free dual-mode optical and &lt;sup&gt;13&lt;...</td>
+      <td>Mon, 28 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/2q38g0g5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Actinide tetra-N-heterocyclic carbene 'sandwic...</td>
+      <td>Thu, 24 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/2j8503k9</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Moat: Verifying confidentiality of enclave pro...</td>
+      <td>Thu, 24 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/0qg1g2nm</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Observing and Modeling the Sequential Pairwise...</td>
+      <td>Thu, 24 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/0mt7m53c</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>At the intersection of immigration and welfare...</td>
+      <td>Wed, 23 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/7dp0m5v3</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Does State Unemployment Insurance Modernizatio...</td>
+      <td>Wed, 23 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/6fh4231d</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Sterile neutrino dark matter and leptogenesis ...</td>
+      <td>Tue, 22 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/9h95x481</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Predictions for axion couplings from ALP cogen...</td>
+      <td>Tue, 22 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/436453p7</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
