@@ -5,6 +5,7 @@ parts:
   chapters:
   - file: Introduction/eps_libraries
   - file: Introduction/research_workflows
+  - file: Introduction/question
 - caption: Searching
   chapters:
   - file: Search/searching_for_resources
