@@ -71,17 +71,13 @@ Reservable Group Study Rooms
 Diversity & Inclusion Book Collection  
 Technical Reports Collection  
 Engineering Book and Journal Collections  
-Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
+Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a>   
 ```{image} ./images/Lisa2Headshot.png
 :alt: Lisa's Bitmoji Headshot
 :width: 100px
 ```
 ```{image} ./images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
-:width: 100px
-```
-```{image} ./images/AnnaHeadshot.png
-:alt: Anna's Bitmoji Headshot
 :width: 100px
 ```
 
@@ -119,13 +115,9 @@ Phone: (510) 642-3122
 
 **Features**  
 Physics and Astronomy Book and Journal Collections  
-Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a> | <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
+Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a> 
 ```{image} ./images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
 :width: 100px
 ```  
-```{image} ./images/SamHeadshot.png
-:alt: Sam's Bitmoji Headshot
-:width: 100px
-```
 
