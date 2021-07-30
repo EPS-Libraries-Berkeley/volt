@@ -27,6 +27,7 @@ The sections of this guide are designed to help you manage various aspects of th
 <br></br>
 
 ### Contact Us
+### EPS Librarians
 ```{image} ./Introduction/images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
 :width: 100px
