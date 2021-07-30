@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the Engineering & Physical Sciences Libraries' virtual Online Library Tutorials (vOLT). Whether you're searching for articles, streamlining your research workflows, or organizing data, citations and writing, we have expertise and resources to help you.
+Welcome to the Engineering & Physical Sciences Libraries' virtual Online Library Tutorials (vOLT)! Whether you're searching for articles, streamlining your research workflows, or organizing data, citations and writing, we have expertise and resources to help you.
 
 The sections of this guide are designed to help you manage various aspects of the research process. If you have questions about this guide or the resources described, you are welcome to <a href="https://www.lib.berkeley.edu/help/ask-science-reference-question" target="_blank">ask a Science Librarian</a>. Additional resources can also be found on the Library's guide to <a href="https://www.lib.berkeley.edu/research-support" target="_blank">Research Support</a> and on the Library's list of <a href="https://www.lib.berkeley.edu/research-support/guides-and-tutorials" target="_blank">Guides and Tutorials</a>.
 
@@ -88,3 +88,4 @@ Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engi
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>
 **Circulation/Reserves Supervisor**
+
