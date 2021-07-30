@@ -1,3 +1,4 @@
+`````python
 # Welcome
 
 Welcome to the Engineering & Physical Sciences Libraries' virtual Online Library Tutorials (vOLT). Whether you're searching for articles, streamlining your research workflows, or organizing data, citations and writing, we have expertise and resources to help you.
@@ -73,10 +74,20 @@ Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engi
 :width: 100px
 ```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
-**Data Services Librarian**    
+**Data Services Librarian**  
 
+```{image} ./Introduction/images/EricaHeadshot.png
+:alt: Erica's Bitmoji Headshot
+:width: 100px
+```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a>
 **Technical Processing & Collection Projects Assistant**
 
+```{image} ./Introduction/images/BonitaHeadshot.png
+:alt: Bonita's Bitmoji Headshot
+:width: 100px
+```
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>
 **Circulation/Reserves Supervisor**
+
+`````
