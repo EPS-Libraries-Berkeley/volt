@@ -4,7 +4,7 @@
 
 The Engineering & Physical Sciences Division of the UC Berkeley Library includes five locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>. Our libraries all include study space, printing and scanning, public access computers, and course reserves for classes in their subject areas.
 
-```{caution}
+```
 These EPS Library locations are CURRENTLY CLOSED due to the COVID-19 pandemic. We look forward to seeing you on August 25th!
 ```
 
