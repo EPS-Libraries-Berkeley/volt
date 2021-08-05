@@ -31,9 +31,10 @@ parts:
   - file: LaTeX/Intro_to_LaTeX
     sections:
     - file: LaTeX/Basics
-    - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Equations_and_Formulas
+    - file: LaTeX/Tables_and_Figures
     - file: LaTeX/Bibliographies
+    - file: LaTeX/FAQs
 - caption: Publishing
   chapters:
   - file: Publishing/preprints
