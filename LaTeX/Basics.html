@@ -54,7 +54,7 @@
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/Basics.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tables and Figures" href="Tables_and_Figures.html" />
+    <link rel="next" title="Equations and Formulas" href="Equations_and_Formulas.html" />
     <link rel="prev" title="Introduction to Latex" href="Intro_to_LaTeX.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -224,18 +224,23 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Tables_and_Figures.html">
-     Tables and Figures
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="Equations_and_Formulas.html">
      Equations and Formulas
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="Tables_and_Figures.html">
+     Tables and Figures
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="Bibliographies.html">
      Creating Bibliographies in LaTeX
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="FAQs.html">
+     FAQs
     </a>
    </li>
   </ul>
@@ -523,7 +528,7 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 <ul class="simple">
 <li><p><strong>Bold</strong>: <code class="docutils literal notranslate"><span class="pre">\textbf{example}</span></code></p></li>
 <li><p><em>Italics</em>: <code class="docutils literal notranslate"><span class="pre">\textit{example}</span></code></p></li>
-<li><p>Underline: <code class="docutils literal notranslate"><span class="pre">\underline{example}</span></code></p></li>
+<li><p><ins>Underline</ins>: <code class="docutils literal notranslate"><span class="pre">\underline{example}</span></code></p></li>
 </ul>
 <p>Font typefaces: Change in preamble. More information:
 <a class="reference external" href="https://v2.overleaf.com/learn/Font_typefaces">https://v2.overleaf.com/learn/Font_typefaces</a></p>
@@ -531,7 +536,7 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 <div class="section" id="make-title">
 <h2>Make Title<a class="headerlink" href="#make-title" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>The simplest option is to use the \maketitle command which draws from the following declarations within the preamble:<br />
+<li><p>The simplest option for making a title is to use the \maketitle command which draws from the following declarations within the preamble:<br />
 <code class="docutils literal notranslate"><span class="pre">\author</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">\date</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">\thanks</span></code><br />
@@ -579,10 +584,10 @@ Formatting is left to you, but commands like <code class="docutils literal notra
 Practice several basic LaTeX commands in a new project.</em></p>
 <ol class="simple">
 <li><p>Open a new project in <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a>.</p></li>
-<li><p>Create title page</p>
+<li><p>Create a title page</p>
 <ol class="simple">
 <li><p>Add <code class="docutils literal notranslate"><span class="pre">[title</span> <span class="pre">page]</span></code> to make preamble command <code class="docutils literal notranslate"><span class="pre">\documentclass[titlepage]{article}</span></code></p></li>
-<li><p>After <code class="docutils literal notranslate"><span class="pre">\title</span></code>, add “vOLT LaTeX Basics Assignment”</p></li>
+<li><p>After <code class="docutils literal notranslate"><span class="pre">\title</span></code>, add “VOLT LaTeX Basics Assignment”</p></li>
 <li><p>After <code class="docutils literal notranslate"><span class="pre">\author</span></code>, add your name</p></li>
 <li><p>Confirm that the date is correct or edit if needed</p></li>
 <li><p>Create <strong>Title Page</strong> using command <code class="docutils literal notranslate"><span class="pre">\maketitle</span></code> inserted after <code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></li>
@@ -610,7 +615,7 @@ Death Valley</p></li>
 <p><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\section*{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\times</span></code>, <code class="docutils literal notranslate"><span class="pre">$...$</span></code>, <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code>. Degree can be represented several ways such as <code class="docutils literal notranslate"><span class="pre">$^\circ$</span></code> or <code class="docutils literal notranslate"><span class="pre">\degree</span></code> (requires the <code class="docutils literal notranslate"><span class="pre">{gensymb}</span></code> package). Subscripts and superscripts are written using the symbols _ and ^.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Questions? Compare your LaTeX code to the <a href="https://www.overleaf.com/read/pqhrrfsggvwm">solutions</a> to troubleshoot.</p>
+<p>Questions? Compare your LaTeX code to the <a href="https://www.overleaf.com/read/djdcymcpxcxq">solutions</a> to troubleshoot.</p>
 </div>
 </div>
 </div>
@@ -641,7 +646,7 @@ Death Valley</p></li>
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="Intro_to_LaTeX.html" title="previous page">Introduction to Latex</a>
-    <a class='right-next' id="next-link" href="Tables_and_Figures.html" title="next page">Tables and Figures</a>
+    <a class='right-next' id="next-link" href="Equations_and_Formulas.html" title="next page">Equations and Formulas</a>
 
         </div>
         

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creating Bibliographies in LaTeX &#8212; vOLT virtual Online Library Tutorials</title>
+    <title>FAQs &#8212; vOLT virtual Online Library Tutorials</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,11 +49,11 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/Bibliographies.html" />
+    <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/FAQs.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="FAQs" href="FAQs.html" />
-    <link rel="prev" title="Tables and Figures" href="Tables_and_Figures.html" />
+    <link rel="next" title="Preprints" href="../Publishing/preprints.html" />
+    <link rel="prev" title="Creating Bibliographies in LaTeX" href="Bibliographies.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -231,13 +231,13 @@
      Tables and Figures
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Bibliographies.html">
      Creating Bibliographies in LaTeX
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="FAQs.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      FAQs
     </a>
    </li>
@@ -347,7 +347,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/LaTeX/Bibliographies.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/LaTeX/FAQs.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -385,7 +385,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/LaTeX/Bibliographies.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/LaTeX/FAQs.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -408,55 +408,14 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started-with-a-bib-file">
-   Getting started with a .bib file
+  <a class="reference internal nav-link" href="#troubleshooting">
+   Troubleshooting
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-does-a-citation-in-a-bib-file-look-like">
-   What does a citation in a .bib file look like?
+  <a class="reference internal nav-link" href="#common-errors">
+   Common Errors
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bibliography-packages">
-   Bibliography Packages
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#in-text-citations">
-   In-text citations
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#examples">
-     Examples
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercise-1">
-   <em>
-    Exercise 1
-   </em>
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-bib-file-and-add-references">
-     Create a .bib file and add references
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-a-bibliography">
-     Adding a bibliography
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#citation-commands">
-     Citation commands
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -469,88 +428,17 @@
         
               <div>
                 
-  <div class="section" id="creating-bibliographies-in-latex">
-<h1>Creating Bibliographies in LaTeX<a class="headerlink" href="#creating-bibliographies-in-latex" title="Permalink to this headline">¶</a></h1>
-<p><em>Objective: Learn the basic commands to create and edit in-text citations and bibliographies</em></p>
-<div class="section" id="getting-started-with-a-bib-file">
-<h2>Getting started with a .bib file<a class="headerlink" href="#getting-started-with-a-bib-file" title="Permalink to this headline">¶</a></h2>
-<p>In order to include in-text citations and a bibliography, the document needs to refer to a .bib file. There are three ways to include a .bib file in a project in Overleaf.</p>
-<ol class="simple">
-<li><p>Upload your own .bib file that you create or export from a citation manager.</p></li>
-<li><p>Link to a URL (.bib)</p></li>
-<li><p>Connect your Overleaf account with Mendeley or Zotero.</p></li>
-</ol>
-<p>If you are working in a traditional LaTeX editor, locate the .bib file in the directory.</p>
+  <div class="section" id="faqs">
+<h1>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>Need help troubleshooting? Share your Overleaf doc, and send us the link:</p>
+<p><img alt="Share Overleaf document" src="../_images/latex_share.jpg" /></p>
 </div>
-<div class="section" id="what-does-a-citation-in-a-bib-file-look-like">
-<h2>What does a citation in a .bib file look like?<a class="headerlink" href="#what-does-a-citation-in-a-bib-file-look-like" title="Permalink to this headline">¶</a></h2>
-<p><img alt="bibkey" src="../_images/bibkey.png" /></p>
-</div>
-<div class="section" id="bibliography-packages">
-<h2>Bibliography Packages<a class="headerlink" href="#bibliography-packages" title="Permalink to this headline">¶</a></h2>
-<p>LaTeX uses two common packages to generate in-text citations and bibliographies.</p>
-<ol class="simple">
-<li><p><strong>natbib</strong>: works best with author-year citations and numerical citations. This package works well for simple, short bibliographies, but is not supported and less commonly used.</p></li>
-<li><p><strong>biblatex</strong>: the most flexible package for generating citations and the package that will be referred to in this document.</p></li>
-</ol>
-<p>Packages required for the preamble:</p>
-<p><code class="docutils literal notranslate"><span class="pre">\usepackage[backend=biber,style=authoryear]{biblatex}</span></code></p>
-<p>The above syntax calls in the biblatex package and the backend (biber), which acts as the interface between the .bib file and the LaTeX document. “Authoryear” denotes the citation style. This can be changed accordingly.</p>
-<p><code class="docutils literal notranslate"><span class="pre">\addbibresource{example.bib}</span></code></p>
-<p>The above command calls in the .bib file, which has the citation information for in-text citations and the bibliography.</p>
-<p><code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code></p>
-<p>The above command inserts the bibliography, which will contain citations referenced in the text.</p>
-</div>
-<div class="section" id="in-text-citations">
-<h2>In-text citations<a class="headerlink" href="#in-text-citations" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">\cite{}</span></code> → bare citation command (according to style)</p>
-<p><code class="docutils literal notranslate"><span class="pre">\parencite{}</span></code> → parenthetical citation</p>
-<p><code class="docutils literal notranslate"><span class="pre">\citeauthor{}</span></code> → prints author names(s)</p>
-<p><code class="docutils literal notranslate"><span class="pre">\textcite{}</span></code> → prints authors or editors followed by a citation label enclosed in ()</p>
-<p><code class="docutils literal notranslate"><span class="pre">\nocite</span> <span class="pre">{*}</span></code> → prints publication in bibliography without citation</p>
-<p><code class="docutils literal notranslate"><span class="pre">\citeyear{}</span></code> → prints only the year field</p>
-<div class="section" id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">\cite{knyazeva_duplex_2013}</span></code> → Knyazeva and Pohl 2013</p>
-<p><code class="docutils literal notranslate"><span class="pre">\parencite{singh_erratum:_2013}</span></code> → (Singh et al. 2013)</p>
-<p><code class="docutils literal notranslate"><span class="pre">\citeauthor{campbell_how_2011}</span></code> → Campbell and Cabrera</p>
-<p><code class="docutils literal notranslate"><span class="pre">\textcite{elsabbagh_microstructure_2014}</span></code> → Elsabbagh, Hamouda, and Taha (2014)</p>
-</div>
-</div>
-<div class="section" id="exercise-1">
-<h2><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
-<p><strong>Objective</strong>: Learn to create, edit or upload a .bib file, use basic citation commands, and display a bibliography.</p>
-<div class="section" id="create-a-bib-file-and-add-references">
-<h3>Create a .bib file and add references<a class="headerlink" href="#create-a-bib-file-and-add-references" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li>Create a new file within your project (click on the paper icon in the upper left) and name it references.bib</li>
-<li>Search for these three articles and books in Google Scholar and locate their BibTeX formatted citations.</li>
-<ul>
-<li>10.1126/science.1214319</li>
-<li>Hydraulic power system analysis</li>
-<li>10.1103/PhysRevB.100.094418</li>
-</ul>
-<li>Paste each citation within your .bib file. (No preamble is needed).</li>
-</ul><p><img alt="bibex" src="../_images/scholar_bibtex.png" /></p>
-</div>
-<div class="section" id="adding-a-bibliography">
-<h3>Adding a bibliography<a class="headerlink" href="#adding-a-bibliography" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>To display bibliography in APA style, add package and style command to preamble:<br>
-\usepackage[backend=biber,style=authoryear]{biblatex}<br>
-\addbibresource{references.bib}<br></p></li>
-<li><p>And use these commands within document:<br>
-\printbibliography<br>
-\nocite{*}<br></p></li>
-</ol>
-</div>
-<div class="section" id="citation-commands">
-<h3>Citation commands<a class="headerlink" href="#citation-commands" title="Permalink to this headline">¶</a></h3>
-<p>Try using citation commands to recreate the sentence below:</p>
-<p>In the example provided, \cite{weber2012ohm} describes the experiment, but \citeauthor{akers2006hydraulic} contradicts these conclusions.</p>
-<p><em>Commands needed:</em> \cite{}, \citeauthor{}</p>
-<p>For additional examples and more information, please visit Overleaf’s page on <a class="reference external" href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">bibliography management in LaTeX</a></p>
-</div>
+<div class="section" id="common-errors">
+<h2>Common Errors<a class="headerlink" href="#common-errors" title="Permalink to this headline">¶</a></h2>
+<p>LaTeX errors can be tricky to unravel.
+Check out Overleaf’s list of common errors: <a class="reference external" href="https://www.overleaf.com/learn/latex/Errors">https://www.overleaf.com/learn/latex/Errors</a></p>
 </div>
 </div>
 
@@ -579,8 +467,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="Tables_and_Figures.html" title="previous page">Tables and Figures</a>
-    <a class='right-next' id="next-link" href="FAQs.html" title="next page">FAQs</a>
+    <a class='left-prev' id="prev-link" href="Bibliographies.html" title="previous page">Creating Bibliographies in LaTeX</a>
+    <a class='right-next' id="next-link" href="../Publishing/preprints.html" title="next page">Preprints</a>
 
         </div>
         
