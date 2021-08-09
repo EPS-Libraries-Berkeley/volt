@@ -65,7 +65,7 @@ As you go through these tutorials, we hope you gain a better sense of what tools
 
 ## Bibliography
 
-```{bibliography} references.bib
-:style: plain
+```{bibliography}
+:style: unsrt
 ```
 
