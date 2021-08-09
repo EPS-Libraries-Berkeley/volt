@@ -626,8 +626,8 @@
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1900</span><span class="o">/</span><span class="mf">3426556834.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">UnexpectedEmptyPageError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1922</span><span class="o">/</span><span class="mf">3426556834.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span> 
 <span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">quantum_dots</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="ne">---&gt; </span><span class="mi">13</span> <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">results_generator</span><span class="p">:</span>
@@ -642,13 +642,13 @@
 <span class="g g-Whitespace">    </span><span class="mi">564</span>                 <span class="c1"># NOTE: this is an ugly fix for a known bug. The totalresults</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.7.11/x64/lib/python3.7/site-packages/arxiv/arxiv.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page)</span>
-<span class="g g-Whitespace">    </span><span class="mi">623</span>                 <span class="n">to_sleep</span> <span class="o">=</span> <span class="p">(</span><span class="n">required</span> <span class="o">-</span> <span class="n">since_last_request</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">624</span>                 <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Sleeping for </span><span class="si">%f</span><span class="s2"> seconds&quot;</span><span class="p">,</span> <span class="n">to_sleep</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">625</span>                 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">to_sleep</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">626</span>         <span class="c1"># self.delay_seconds seconds have passed since last call. Fetch results.</span>
-<span class="g g-Whitespace">    </span><span class="mi">627</span>         <span class="n">err</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">643</span>         <span class="c1"># Feed was never returned in self.num_retries tries. Raise the last</span>
+<span class="g g-Whitespace">    </span><span class="mi">644</span>         <span class="c1"># exception encountered.</span>
+<span class="ne">--&gt; </span><span class="mi">645</span>         <span class="k">raise</span> <span class="n">err</span>
+<span class="g g-Whitespace">    </span><span class="mi">646</span> 
+<span class="g g-Whitespace">    </span><span class="mi">647</span> 
 
-<span class="ne">KeyboardInterrupt</span>: 
+<span class="ne">UnexpectedEmptyPageError</span>: Page of results was unexpectedly empty (http://export.arxiv.org/api/query?search_query=%22quantum+dots%22&amp;id_list=&amp;sortBy=relevance&amp;sortOrder=descending&amp;start=1060&amp;max_results=1000)
 </pre></div>
 </div>
 </div>
