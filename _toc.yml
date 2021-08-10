@@ -36,6 +36,7 @@ parts:
     - file: LaTeX/Bibliographies
     - file: LaTeX/FAQs
     - file: LaTeX/latex_workshop
+      numbered: true
 - caption: Publishing
   chapters:
   - file: Publishing/preprints
