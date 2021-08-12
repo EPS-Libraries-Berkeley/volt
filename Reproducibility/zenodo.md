@@ -1,6 +1,6 @@
 # Zenodo
 
-*This page is currently under development.*
+*This page is still under development.*
 
 To advance open science and reproducibility, it is important to share and archive your code in addition to your data. If you archive your code in a repository that provides a digital object identifier (DOI), it will also be easier to cite your code and get credit for it.
 
