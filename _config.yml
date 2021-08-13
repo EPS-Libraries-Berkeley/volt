@@ -8,9 +8,7 @@ execute:
   exclude_patterns:
     - 'crossref_library_module.ipynb'
 
-# Bibliography settings
-bibtex_bibfiles:
-  - references.bib
+
 
 html:
   home_page_in_navbar: false
@@ -29,8 +27,10 @@ html:
 
 sphinx:
   config:
-
-    html_show_copyright: false    
+    bibtex_reference_style: 'author_year' 
+    html_show_copyright: false 
+bibtex_bibfiles:
+  - /references.bib   
 
 latex:
   latex_documents:
