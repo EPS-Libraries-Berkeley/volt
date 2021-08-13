@@ -48,6 +48,9 @@ parts:
 - caption: Special Topics
   chapters:  
   - file: Special_Topics/digital-mapping.md
+- caption: References
+  chapters:
+  - file: Bibliography
 - caption: About
   chapters:
   - file: README.md

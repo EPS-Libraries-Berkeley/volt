@@ -39,13 +39,13 @@ align: center
 Honest Workflow
 ```
 
-Thomas Van Hoey, a graduate student in linguistics, took an honest look at his own workflow, which is probably a better representation of how most of us get through the day {cite}`van_hoey_2020`.
+Thomas Van Hoey, a graduate student in linguistics, took an honest look at his own workflow, which is probably a better representation of how most of us get through the day {cite}`vanhoey2020`.
 
 +++
 
 A workflow does not exist on its own, but is made of choices - which software, applications and products to use; how do they work together effectively; how open and reproducible are they; and what makes sense for a given task, subject domain or project. 
 
-The following image comes from Bosman and Kramer's 2016 survey {cite}`bosman_kramer_2016` of 20,000 researchers worldwide to give you a sense of how products sync to comprise a hypothetical workflow.
+The following image comes from Bosman and Kramer's 2016 survey {cite:t}`bosmankramer2016` of 20,000 researchers worldwide to give you a sense of how products sync to comprise a hypothetical workflow.
 
 +++
 
@@ -61,9 +61,6 @@ Hypothetical Workflows
 +++
 
 As you go through these tutorials, we hope you gain a better sense of what tools are available for you here at Berkeley and how you can connect them thoughtfully to your preferred workflows. 
-
-
-## Bibliography
 
 ```{bibliography}
 :style: unsrt
