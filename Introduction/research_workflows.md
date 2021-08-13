@@ -15,7 +15,7 @@ Basic Research Workflow
 
 However, real workflows are never this simple.
 
-Figure 2 shows an example of more complex, iterative model {cite}`bosman_kramer_2016`. You can see how multiple cycles nest within the larger cycle as each aspect of the workflow requires revisions, edits, clarifying experiments, etc.
+Figure 2 shows an example of more complex, iterative model {cite}`bosmankramer2016`. You can see how multiple cycles nest within the larger cycle as each aspect of the workflow requires revisions, edits, clarifying experiments, etc.
 
 
 ```{figure} ./images/multicycle_workflow.png
@@ -45,7 +45,7 @@ Thomas Van Hoey, a graduate student in linguistics, took an honest look at his o
 
 A workflow does not exist on its own, but is made of choices - which software, applications and products to use; how do they work together effectively; how open and reproducible are they; and what makes sense for a given task, subject domain or project. 
 
-The following image comes from Bosman and Kramer's 2016 survey {cite:t}`bosmankramer2016` of 20,000 researchers worldwide to give you a sense of how products sync to comprise a hypothetical workflow.
+The following image comes from Bosman and Kramer's 2016 survey {cite}`bosmankramer2016` of 20,000 researchers worldwide to give you a sense of how products sync to comprise a hypothetical workflow.
 
 +++
 
