@@ -79,12 +79,12 @@ Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engi
 :alt: Erica's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a>
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a>  
 **Technical Processing & Collection Projects Assistant**
 
 ```{image} ./Introduction/images/BonitaHeadshot.png
 :alt: Bonita's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>  
 **Circulation/Reserves Supervisor**
