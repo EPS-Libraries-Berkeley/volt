@@ -18,6 +18,8 @@ parts:
 - caption: Data
   chapters:
   - file: Data/search
+    sections:
+    - file: Data/data_case_study_1 
   - file: Data/Data_Management
   - file: Data/What_is_a_repository
   - file: Data/Resources
