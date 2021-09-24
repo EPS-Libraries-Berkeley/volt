@@ -5,6 +5,7 @@ logo: EPS-Logo.png
 
 
 execute:
+  timeout: 500
   exclude_patterns:
     - 'crossref_library_module.ipynb'
 
