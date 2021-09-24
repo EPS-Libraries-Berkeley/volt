@@ -4,7 +4,7 @@ numpy
 matplotlib
 nbinteract
 scipy
-arxiv>=1.1.0
+arxiv>=1.4.0
 requests
 datetime
 habanero
