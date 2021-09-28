@@ -20,6 +20,10 @@ parts:
   - file: Data/search
     sections:
     - file: Data/data_case_study_1 
+    - file: Data/data_case_study_2
+    - file: Data/data_case_study_3
+    - file: Data/data_case_study_4
+    - file: Data/data_case_study_5
   - file: Data/Data_Management
   - file: Data/What_is_a_repository
   - file: Data/Resources
