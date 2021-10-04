@@ -19,7 +19,8 @@ parts:
   chapters:
   - file: Data/search
     sections:
-    - file: Data/data_case_study_1 
+    - file: Data/data_case_study_example
+    - file: Data/data_case_study_1
     - file: Data/data_case_study_2
     - file: Data/data_case_study_3
     - file: Data/data_case_study_4
