@@ -76,7 +76,7 @@ Yes! The data has a [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/
 
 2. What does this mean? <br>
 You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) under the following terms: 
-Attribution (give appropriate credit, link to the license and indicate if changes were made)
-You may not use the material for commercial purposes
+Attribution (give appropriate credit, link to the license and indicate if changes were made)<br>
+You may not use the material for commercial purposes<br>
 If you remix, transform, or build upon the material, you must distribute your contributions under the same license. 
 ```

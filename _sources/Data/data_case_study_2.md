@@ -8,6 +8,13 @@ Take a look at the landing page for the dataset:<br>
 
 With the information shown above, and using the link provided, answer the following questions:
 
+## Background
+
+**Questions**
+
+1. Why was the data collected?
+2. What are the limitations of the data?
+
 ## Publisher / Host
 
 **Questions**
