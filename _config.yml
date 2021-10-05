@@ -28,7 +28,7 @@ html:
 
 sphinx:
   config:
-    bibtex_reference_style: 'author_year' 
+    bibtex_reference_style: author_year
     html_show_copyright: false 
 bibtex_bibfiles:
   - /references.bib   
