@@ -44,6 +44,3 @@ Regardless of the license, always include a citation. <br>
 
 For more information about archiving and publishing options, consult the section on [Archival Repositories](https://eps-libraries-berkeley.github.io/volt/Data/What_is_a_repository.html).
 
-```{bibliography}
-:filter: docname in docnames
-```
