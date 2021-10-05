@@ -17,7 +17,7 @@ parts:
     - file: Search/crossref_library_module
 - caption: Data
   chapters:
-  - file: Data/search
+  - file: Data/understanding_data
     sections:
     - file: Data/data_case_study_example
     - file: Data/data_case_study_1
