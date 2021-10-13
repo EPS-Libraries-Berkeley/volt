@@ -27,8 +27,17 @@ With the information shown above, and using the links provided, answer the follo
     - Favorable influences
     - Detrimental influences <br>
     
+    Based on each assessment, a neighborhood was assigned a grade. An “A” grade neighborhood, represented by the color green and inhabited by white people, signified a minimal risk for banks and mortgage lenders. Neighborhoods that received a “D” grade, represented by the color red and inhabited by BIPOC Americans, signified a high risk, enabling lenders to refuse loans for homes in redlined neighborhoods. The inhabitants of redlined neighborhoods, Black Americans, Asian Americans, and other people of color, were intentionally denied mortgages, which prevented them from acquiring and building wealth through property - a denial that had deleterious effects on many BIPOC Americans for generations to come. 
+    
 2. What are the limitations of the data? <br>       
-The data describes neighborhoods and zipcodes based on a predetermined set of characteristics to determine funding. These characteristics (except for the category of terrain) are racist and discriminatory. 
+    The data describes neighborhoods and zipcodes based on a predetermined set of characteristics to determine funding. These characteristics (except for the description of terrain) are racist and discriminatory. 
+    - Description of terrain
+    - Inhabitants (which inludes type, estimated annual family income, foreign-born; and Negro)
+    - Buildings
+    - History of sale values and rental values
+    - Trend of desirability next 10-15 years
+    - Clarifying remarks
+
 ```
 
 ## Publisher / Host
