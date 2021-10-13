@@ -28,7 +28,6 @@ Here, we invite you to consider the addition of three components, **Data Biograp
 5. What are its impacts? On whom?
 6. What are the known limitations?
 
-{cite}`d2017creative`
 
 ### Licensing
 
@@ -49,4 +48,7 @@ Regardless of the license, always include a citation. <br>
 ![Data Archiving](./images/data_analysis_5.png)
 
 For more information about archiving and publishing options, consult the section on [Archival Repositories](https://eps-libraries-berkeley.github.io/volt/Data/What_is_a_repository.html).
+
+{cite}`d2017creative` 
+Data Biography and Data Analysis Images based on: Catherine D’Ignazio. Creative data literacy: bridging the gap between the data-haves and data-have nots. Information Design Journal, 23(1):6–18, 2017.
 
