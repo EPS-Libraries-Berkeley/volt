@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>ArXiv API &#8212; vOLT virtual Online Library Tutorials</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -87,7 +88,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -109,7 +110,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -153,7 +154,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -229,7 +230,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -241,7 +242,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -290,7 +291,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -312,7 +313,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -329,7 +330,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -341,7 +342,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -353,7 +354,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -511,12 +512,12 @@
         
               <div>
                 
-  <div class="section" id="arxiv-api">
+  <section class="tex2jax_ignore mathjax_ignore" id="arxiv-api">
 <h1>ArXiv API<a class="headerlink" href="#arxiv-api" title="Permalink to this headline">¶</a></h1>
 <p>The ArXiV API allows programmatic access to the arXiv’s e-print content and metadata. “The goal of the interface is to facilitate new and creative use of the the vast body of material on the arXiv by providing a low barrier to entry for application developers.” <a class="reference external" href="https://arxiv.org/help/api">https://arxiv.org/help/api</a></p>
 <p>The API’s user manual (<a class="reference external" href="https://arxiv.org/help/api/user-manual">https://arxiv.org/help/api/user-manual</a>) provides helpful documentation for using the API and retrieving article metadata.</p>
 <p>Our examples below will introduce you to the basics of querying the ArXiV API.</p>
-<div class="section" id="install-packages">
+<section id="install-packages">
 <h2>Install Packages<a class="headerlink" href="#install-packages" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -535,8 +536,8 @@
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="query-the-api">
+</section>
+<section id="query-the-api">
 <h2>Query the API<a class="headerlink" href="#query-the-api" title="Permalink to this headline">¶</a></h2>
 <p>Perform a simple query for “graphene.” We’ll limit results to the titles of the 10 most recent papers.</p>
 <div class="cell docutils container">
@@ -553,16 +554,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Form-preserving Darboux transformations for $4\times 4$ Dirac equations
-Geometry effects in topologically confined bilayer graphene loops
-Frequency dependence of the light-induced Hall effect in dissipative graphene
-On the Spectra of Periodic Elastic Beam Lattices: Single-Layer Graph
-Modification of the Optical Properties of Molecular Chains upon Coupling to Adatoms
-Atomic frustration-based twistronics
-Observation of Unpinned Two-Dimensional Dirac States in Antimony Single Layers with Phosphorene Structure
-Enhancement of spin-orbit coupling and magnetic scattering in hydrogenated graphene
-Triaxially strained suspended graphene for large-area pseudo-magnetic fields
-Machine-learning based determination of the stacking order of bilayer graphene
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Spin relaxation in a single-electron graphene quantum dot
+Spin relaxation, Josephson effect and Yu-Shiba-Rusinov states in superconducting bilayer graphene
+Green-extraction of carbon thin films from natural mineral Shungite
+Density functional calculations of atomic structure, charging effect, and static dielectric constant of two-dimensional systems based on B-splines
+Flat-band plasmons in twisted bilayer transition metal dichalcogenides: twist angle, relaxation and band cutoff effects
+Acoustic-phonon-mediated superconductivity in Bernal bilayer graphene
+Active tuning of highly anisotropic phonon polaritons in van der Waals crystal slabs by gated graphene
+Dynamical Noncommutative Graphene
+Disentangling the Complex Electronic Structure of an Adsorbed Nanographene: Cycloarene C108
+Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
 </pre></div>
 </div>
 </div>
@@ -591,8 +592,8 @@ Machine-learning based determination of the stacking order of bilayer graphene
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="organize-and-analyze-your-results">
+</section>
+<section id="organize-and-analyze-your-results">
 <h2>Organize and analyze your results<a class="headerlink" href="#organize-and-analyze-your-results" title="Permalink to this headline">¶</a></h2>
 <p>Create a dataframe to better analyze your results. This example uses Python’s <a class="reference external" href="https://docs.python.org/3/library/functions.html#vars"><code class="docutils literal notranslate"><span class="pre">vars</span></code></a> built-in function to convert search results into Python dictionaries of paper metadata.</p>
 <div class="cell docutils container">
@@ -749,20 +750,20 @@ Machine-learning based determination of the stacking order of bilayer graphene
     </tr>
     <tr>
       <th>6</th>
-      <td>http://arxiv.org/abs/1003.2350v1</td>
-      <td>2010-03-11 15:52:09+00:00</td>
-      <td>2010-03-11 15:52:09+00:00</td>
-      <td>Linewidth broadening of a quantum dot coupled ...</td>
-      <td>[Arka Majumdar, Andrei Faraon, Erik Kim, Dirk ...</td>
-      <td>We study the coupling between a photonic cryst...</td>
-      <td>5 pages, 4 figures</td>
-      <td>None</td>
-      <td>10.1103/PhysRevB.82.045306</td>
-      <td>quant-ph</td>
-      <td>[quant-ph]</td>
-      <td>[http://dx.doi.org/10.1103/PhysRevB.82.045306,...</td>
-      <td>http://arxiv.org/pdf/1003.2350v1</td>
-      <td>{'id': 'http://arxiv.org/abs/1003.2350v1', 'gu...</td>
+      <td>http://arxiv.org/abs/1206.2674v1</td>
+      <td>2012-06-12 21:00:22+00:00</td>
+      <td>2012-06-12 21:00:22+00:00</td>
+      <td>Effective microscopic theory of quantum dot su...</td>
+      <td>[U. Aeberhard]</td>
+      <td>We introduce a quantum dot orbital tight-bindi...</td>
+      <td>9 pages, 6 figures; Special Issue: Numerical S...</td>
+      <td>Optical and Quantum Electronics 44, 133 (2012)</td>
+      <td>10.1007/s11082-011-9529-9</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall, cond-mat.mtrl-sci]</td>
+      <td>[http://dx.doi.org/10.1007/s11082-011-9529-9, ...</td>
+      <td>http://arxiv.org/pdf/1206.2674v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1206.2674v1', 'gu...</td>
     </tr>
     <tr>
       <th>7</th>
@@ -783,37 +784,37 @@ Machine-learning based determination of the stacking order of bilayer graphene
     </tr>
     <tr>
       <th>8</th>
-      <td>http://arxiv.org/abs/1508.05462v1</td>
-      <td>2015-08-22 03:13:34+00:00</td>
-      <td>2015-08-22 03:13:34+00:00</td>
-      <td>Scanning gate microscopy of ultra clean carbon...</td>
-      <td>[Jiamin Xue, Rohan Dhall, Stephen B. Cronin, B...</td>
-      <td>We perform scanning gate microscopy on individ...</td>
+      <td>http://arxiv.org/abs/1003.2350v1</td>
+      <td>2010-03-11 15:52:09+00:00</td>
+      <td>2010-03-11 15:52:09+00:00</td>
+      <td>Linewidth broadening of a quantum dot coupled ...</td>
+      <td>[Arka Majumdar, Andrei Faraon, Erik Kim, Dirk ...</td>
+      <td>We study the coupling between a photonic cryst...</td>
       <td>5 pages, 4 figures</td>
       <td>None</td>
-      <td>None</td>
-      <td>cond-mat.mes-hall</td>
-      <td>[cond-mat.mes-hall]</td>
-      <td>[http://arxiv.org/abs/1508.05462v1, http://arx...</td>
-      <td>http://arxiv.org/pdf/1508.05462v1</td>
-      <td>{'id': 'http://arxiv.org/abs/1508.05462v1', 'g...</td>
+      <td>10.1103/PhysRevB.82.045306</td>
+      <td>quant-ph</td>
+      <td>[quant-ph]</td>
+      <td>[http://dx.doi.org/10.1103/PhysRevB.82.045306,...</td>
+      <td>http://arxiv.org/pdf/1003.2350v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1003.2350v1', 'gu...</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>http://arxiv.org/abs/1206.2674v1</td>
-      <td>2012-06-12 21:00:22+00:00</td>
-      <td>2012-06-12 21:00:22+00:00</td>
-      <td>Effective microscopic theory of quantum dot su...</td>
-      <td>[U. Aeberhard]</td>
-      <td>We introduce a quantum dot orbital tight-bindi...</td>
-      <td>9 pages, 6 figures; Special Issue: Numerical S...</td>
-      <td>Optical and Quantum Electronics 44, 133 (2012)</td>
-      <td>10.1007/s11082-011-9529-9</td>
-      <td>cond-mat.mes-hall</td>
-      <td>[cond-mat.mes-hall, cond-mat.mtrl-sci]</td>
-      <td>[http://dx.doi.org/10.1007/s11082-011-9529-9, ...</td>
-      <td>http://arxiv.org/pdf/1206.2674v1</td>
-      <td>{'id': 'http://arxiv.org/abs/1206.2674v1', 'gu...</td>
+      <td>http://arxiv.org/abs/1201.1258v1</td>
+      <td>2012-01-05 18:56:21+00:00</td>
+      <td>2012-01-05 18:56:21+00:00</td>
+      <td>Photoluminescence from In0.5Ga0.5As/GaP quantu...</td>
+      <td>[Kelley Rivoire, Sonia Buckley, Yuncheng Song,...</td>
+      <td>We demonstrate room temperature visible wavele...</td>
+      <td>None</td>
+      <td>None</td>
+      <td>10.1103/PhysRevB.85.045319</td>
+      <td>quant-ph</td>
+      <td>[quant-ph, physics.optics]</td>
+      <td>[http://dx.doi.org/10.1103/PhysRevB.85.045319,...</td>
+      <td>http://arxiv.org/pdf/1201.1258v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1201.1258v1', 'gu...</td>
     </tr>
   </tbody>
 </table>
@@ -928,47 +929,47 @@ Machine-learning based determination of the stacking order of bilayer graphene
       <td>...</td>
     </tr>
     <tr>
-      <th>10792</th>
-      <td>Asymptotic entanglement sudden death in two at...</td>
-      <td>2021-05-12 14:29:44+00:00</td>
-      <td>Gehad Sadiek</td>
-      <td>http://arxiv.org/abs/2105.05694v1</td>
-    </tr>
-    <tr>
-      <th>10793</th>
+      <th>10813</th>
       <td>Engineering interfacial quantum states and ele...</td>
       <td>2021-07-21 15:19:10+00:00</td>
       <td>Ignacio Piquero-Zulaica</td>
       <td>http://arxiv.org/abs/2107.10141v1</td>
     </tr>
     <tr>
-      <th>10794</th>
+      <th>10814</th>
       <td>Implementation of the SMART protocol for globa...</td>
       <td>2021-08-02 12:46:49+00:00</td>
       <td>Ingvild Hansen</td>
       <td>http://arxiv.org/abs/2108.00836v3</td>
     </tr>
     <tr>
-      <th>10795</th>
+      <th>10815</th>
       <td>Indistinguishable single photons from spatiall...</td>
       <td>2021-08-03 12:00:47+00:00</td>
       <td>Jiefei Zhang</td>
       <td>http://arxiv.org/abs/2108.01428v2</td>
     </tr>
     <tr>
-      <th>10796</th>
+      <th>10816</th>
       <td>The spider-web array--a sparse spin qubit array</td>
       <td>2021-10-01 03:20:29+00:00</td>
       <td>Jelmer M. Boter</td>
       <td>http://arxiv.org/abs/2110.00189v1</td>
     </tr>
+    <tr>
+      <th>10817</th>
+      <td>Solution-processed two-dimensional materials f...</td>
+      <td>2021-10-18 08:22:42+00:00</td>
+      <td>Sebastiano Bellani</td>
+      <td>http://arxiv.org/abs/2110.09088v1</td>
+    </tr>
   </tbody>
 </table>
-<p>10797 rows × 4 columns</p>
+<p>10818 rows × 4 columns</p>
 </div></div></div>
 </div>
-</div>
-<div class="section" id="visualize-your-results">
+</section>
+<section id="visualize-your-results">
 <h2>Visualize your results<a class="headerlink" href="#visualize-your-results" title="Permalink to this headline">¶</a></h2>
 <p>Get a sense of the how your topic has trended over time. When did research on your topic take off? Create a bar chart of the number of articles published in each year.</p>
 <div class="cell docutils container">
@@ -998,29 +999,29 @@ Bing Dong                 27
 Y. Alhassid               20
 Constantine Yannouleas    18
 David M. -T. Kuo          16
-Akira Oguri               15
 Xuedong Hu                15
-Massimo Rontani           14
+Akira Oguri               15
+Kicheon Kang              14
 Rafael Sánchez            14
 Ulrich Hohenester         14
 B. Szafran                14
-Kicheon Kang              14
+Massimo Rontani           14
 P. W. Brouwer             13
 C. W. J. Beenakker        13
+O. Entin-Wohlman          12
+Piotr Trocha              12
 G. Giavaras               12
 Vidar Gudmundsson         12
-Piotr Trocha              12
-O. Entin-Wohlman          12
-Ramin M. Abolfath         11
-A. A. Aligia              11
 Arka Majumdar             11
+A. A. Aligia              11
+Ramin M. Abolfath         11
 Name: first_author, dtype: int64
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="identify-and-download-papers">
+</section>
+<section id="identify-and-download-papers">
 <h2>Identify and download papers<a class="headerlink" href="#identify-and-download-papers" title="Permalink to this headline">¶</a></h2>
 <p>Let’s download the oldest paper about quantum dots co-authored by Piotr Trocha:</p>
 <div class="cell docutils container">
@@ -1071,70 +1072,70 @@ Name: first_author, dtype: int64
       <td>http://arxiv.org/abs/0803.4154v1</td>
     </tr>
     <tr>
-      <th>3365</th>
+      <th>3366</th>
       <td>Negative tunnel magnetoresistance and differen...</td>
       <td>2009-11-02 11:45:03+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0911.0291v1</td>
     </tr>
     <tr>
-      <th>5365</th>
+      <th>5348</th>
       <td>Beating in electronic transport through quantu...</td>
       <td>2010-04-11 16:20:04+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1004.1819v2</td>
     </tr>
     <tr>
-      <th>2451</th>
+      <th>2680</th>
       <td>Orbital Kondo effect in double quantum dots</td>
       <td>2010-08-17 14:13:23+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1008.2902v2</td>
     </tr>
     <tr>
-      <th>2499</th>
+      <th>2489</th>
       <td>The influence of spin-flip scattering on the p...</td>
       <td>2011-05-08 20:12:41+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1105.1550v1</td>
     </tr>
     <tr>
-      <th>5502</th>
+      <th>5485</th>
       <td>Large enhancement of thermoelectric effects in...</td>
       <td>2011-08-11 14:49:51+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1108.2422v2</td>
     </tr>
     <tr>
-      <th>7701</th>
+      <th>7714</th>
       <td>The role of the indirect tunneling processes a...</td>
       <td>2011-09-12 20:51:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1109.2621v1</td>
     </tr>
     <tr>
-      <th>2607</th>
+      <th>2610</th>
       <td>Spin-polarized Andreev transport influenced by...</td>
       <td>2014-09-14 23:54:35+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1409.4122v1</td>
     </tr>
     <tr>
-      <th>7768</th>
+      <th>7851</th>
       <td>Spin-resolved Andreev transport through double...</td>
       <td>2015-08-24 19:02:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1508.05915v1</td>
     </tr>
     <tr>
-      <th>6214</th>
+      <th>5944</th>
       <td>Spin-dependent thermoelectric phenomena in a q...</td>
       <td>2017-05-02 14:55:38+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1705.01007v1</td>
     </tr>
     <tr>
-      <th>6439</th>
+      <th>6425</th>
       <td>Cross-correlations in a quantum dot Cooper pai...</td>
       <td>2018-07-23 22:28:01+00:00</td>
       <td>Piotr Trocha</td>
@@ -1159,16 +1160,16 @@ Name: first_author, dtype: int64
 </div>
 </div>
 <p>Confirm that the PDF has downloaded!</p>
-</div>
-<div class="section" id="bibliography">
+</section>
+<section id="bibliography">
 <h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Tim Head: <a class="reference external" href="https://betatim.github.io/posts/analysing-the-arxiv/">https://betatim.github.io/posts/analysing-the-arxiv/</a></p></li>
 <li><p>Lukas Schwab: <a class="reference external" href="https://github.com/lukasschwab/arxiv.py">https://github.com/lukasschwab/arxiv.py</a></p></li>
 <li><p>ArXiV API user manual: <a class="reference external" href="https://arxiv.org/help/api/user-manual">https://arxiv.org/help/api/user-manual</a></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

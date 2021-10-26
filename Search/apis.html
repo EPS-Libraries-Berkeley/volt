@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to searching with APIs &#8212; vOLT virtual Online Library Tutorials</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -87,7 +88,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -109,7 +110,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -153,7 +154,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -229,7 +230,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -241,7 +242,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -290,7 +291,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -312,7 +313,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -329,7 +330,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -341,7 +342,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -353,7 +354,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -491,11 +492,11 @@
         
               <div>
                 
-  <div class="section" id="introduction-to-searching-with-apis">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-searching-with-apis">
 <h1>Introduction to searching with APIs<a class="headerlink" href="#introduction-to-searching-with-apis" title="Permalink to this headline">¶</a></h1>
 <p>Searching for scientific articles using an API (application programming interface) allows you to extract data from publisher platforms and databases. With an API, you can create programmatic searches of a citation database, extract statistical data, or query and manipulate your results within a Notebook.</p>
 <p>In this chapter, we will look at two APIs, CrossRef and arXiv.</p>
-<div class="section" id="what-is-crossref">
+<section id="what-is-crossref">
 <h2>1. What is Crossref?<a class="headerlink" href="#what-is-crossref" title="Permalink to this headline">¶</a></h2>
 <p>Crossref is a non-profit organization that helps to provides access to scientific literature. According to their <a class="reference external" href="https://www.crossref.org/">website</a>, Crossref “makes research outputs easy to find, cite, link, and assess”.</p>
 <p>Crossref data on scientific publications essentially consists of three elements:
@@ -515,8 +516,8 @@
 <li><p>Pair multiple queries to understand topic trends</p></li>
 </ul>
 <p><a class="reference external" href="https://github.com/EPS-Libraries-Berkeley/exercises/blob/master/Crossref%20Library%20Module.ipynb">Find notebook here</a></p>
-</div>
-<div class="section" id="what-is-arxiv">
+</section>
+<section id="what-is-arxiv">
 <h2>2. What is arXiV?<a class="headerlink" href="#what-is-arxiv" title="Permalink to this headline">¶</a></h2>
 <p>arXiV is a free e-print service and an open-access archive for scholarly articles, used often in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.</p>
 <p>Searching arXiV lets you:</p>
@@ -525,10 +526,10 @@
 <li><p>find open versions of works that may be published later behind a paywall</p></li>
 <li><p>understand how articles are versioned and updated</p></li>
 </ul>
-</div>
+</section>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

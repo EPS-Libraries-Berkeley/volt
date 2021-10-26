@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Understanding Data &#8212; vOLT virtual Online Library Tutorials</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -33,17 +34,17 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -87,7 +88,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -109,7 +110,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -153,7 +154,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -229,7 +230,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -241,7 +242,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -290,7 +291,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -312,7 +313,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -329,7 +330,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -341,7 +342,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -353,7 +354,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -481,7 +482,7 @@
         
               <div>
                 
-  <div class="section" id="understanding-data">
+  <section class="tex2jax_ignore mathjax_ignore" id="understanding-data">
 <h1>Understanding Data<a class="headerlink" href="#understanding-data" title="Permalink to this headline">¶</a></h1>
 <p>Beginning a data-focused project can be daunting! This section will help you:<br></p>
 <ol class="simple">
@@ -490,13 +491,13 @@
 <li><p>Identify issues that may aid or hinder reproducibility</p></li>
 <li><p>Know where to get started with finding data</p></li>
 </ol>
-<div class="section" id="data-analysis">
+<section id="data-analysis">
 <h2>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
 <p>A typical <strong>Data Analysis</strong> approach takes the following path:</p>
 <p><img alt="Data Analysis" src="../_images/data_analysis_1.png" /></p>
 <p>Here, we invite you to consider the addition of three components, <strong>Data Biography</strong>, <strong>Licensing</strong>, and <strong>Archiving and Publishing</strong>, each marked in the revised approach below:</p>
 <p><img alt="Data Analysis Full" src="../_images/data_analysis_2.png" /></p>
-<div class="section" id="data-biography">
+<section id="data-biography">
 <h3>Data biography<a class="headerlink" href="#data-biography" title="Permalink to this headline">¶</a></h3>
 <p><img alt="Data Biography" src="../_images/data_analysis_3.png" /></p>
 <ol class="simple">
@@ -507,8 +508,8 @@
 <li><p>What are its impacts? On whom?</p></li>
 <li><p>What are the known limitations?</p></li>
 </ol>
-</div>
-<div class="section" id="licensing">
+</section>
+<section id="licensing">
 <h3>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline">¶</a></h3>
 <p><img alt="Data Licensing" src="../_images/data_analysis_4.png" /></p>
 <ol class="simple">
@@ -519,18 +520,18 @@
 Find a <strong>license</strong>. If there is a license, what does it mean? <br></p>
 <p>Consult <a class="reference external" href="https://creativecommons.org/about/cclicenses/">Creative Commons</a> to learn about licenses and their implications.<br></p>
 <p>Regardless of the license, always include a citation. <br></p>
-</div>
-<div class="section" id="archiving-and-publishing">
+</section>
+<section id="archiving-and-publishing">
 <h3>Archiving and Publishing<a class="headerlink" href="#archiving-and-publishing" title="Permalink to this headline">¶</a></h3>
 <p><img alt="Data Archiving" src="../_images/data_analysis_5.png" /></p>
 <p>For more information about archiving and publishing options, consult the section on <a class="reference external" href="https://eps-libraries-berkeley.github.io/volt/Data/What_is_a_repository.html">Archival Repositories</a>.</p>
 <p><a class="bibtex reference internal" href="../Bibliography.html#d2017creative" id="id1">[2]</a>
 Data Biography and Data Analysis Images based on: Catherine D’Ignazio. Creative data literacy: bridging the gap between the data-haves and data-have nots. Information Design Journal, 23(1):6–18, 2017.</p>
-</div>
-</div>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
