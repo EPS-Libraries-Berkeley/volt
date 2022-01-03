@@ -109,7 +109,7 @@ Building Location: 351 Physics North
 Phone: (510) 642-3122  
 
 **Features**  
-Physics and Astronomy Book and Journal Collections  
+Physics and Astronomy Book and Journal Collection
 Librarians: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a> 
 ```{image} ./images/KristenHeadshot.png
 :alt: Kristen's Bitmoji Headshot
