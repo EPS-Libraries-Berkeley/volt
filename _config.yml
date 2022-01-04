@@ -43,6 +43,6 @@ launch_buttons:
   colab_url                 : "https://colab.research.google.com"
 
 repository:
-  url                       : https://github.com/EPS-Libraries-Berkeley/volt
+  url                       : https://github.com/EPS-Libraries-Berkeley/volt/
   branch                    : main
 
