@@ -28,6 +28,7 @@ Here, we invite you to consider the addition of three components, **Data Biograp
 5. What are its impacts? On whom?
 6. What are the known limitations?
 
+
 ### Licensing
 
 ![Data Licensing](./images/data_analysis_4.png)
