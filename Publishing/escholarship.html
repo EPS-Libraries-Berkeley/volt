@@ -8,8 +8,8 @@
 
     <title>eScholarship at UC Berkeley &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -42,7 +42,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -56,8 +56,21 @@
     <link rel="next" title="Open Access" href="oa.html" />
     <link rel="prev" title="Preprints" href="preprints.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-3155703-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -88,7 +101,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -110,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -154,7 +167,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -230,7 +243,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -242,7 +255,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -291,7 +304,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -313,7 +326,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -330,7 +343,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -342,7 +355,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -354,7 +367,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -411,7 +424,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -422,7 +435,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -464,7 +477,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -482,7 +495,167 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>eScholarship at UC Berkeley</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ten-most-recent-postprints-in-escholarship">
+   Ten Most Recent Postprints in eScholarship
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="escholarship-at-uc-berkeley">
+<h1>eScholarship at UC Berkeley<a class="headerlink" href="#escholarship-at-uc-berkeley" title="Permalink to this headline">¶</a></h1>
+<p><img alt="escholarship_logo" src="../_images/escholarship_logo.png" /></p>
+<p><strong>eScholarship Repository</strong> offers preservation and dissemination services for a wide range of scholarship including working papers, electronic theses and dissertations (ETDs), student capstone projects, and paper/seminar series. eScholarship Repository is also the primary destination for researchers depositing their previously published journal articles in accordance with the Academic Senate’s UC Open Access Policy.</p>
+<p><a class="reference external" href="https://escholarship.org/uc/ucb/about">https://escholarship.org/uc/ucb/about</a></p>
+<p>To deposit your work as a UC Berkeley affiliate, click on the “Deposit” button and follow the instructions according to your affiliation.</p>
+<p><img alt="Deposit_by_affiliation" src="../_images/deposit.png" /></p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<section id="ten-most-recent-postprints-in-escholarship">
+<h2>Ten Most Recent Postprints in eScholarship<a class="headerlink" href="#ten-most-recent-postprints-in-escholarship" title="Permalink to this headline">¶</a></h2>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;guid&#39;</span><span class="p">:</span><span class="s1">&#39;Link&#39;</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Mind the gap: the power of combining photometr...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/8j12x9bp</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Designing a remote professional development co...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/8dz86756</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>On neural architectures for astronomical time-...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/86h4k2pj</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Erratum to: Measurement of hadronic event shap...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/83r0x6hk</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Visualizing pectin polymer-polymer entanglemen...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/7198r2b5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Limited modified gravity</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/6br5t1fn</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Search for exotic decays of the Higgs boson in...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/5ht890vr</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Search for dark matter produced in association...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/4947m7tg</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Cosmological constraints from unWISE and Planc...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/3z98j150</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>A fluorescence sandwich immunoassay for the re...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/3v35m6bb</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Publishing"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -532,63 +705,63 @@
   <tbody>
     <tr>
       <th>0</th>
-      <td>First neutrinoless double beta decay results f...</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/99q7p65m</td>
+      <td>Mind the gap: the power of combining photometr...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/8j12x9bp</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Multiverse in an inverted island</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/8n1340g7</td>
+      <td>Designing a remote professional development co...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/8dz86756</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Predicting Resource Requirement in Intermediat...</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/8hj7f4c2</td>
+      <td>On neural architectures for astronomical time-...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/86h4k2pj</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>The CUORE bolometric detector for neutrinoless...</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/74h3084v</td>
+      <td>Erratum to: Measurement of hadronic event shap...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/83r0x6hk</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>The CUORE and CUORE-0 experiments at LNGS</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/6q23v65z</td>
+      <td>Visualizing pectin polymer-polymer entanglemen...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/7198r2b5</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>2019 Computing Sciences Strategic Plan</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/61j6m742</td>
+      <td>Limited modified gravity</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/6br5t1fn</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Performance analysis tool for HPC and big data...</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/4sg377w2</td>
+      <td>Search for exotic decays of the Higgs boson in...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/5ht890vr</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Precise measurement of 2 ν 2 β decay of &lt;sup&gt;1...</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/4g9143hk</td>
+      <td>Search for dark matter produced in association...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/4947m7tg</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Parallel variable selection for effective perf...</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/40d5t2hp</td>
+      <td>Cosmological constraints from unWISE and Planc...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/3z98j150</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>Results from CUORE and CUORE-0</td>
-      <td>Tue, 26 Oct 2021</td>
-      <td>https://escholarship.org/uc/item/3n55b1vh</td>
+      <td>A fluorescence sandwich immunoassay for the re...</td>
+      <td>Tue, 4 Jan 2022</td>
+      <td>https://escholarship.org/uc/item/3v35m6bb</td>
     </tr>
   </tbody>
 </table>
@@ -620,43 +793,33 @@
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="preprints.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Preprints</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="preprints.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Preprints</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="oa.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Open Access</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="oa.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Open Access</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Engineering & Physical Sciences Librarians<br/>
-        
-          <div class="extra_footer">
-            <p>
+  <p>
+    
+      By Engineering & Physical Sciences Librarians<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -665,28 +828,16 @@
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

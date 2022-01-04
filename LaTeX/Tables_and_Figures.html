@@ -8,8 +8,8 @@
 
     <title>Tables and Figures &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -42,7 +42,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -56,8 +56,21 @@
     <link rel="next" title="Creating Bibliographies in LaTeX" href="Bibliographies.html" />
     <link rel="prev" title="Equations and Formulas" href="Equations_and_Formulas.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-3155703-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -88,7 +101,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -110,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -154,7 +167,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -230,7 +243,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -242,7 +255,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -291,7 +304,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -313,7 +326,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -330,7 +343,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -342,7 +355,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -354,7 +367,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -411,7 +424,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -422,7 +435,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -464,7 +477,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -551,7 +564,298 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Tables and Figures</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-creating-a-basic-two-column-table">
+     Example: Creating a basic two column table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-adding-vertical-and-horizontal-lines">
+     Example: Adding vertical and horizontal lines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-centering-and-adding-a-caption">
+     Example: Centering and adding a caption
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1">
+   <em>
+    Exercise 1
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2">
+   <em>
+    Exercise 2
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figures">
+   Figures
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uploading-a-figure">
+     Uploading a figure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figure-placement">
+     Figure Placement
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-upload-a-figure">
+   <em>
+    Exercise 3: Upload a figure
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-designate-figure-position">
+   <em>
+    Exercise 4: Designate figure position
+   </em>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#syncing-and-uploading-figures-hosted-elsewhere">
+     Syncing and Uploading figures hosted elsewhere
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="tables-and-figures">
+<h1>Tables and Figures<a class="headerlink" href="#tables-and-figures" title="Permalink to this headline">¶</a></h1>
+<p><em>Objective: Learn the basic commands to create and edit tables.</em></p>
+<section id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Basic tables can be created with a combination of the commands below and the <strong>use package</strong>: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic Commands</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code></p></td>
+<td><p>column alignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>ampersand separates columns</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td><p>double backslash begins new row</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\hline</span></code></p></td>
+<td><p>horizontal line</p></td>
+</tr>
+<tr class="row-even"><td><p>|</p></td>
+<td><p>vertical line</p></td>
+</tr>
+</tbody>
+</table>
+<section id="example-creating-a-basic-two-column-table">
+<h3>Example: Creating a basic two column table<a class="headerlink" href="#example-creating-a-basic-two-column-table" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Basic" src="../_images/tables_basic.png" /></p>
+</section>
+<section id="example-adding-vertical-and-horizontal-lines">
+<h3>Example: Adding vertical and horizontal lines<a class="headerlink" href="#example-adding-vertical-and-horizontal-lines" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Lines" src="../_images/tables_lines.png" /></p>
+</section>
+<section id="example-centering-and-adding-a-caption">
+<h3>Example: Centering and adding a caption<a class="headerlink" href="#example-centering-and-adding-a-caption" title="Permalink to this headline">¶</a></h3>
+<p>Note the addition the <code class="docutils literal notranslate"><span class="pre">\caption</span></code> and <code class="docutils literal notranslate"><span class="pre">\centering</span></code> commands.</p>
+<p><img alt="Caption" src="../_images/tables_caption.png" /></p>
+</section>
+</section>
+<section id="exercise-1">
+<h2><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">tabularx</span></code> package to create a simple table of the US Women’s Soccer Team’s 2019 World Cup Starting Roster: <a class="reference external" href="https://www.ussoccer.com/players">https://www.ussoccer.com/players</a></p>
+<p>Begin with a header row and two columns.</p>
+<ul class="simple">
+<li><p>Your two column headers will be: Position and Last Name – Left align the text of the left column</p></li>
+<li><p>Center the text of the right column</p></li>
+<li><p>Add vertical and horizontal lines</p></li>
+</ul>
+<p>Add a caption “2019 Team Roster” and center the table.<br />
+Note: Using the <code class="docutils literal notranslate"><span class="pre">\caption{}</span></code> command will add the phrase “Table 1” in front of caption.</p>
+<p>Use package needed: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
+<p>Commands needed:<br />
+<code class="docutils literal notranslate"><span class="pre">&amp;</span></code> = column separator<br />
+<code class="docutils literal notranslate"><span class="pre">\\</span></code> = begin new row<br />
+<code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code> = column alignment</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Position</p></th>
+<th class="head"><p>Last Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GK</p></td>
+<td><p>Naeher</p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>Sauerbrunn</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+<td><p>Dahlkemper</p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>O’Hara</p></td>
+</tr>
+<tr class="row-even"><td><p>D</p></td>
+<td><p>Dunn</p></td>
+</tr>
+<tr class="row-odd"><td><p>M</p></td>
+<td><p>Mewis</p></td>
+</tr>
+<tr class="row-even"><td><p>M</p></td>
+<td><p>Ertz</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exercise-2">
+<h2><em>Exercise 2</em><a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
+<p>Create a table like the one below with columns spanning multiple rows or rows spanning multiple columns.</p>
+<p><img alt="Multiple Columns" src="../_images/tables_multi.png" /></p>
+<p><em>Questions?</em><br />
+Consult the answer key in the Overleaf Project to troubleshoot: <a class="reference external" href="https://www.overleaf.com/read/vkpyvmhgzsgm">https://www.overleaf.com/read/vkpyvmhgzsgm</a></p>
+<p>More information sources:</p>
+<ul class="simple">
+<li><p>Roster: <a class="reference external" href="https://www.ussoccer.com/players">https://www.ussoccer.com/players</a></p></li>
+<li><p>Tables info: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
+<li><p>Multicolumn/Multirow: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
+</ul>
+</section>
+<section id="figures">
+<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h2>
+<p><em>Objective:</em> Learn to upload and position figures in Overleaf.</p>
+<section id="uploading-a-figure">
+<h3>Uploading a figure<a class="headerlink" href="#uploading-a-figure" title="Permalink to this headline">¶</a></h3>
+<p>Incorporating images and figures into your Overleaf project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.</p>
+<p>Click on the “upload” icon and navigate to the location of your figure.</p>
+<p><img alt="upload" src="../_images/tables_figure.png" /></p>
+</section>
+<section id="figure-placement">
+<h3>Figure Placement<a class="headerlink" href="#figure-placement" title="Permalink to this headline">¶</a></h3>
+<p>Use the following specifiers to adjust the placement of your figures.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Specifier</p></th>
+<th class="head"><p>Permission</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>h</p></td>
+<td><p>Place the float here: approximately, not exactly, at the same point it occurs in the source text</p></td>
+</tr>
+<tr class="row-odd"><td><p>t</p></td>
+<td><p>Position at the top of the page</p></td>
+</tr>
+<tr class="row-even"><td><p>b</p></td>
+<td><p>Position at the bottom of the page</p></td>
+</tr>
+<tr class="row-odd"><td><p>p</p></td>
+<td><p>Put on a special page for floats only</p></td>
+</tr>
+<tr class="row-even"><td><p>!</p></td>
+<td><p>Override internal parameters LaTeX uses for determining “good” float positions</p></td>
+</tr>
+<tr class="row-odd"><td><p>H</p></td>
+<td><p>Places the float at precisely the location in the LaTeX code. Requires the float package. This is somewhat equivalent to h!</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="exercise-3-upload-a-figure">
+<h2><em>Exercise 3: Upload a figure</em><a class="headerlink" href="#exercise-3-upload-a-figure" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>To upload image, choose an image of your own, or find file at: <a class="reference external" href="https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png">https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png</a></p></li>
+<li><p>Download keyboard_cat.png, and upload file to the Overleaf project.</p></li>
+<li><p>Place image with these commands:<br />
+<code class="docutils literal notranslate"><span class="pre">\usepackage{graphicx}</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.4\textwidth]{keyboard_cat}</span></code></p></li>
+</ol>
+<p><img alt="cat" src="../_images/keyboard_cat.png" /></p>
+</section>
+<section id="exercise-4-designate-figure-position">
+<h2><em>Exercise 4: Designate figure position</em><a class="headerlink" href="#exercise-4-designate-figure-position" title="Permalink to this headline">¶</a></h2>
+<p>Use b, t, h to see where figure moves. You might need to add additional text in the document to see how the figure placement varies.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\begin{figure}[b]</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\centering</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.6\textwidth]{keyboard_cat}</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">\end{figure}</span></code></p>
+<section id="syncing-and-uploading-figures-hosted-elsewhere">
+<h3>Syncing and Uploading figures hosted elsewhere<a class="headerlink" href="#syncing-and-uploading-figures-hosted-elsewhere" title="Permalink to this headline">¶</a></h3>
+<p>Find more information about syncing and hosting your figures outside of Overleaf.</p>
+<p>Google Drive: <a class="reference external" href="https://www.overleaf.com/help/247-how-can-i-upload-files-from-google-drive#.W4WtwhPwZE5">https://www.overleaf.com/help/247-how-can-i-upload-files-from-google-drive#.W4WtwhPwZE5</a><br />
+GitHub/Dropbox: <a class="reference external" href="https://www.overleaf.com/help/343#.W4WtgxPwZE4">https://www.overleaf.com/help/343#.W4WtgxPwZE4</a></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./LaTeX"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -751,43 +1055,33 @@ GitHub/Dropbox: <a class="reference external" href="https://www.overleaf.com/hel
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="Equations_and_Formulas.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Equations and Formulas</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Equations_and_Formulas.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Equations and Formulas</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Bibliographies.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Creating Bibliographies in LaTeX</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="Bibliographies.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Creating Bibliographies in LaTeX</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Engineering & Physical Sciences Librarians<br/>
-        
-          <div class="extra_footer">
-            <p>
+  <p>
+    
+      By Engineering & Physical Sciences Librarians<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -796,28 +1090,16 @@ GitHub/Dropbox: <a class="reference external" href="https://www.overleaf.com/hel
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

@@ -8,8 +8,8 @@
 
     <title>ArXiv API &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -42,7 +42,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -56,8 +56,21 @@
     <link rel="next" title="CrossRef API" href="crossref_library_module.html" />
     <link rel="prev" title="Introduction to searching with APIs" href="apis.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-3155703-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -88,7 +101,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -110,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -154,7 +167,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -230,7 +243,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -242,7 +255,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -291,7 +304,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -313,7 +326,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -330,7 +343,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -342,7 +355,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -354,7 +367,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -411,7 +424,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -422,7 +435,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -464,7 +477,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -507,9 +520,54 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>ArXiv API</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-packages">
+   Install Packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#query-the-api">
+   Query the API
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#organize-and-analyze-your-results">
+   Organize and analyze your results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-your-results">
+   Visualize your results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identify-and-download-papers">
+   Identify and download papers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bibliography">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="arxiv-api">
@@ -554,16 +612,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Spin relaxation in a single-electron graphene quantum dot
-Spin relaxation, Josephson effect and Yu-Shiba-Rusinov states in superconducting bilayer graphene
-Green-extraction of carbon thin films from natural mineral Shungite
-Density functional calculations of atomic structure, charging effect, and static dielectric constant of two-dimensional systems based on B-splines
-Flat-band plasmons in twisted bilayer transition metal dichalcogenides: twist angle, relaxation and band cutoff effects
-Acoustic-phonon-mediated superconductivity in Bernal bilayer graphene
-Active tuning of highly anisotropic phonon polaritons in van der Waals crystal slabs by gated graphene
-Dynamical Noncommutative Graphene
-Disentangling the Complex Electronic Structure of an Adsorbed Nanographene: Cycloarene C108
-Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bottom-up Growth of Graphene Nanospears and Nanoribbons
+Intrinsic Superflat Bands in General Twisted Bilayer Systems
+Interplay of Band Geometry and Topology in Ideal Chern Insulators in Presence of External Electromagnetic Fields
+Suspended graphene membranes to control Au nucleation and growth
+Moire Band Structures of the Double twisted Few Layer Graphene
+Waveguide-Integrated Mid-Infrared Photodetection using Graphene on a Scalable Chalcogenide Glass Platform
+In-plane orbital magnetization as a probe for symmetry breaking in strained twisted bilayer graphene
+Interaction-induced velocity renormalization in magic angle twisted trilayer graphene
+Wide-range $T^2$ resistivity and umklapp scattering in moiré graphene
+Geometric interference in a high-mobility graphene annulus p-n junction device
 </pre></div>
 </div>
 </div>
@@ -750,40 +808,6 @@ Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
     </tr>
     <tr>
       <th>6</th>
-      <td>http://arxiv.org/abs/1206.2674v1</td>
-      <td>2012-06-12 21:00:22+00:00</td>
-      <td>2012-06-12 21:00:22+00:00</td>
-      <td>Effective microscopic theory of quantum dot su...</td>
-      <td>[U. Aeberhard]</td>
-      <td>We introduce a quantum dot orbital tight-bindi...</td>
-      <td>9 pages, 6 figures; Special Issue: Numerical S...</td>
-      <td>Optical and Quantum Electronics 44, 133 (2012)</td>
-      <td>10.1007/s11082-011-9529-9</td>
-      <td>cond-mat.mes-hall</td>
-      <td>[cond-mat.mes-hall, cond-mat.mtrl-sci]</td>
-      <td>[http://dx.doi.org/10.1007/s11082-011-9529-9, ...</td>
-      <td>http://arxiv.org/pdf/1206.2674v1</td>
-      <td>{'id': 'http://arxiv.org/abs/1206.2674v1', 'gu...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>http://arxiv.org/abs/1405.1981v1</td>
-      <td>2014-05-08 15:51:52+00:00</td>
-      <td>2014-05-08 15:51:52+00:00</td>
-      <td>A single quantum dot as an optical thermometer...</td>
-      <td>[Florian Haupt, Atac Imamoglu, Martin Kroner]</td>
-      <td>Resonant laser spectroscopy of a negatively ch...</td>
-      <td>11 pages, 4 figures</td>
-      <td>Phys. Rev. Applied 2, 024001 (2014)</td>
-      <td>10.1103/PhysRevApplied.2.024001</td>
-      <td>cond-mat.mes-hall</td>
-      <td>[cond-mat.mes-hall]</td>
-      <td>[http://dx.doi.org/10.1103/PhysRevApplied.2.02...</td>
-      <td>http://arxiv.org/pdf/1405.1981v1</td>
-      <td>{'id': 'http://arxiv.org/abs/1405.1981v1', 'gu...</td>
-    </tr>
-    <tr>
-      <th>8</th>
       <td>http://arxiv.org/abs/1003.2350v1</td>
       <td>2010-03-11 15:52:09+00:00</td>
       <td>2010-03-11 15:52:09+00:00</td>
@@ -800,7 +824,7 @@ Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
       <td>{'id': 'http://arxiv.org/abs/1003.2350v1', 'gu...</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>7</th>
       <td>http://arxiv.org/abs/1201.1258v1</td>
       <td>2012-01-05 18:56:21+00:00</td>
       <td>2012-01-05 18:56:21+00:00</td>
@@ -815,6 +839,40 @@ Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
       <td>[http://dx.doi.org/10.1103/PhysRevB.85.045319,...</td>
       <td>http://arxiv.org/pdf/1201.1258v1</td>
       <td>{'id': 'http://arxiv.org/abs/1201.1258v1', 'gu...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>http://arxiv.org/abs/1206.2674v1</td>
+      <td>2012-06-12 21:00:22+00:00</td>
+      <td>2012-06-12 21:00:22+00:00</td>
+      <td>Effective microscopic theory of quantum dot su...</td>
+      <td>[U. Aeberhard]</td>
+      <td>We introduce a quantum dot orbital tight-bindi...</td>
+      <td>9 pages, 6 figures; Special Issue: Numerical S...</td>
+      <td>Optical and Quantum Electronics 44, 133 (2012)</td>
+      <td>10.1007/s11082-011-9529-9</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall, cond-mat.mtrl-sci]</td>
+      <td>[http://dx.doi.org/10.1007/s11082-011-9529-9, ...</td>
+      <td>http://arxiv.org/pdf/1206.2674v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1206.2674v1', 'gu...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>http://arxiv.org/abs/1508.05462v1</td>
+      <td>2015-08-22 03:13:34+00:00</td>
+      <td>2015-08-22 03:13:34+00:00</td>
+      <td>Scanning gate microscopy of ultra clean carbon...</td>
+      <td>[Jiamin Xue, Rohan Dhall, Stephen B. Cronin, B...</td>
+      <td>We perform scanning gate microscopy on individ...</td>
+      <td>5 pages, 4 figures</td>
+      <td>None</td>
+      <td>None</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall]</td>
+      <td>[http://arxiv.org/abs/1508.05462v1, http://arx...</td>
+      <td>http://arxiv.org/pdf/1508.05462v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1508.05462v1', 'g...</td>
     </tr>
   </tbody>
 </table>
@@ -929,43 +987,43 @@ Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
       <td>...</td>
     </tr>
     <tr>
-      <th>10813</th>
-      <td>Engineering interfacial quantum states and ele...</td>
-      <td>2021-07-21 15:19:10+00:00</td>
-      <td>Ignacio Piquero-Zulaica</td>
-      <td>http://arxiv.org/abs/2107.10141v1</td>
-    </tr>
-    <tr>
-      <th>10814</th>
-      <td>Implementation of the SMART protocol for globa...</td>
-      <td>2021-08-02 12:46:49+00:00</td>
-      <td>Ingvild Hansen</td>
-      <td>http://arxiv.org/abs/2108.00836v3</td>
-    </tr>
-    <tr>
-      <th>10815</th>
-      <td>Indistinguishable single photons from spatiall...</td>
-      <td>2021-08-03 12:00:47+00:00</td>
-      <td>Jiefei Zhang</td>
-      <td>http://arxiv.org/abs/2108.01428v2</td>
-    </tr>
-    <tr>
-      <th>10816</th>
-      <td>The spider-web array--a sparse spin qubit array</td>
-      <td>2021-10-01 03:20:29+00:00</td>
-      <td>Jelmer M. Boter</td>
-      <td>http://arxiv.org/abs/2110.00189v1</td>
-    </tr>
-    <tr>
-      <th>10817</th>
+      <th>10935</th>
       <td>Solution-processed two-dimensional materials f...</td>
       <td>2021-10-18 08:22:42+00:00</td>
       <td>Sebastiano Bellani</td>
       <td>http://arxiv.org/abs/2110.09088v1</td>
     </tr>
+    <tr>
+      <th>10936</th>
+      <td>Quality factor for zero-bias conductance peaks...</td>
+      <td>2021-11-01 18:11:43+00:00</td>
+      <td>Yi-Hua Lai</td>
+      <td>http://arxiv.org/abs/2111.01178v1</td>
+    </tr>
+    <tr>
+      <th>10937</th>
+      <td>High Responsivity Gate Tunable UV-Visible Broa...</td>
+      <td>2021-11-09 14:15:45+00:00</td>
+      <td>Shubhrasish Mukherjee</td>
+      <td>http://arxiv.org/abs/2111.05159v1</td>
+    </tr>
+    <tr>
+      <th>10938</th>
+      <td>Current noise and Keldysh vertex function of a...</td>
+      <td>2021-11-20 00:03:47+00:00</td>
+      <td>Akira Oguri</td>
+      <td>http://arxiv.org/abs/2111.10483v1</td>
+    </tr>
+    <tr>
+      <th>10939</th>
+      <td>Post-processing of real-time quantum event mea...</td>
+      <td>2021-12-14 14:09:20+00:00</td>
+      <td>Jens Kerski</td>
+      <td>http://arxiv.org/abs/2112.07417v1</td>
+    </tr>
   </tbody>
 </table>
-<p>10818 rows × 4 columns</p>
+<p>10940 rows × 4 columns</p>
 </div></div></div>
 </div>
 </section>
@@ -998,23 +1056,23 @@ Isospin magnetism and spin-triplet superconductivity in Bernal bilayer graphene
 Bing Dong                 27
 Y. Alhassid               20
 Constantine Yannouleas    18
+Akira Oguri               16
 David M. -T. Kuo          16
 Xuedong Hu                15
-Akira Oguri               15
+Massimo Rontani           14
 Kicheon Kang              14
 Rafael Sánchez            14
 Ulrich Hohenester         14
 B. Szafran                14
-Massimo Rontani           14
 P. W. Brouwer             13
+Vidar Gudmundsson         13
 C. W. J. Beenakker        13
+G. Giavaras               12
 O. Entin-Wohlman          12
 Piotr Trocha              12
-G. Giavaras               12
-Vidar Gudmundsson         12
-Arka Majumdar             11
-A. A. Aligia              11
 Ramin M. Abolfath         11
+A. A. Aligia              11
+Arka Majumdar             11
 Name: first_author, dtype: int64
 </pre></div>
 </div>
@@ -1058,84 +1116,773 @@ Name: first_author, dtype: int64
   </thead>
   <tbody>
     <tr>
-      <th>754</th>
+      <th>758</th>
       <td>Dicke-like effect in spin-polarized transport ...</td>
       <td>2007-11-22 16:11:11+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0711.3611v2</td>
     </tr>
     <tr>
-      <th>2304</th>
+      <th>2319</th>
       <td>Kondo-Dicke resonances in electronic transport...</td>
       <td>2008-03-28 15:49:07+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0803.4154v1</td>
     </tr>
     <tr>
-      <th>3366</th>
+      <th>3388</th>
       <td>Negative tunnel magnetoresistance and differen...</td>
       <td>2009-11-02 11:45:03+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0911.0291v1</td>
     </tr>
     <tr>
-      <th>5348</th>
+      <th>5402</th>
       <td>Beating in electronic transport through quantu...</td>
       <td>2010-04-11 16:20:04+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1004.1819v2</td>
     </tr>
     <tr>
-      <th>2680</th>
+      <th>2469</th>
       <td>Orbital Kondo effect in double quantum dots</td>
       <td>2010-08-17 14:13:23+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1008.2902v2</td>
     </tr>
     <tr>
-      <th>2489</th>
+      <th>2508</th>
       <td>The influence of spin-flip scattering on the p...</td>
       <td>2011-05-08 20:12:41+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1105.1550v1</td>
     </tr>
     <tr>
-      <th>5485</th>
+      <th>5557</th>
       <td>Large enhancement of thermoelectric effects in...</td>
       <td>2011-08-11 14:49:51+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1108.2422v2</td>
     </tr>
     <tr>
-      <th>7714</th>
+      <th>7789</th>
       <td>The role of the indirect tunneling processes a...</td>
       <td>2011-09-12 20:51:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1109.2621v1</td>
     </tr>
     <tr>
-      <th>2610</th>
+      <th>2727</th>
       <td>Spin-polarized Andreev transport influenced by...</td>
       <td>2014-09-14 23:54:35+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1409.4122v1</td>
     </tr>
     <tr>
-      <th>7851</th>
+      <th>7904</th>
       <td>Spin-resolved Andreev transport through double...</td>
       <td>2015-08-24 19:02:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1508.05915v1</td>
     </tr>
     <tr>
-      <th>5944</th>
+      <th>6370</th>
       <td>Spin-dependent thermoelectric phenomena in a q...</td>
       <td>2017-05-02 14:55:38+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1705.01007v1</td>
     </tr>
     <tr>
-      <th>6425</th>
+      <th>6498</th>
+      <td>Cross-correlations in a quantum dot Cooper pai...</td>
+      <td>2018-07-23 22:28:01+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1807.08850v1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the arxiv.Result object stored in the _result column to trigger a PDF download.</span>
+<span class="n">qd_Trocha_oldest</span> <span class="o">=</span> <span class="n">qd_Trocha_sorted</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">qd_Trocha_oldest</span><span class="o">.</span><span class="n">_result</span><span class="o">.</span><span class="n">download_pdf</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;./0711.3611v2.Dicke_like_effect_in_spin_polarized_transport_through_coupled_quantum_dots.pdf&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Confirm that the PDF has downloaded!</p>
+</section>
+<section id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Tim Head: <a class="reference external" href="https://betatim.github.io/posts/analysing-the-arxiv/">https://betatim.github.io/posts/analysing-the-arxiv/</a></p></li>
+<li><p>Lukas Schwab: <a class="reference external" href="https://github.com/lukasschwab/arxiv.py">https://github.com/lukasschwab/arxiv.py</a></p></li>
+<li><p>ArXiV API user manual: <a class="reference external" href="https://arxiv.org/help/api/user-manual">https://arxiv.org/help/api/user-manual</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Search"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="arxiv-api">
+<h1>ArXiv API<a class="headerlink" href="#arxiv-api" title="Permalink to this headline">¶</a></h1>
+<p>The ArXiV API allows programmatic access to the arXiv’s e-print content and metadata. “The goal of the interface is to facilitate new and creative use of the the vast body of material on the arXiv by providing a low barrier to entry for application developers.” <a class="reference external" href="https://arxiv.org/help/api">https://arxiv.org/help/api</a></p>
+<p>The API’s user manual (<a class="reference external" href="https://arxiv.org/help/api/user-manual">https://arxiv.org/help/api/user-manual</a>) provides helpful documentation for using the API and retrieving article metadata.</p>
+<p>Our examples below will introduce you to the basics of querying the ArXiV API.</p>
+<section id="install-packages">
+<h2>Install Packages<a class="headerlink" href="#install-packages" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib</span>
+<span class="kn">import</span> <span class="nn">arxiv</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span><span class="p">,</span> <span class="n">defaultdict</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># for array manipulation</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># for data visualization</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline 
+<span class="kn">import</span> <span class="nn">datetime</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="query-the-api">
+<h2>Query the API<a class="headerlink" href="#query-the-api" title="Permalink to this headline">¶</a></h2>
+<p>Perform a simple query for “graphene.” We’ll limit results to the titles of the 10 most recent papers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">search</span> <span class="o">=</span> <span class="n">arxiv</span><span class="o">.</span><span class="n">Search</span><span class="p">(</span>
+  <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;graphene&quot;</span><span class="p">,</span>
+  <span class="n">max_results</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="n">sort_by</span> <span class="o">=</span> <span class="n">arxiv</span><span class="o">.</span><span class="n">SortCriterion</span><span class="o">.</span><span class="n">SubmittedDate</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">search</span><span class="o">.</span><span class="n">results</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Bottom-up Growth of Graphene Nanospears and Nanoribbons
+Intrinsic Superflat Bands in General Twisted Bilayer Systems
+Interplay of Band Geometry and Topology in Ideal Chern Insulators in Presence of External Electromagnetic Fields
+Suspended graphene membranes to control Au nucleation and growth
+Moire Band Structures of the Double twisted Few Layer Graphene
+Waveguide-Integrated Mid-Infrared Photodetection using Graphene on a Scalable Chalcogenide Glass Platform
+In-plane orbital magnetization as a probe for symmetry breaking in strained twisted bilayer graphene
+Interaction-induced velocity renormalization in magic angle twisted trilayer graphene
+Wide-range $T^2$ resistivity and umklapp scattering in moiré graphene
+Geometric interference in a high-mobility graphene annulus p-n junction device
+</pre></div>
+</div>
+</div>
+</div>
+<p>Do another query for the topic “quantum dots,” but note that you could swap in a topic of your liking.</p>
+<p>You can define a custom arXiv API client with specialized pagination behavior. This time we’ll process each paper as it’s fetched rather than exhausting the result-generator into a <code class="docutils literal notranslate"><span class="pre">list</span></code>; this is useful for running analysis while the client sleeps.</p>
+<p>Because this <code class="docutils literal notranslate"><span class="pre">arxiv.Search</span></code> doesn’t bound the number of results with <code class="docutils literal notranslate"><span class="pre">max_results</span></code>, it will fetch <em>every</em> matching paper (roughly 10,000). This may take several minutes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results_generator</span> <span class="o">=</span> <span class="n">arxiv</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span>
+  <span class="n">page_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+  <span class="n">delay_seconds</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+  <span class="n">num_retries</span><span class="o">=</span><span class="mi">3</span>
+<span class="p">)</span><span class="o">.</span><span class="n">results</span><span class="p">(</span><span class="n">arxiv</span><span class="o">.</span><span class="n">Search</span><span class="p">(</span>
+  <span class="n">query</span><span class="o">=</span><span class="s1">&#39;&quot;quantum dots&quot;&#39;</span><span class="p">,</span>
+  <span class="n">id_list</span><span class="o">=</span><span class="p">[],</span>
+  <span class="n">sort_by</span><span class="o">=</span><span class="n">arxiv</span><span class="o">.</span><span class="n">SortCriterion</span><span class="o">.</span><span class="n">Relevance</span><span class="p">,</span>
+  <span class="n">sort_order</span><span class="o">=</span><span class="n">arxiv</span><span class="o">.</span><span class="n">SortOrder</span><span class="o">.</span><span class="n">Descending</span><span class="p">,</span>
+<span class="p">))</span>
+
+<span class="n">quantum_dots</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">results_generator</span><span class="p">:</span>
+  <span class="c1"># You could do per-paper analysis here; for now, just collect them in a list.</span>
+  <span class="n">quantum_dots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paper</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="organize-and-analyze-your-results">
+<h2>Organize and analyze your results<a class="headerlink" href="#organize-and-analyze-your-results" title="Permalink to this headline">¶</a></h2>
+<p>Create a dataframe to better analyze your results. This example uses Python’s <a class="reference external" href="https://docs.python.org/3/library/functions.html#vars"><code class="docutils literal notranslate"><span class="pre">vars</span></code></a> built-in function to convert search results into Python dictionaries of paper metadata.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qd_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="nb">vars</span><span class="p">(</span><span class="n">paper</span><span class="p">)</span> <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">quantum_dots</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We’ll look at the first 10 results.</p>
+<div class="cell tag_output_scroll tag_full-width docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qd_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entry_id</th>
+      <th>updated</th>
+      <th>published</th>
+      <th>title</th>
+      <th>authors</th>
+      <th>summary</th>
+      <th>comment</th>
+      <th>journal_ref</th>
+      <th>doi</th>
+      <th>primary_category</th>
+      <th>categories</th>
+      <th>links</th>
+      <th>pdf_url</th>
+      <th>_raw</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>http://arxiv.org/abs/cond-mat/0310363v1</td>
+      <td>2003-10-15 20:15:59+00:00</td>
+      <td>2003-10-15 20:15:59+00:00</td>
+      <td>Excitonic properties of strained wurtzite and ...</td>
+      <td>[Vladimir A. Fonoberov, Alexander A. Balandin]</td>
+      <td>We investigate exciton states theoretically in...</td>
+      <td>18 pages, accepted for publication in the Jour...</td>
+      <td>J. Appl. Phys. 94, 7178 (2003)</td>
+      <td>10.1063/1.1623330</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall]</td>
+      <td>[http://dx.doi.org/10.1063/1.1623330, http://a...</td>
+      <td>http://arxiv.org/pdf/cond-mat/0310363v1</td>
+      <td>{'id': 'http://arxiv.org/abs/cond-mat/0310363v...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>http://arxiv.org/abs/2008.11666v1</td>
+      <td>2020-08-26 16:48:21+00:00</td>
+      <td>2020-08-26 16:48:21+00:00</td>
+      <td>A two-dimensional array of single-hole quantum...</td>
+      <td>[F. van Riggelen, N. W. Hendrickx, W. I. L. La...</td>
+      <td>Quantum dots fabricated using techniques and m...</td>
+      <td>7 pages, 4 figures</td>
+      <td>None</td>
+      <td>10.1063/5.0037330</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall]</td>
+      <td>[http://dx.doi.org/10.1063/5.0037330, http://a...</td>
+      <td>http://arxiv.org/pdf/2008.11666v1</td>
+      <td>{'id': 'http://arxiv.org/abs/2008.11666v1', 'g...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>http://arxiv.org/abs/cond-mat/0411742v1</td>
+      <td>2004-11-30 02:56:15+00:00</td>
+      <td>2004-11-30 02:56:15+00:00</td>
+      <td>Polar optical phonons in wurtzite spheroidal q...</td>
+      <td>[Vladimir A. Fonoberov, Alexander A. Balandin]</td>
+      <td>Polar optical-phonon modes are derived analyti...</td>
+      <td>11 pages</td>
+      <td>J. Phys.: Condens. Matter 17, 1085 (2005)</td>
+      <td>10.1088/0953-8984/17/7/003</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall]</td>
+      <td>[http://dx.doi.org/10.1088/0953-8984/17/7/003,...</td>
+      <td>http://arxiv.org/pdf/cond-mat/0411742v1</td>
+      <td>{'id': 'http://arxiv.org/abs/cond-mat/0411742v...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>http://arxiv.org/abs/1403.4790v1</td>
+      <td>2014-03-19 13:03:49+00:00</td>
+      <td>2014-03-19 13:03:49+00:00</td>
+      <td>Group-velocity slowdown in quantum-dots and qu...</td>
+      <td>[Stephan Michael, Weng W. Chow, Hans Christian...</td>
+      <td>We investigate theoretically the slowdown of o...</td>
+      <td>Physics and Simulation of Optoelectronic Devic...</td>
+      <td>None</td>
+      <td>10.1117/12.2042412</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall, cond-mat.mtrl-sci]</td>
+      <td>[http://dx.doi.org/10.1117/12.2042412, http://...</td>
+      <td>http://arxiv.org/pdf/1403.4790v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1403.4790v1', 'gu...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>http://arxiv.org/abs/cond-mat/0403328v1</td>
+      <td>2004-03-12 18:28:06+00:00</td>
+      <td>2004-03-12 18:28:06+00:00</td>
+      <td>A new method to epitaxially grow long-range or...</td>
+      <td>[J. Bauer, D. Schuh, E. Uccelli, R. Schulz, A....</td>
+      <td>We report on a new approach for positioning of...</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall]</td>
+      <td>[http://arxiv.org/abs/cond-mat/0403328v1, http...</td>
+      <td>http://arxiv.org/pdf/cond-mat/0403328v1</td>
+      <td>{'id': 'http://arxiv.org/abs/cond-mat/0403328v...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>http://arxiv.org/abs/cond-mat/0411484v1</td>
+      <td>2004-11-18 16:47:14+00:00</td>
+      <td>2004-11-18 16:47:14+00:00</td>
+      <td>Giant optical anisotropy in a single InAs quan...</td>
+      <td>[I. Favero, Guillaume Cassabois, A. Jankovic, ...</td>
+      <td>We present the experimental evidence of giant ...</td>
+      <td>submitted to Applied Physics Letters</td>
+      <td>None</td>
+      <td>10.1063/1.1854733</td>
+      <td>cond-mat.other</td>
+      <td>[cond-mat.other]</td>
+      <td>[http://dx.doi.org/10.1063/1.1854733, http://a...</td>
+      <td>http://arxiv.org/pdf/cond-mat/0411484v1</td>
+      <td>{'id': 'http://arxiv.org/abs/cond-mat/0411484v...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>http://arxiv.org/abs/1003.2350v1</td>
+      <td>2010-03-11 15:52:09+00:00</td>
+      <td>2010-03-11 15:52:09+00:00</td>
+      <td>Linewidth broadening of a quantum dot coupled ...</td>
+      <td>[Arka Majumdar, Andrei Faraon, Erik Kim, Dirk ...</td>
+      <td>We study the coupling between a photonic cryst...</td>
+      <td>5 pages, 4 figures</td>
+      <td>None</td>
+      <td>10.1103/PhysRevB.82.045306</td>
+      <td>quant-ph</td>
+      <td>[quant-ph]</td>
+      <td>[http://dx.doi.org/10.1103/PhysRevB.82.045306,...</td>
+      <td>http://arxiv.org/pdf/1003.2350v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1003.2350v1', 'gu...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>http://arxiv.org/abs/1201.1258v1</td>
+      <td>2012-01-05 18:56:21+00:00</td>
+      <td>2012-01-05 18:56:21+00:00</td>
+      <td>Photoluminescence from In0.5Ga0.5As/GaP quantu...</td>
+      <td>[Kelley Rivoire, Sonia Buckley, Yuncheng Song,...</td>
+      <td>We demonstrate room temperature visible wavele...</td>
+      <td>None</td>
+      <td>None</td>
+      <td>10.1103/PhysRevB.85.045319</td>
+      <td>quant-ph</td>
+      <td>[quant-ph, physics.optics]</td>
+      <td>[http://dx.doi.org/10.1103/PhysRevB.85.045319,...</td>
+      <td>http://arxiv.org/pdf/1201.1258v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1201.1258v1', 'gu...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>http://arxiv.org/abs/1206.2674v1</td>
+      <td>2012-06-12 21:00:22+00:00</td>
+      <td>2012-06-12 21:00:22+00:00</td>
+      <td>Effective microscopic theory of quantum dot su...</td>
+      <td>[U. Aeberhard]</td>
+      <td>We introduce a quantum dot orbital tight-bindi...</td>
+      <td>9 pages, 6 figures; Special Issue: Numerical S...</td>
+      <td>Optical and Quantum Electronics 44, 133 (2012)</td>
+      <td>10.1007/s11082-011-9529-9</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall, cond-mat.mtrl-sci]</td>
+      <td>[http://dx.doi.org/10.1007/s11082-011-9529-9, ...</td>
+      <td>http://arxiv.org/pdf/1206.2674v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1206.2674v1', 'gu...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>http://arxiv.org/abs/1508.05462v1</td>
+      <td>2015-08-22 03:13:34+00:00</td>
+      <td>2015-08-22 03:13:34+00:00</td>
+      <td>Scanning gate microscopy of ultra clean carbon...</td>
+      <td>[Jiamin Xue, Rohan Dhall, Stephen B. Cronin, B...</td>
+      <td>We perform scanning gate microscopy on individ...</td>
+      <td>5 pages, 4 figures</td>
+      <td>None</td>
+      <td>None</td>
+      <td>cond-mat.mes-hall</td>
+      <td>[cond-mat.mes-hall]</td>
+      <td>[http://arxiv.org/abs/1508.05462v1, http://arx...</td>
+      <td>http://arxiv.org/pdf/1508.05462v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1508.05462v1', 'g...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Next, we’ll create list of all of the columns in the dataframe to see what else is there:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">qd_df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;entry_id&#39;,
+ &#39;updated&#39;,
+ &#39;published&#39;,
+ &#39;title&#39;,
+ &#39;authors&#39;,
+ &#39;summary&#39;,
+ &#39;comment&#39;,
+ &#39;journal_ref&#39;,
+ &#39;doi&#39;,
+ &#39;primary_category&#39;,
+ &#39;categories&#39;,
+ &#39;links&#39;,
+ &#39;pdf_url&#39;,
+ &#39;_raw&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>We have 14 columns overall. We’ll add two derived columns––the name of the first listed author and a reference to the original <code class="docutils literal notranslate"><span class="pre">arxiv.Result</span></code> object-–then narrow the dataframe to paper titles, <code class="docutils literal notranslate"><span class="pre">published</span></code> dates, and first authors to run some analysis of publishing patterns over time.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a first_author column: the name of the first author among each paper&#39;s list of authors.</span>
+<span class="n">qd_df</span><span class="p">[</span><span class="s1">&#39;first_author&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">authors_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">authors_list</span> <span class="ow">in</span> <span class="n">qd_df</span><span class="p">[</span><span class="s1">&#39;authors&#39;</span><span class="p">]]</span>
+<span class="c1"># Keep a reference to the original results in the dataframe: this is useful for downloading PDFs.</span>
+<span class="n">qd_df</span><span class="p">[</span><span class="s1">&#39;_result&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">quantum_dots</span>
+
+<span class="c1"># Narrow our dataframe to just the columns we want for our analysis.</span>
+<span class="n">qd_df</span> <span class="o">=</span> <span class="n">qd_df</span><span class="p">[[</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;published&#39;</span><span class="p">,</span> <span class="s1">&#39;first_author&#39;</span><span class="p">,</span> <span class="s1">&#39;_result&#39;</span><span class="p">]]</span>
+<span class="n">qd_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>title</th>
+      <th>published</th>
+      <th>first_author</th>
+      <th>_result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Excitonic properties of strained wurtzite and ...</td>
+      <td>2003-10-15 20:15:59+00:00</td>
+      <td>Vladimir A. Fonoberov</td>
+      <td>http://arxiv.org/abs/cond-mat/0310363v1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>A two-dimensional array of single-hole quantum...</td>
+      <td>2020-08-26 16:48:21+00:00</td>
+      <td>F. van Riggelen</td>
+      <td>http://arxiv.org/abs/2008.11666v1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Polar optical phonons in wurtzite spheroidal q...</td>
+      <td>2004-11-30 02:56:15+00:00</td>
+      <td>Vladimir A. Fonoberov</td>
+      <td>http://arxiv.org/abs/cond-mat/0411742v1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Group-velocity slowdown in quantum-dots and qu...</td>
+      <td>2014-03-19 13:03:49+00:00</td>
+      <td>Stephan Michael</td>
+      <td>http://arxiv.org/abs/1403.4790v1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>A new method to epitaxially grow long-range or...</td>
+      <td>2004-03-12 18:28:06+00:00</td>
+      <td>J. Bauer</td>
+      <td>http://arxiv.org/abs/cond-mat/0403328v1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>10935</th>
+      <td>Solution-processed two-dimensional materials f...</td>
+      <td>2021-10-18 08:22:42+00:00</td>
+      <td>Sebastiano Bellani</td>
+      <td>http://arxiv.org/abs/2110.09088v1</td>
+    </tr>
+    <tr>
+      <th>10936</th>
+      <td>Quality factor for zero-bias conductance peaks...</td>
+      <td>2021-11-01 18:11:43+00:00</td>
+      <td>Yi-Hua Lai</td>
+      <td>http://arxiv.org/abs/2111.01178v1</td>
+    </tr>
+    <tr>
+      <th>10937</th>
+      <td>High Responsivity Gate Tunable UV-Visible Broa...</td>
+      <td>2021-11-09 14:15:45+00:00</td>
+      <td>Shubhrasish Mukherjee</td>
+      <td>http://arxiv.org/abs/2111.05159v1</td>
+    </tr>
+    <tr>
+      <th>10938</th>
+      <td>Current noise and Keldysh vertex function of a...</td>
+      <td>2021-11-20 00:03:47+00:00</td>
+      <td>Akira Oguri</td>
+      <td>http://arxiv.org/abs/2111.10483v1</td>
+    </tr>
+    <tr>
+      <th>10939</th>
+      <td>Post-processing of real-time quantum event mea...</td>
+      <td>2021-12-14 14:09:20+00:00</td>
+      <td>Jens Kerski</td>
+      <td>http://arxiv.org/abs/2112.07417v1</td>
+    </tr>
+  </tbody>
+</table>
+<p>10940 rows × 4 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="visualize-your-results">
+<h2>Visualize your results<a class="headerlink" href="#visualize-your-results" title="Permalink to this headline">¶</a></h2>
+<p>Get a sense of the how your topic has trended over time. When did research on your topic take off? Create a bar chart of the number of articles published in each year.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qd_df</span><span class="p">[</span><span class="s2">&quot;published&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">qd_df</span><span class="p">[</span><span class="s2">&quot;published&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;published&#39;&gt;
+</pre></div>
+</div>
+<img alt="../_images/arxiv_api_20_1.png" src="../_images/arxiv_api_20_1.png" />
+</div>
+</div>
+<p>Explore authors to see who is publishing your topic. Group by author, then sort and select the top 20 authors.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qd_authors</span> <span class="o">=</span> <span class="n">qd_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">qd_df</span><span class="p">[</span><span class="s2">&quot;first_author&quot;</span><span class="p">])[</span><span class="s2">&quot;first_author&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">qd_authors</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>first_author
+Bing Dong                 27
+Y. Alhassid               20
+Constantine Yannouleas    18
+Akira Oguri               16
+David M. -T. Kuo          16
+Xuedong Hu                15
+Massimo Rontani           14
+Kicheon Kang              14
+Rafael Sánchez            14
+Ulrich Hohenester         14
+B. Szafran                14
+P. W. Brouwer             13
+Vidar Gudmundsson         13
+C. W. J. Beenakker        13
+G. Giavaras               12
+O. Entin-Wohlman          12
+Piotr Trocha              12
+Ramin M. Abolfath         11
+A. A. Aligia              11
+Arka Majumdar             11
+Name: first_author, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="identify-and-download-papers">
+<h2>Identify and download papers<a class="headerlink" href="#identify-and-download-papers" title="Permalink to this headline">¶</a></h2>
+<p>Let’s download the oldest paper about quantum dots co-authored by Piotr Trocha:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qd_Trocha_sorted</span>  <span class="o">=</span> <span class="n">qd_df</span><span class="p">[</span><span class="n">qd_df</span><span class="p">[</span><span class="s1">&#39;first_author&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Piotr Trocha&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;published&#39;</span><span class="p">)</span>
+<span class="n">qd_Trocha_sorted</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>title</th>
+      <th>published</th>
+      <th>first_author</th>
+      <th>_result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>758</th>
+      <td>Dicke-like effect in spin-polarized transport ...</td>
+      <td>2007-11-22 16:11:11+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/0711.3611v2</td>
+    </tr>
+    <tr>
+      <th>2319</th>
+      <td>Kondo-Dicke resonances in electronic transport...</td>
+      <td>2008-03-28 15:49:07+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/0803.4154v1</td>
+    </tr>
+    <tr>
+      <th>3388</th>
+      <td>Negative tunnel magnetoresistance and differen...</td>
+      <td>2009-11-02 11:45:03+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/0911.0291v1</td>
+    </tr>
+    <tr>
+      <th>5402</th>
+      <td>Beating in electronic transport through quantu...</td>
+      <td>2010-04-11 16:20:04+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1004.1819v2</td>
+    </tr>
+    <tr>
+      <th>2469</th>
+      <td>Orbital Kondo effect in double quantum dots</td>
+      <td>2010-08-17 14:13:23+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1008.2902v2</td>
+    </tr>
+    <tr>
+      <th>2508</th>
+      <td>The influence of spin-flip scattering on the p...</td>
+      <td>2011-05-08 20:12:41+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1105.1550v1</td>
+    </tr>
+    <tr>
+      <th>5557</th>
+      <td>Large enhancement of thermoelectric effects in...</td>
+      <td>2011-08-11 14:49:51+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1108.2422v2</td>
+    </tr>
+    <tr>
+      <th>7789</th>
+      <td>The role of the indirect tunneling processes a...</td>
+      <td>2011-09-12 20:51:49+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1109.2621v1</td>
+    </tr>
+    <tr>
+      <th>2727</th>
+      <td>Spin-polarized Andreev transport influenced by...</td>
+      <td>2014-09-14 23:54:35+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1409.4122v1</td>
+    </tr>
+    <tr>
+      <th>7904</th>
+      <td>Spin-resolved Andreev transport through double...</td>
+      <td>2015-08-24 19:02:49+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1508.05915v1</td>
+    </tr>
+    <tr>
+      <th>6370</th>
+      <td>Spin-dependent thermoelectric phenomena in a q...</td>
+      <td>2017-05-02 14:55:38+00:00</td>
+      <td>Piotr Trocha</td>
+      <td>http://arxiv.org/abs/1705.01007v1</td>
+    </tr>
+    <tr>
+      <th>6498</th>
       <td>Cross-correlations in a quantum dot Cooper pai...</td>
       <td>2018-07-23 22:28:01+00:00</td>
       <td>Piotr Trocha</td>
@@ -1194,43 +1941,33 @@ Name: first_author, dtype: int64
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="apis.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Introduction to searching with APIs</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="apis.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction to searching with APIs</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="crossref_library_module.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">CrossRef API</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="crossref_library_module.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">CrossRef API</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Engineering & Physical Sciences Librarians<br/>
-        
-          <div class="extra_footer">
-            <p>
+  <p>
+    
+      By Engineering & Physical Sciences Librarians<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -1239,28 +1976,16 @@ Name: first_author, dtype: int64
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

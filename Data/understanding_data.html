@@ -8,8 +8,8 @@
 
     <title>Understanding Data &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -42,7 +42,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -56,8 +56,21 @@
     <link rel="next" title="Data Case Study Example" href="data_case_study_example.html" />
     <link rel="prev" title="CrossRef API" href="../Search/crossref_library_module.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-3155703-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -88,7 +101,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -110,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -154,7 +167,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -230,7 +243,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -242,7 +255,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -291,7 +304,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -313,7 +326,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -330,7 +343,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -342,7 +355,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -354,7 +367,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -411,7 +424,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -422,7 +435,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -442,7 +455,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -477,7 +490,125 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Understanding Data</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-analysis">
+   Data Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-biography">
+     Data biography
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#licensing">
+     Licensing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#archiving-and-publishing">
+     Archiving and Publishing
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="understanding-data">
+<h1>Understanding Data<a class="headerlink" href="#understanding-data" title="Permalink to this headline">¶</a></h1>
+<p>Beginning a data-focused project can be daunting! This section will help you:<br></p>
+<ol class="simple">
+<li><p>Interpret why data was collected and examine its perceived limitations</p></li>
+<li><p>Understand the basics of data licensing and access</p></li>
+<li><p>Identify issues that may aid or hinder reproducibility</p></li>
+<li><p>Know where to get started with finding data</p></li>
+</ol>
+<section id="data-analysis">
+<h2>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
+<p>A typical <strong>Data Analysis</strong> approach takes the following path:</p>
+<p><img alt="Data Analysis" src="../_images/data_analysis_1.png" /></p>
+<p>Here, we invite you to consider the addition of three components, <strong>Data Biography</strong>, <strong>Licensing</strong>, and <strong>Archiving and Publishing</strong>, each marked in the revised approach below:</p>
+<p><img alt="Data Analysis Full" src="../_images/data_analysis_2.png" /></p>
+<section id="data-biography">
+<h3>Data biography<a class="headerlink" href="#data-biography" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Data Biography" src="../_images/data_analysis_3.png" /></p>
+<ol class="simple">
+<li><p>Who collected the data?</p></li>
+<li><p>How did they collect it?</p></li>
+<li><p>For what purpose?</p></li>
+<li><p>How is it used? By whom?</p></li>
+<li><p>What are its impacts? On whom?</p></li>
+<li><p>What are the known limitations?</p></li>
+</ol>
+</section>
+<section id="licensing">
+<h3>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Data Licensing" src="../_images/data_analysis_4.png" /></p>
+<ol class="simple">
+<li><p>How can you use data?</p></li>
+<li><p>How do you know?</p></li>
+</ol>
+<p>At a minimum, generate a <strong>citation</strong> for the data that you will use. <br>
+Find a <strong>license</strong>. If there is a license, what does it mean? <br></p>
+<p>Consult <a class="reference external" href="https://creativecommons.org/about/cclicenses/">Creative Commons</a> to learn about licenses and their implications.<br></p>
+<p>Regardless of the license, always include a citation. <br></p>
+</section>
+<section id="archiving-and-publishing">
+<h3>Archiving and Publishing<a class="headerlink" href="#archiving-and-publishing" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Data Archiving" src="../_images/data_analysis_5.png" /></p>
+<p>For more information about archiving and publishing options, consult the section on <a class="reference external" href="https://eps-libraries-berkeley.github.io/volt/Data/What_is_a_repository.html">Archival Repositories</a>.</p>
+<p><a class="bibtex reference internal" href="../Bibliography.html#d2017creative" id="id1">[2]</a>
+Data Biography and Data Analysis Images based on: Catherine D’Ignazio. Creative data literacy: bridging the gap between the data-haves and data-have nots. Information Design Journal, 23(1):6–18, 2017.</p>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Data"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -556,43 +687,33 @@ Data Biography and Data Analysis Images based on: Catherine D’Ignazio. Creativ
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../Search/crossref_library_module.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">CrossRef API</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../Search/crossref_library_module.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">CrossRef API</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="data_case_study_example.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data Case Study Example</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="data_case_study_example.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Data Case Study Example</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Engineering & Physical Sciences Librarians<br/>
-        
-          <div class="extra_footer">
-            <p>
+  <p>
+    
+      By Engineering & Physical Sciences Librarians<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -601,28 +722,16 @@ Data Biography and Data Analysis Images based on: Catherine D’Ignazio. Creativ
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

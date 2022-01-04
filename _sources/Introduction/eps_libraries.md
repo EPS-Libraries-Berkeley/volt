@@ -105,7 +105,7 @@ Librarian: <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" t
 :alt: Physics-Astronomy Library Location
 :width: 400px
 ```   
-Building Location: 351 LeConte Hall  
+Building Location: 351 Physics North  
 Phone: (510) 642-3122  
 
 **Features**  

@@ -8,8 +8,8 @@
 
     <title>Welcome &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -42,7 +42,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -55,8 +55,21 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="EPS Libraries" href="Introduction/eps_libraries.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-3155703-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -87,7 +100,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -109,7 +122,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -153,7 +166,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -229,7 +242,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -241,7 +254,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -290,7 +303,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -312,7 +325,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -329,7 +342,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -341,7 +354,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -353,7 +366,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -410,7 +423,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -421,7 +434,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -441,7 +454,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -476,7 +489,158 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Welcome</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#meet-your-virtual-team">
+   Meet your virtual team!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contact-us">
+     Contact Us
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eps-librarians">
+     EPS Librarians
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contributors">
+     Contributors
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="welcome">
+<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the Engineering &amp; Physical Sciences Libraries’ virtual Online Library Tutorials (vOLT). Whether you’re searching for articles, streamlining your research workflows, or organizing data, citations and writing, we have expertise and resources to help you.</p>
+<p>The sections of this guide are designed to help you manage various aspects of the research process. If you have questions about this guide or the resources described, you are welcome to <a href="https://www.lib.berkeley.edu/help/ask-science-reference-question" target="_blank">ask a Science Librarian</a>. Additional resources can also be found on the Library’s guide to <a href="https://www.lib.berkeley.edu/research-support" target="_blank">Research Support</a> and on the Library’s list of <a href="https://www.lib.berkeley.edu/research-support/guides-and-tutorials" target="_blank">Guides and Tutorials</a>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title">Question?</p>
+<div class="admonition-fill-out-the-form-below admonition">
+<p class="admonition-title">Fill out the form below.</p>
+<iframe 
+	src="https://ucberkeley.libanswers.com/widget_standalone.php?la_widget_id=14976" 
+	width="100%" 
+	height="700px" 
+	frameborder="0" 
+	marginheight="0" 
+	marginwidth="0">
+	Loading...
+</iframe>
+</div>
+</aside>
+<section id="meet-your-virtual-team">
+<h2>Meet your virtual team!<a class="headerlink" href="#meet-your-virtual-team" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/EPSLibrarians.png"><img alt="EPS Librarians" src="_images/EPSLibrarians.png" style="width: 600px;" /></a>
+<p><br></br></p>
+<section id="contact-us">
+<h3>Contact Us<a class="headerlink" href="#contact-us" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="eps-librarians">
+<h3>EPS Librarians<a class="headerlink" href="#eps-librarians" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/SamHeadshot.png"><img alt="Sam's Bitmoji Headshot" src="_images/SamHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a><br />
+<strong>Open Science Librarian</strong><br />
+Subject Areas: Earth &amp; Planetary Science, Geology and Geophysics</p>
+<a class="reference internal image-reference" href="_images/BrianHeadshot.png"><img alt="Brian's Bitmoji Headshot" src="_images/BrianHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a><br />
+<strong>Head, Engineering &amp; Physical Sciences Division</strong><br />
+Subject Areas: Computer Science, Logic &amp; the Methodology of Science, Mathematics, Statistics</p>
+<a class="reference internal image-reference" href="_images/SusanHeadshot.png"><img alt="Susan's Bitmoji Headshot" src="_images/SusanHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a><br />
+<strong>GIS &amp; Map Librarian</strong><br />
+Subject Areas: Geography, GIS &amp; Maps</p>
+<a class="reference internal image-reference" href="_images/Lisa2Headshot.png"><img alt="Lisa's Bitmoji Headshot" src="_images/Lisa2Headshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a><br />
+<strong>Engineering Librarian</strong><br />
+Subject Areas: Applied Science and Technology, Civil and Environmental Engineering, Engineering, Environmental Engineering, Industrial Engineering &amp; Operations Research, Mechanical Engineering, Nuclear Engineering, Ocean Engineering</p>
+<a class="reference internal image-reference" href="_images/KristenHeadshot.png"><img alt="Kristen's Bitmoji Headshot" src="_images/KristenHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a><br />
+<strong>Chemical &amp; Physical Sciences Librarian</strong><br />
+Subject Areas: Astronomy &amp; Astrophysics, Chemistry, Chemical &amp; Biomolecular Engineering, Physics</p>
+</section>
+<section id="contributors">
+<h3>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/AnnaHeadshot.png"><img alt="Anna's Bitmoji Headshot" src="_images/AnnaHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a><br />
+<strong>Data Services Librarian</strong></p>
+<a class="reference internal image-reference" href="_images/EricaHeadshot.png"><img alt="Erica's Bitmoji Headshot" src="_images/EricaHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a><br />
+<strong>Technical Processing &amp; Collection Projects Assistant</strong></p>
+<a class="reference internal image-reference" href="_images/BonitaHeadshot.png"><img alt="Bonita's Bitmoji Headshot" src="_images/BonitaHeadshot.png" style="width: 100px;" /></a>
+<p><a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a><br />
+<strong>Circulation/Reserves Supervisor</strong></p>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -588,34 +752,26 @@ Subject Areas: Astronomy &amp; Astrophysics, Chemistry, Chemical &amp; Biomolecu
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-     <div id="next">
-        <a class="right-next" href="Introduction/eps_libraries.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">EPS Libraries</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="Introduction/eps_libraries.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">EPS Libraries</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Engineering & Physical Sciences Librarians<br/>
-        
-          <div class="extra_footer">
-            <p>
+  <p>
+    
+      By Engineering & Physical Sciences Librarians<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -624,28 +780,16 @@ Subject Areas: Astronomy &amp; Astrophysics, Chemistry, Chemical &amp; Biomolecu
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

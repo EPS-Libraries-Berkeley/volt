@@ -8,8 +8,8 @@
 
     <title>Open Access &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -42,7 +42,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -56,8 +56,21 @@
     <link rel="next" title="Data reuse from Dryad" href="../Reproducibility/dryad.html" />
     <link rel="prev" title="eScholarship at UC Berkeley" href="escholarship.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-3155703-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -88,7 +101,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -110,7 +123,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Searching
  </span>
@@ -154,7 +167,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Data
  </span>
@@ -230,7 +243,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organizing
  </span>
@@ -242,7 +255,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Writing
  </span>
@@ -291,7 +304,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Publishing
  </span>
@@ -313,7 +326,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Reproducibility
  </span>
@@ -330,7 +343,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Special Topics
  </span>
@@ -342,7 +355,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -354,7 +367,7 @@
   </a>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   About
  </span>
@@ -411,7 +424,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -422,7 +435,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -442,7 +455,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -482,7 +495,125 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Open Access</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-open-access">
+   What is Open Access?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#university-of-california-open-access-policies">
+   University of California Open Access Policies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish-in-an-open-access-journal">
+   Publish in an open access journal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-help-to-defray-article-processing-charges">
+     Get help to defray article processing charges
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#publish-open-access-through-a-uc-wide-transformative-agreement">
+     Publish open access through a UC-wide transformative agreement
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="open-access">
+<h1>Open Access<a class="headerlink" href="#open-access" title="Permalink to this headline">¶</a></h1>
+<section id="what-is-open-access">
+<h2>What is Open Access?<a class="headerlink" href="#what-is-open-access" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p><strong>Open Access</strong> is the free, immediate, online availability of research articles coupled with the rights to use these articles fully in the digital environment.<br>
+<a class="reference external" href="https://sparcopen.org/open-access/">SPARC, https://sparcopen.org/open-access</a></p>
+</div>
+<p>Learn more about Open Access through the UC Berkeley Office of Scholarly Communication:
+<a class="reference external" href="https://www.lib.berkeley.edu/scholarly-communication/open-access-publishing/what-is-open-access">https://www.lib.berkeley.edu/scholarly-communication/open-access-publishing/what-is-open-access</a></p>
+</section>
+<section id="university-of-california-open-access-policies">
+<h2>University of California Open Access Policies<a class="headerlink" href="#university-of-california-open-access-policies" title="Permalink to this headline">¶</a></h2>
+<p>The Academic Senate of the University of California adopted an <a class="reference external" href="https://osc.universityofcalifornia.edu/scholarly-publishing/uc-open-access-policies-background/systemwide-senate/">Open Access Policy on July 24, 2013</a>, ensuring that future research articles authored by faculty at all 10 campuses of UC will be made available to the public at no charge. On October 23, 2015, a <a class="reference external" href="https://osc.universityofcalifornia.edu/scholarly-publishing/uc-open-access-policies-background/presidential/">Presidential Open Access Policy</a> expanded open access rights and responsibilities to all other authors who write scholarly articles while employed at UC, including non-senate researchers, lecturers, post-doctoral scholars, administrative staff, librarians, and graduate students.</p>
+<p>Pursuant to these policies, UC Berkeley faculty, staff, and students can make a copy of their scholarship available in the UC’s open access repository, called eScholarship because a license is reserved for the University to preserve and post an author final version (post-print).</p>
+<p>The UC system-wide <a class="reference external" href="https://osc.universityofcalifornia.edu/">Office of Scholarly Communications</a> also has a <a class="reference external" href="https://osc.universityofcalifornia.edu/for-authors/open-access-policy/">helpful guide</a> on both the OA policies and depositing.</p>
+</section>
+<section id="publish-in-an-open-access-journal">
+<h2>Publish in an open access journal<a class="headerlink" href="#publish-in-an-open-access-journal" title="Permalink to this headline">¶</a></h2>
+<section id="get-help-to-defray-article-processing-charges">
+<h3>Get help to defray article processing charges<a class="headerlink" href="#get-help-to-defray-article-processing-charges" title="Permalink to this headline">¶</a></h3>
+<p>If you are publishing in a fully open access journal, the <a class="reference external" href="https://guides.lib.berkeley.edu/brii">Berkeley Research Impact Initiative (BRII)</a> can reimburse your fees paid for article processing charges (APCs).</p>
+<p>To read about eligibility and submit a form for reimbursement of your APC, check out our <a class="reference external" href="https://guides.lib.berkeley.edu/brii">BRII guide</a>. It will walk you through the application process. The BRII program is open to authors in any discipline, and especially encourages applicants from the humanities and social sciences.</p>
+<p>Note that the BRII program reimburses for APCs when you publish in fully open access journals. Unfortunately, BRII can’t reimburse for publishing in “hybrid” OA journals—ones that charge us for a subscription for read access, and an additional payment to make a copy open access—because of the double payment situation that creates for the Library.</p>
+</section>
+<section id="publish-open-access-through-a-uc-wide-transformative-agreement">
+<h3>Publish open access through a UC-wide transformative agreement<a class="headerlink" href="#publish-open-access-through-a-uc-wide-transformative-agreement" title="Permalink to this headline">¶</a></h3>
+<p>The University of California has entered into several <a class="reference external" href="https://osc.universityofcalifornia.edu/uc-publisher-relationships/resources-for-negotiating-with-publishers/negotiating-with-scholarly-journal-publishers-a-toolkit/an-introductory-guide-to-the-uc-model-transformative-agreement/">transformative open access agreements</a> with publishers. Over time, these arrangements facilitate a cost-effective transition from paying for subscriptions to paying to publish open access articles. Typically these agreements provide free reading access to the UC community, and support open access publishing by UC authors by defraying some or all of the article processing charges.</p>
+<p>Here are the UC-wide transformative agreements to which authors can take part:</p>
+<p>Association for Computing Machinery (ACM)
+Cambridge University Press
+Candian Science Publishing
+Company of Biologists
+Elsevier
+Journal of Medical Internet Research (JMIR)
+National Academy of Sciences
+Public Library of Science (PLOS)
+Royal Society
+Springer Nature
+<a class="reference external" href="https://osc.universityofcalifornia.edu/for-authors/open-access-publishing-at-uc/publishing-discounts/">Other APC discounts and waivers</a></p>
+<p>As a member of the UC Berkeley community, you may also be entitled to other discounts off of many APCs through our membership and license agreements. For up-to-date information see the <a class="reference external" href="https://osc.universityofcalifornia.edu/for-authors/open-access-publishing-at-uc/publishing-discounts/">UC-wide list of publisher discounts</a>.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Publishing"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -556,43 +687,33 @@ Springer Nature
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="escholarship.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">eScholarship at UC Berkeley</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="escholarship.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">eScholarship at UC Berkeley</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Reproducibility/dryad.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data reuse from Dryad</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="../Reproducibility/dryad.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Data reuse from Dryad</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Engineering & Physical Sciences Librarians<br/>
-        
-          <div class="extra_footer">
-            <p>
+  <p>
+    
+      By Engineering & Physical Sciences Librarians<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -601,28 +722,16 @@ Springer Nature
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
