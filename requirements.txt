@@ -1,4 +1,3 @@
-
 pandas
 numpy
 matplotlib
@@ -9,4 +8,4 @@ requests
 datetime
 habanero
 jupyter-book
-sphinxcontrib-bibtex<2.0.0
+sphinxcontrib-bibtex==1.0.0
