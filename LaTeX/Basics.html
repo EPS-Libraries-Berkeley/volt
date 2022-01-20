@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -534,19 +534,20 @@
         </div>
     </div>
 </div>
-    <!-- Table of contents that is only displayed when printing the page -->
-    <div id="jb-print-docs-body" class="onlyprint">
-        <h1>LaTeX Basics</h1>
-        <!-- Table of contents -->
-        <div id="print-main-content" class="row">
-            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
-            <div id="jb-print-toc">
-                
-                <div>
-                    <h2> Contents </h2>
-                </div>
-                <nav aria-label="Page">
-                    <ul class="visible nav section-nav flex-column">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>LaTeX Basics</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#latex-using-overleaf">
    LaTeX using Overleaf
@@ -591,7 +592,9 @@
  </li>
 </ul>
 
-                </nav>
+                        </nav>
+                    </div>
+                </div>
             </div>
             
               <div>
@@ -776,196 +779,8 @@ Death Valley</p></li>
 
               </div>
               
-            </div>
-        </div>
-    </div>
-    <div id="main-content" class="row noprint">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
-                
-  <section class="tex2jax_ignore mathjax_ignore" id="latex-basics">
-<h1>LaTeX Basics<a class="headerlink" href="#latex-basics" title="Permalink to this headline">¶</a></h1>
-<section id="latex-using-overleaf">
-<h2>LaTeX using Overleaf<a class="headerlink" href="#latex-using-overleaf" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Create documents via a cloud-based account</p></li>
-<li><p>Source code or rich text format</p></li>
-<li><p>Collaborating and sharing documents</p></li>
-<li><p>Versioning and track changes</p></li>
-<li><p>Templates for a variety of documents and publishers</p></li>
-<li><p>Link with other tools in your research workflow</p></li>
-<li><p>Pro account with your <a class="reference external" href="http://berkeley.edu">berkeley.edu</a> address</p></li>
-</ul>
-</section>
-<section id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<p>Look at the template below to get a sense of how Overleaf works. On the left side, you’ll see the content written in LaTeX. On the right side, the rendered document.</p>
-<p><img alt="Template_image" src="../_images/template.png" /></p>
-</section>
-<section id="structure-of-a-document">
-<h2>Structure of a document<a class="headerlink" href="#structure-of-a-document" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Term</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Example</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Command</p></td>
-<td><p>Control sequence which performs an action</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\newpage</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Preamble</p></td>
-<td><p>Block of commands that define the type of document you are writing,  the language you are writing in, the packages you would like to use. Comes before \begin{document}</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\documentclass{article}</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Package</p></td>
-<td><p>Enable you to create bibliographies, insert images and figures, and write formulas.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\usepackage{amsmath}</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Environment</p></td>
-<td><p>Block of code with specific behavior depending on its type</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\begin{}</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">\end{}</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Body</p></td>
-<td><p>Content of document enclosed inside an environment</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>Comments:
-Use % to create a comment. Nothing on the line after the % will be typeset.</p></li>
-<li><p>Restricted Characters:
-Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
-</ul>
-</div>
-</section>
-<section id="basic-commands">
-<h2>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Bold</strong>: <code class="docutils literal notranslate"><span class="pre">\textbf{example}</span></code></p></li>
-<li><p><em>Italics</em>: <code class="docutils literal notranslate"><span class="pre">\textit{example}</span></code></p></li>
-<li><p><ins>Underline</ins>: <code class="docutils literal notranslate"><span class="pre">\underline{example}</span></code></p></li>
-</ul>
-<p>Font typefaces: Change in preamble. More information:
-<a class="reference external" href="https://v2.overleaf.com/learn/Font_typefaces">https://v2.overleaf.com/learn/Font_typefaces</a></p>
-</section>
-<section id="make-title">
-<h2>Make Title<a class="headerlink" href="#make-title" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>The simplest option for making a title is to use the \maketitle command which draws from the following declarations within the preamble:<br />
-<code class="docutils literal notranslate"><span class="pre">\author</span></code><br />
-<code class="docutils literal notranslate"><span class="pre">\date</span></code><br />
-<code class="docutils literal notranslate"><span class="pre">\thanks</span></code><br />
-<code class="docutils literal notranslate"><span class="pre">\title</span></code></p></li>
-<li><p>OR use the<br />
-<code class="docutils literal notranslate"><span class="pre">\begin{titlepage}</span> <span class="pre">...</span> <span class="pre">\end{titlepage}</span></code><br />
-environment.</p></li>
-</ol>
-<p>The titlepage environment creates a title page, i.e. a page with no printed page number or heading. It also causes the following page to be numbered page one.
-Formatting is left to you, but commands like <code class="docutils literal notranslate"><span class="pre">\centering</span></code>, <code class="docutils literal notranslate"><span class="pre">\vspace</span></code>, and <code class="docutils literal notranslate"><span class="pre">\vfill</span></code> are helpful.</p>
-</section>
-<section id="basic-math">
-<h2>Basic Math<a class="headerlink" href="#basic-math" title="Permalink to this headline">¶</a></h2>
-<p>To display math inline with text, place formula or symbol in between $:</p>
-<p><code class="docutils literal notranslate"><span class="pre">$x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z$</span></code> renders inline: <span class="math notranslate nohighlight">\(x + y = z\)</span></p>
-<p>Display mode <code class="docutils literal notranslate"><span class="pre">\[</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">\]</span></code> will center the equation on its own line:</p>
-<div class="math notranslate nohighlight">
-\[x + y = z\]</div>
-</section>
-<section id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
-<p>Use the <code class="docutils literal notranslate"><span class="pre">\begin{itemize}...\end{itemize}</span></code> environment to create unnumbered lists.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">itemize</span><span class="p">}</span>
-\<span class="n">item</span> <span class="n">Apples</span>
-\<span class="n">item</span> <span class="n">Cherries</span>
-\<span class="n">item</span> <span class="n">Oranges</span>
-\<span class="n">item</span> <span class="n">Peaches</span>
-\<span class="n">item</span> <span class="n">Watermelon</span>
-\<span class="n">end</span><span class="p">{</span><span class="n">itemize</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>This code results in:</p>
-<ul class="simple">
-<li><p>Apples</p></li>
-<li><p>Cherries</p></li>
-<li><p>Oranges</p></li>
-<li><p>Peaches</p></li>
-<li><p>Watermelon</p></li>
-</ul>
-<p>Use the similar <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code> environment to create numbered lists.</p>
-</section>
-<section id="exercise-1">
-<h2><em>Exercise 1</em><a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
-<p><em>Objective:<br />
-Practice several basic LaTeX commands in a new project.</em></p>
-<ol class="simple">
-<li><p>Open a new project in <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a>.</p></li>
-<li><p>Create a title page</p>
-<ol class="simple">
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">[title</span> <span class="pre">page]</span></code> to make preamble command <code class="docutils literal notranslate"><span class="pre">\documentclass[titlepage]{article}</span></code></p></li>
-<li><p>After <code class="docutils literal notranslate"><span class="pre">\title</span></code>, add “VOLT LaTeX Basics Assignment”</p></li>
-<li><p>After <code class="docutils literal notranslate"><span class="pre">\author</span></code>, add your name</p></li>
-<li><p>Confirm that the date is correct or edit if needed</p></li>
-<li><p>Create <strong>Title Page</strong> using command <code class="docutils literal notranslate"><span class="pre">\maketitle</span></code> inserted after <code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></li>
-</ol>
-</li>
-<li><p>Add a new section labeled “Practice” using the <code class="docutils literal notranslate"><span class="pre">\section*</span></code> command.</p></li>
-<li><p>Add the following paragraph under that section using “inline” math commands:</p></li>
-</ol>
-<hr class="docutils" />
-<p>We know the initial pressure <span class="math notranslate nohighlight">\(P_0 = 7.00 \times 10^5 Pa\)</span>, the initial temperature <span class="math notranslate nohighlight">\(T_0 = 18.0 ^{\circ}C\)</span>, and the final temperature <span class="math notranslate nohighlight">\(T_f = 35.0 ^{\circ}C\)</span>.</p>
-<p><strong>Question:</strong> What is the final pressure <span class="math notranslate nohighlight">\(P_f\)</span>?</p>
-<hr class="docutils" />
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Add the command <code class="docutils literal notranslate"><span class="pre">\usepackage{gensymb}</span></code> to the preamble in order to use the <code class="docutils literal notranslate"><span class="pre">\degree</span></code> command.</p>
-</div>
-<ol class="simple">
-<li><p>Add a new section labeled “California Road Trip Destinations”</p></li>
-<li><p>Make a numbered list of four items, for example:<br />
-Yosemite <br/>
-Big Sur <br/>
-Lake Tahoe <br/>
-Death Valley</p></li>
-</ol>
-<p><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\section*{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\times</span></code>, <code class="docutils literal notranslate"><span class="pre">$...$</span></code>, <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code>. Degree can be represented several ways such as <code class="docutils literal notranslate"><span class="pre">$^\circ$</span></code> or <code class="docutils literal notranslate"><span class="pre">\degree</span></code> (requires the <code class="docutils literal notranslate"><span class="pre">{gensymb}</span></code> package). Subscripts and superscripts are written using the symbols _ and ^.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Questions? Compare your LaTeX code to the <a href="https://www.overleaf.com/read/djdcymcpxcxq">solutions</a> to troubleshoot.</p>
-</div>
-</section>
-</section>
-
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./LaTeX"
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
-
-              </div>
-              
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="Intro_to_LaTeX.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -982,7 +797,7 @@ Death Valley</p></li>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">

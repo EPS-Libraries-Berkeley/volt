@@ -510,19 +510,20 @@
         </div>
     </div>
 </div>
-    <!-- Table of contents that is only displayed when printing the page -->
-    <div id="jb-print-docs-body" class="onlyprint">
-        <h1>Digital Mapping</h1>
-        <!-- Table of contents -->
-        <div id="print-main-content" class="row">
-            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
-            <div id="jb-print-toc">
-                
-                <div>
-                    <h2> Contents </h2>
-                </div>
-                <nav aria-label="Page">
-                    <ul class="visible nav section-nav flex-column">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Digital Mapping</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-is-digital-mapping">
    What is digital mapping?
@@ -547,7 +548,9 @@
  </li>
 </ul>
 
-                </nav>
+                        </nav>
+                    </div>
+                </div>
             </div>
             
               <div>
@@ -607,71 +610,8 @@
 
               </div>
               
-            </div>
-        </div>
-    </div>
-    <div id="main-content" class="row noprint">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
-                
-  <section class="tex2jax_ignore mathjax_ignore" id="digital-mapping">
-<h1>Digital Mapping<a class="headerlink" href="#digital-mapping" title="Permalink to this headline">¶</a></h1>
-<p>This tutorial will give a short introduction to some digital mapping concepts, tools, and data.</p>
-<section id="what-is-digital-mapping">
-<h2>What is digital mapping?<a class="headerlink" href="#what-is-digital-mapping" title="Permalink to this headline">¶</a></h2>
-<p>Digital mapping uses computer software (either desktop or web based) to create digital maps. The basic components of digital mapping are <strong>geospatial data</strong> and specialized software called <strong>GIS</strong> ( <strong>G</strong>eographic <strong>I</strong>nformation <strong>S</strong>ystems ). We’ll look at each of the these in more detail below.</p>
-</section>
-<section id="components-of-digital-mapping">
-<h2>Components of digital mapping<a class="headerlink" href="#components-of-digital-mapping" title="Permalink to this headline">¶</a></h2>
-<section id="geographic-data-vs-geospatial-data">
-<h3>Geographic data vs. geospatial data<a class="headerlink" href="#geographic-data-vs-geospatial-data" title="Permalink to this headline">¶</a></h3>
-<p><strong>Geographic data</strong> is data about locations on or near the surface of the earth. It can scale from the very local all the way up to a global level.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Because geographic data only includes data on or near the surface of the earth it does not include data about outer space or other planets!</p>
-</div>
-<a class="reference internal image-reference" href="../_images/no_potw2013a.jpg"><img alt="Hubble Space Telescope image of a Cannibal Galaxy" class="align-center" src="../_images/no_potw2013a.jpg" style="height: 100px;" /></a>
-<p><em>Image source: <a class="reference external" href="https://www.nasa.gov/mission_pages/hubble/multimedia/index.html">https://www.nasa.gov/mission_pages/hubble/multimedia/index.html</a></em></p>
-<p>Geographic data uses human-understandable means to describe and represent location. For example, a town name (San Jose) or a street intersection (Hearst &amp; Euclid) both describe locations in ways that humans can interpret relatively easily and set in context. Geographic data can also include <strong>attributes</strong> about a location, for example how many people live in a city or the name of a building.</p>
-<p><strong>Geospatial data</strong> on the other hand encodes location with coordinates. It consists of geometric representations. This type of representation using geospatial coordinates allows a computer to understand the location. Correctly interpreting the town name “San Jose” requires context (which country? which state?), but geospatial coordinates are (relatively) unambiguous. Just like geographic data, geospatial data can also include <strong>attribute</strong> information about a location.</p>
-<p>Geospatial data is powerful! It can be:</p>
-<ul class="simple">
-<li><p>mapped!</p></li>
-<li><p>used to derive spatial measurements like area and distance</p></li>
-<li><p>used for determine spatial relationships like inside, next to, etc.</p></li>
-</ul>
-</section>
-</section>
-<section id="to-be-continued-more-content-coming-soon">
-<h2>To be continued… :) More content coming soon!<a class="headerlink" href="#to-be-continued-more-content-coming-soon" title="Permalink to this headline">¶</a></h2>
-</section>
-</section>
-
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./Special_Topics"
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
-
-              </div>
-              
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="../Reproducibility/zenodo.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -688,7 +628,7 @@
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
