@@ -11,6 +11,7 @@ The sections of this guide are designed to help you manage various aspects of th
 :width: 600px
 ```  
 <br></br>
+### Contact Us
 ```{image} ./Introduction/images/SamHeadshot.png
 :alt: Sam's Bitmoji Headshot
 :width: 100px
@@ -18,14 +19,6 @@ The sections of this guide are designed to help you manage various aspects of th
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
 **Open Science Librarian**  
 Subject Areas: Earth & Planetary Science, Geology and Geophysics  
-
-```{image} ./Introduction/images/AnnaHeadshot.png
-:alt: Anna's Bitmoji Headshot
-:width: 100px
-```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
-**Science Data & Engineering Librarian**  
-Subject Areas: Bioengineering, Electrical Engineering, Materials Science & Engineering  
 
 ```{image} ./Introduction/images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
@@ -58,3 +51,16 @@ Subject Areas: Applied Science and Technology, Civil and Environmental Engineeri
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
 **Chemical & Physical Sciences Librarian**  
 Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engineering, Physics
+### Contributors
+```{image} ./Introduction/images/AnnaHeadshot.png
+:alt: Anna's Bitmoji Headshot
+:width: 100px
+```
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
+**Data Services Librarian**    
+
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a>
+**Technical Processing & Collection Projects Assistant**
+
+<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>
+**Circulation/Reserves Supervisor**
