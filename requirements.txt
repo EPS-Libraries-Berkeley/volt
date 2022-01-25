@@ -1,12 +1,11 @@
-
 pandas
 numpy
 matplotlib
-nbinteract
 scipy
-arxiv>=1.1.0
+arxiv>=1.4.0
 requests
 datetime
 habanero
 jupyter-book
-sphinxcontrib-bibtex<2.0.0
+sphinxcontrib-bibtex==1.0.0
+docutils<0.18

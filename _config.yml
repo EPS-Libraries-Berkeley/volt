@@ -5,12 +5,11 @@ logo: EPS-Logo.png
 
 
 execute:
+  timeout: 500
   exclude_patterns:
     - 'crossref_library_module.ipynb'
 
-# Bibliography settings
-bibtex_bibfiles:
-  - references.bib
+
 
 html:
   home_page_in_navbar: false
@@ -29,8 +28,10 @@ html:
 
 sphinx:
   config:
-
-    html_show_copyright: false    
+    bibtex_reference_style: author_year
+    html_show_copyright: false 
+bibtex_bibfiles:
+  - /references.bib   
 
 latex:
   latex_documents:
@@ -39,8 +40,9 @@ latex:
 launch_buttons:
   notebook_interface        : classic
   binderhub_url             : "https://mybinder.org"
+  colab_url                 : "https://colab.research.google.com"
 
 repository:
-  url                       : https://github.com/EPS-Libraries-Berkeley/volt
+  url                       : https://github.com/EPS-Libraries-Berkeley/volt/
   branch                    : main
 
