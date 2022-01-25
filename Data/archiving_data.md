@@ -1,0 +1,11 @@
+# Archiving and Sharing Data
+
+Please check funder and publisher requirements when archiving data. Based on the data type, the funder may want data deposited in a specific location. Publishers usually provide repository recommendations, but it is important to check their guidelines. 
+
+If affiliated with UC Berkeley or Lawrence Berkeley National Lab, it is free to deposit datasets with [Dryad Digital Repository](https://datadryad.org/stash/). Dryad is an open-source archival repository for a wide range of data types from any discipline. Data is assigned a DOI and citation for increased discovery, stability, and to enable proper attribution. 
+
+To ensure that data is understandable and usable in the future, you need to make your data and code FAIR: findable, accessible, interoperable, and usable.  
+
+If your data requires a discipline specific repository, please visit [Registry of Research Data Repositories](https://www.re3data.org). 
+
+![re3](images/re3.png)
