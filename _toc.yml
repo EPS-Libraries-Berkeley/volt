@@ -43,6 +43,7 @@ parts:
     - file: LaTeX/Bibliographies
     - file: LaTeX/FAQs
     - file: LaTeX/latex_workshop
+    - file: LaTeX/latex-cv-workshop
 - caption: Publishing
   chapters:
   - file: Publishing/preprints
