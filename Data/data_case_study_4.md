@@ -26,14 +26,13 @@ With the information shown above, and using the link provided, answer the follow
 
 ## Citation
 
-````{panels}
+````{card}
 **Questions**
 
 1. How would you cite the data?
 2. Is there an example or recommendation?
----
+
 ```{dropdown} Result
-    :title: bg-primary text-white text-center font-weight-bold
 California Department of Public Health (2021), COVID-19 Vaccine Progress Dashboard Data, California Open Data Portal, https://data.ca.gov/dataset/covid-19-vaccine-progress-dashboard-data
 ```
 ````

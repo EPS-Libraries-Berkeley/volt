@@ -26,14 +26,13 @@ With the information shown above, and using the link provided, answer the follow
 
 ## Citation
 
-````{panels}
+````{card}
 **Questions**
 
 1. How would you cite the data?
 2. Is there an example or recommendation?
----
+
 ```{dropdown} Result
-    :title: bg-primary text-white text-center font-weight-bold
 Berkeley Institute of Governmental Studies, University of California. (2020). Berkeley IGS Poll: Tabulations from an April 2020 Survey of California Registered Voters about COVID-19 and Farmworkers (Version 3) [Dataset]. Cornell University, Ithaca, NY: Roper Center for Public Opinion Research. doi:10.25940/ROPER-31118024
 ```
 ````
