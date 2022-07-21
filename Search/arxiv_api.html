@@ -8,8 +8,9 @@
 
     <title>ArXiv API &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,36 +20,35 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/Search/arxiv_api.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -72,7 +72,21 @@
                     </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -81,9 +95,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -301,6 +316,11 @@
      Workshop - Introduction to LaTeX
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../LaTeX/latex-cv-workshop.html">
+     CV Workshop - Take your curriculum vitae to the next level with LaTeX
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -381,109 +401,195 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Search/arxiv_api.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/Search/arxiv_api.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/Search/arxiv_api.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/Search/arxiv_api.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/Search/arxiv_api.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/EPS-Libraries-Berkeley/volt/"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/Search/arxiv_api.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#install-packages">
    Install Packages
@@ -516,12 +622,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>ArXiv API</h1>
@@ -570,16 +675,17 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="arxiv-api">
-<h1>ArXiv API<a class="headerlink" href="#arxiv-api" title="Permalink to this headline">¶</a></h1>
+<h1>ArXiv API<a class="headerlink" href="#arxiv-api" title="Permalink to this headline">#</a></h1>
 <p>The ArXiV API allows programmatic access to the arXiv’s e-print content and metadata. “The goal of the interface is to facilitate new and creative use of the the vast body of material on the arXiv by providing a low barrier to entry for application developers.” <a class="reference external" href="https://arxiv.org/help/api">https://arxiv.org/help/api</a></p>
 <p>The API’s user manual (<a class="reference external" href="https://arxiv.org/help/api/user-manual">https://arxiv.org/help/api/user-manual</a>) provides helpful documentation for using the API and retrieving article metadata.</p>
 <p>Our examples below will introduce you to the basics of querying the ArXiV API.</p>
 <section id="install-packages">
-<h2>Install Packages<a class="headerlink" href="#install-packages" title="Permalink to this headline">¶</a></h2>
+<h2>Install Packages<a class="headerlink" href="#install-packages" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">urllib</span>
@@ -599,7 +705,7 @@
 </div>
 </section>
 <section id="query-the-api">
-<h2>Query the API<a class="headerlink" href="#query-the-api" title="Permalink to this headline">¶</a></h2>
+<h2>Query the API<a class="headerlink" href="#query-the-api" title="Permalink to this headline">#</a></h2>
 <p>Perform a simple query for “graphene.” We’ll limit results to the titles of the 10 most recent papers.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -615,16 +721,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>THz radiation induced circular Hall effect in graphene
-Growth optimization and device integration of narrow-bandgap graphene nanoribbons
-Quantum tunneling in graphene Corbino disk in a solenoid magnetic potential with wedge disclination
-Ferromagnetism in armchair graphene nanoribbon heterostructures
-Majorana bound states in encapsulated bilayer graphene
-Experimental control over thermal conductance quantization in fractional quantum Hall states
-Proximity-Induced Superconductivity in Atomically Precise Nanographene
-The effects of microscopic scattering on terahertz third harmonic generation in monolayer graphene
-Graphene-based enhancement of near-field radiative-heat-transfer rectification
-The saddle-point exciton signature on high harmonic generation in 2D hexagonal nanostructures
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fully Atomistic Molecular Dynamics Simulations of Elastic Properties of Tetragraphene Monolayer
+Hydrodynamic approach to two-dimensional electron systems
+MsSpec-DFM (Dielectric function module): Towards a multiple scattering approach to plasmon description
+Dirac cones for a mean-field model of graphene
+Observation of well-defined Kohn-anomaly in high-quality graphene devices at room temperature
+Molecular encapsulation from the liquid phase and 6-armchair graphene nanoribbon growth in carbon nanotubes
+Polyaniline and graphene nanocomposites for enhancing the interlaminar fracture toughness and thermo-mechanical properties of carbon fiber/epoxy composites
+Andreev reflection spectroscopy in strongly paired superconductors
+Exploring the configurational space of amorphous graphene with machine-learned atomic energies
+Bipolar Thermoelectricity in Bilayer-Graphene/Superconductor Tunnel Junctions
 </pre></div>
 </div>
 </div>
@@ -655,7 +761,7 @@ The saddle-point exciton signature on high harmonic generation in 2D hexagonal n
 </div>
 </section>
 <section id="organize-and-analyze-your-results">
-<h2>Organize and analyze your results<a class="headerlink" href="#organize-and-analyze-your-results" title="Permalink to this headline">¶</a></h2>
+<h2>Organize and analyze your results<a class="headerlink" href="#organize-and-analyze-your-results" title="Permalink to this headline">#</a></h2>
 <p>Create a dataframe to better analyze your results. This example uses Python’s <a class="reference external" href="https://docs.python.org/3/library/functions.html#vars"><code class="docutils literal notranslate"><span class="pre">vars</span></code></a> built-in function to convert search results into Python dictionaries of paper metadata.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -862,20 +968,20 @@ The saddle-point exciton signature on high harmonic generation in 2D hexagonal n
     </tr>
     <tr>
       <th>9</th>
-      <td>http://arxiv.org/abs/1508.05462v1</td>
-      <td>2015-08-22 03:13:34+00:00</td>
-      <td>2015-08-22 03:13:34+00:00</td>
-      <td>Scanning gate microscopy of ultra clean carbon...</td>
-      <td>[Jiamin Xue, Rohan Dhall, Stephen B. Cronin, B...</td>
-      <td>We perform scanning gate microscopy on individ...</td>
-      <td>5 pages, 4 figures</td>
-      <td>None</td>
-      <td>None</td>
+      <td>http://arxiv.org/abs/1405.1981v1</td>
+      <td>2014-05-08 15:51:52+00:00</td>
+      <td>2014-05-08 15:51:52+00:00</td>
+      <td>A single quantum dot as an optical thermometer...</td>
+      <td>[Florian Haupt, Atac Imamoglu, Martin Kroner]</td>
+      <td>Resonant laser spectroscopy of a negatively ch...</td>
+      <td>11 pages, 4 figures</td>
+      <td>Phys. Rev. Applied 2, 024001 (2014)</td>
+      <td>10.1103/PhysRevApplied.2.024001</td>
       <td>cond-mat.mes-hall</td>
       <td>[cond-mat.mes-hall]</td>
-      <td>[http://arxiv.org/abs/1508.05462v1, http://arx...</td>
-      <td>http://arxiv.org/pdf/1508.05462v1</td>
-      <td>{'id': 'http://arxiv.org/abs/1508.05462v1', 'g...</td>
+      <td>[http://dx.doi.org/10.1103/PhysRevApplied.2.02...</td>
+      <td>http://arxiv.org/pdf/1405.1981v1</td>
+      <td>{'id': 'http://arxiv.org/abs/1405.1981v1', 'gu...</td>
     </tr>
   </tbody>
 </table>
@@ -990,48 +1096,48 @@ The saddle-point exciton signature on high harmonic generation in 2D hexagonal n
       <td>...</td>
     </tr>
     <tr>
-      <th>10957</th>
-      <td>Solution-processed two-dimensional materials f...</td>
-      <td>2021-10-18 08:22:42+00:00</td>
-      <td>Sebastiano Bellani</td>
-      <td>http://arxiv.org/abs/2110.09088v1</td>
+      <th>11211</th>
+      <td>Blueprint of a scalable spin qubit shuttle dev...</td>
+      <td>2022-02-23 21:23:28+00:00</td>
+      <td>Veit Langrock</td>
+      <td>http://arxiv.org/abs/2202.11793v1</td>
     </tr>
     <tr>
-      <th>10958</th>
-      <td>Quality factor for zero-bias conductance peaks...</td>
-      <td>2021-11-01 18:11:43+00:00</td>
-      <td>Yi-Hua Lai</td>
-      <td>http://arxiv.org/abs/2111.01178v1</td>
+      <th>11212</th>
+      <td>Quantum simulator of extended bipartite Hubbar...</td>
+      <td>2022-03-03 15:11:05+00:00</td>
+      <td>Yasser Saleem</td>
+      <td>http://arxiv.org/abs/2203.01760v1</td>
     </tr>
     <tr>
-      <th>10959</th>
-      <td>High Responsivity Gate Tunable UV-Visible Broa...</td>
-      <td>2021-11-09 14:15:45+00:00</td>
-      <td>Shubhrasish Mukherjee</td>
-      <td>http://arxiv.org/abs/2111.05159v1</td>
+      <th>11213</th>
+      <td>The cumulant Green's functions method for the ...</td>
+      <td>2022-05-02 19:01:11+00:00</td>
+      <td>Renan Lira</td>
+      <td>http://arxiv.org/abs/2205.01161v2</td>
     </tr>
     <tr>
-      <th>10960</th>
-      <td>Current noise and Keldysh vertex function of a...</td>
-      <td>2021-11-20 00:03:47+00:00</td>
-      <td>Akira Oguri</td>
-      <td>http://arxiv.org/abs/2111.10483v1</td>
+      <th>11214</th>
+      <td>Semiconductor-based electron flying qubits: Re...</td>
+      <td>2022-07-04 10:49:06+00:00</td>
+      <td>Hermann Edlbauer</td>
+      <td>http://arxiv.org/abs/2207.01318v1</td>
     </tr>
     <tr>
-      <th>10961</th>
-      <td>Post-processing of real-time quantum event mea...</td>
-      <td>2021-12-14 14:09:20+00:00</td>
-      <td>Jens Kerski</td>
-      <td>http://arxiv.org/abs/2112.07417v1</td>
+      <th>11215</th>
+      <td>Limits to two-spin-qubit gate fidelity from th...</td>
+      <td>2022-07-19 17:55:40+00:00</td>
+      <td>Wenbo Sun</td>
+      <td>http://arxiv.org/abs/2207.09441v1</td>
     </tr>
   </tbody>
 </table>
-<p>10962 rows × 4 columns</p>
+<p>11216 rows × 4 columns</p>
 </div></div></div>
 </div>
 </section>
 <section id="visualize-your-results">
-<h2>Visualize your results<a class="headerlink" href="#visualize-your-results" title="Permalink to this headline">¶</a></h2>
+<h2>Visualize your results<a class="headerlink" href="#visualize-your-results" title="Permalink to this headline">#</a></h2>
 <p>Get a sense of the how your topic has trended over time. When did research on your topic take off? Create a bar chart of the number of articles published in each year.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1058,22 +1164,22 @@ The saddle-point exciton signature on high harmonic generation in 2D hexagonal n
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>first_author
 Bing Dong                 27
 Y. Alhassid               20
-Constantine Yannouleas    18
+Constantine Yannouleas    20
 Akira Oguri               16
 David M. -T. Kuo          16
 Xuedong Hu                15
-Kicheon Kang              14
-B. Szafran                14
 Massimo Rontani           14
+Vidar Gudmundsson         14
+B. Szafran                14
+Kicheon Kang              14
 Rafael Sánchez            14
 Ulrich Hohenester         14
-P. W. Brouwer             13
-Vidar Gudmundsson         13
 C. W. J. Beenakker        13
+P. W. Brouwer             13
 Piotr Trocha              12
-G. Giavaras               12
 O. Entin-Wohlman          12
-Arka Majumdar             11
+G. Giavaras               12
+Tetsufumi Tanamoto        11
 Ramin M. Abolfath         11
 A. A. Aligia              11
 Name: first_author, dtype: int64
@@ -1083,7 +1189,7 @@ Name: first_author, dtype: int64
 </div>
 </section>
 <section id="identify-and-download-papers">
-<h2>Identify and download papers<a class="headerlink" href="#identify-and-download-papers" title="Permalink to this headline">¶</a></h2>
+<h2>Identify and download papers<a class="headerlink" href="#identify-and-download-papers" title="Permalink to this headline">#</a></h2>
 <p>Let’s download the oldest paper about quantum dots co-authored by Piotr Trocha:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1119,84 +1225,84 @@ Name: first_author, dtype: int64
   </thead>
   <tbody>
     <tr>
-      <th>760</th>
+      <th>768</th>
       <td>Dicke-like effect in spin-polarized transport ...</td>
       <td>2007-11-22 16:11:11+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0711.3611v2</td>
     </tr>
     <tr>
-      <th>2322</th>
+      <th>2348</th>
       <td>Kondo-Dicke resonances in electronic transport...</td>
       <td>2008-03-28 15:49:07+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0803.4154v1</td>
     </tr>
     <tr>
-      <th>3381</th>
+      <th>3409</th>
       <td>Negative tunnel magnetoresistance and differen...</td>
       <td>2009-11-02 11:45:03+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0911.0291v1</td>
     </tr>
     <tr>
-      <th>5401</th>
+      <th>5451</th>
       <td>Beating in electronic transport through quantu...</td>
       <td>2010-04-11 16:20:04+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1004.1819v2</td>
     </tr>
     <tr>
-      <th>2467</th>
+      <th>2481</th>
       <td>Orbital Kondo effect in double quantum dots</td>
       <td>2010-08-17 14:13:23+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1008.2902v2</td>
     </tr>
     <tr>
-      <th>2513</th>
+      <th>2529</th>
       <td>The influence of spin-flip scattering on the p...</td>
       <td>2011-05-08 20:12:41+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1105.1550v1</td>
     </tr>
     <tr>
-      <th>6154</th>
+      <th>5622</th>
       <td>Large enhancement of thermoelectric effects in...</td>
       <td>2011-08-11 14:49:51+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1108.2422v2</td>
     </tr>
     <tr>
-      <th>7802</th>
+      <th>7934</th>
       <td>The role of the indirect tunneling processes a...</td>
       <td>2011-09-12 20:51:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1109.2621v1</td>
     </tr>
     <tr>
-      <th>2613</th>
+      <th>2706</th>
       <td>Spin-polarized Andreev transport influenced by...</td>
       <td>2014-09-14 23:54:35+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1409.4122v1</td>
     </tr>
     <tr>
-      <th>7912</th>
+      <th>8155</th>
       <td>Spin-resolved Andreev transport through double...</td>
       <td>2015-08-24 19:02:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1508.05915v1</td>
     </tr>
     <tr>
-      <th>6208</th>
+      <th>6564</th>
       <td>Spin-dependent thermoelectric phenomena in a q...</td>
       <td>2017-05-02 14:55:38+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1705.01007v1</td>
     </tr>
     <tr>
-      <th>6254</th>
+      <th>6609</th>
       <td>Cross-correlations in a quantum dot Cooper pai...</td>
       <td>2018-07-23 22:28:01+00:00</td>
       <td>Piotr Trocha</td>
@@ -1223,7 +1329,7 @@ Name: first_author, dtype: int64
 <p>Confirm that the PDF has downloaded!</p>
 </section>
 <section id="bibliography">
-<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h2>
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Tim Head: <a class="reference external" href="https://betatim.github.io/posts/analysing-the-arxiv/">https://betatim.github.io/posts/analysing-the-arxiv/</a></p></li>
 <li><p>Lukas Schwab: <a class="reference external" href="https://github.com/lukasschwab/arxiv.py">https://github.com/lukasschwab/arxiv.py</a></p></li>
@@ -1254,9 +1360,11 @@ Name: first_author, dtype: int64
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="apis.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1272,16 +1380,16 @@ Name: first_author, dtype: int64
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      By Engineering & Physical Sciences Librarians<br/>
-    
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Engineering & Physical Sciences Librarians<br/>
+  
+    <div class="extra_footer">
+      <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -1290,16 +1398,20 @@ Name: first_author, dtype: int64
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

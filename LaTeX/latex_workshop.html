@@ -8,8 +8,9 @@
 
     <title>Workshop - Introduction to LaTeX &#8212; vOLT virtual Online Library Tutorials</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,43 +20,42 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/latex_workshop.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Preprints" href="../Publishing/preprints.html" />
+    <link rel="next" title="CV Workshop - Take your curriculum vitae to the next level with LaTeX" href="latex-cv-workshop.html" />
     <link rel="prev" title="FAQs" href="FAQs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -74,7 +74,21 @@
                     </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -83,9 +97,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -303,6 +318,11 @@
      Workshop - Introduction to LaTeX
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="latex-cv-workshop.html">
+     CV Workshop - Take your curriculum vitae to the next level with LaTeX
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -383,109 +403,195 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/LaTeX/latex_workshop.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/EPS-Libraries-Berkeley/volt/"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/LaTeX/latex_workshop.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/LaTeX/latex_workshop.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/LaTeX/latex_workshop.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/LaTeX/latex_workshop.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/EPS-Libraries-Berkeley/volt/"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/LaTeX/latex_workshop.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#latex-basics">
    LaTeX Basics
@@ -660,12 +766,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Workshop - Introduction to LaTeX</h1>
@@ -856,20 +961,21 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="workshop-introduction-to-latex">
-<h1>Workshop - Introduction to LaTeX<a class="headerlink" href="#workshop-introduction-to-latex" title="Permalink to this headline">¶</a></h1>
+<h1>Workshop - Introduction to LaTeX<a class="headerlink" href="#workshop-introduction-to-latex" title="Permalink to this headline">#</a></h1>
 <section id="latex-basics">
-<h2>LaTeX Basics<a class="headerlink" href="#latex-basics" title="Permalink to this headline">¶</a></h2>
+<h2>LaTeX Basics<a class="headerlink" href="#latex-basics" title="Permalink to this headline">#</a></h2>
 <section id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h3>
 <p>LaTeX is a typesetting system that allows you to focus on your content instead of formatting - formatting is done separately from entry.</p>
 <p>You tell LaTeX “what it is” not “how it looks.”</p>
 </section>
 <section id="latex-using-overleaf">
-<h3>LaTeX using Overleaf<a class="headerlink" href="#latex-using-overleaf" title="Permalink to this headline">¶</a></h3>
+<h3>LaTeX using Overleaf<a class="headerlink" href="#latex-using-overleaf" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Create documents via a cloud based account</p></li>
 <li><p>Source code or rich text format</p></li>
@@ -881,13 +987,13 @@
 </ul>
 </section>
 <section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h3>
 <p>Look at the template below to get a sense of how Overleaf works.
 On the left side, the content is written in LaTeX. On the right side, the rendered document.</p>
 <p><img alt="Template_image" src="../_images/template.png" /></p>
 </section>
 <section id="structure-of-a-document">
-<h3>Structure of a document<a class="headerlink" href="#structure-of-a-document" title="Permalink to this headline">¶</a></h3>
+<h3>Structure of a document<a class="headerlink" href="#structure-of-a-document" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Term</p></th>
@@ -929,7 +1035,7 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 </div>
 </section>
 <section id="basic-commands">
-<h3>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h3>
+<h3>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><strong>Bold</strong>: <code class="docutils literal notranslate"><span class="pre">\textbf{example}</span></code></p></li>
 <li><p><em>Italics</em>: <code class="docutils literal notranslate"><span class="pre">\textit{example}</span></code></p></li>
@@ -940,7 +1046,7 @@ Change font designations in preamble. More information:<br>
 <a class="reference external" href="https://v2.overleaf.com/learn/Font_typefaces">https://v2.overleaf.com/learn/Font_typefaces</a></p>
 </section>
 <section id="make-title">
-<h3>Make Title<a class="headerlink" href="#make-title" title="Permalink to this headline">¶</a></h3>
+<h3>Make Title<a class="headerlink" href="#make-title" title="Permalink to this headline">#</a></h3>
 <p>The simplest option for making a title is to use the <code class="docutils literal notranslate"><span class="pre">\maketitle</span></code> command which draws from the following declarations within the preamble:<br>
 <code class="docutils literal notranslate"><span class="pre">\author</span></code><br />
 <code class="docutils literal notranslate"><span class="pre">\date</span></code><br />
@@ -948,7 +1054,7 @@ Change font designations in preamble. More information:<br>
 <code class="docutils literal notranslate"><span class="pre">\title</span></code></p>
 </section>
 <section id="basic-math">
-<h3>Basic Math<a class="headerlink" href="#basic-math" title="Permalink to this headline">¶</a></h3>
+<h3>Basic Math<a class="headerlink" href="#basic-math" title="Permalink to this headline">#</a></h3>
 <p>To display math inline with text, place formula or symbol in between $:</p>
 <p><code class="docutils literal notranslate"><span class="pre">$x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z$</span></code> renders inline: <span class="math notranslate nohighlight">\(x + y = z\)</span></p>
 <p>Display mode <code class="docutils literal notranslate"><span class="pre">\[</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">\]</span></code> or <code class="docutils literal notranslate"><span class="pre">$$</span> <span class="pre">x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">$$</span></code> will center the equation on its own line:</p>
@@ -956,95 +1062,12 @@ Change font designations in preamble. More information:<br>
 \[x + y = z\]</div>
 </section>
 <section id="lists">
-<h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
+<h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h3>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">\begin{itemize}...\end{itemize}</span></code> environment to create unnumbered lists.</p>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">itemize</span><span class="p">}</span>
-\<span class="n">item</span> <span class="n">Apples</span>
-\<span class="n">item</span> <span class="n">Cherries</span>
-\<span class="n">item</span> <span class="n">Oranges</span>
-\<span class="n">item</span> <span class="n">Peaches</span>
-\<span class="n">item</span> <span class="n">Watermelon</span>
-\<span class="n">end</span><span class="p">{</span><span class="n">itemize</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
-<p class="card-text">This code results in:</p>
-<ul class="simple">
-<li><p class="card-text">Apples</p></li>
-<li><p class="card-text">Cherries</p></li>
-<li><p class="card-text">Oranges</p></li>
-<li><p class="card-text">Peaches</p></li>
-<li><p class="card-text">Watermelon</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
 <p>Use the similar <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code> environment to create numbered lists.</p>
 </section>
 <section id="exercise">
-<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text"><strong>Exercise 1: Basic LaTeX Commands</strong></p>
-</div>
-<div class="card-body docutils">
-<p class="card-text"><em>Objective: Practice several basic LaTeX commands in a new project.</em></p>
-<ol class="simple">
-<li><p class="card-text">Open a new project in <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a>.</p></li>
-<li><p class="card-text">Create Title</p>
-<ul class="simple">
-<li><p class="card-text">After <code class="docutils literal notranslate"><span class="pre">\title</span></code>, add “VOLT LaTeX Basics Assignment”</p></li>
-<li><p class="card-text">After <code class="docutils literal notranslate"><span class="pre">\author</span></code>, add your name</p></li>
-<li><p class="card-text">Confirm that the date is correct or edit if needed</p></li>
-<li><p class="card-text">Display <strong>Title</strong> using command <code class="docutils literal notranslate"><span class="pre">\maketitle</span></code> inserted after <code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></li>
-</ul>
-</li>
-<li><p class="card-text">Add a new section labeled “Practice” using the <code class="docutils literal notranslate"><span class="pre">\section*</span></code> command.</p></li>
-<li><p class="card-text">Add the following paragraph under that section using “inline” math commands:</p></li>
-</ol>
-<p class="card-text">We know the initial pressure <span class="math notranslate nohighlight">\(P_0 = 7.00 \times 10^5 Pa\)</span>, the initial temperature <span class="math notranslate nohighlight">\(T_0 = 18.0 ^{\circ}C\)</span>, and the final temperature <span class="math notranslate nohighlight">\(T_f = 35.0 ^{\circ}C\)</span>.</p>
-<ol class="simple">
-<li><p class="card-text">Add a new section labeled “California Road Trip Destinations”</p></li>
-<li><p class="card-text">Make a numbered list of four items, for example:<br />
-Yosemite <br/>
-Big Sur <br/>
-Lake Tahoe <br/>
-Death Valley<br/></p></li>
-</ol>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p class="card-text"><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\section*{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\times</span></code>, <code class="docutils literal notranslate"><span class="pre">$...$</span></code>, <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code>. Degree can be represented several ways such as <code class="docutils literal notranslate"><span class="pre">$^\circ$</span></code> or <code class="docutils literal notranslate"><span class="pre">\degree</span></code> (requires the <code class="docutils literal notranslate"><span class="pre">\usepackage{gensymb}</span></code>). Subscripts and superscripts are written using the symbols _ and ^.</p>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Results</strong><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">This is how your rendered exercise should appear in Overleaf.
-<img alt="Results" src="../_images/VOLT_Basic_Exercises.png" /></p>
-</div>
-</details></div>
-</div>
-</div>
-</div>
-</div>
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">#</a></h3>
 <div class="admonition-questions admonition">
 <p class="admonition-title">Questions?</p>
 <p>Compare your LaTeX code to the <a href="https://www.overleaf.com/read/djdcymcpxcxq">solutions</a> to troubleshoot.</p>
@@ -1052,9 +1075,9 @@ Death Valley<br/></p></li>
 </section>
 </section>
 <section id="mathematics-and-equations">
-<h2>Mathematics and Equations<a class="headerlink" href="#mathematics-and-equations" title="Permalink to this headline">¶</a></h2>
+<h2>Mathematics and Equations<a class="headerlink" href="#mathematics-and-equations" title="Permalink to this headline">#</a></h2>
 <section id="simple-operators-subscripts-superscripts-more">
-<h3>Simple Operators, Subscripts, Superscripts &amp; More<a class="headerlink" href="#simple-operators-subscripts-superscripts-more" title="Permalink to this headline">¶</a></h3>
+<h3>Simple Operators, Subscripts, Superscripts &amp; More<a class="headerlink" href="#simple-operators-subscripts-superscripts-more" title="Permalink to this headline">#</a></h3>
 <p>To render simple equations, you also need to know syntax and commands for operators, relations, subscripts, superscripts, and fractions.</p>
 <p><strong>Operators &amp; Relations:</strong><br/>
 +, -, =, &gt;, &lt; work as expected. Here are some other commands:</p>
@@ -1101,10 +1124,10 @@ To display a fraction, use the command <code class="docutils literal notranslate
 <p><strong>Example:</strong> <code class="docutils literal notranslate"><span class="pre">\frac{1}{x}</span></code> gives <span class="math notranslate nohighlight">\(\frac{1}{x}\)</span></p>
 </section>
 <section id="next-steps-greek-letters-integrals-more">
-<h3>Next Steps: Greek Letters, Integrals &amp; More<a class="headerlink" href="#next-steps-greek-letters-integrals-more" title="Permalink to this headline">¶</a></h3>
+<h3>Next Steps: Greek Letters, Integrals &amp; More<a class="headerlink" href="#next-steps-greek-letters-integrals-more" title="Permalink to this headline">#</a></h3>
 </section>
 <section id="greek-letters">
-<h3>Greek Letters<a class="headerlink" href="#greek-letters" title="Permalink to this headline">¶</a></h3>
+<h3>Greek Letters<a class="headerlink" href="#greek-letters" title="Permalink to this headline">#</a></h3>
 <p>Many equations and formulas use Greek letters. The command is simple - just the backslash and the name of the letter. Capitalize the command to get the capital letter. Here are some examples:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1160,59 +1183,21 @@ To display a fraction, use the command <code class="docutils literal notranslate
 </div>
 </section>
 <section id="limits-integrals">
-<h3>Limits &amp; Integrals<a class="headerlink" href="#limits-integrals" title="Permalink to this headline">¶</a></h3>
+<h3>Limits &amp; Integrals<a class="headerlink" href="#limits-integrals" title="Permalink to this headline">#</a></h3>
 <p>There are also commands for common operations that take upper and lower bounds:</p>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
-<p class="card-text"><strong>Limits:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="p">[</span> 
-<span class="n">lim_</span><span class="p">{</span><span class="n">x</span> \<span class="n">to</span> \<span class="n">infty</span><span class="p">}</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> 
-\<span class="p">]</span>
-</pre></div>
-</div>
-<p class="card-text">results in</p>
-<div class="math notranslate nohighlight">
-\[
-lim_{x \to \infty} f(x) 
-\]</div>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
-<p class="card-text"><strong>Integrals:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="p">[</span> 
-\<span class="n">int_</span><span class="p">{</span><span class="n">a</span><span class="p">}</span><span class="o">^</span><span class="p">{</span><span class="n">b</span><span class="p">}</span> <span class="n">x</span><span class="o">^</span><span class="mi">2</span> <span class="n">dx</span> 
-\<span class="p">]</span>
-</pre></div>
-</div>
-<p class="card-text">results in</p>
-<div class="math notranslate nohighlight">
-\[
-\int_{a}^{b} x^2 dx 
-\]</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section id="more-advanced-math-packages">
-<h3>More Advanced: Math Packages<a class="headerlink" href="#more-advanced-math-packages" title="Permalink to this headline">¶</a></h3>
+<h3>More Advanced: Math Packages<a class="headerlink" href="#more-advanced-math-packages" title="Permalink to this headline">#</a></h3>
 </section>
 <section id="amsmath-amssymb-packages">
-<h3><em>amsmath</em> &amp; <em>amssymb</em> Packages<a class="headerlink" href="#amsmath-amssymb-packages" title="Permalink to this headline">¶</a></h3>
+<h3><em>amsmath</em> &amp; <em>amssymb</em> Packages<a class="headerlink" href="#amsmath-amssymb-packages" title="Permalink to this headline">#</a></h3>
 <p>LaTeX has many packages that you can use to extend its capabilities. The <em>amsmath</em> and <em>amssymb</em> packages provide you with additional symbols and commands for structuring equations.</p>
 <p>To include them, add these commands to the preamble of your LaTeX document:<br/>
 <code class="docutils literal notranslate"><span class="pre">\usepackage{amsmath}</span></code><br/>
 <code class="docutils literal notranslate"><span class="pre">\usepackage{amssymb}</span></code></p>
 </section>
 <section id="amsmath-equations-environment">
-<h3><em>amsmath</em>: Equations Environment<a class="headerlink" href="#amsmath-equations-environment" title="Permalink to this headline">¶</a></h3>
+<h3><em>amsmath</em>: Equations Environment<a class="headerlink" href="#amsmath-equations-environment" title="Permalink to this headline">#</a></h3>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">\begin{equation}...\end{equation}</span></code> command to include a numbered equation in display mode.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">equation</span><span class="p">}</span>
 \<span class="n">frac</span><span class="p">{</span>\<span class="n">partial</span> <span class="n">Q</span><span class="p">}{</span>\<span class="n">partial</span> <span class="n">t</span><span class="p">}</span> <span class="o">=</span> \<span class="n">frac</span><span class="p">{</span>\<span class="n">partial</span> <span class="n">s</span><span class="p">}{</span>\<span class="n">partial</span> <span class="n">t</span><span class="p">}</span>
@@ -1220,85 +1205,26 @@ lim_{x \to \infty} f(x)
 </pre></div>
 </div>
 <p>results in</p>
+<div class="math notranslate nohighlight" id="equation-1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-1" title="Permalink to this equation">#</a></span>\[
+\begin{equation}
+\frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t}
+\end{equation}
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span></code> for unnumbered equations.</p>
 </div>
 </section>
 <section id="id1">
-<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text"><strong>Exercise 2: Mathematical Equations</strong></p>
-</div>
-<div class="card-body docutils">
-<p class="card-text"><em>Objective: Experiment with mathematical notations in LaTeX.</em></p>
-<ol class="simple">
-<li><p class="card-text">Recreate this text in your document:
-A quadratic equation is an equation of the form <span class="math notranslate nohighlight">\(ax^2 + bx + c = 0\)</span> and such equations can be solved using the quadratic formula:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\]</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p class="card-text">Commands needed: <code class="docutils literal notranslate"><span class="pre">\frac{}{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\pm</span></code>, <code class="docutils literal notranslate"><span class="pre">\sqrt{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\[...\]</span></code> or <code class="docutils literal notranslate"><span class="pre">$$...$$</span></code><br></p>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Additional challenges</strong><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Recreate this equation in your document:</p>
-<div class="math notranslate nohighlight">
-\[
-i\hbar\frac{\partial}{\partial t}\psi = \hat{H}\psi
-\]</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p class="card-text">Commands needed: <code class="docutils literal notranslate"><span class="pre">\partial</span></code>, <code class="docutils literal notranslate"><span class="pre">\psi</span></code>, <code class="docutils literal notranslate"><span class="pre">\hbar</span></code>, <code class="docutils literal notranslate"><span class="pre">\hat{H}</span></code><br>
-Packages needed: <code class="docutils literal notranslate"><span class="pre">\usepackage{amsmath}</span></code>, <code class="docutils literal notranslate"><span class="pre">\usepackage{amssymb}</span></code><br>
-Environment needed: <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span> <span class="pre">...</span> <span class="pre">\end{equation*}</span></code><br></p>
-</div>
-<p class="card-text">Recreate this equation in your document:</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{d\sigma}{d\lambda}= \left|\frac{2\mu}{\hbar^2}\int_{0}^{\infty}\frac{sin(\Delta kr)}{\Delta kr}V(r)r^2dr\right|^2
-\]</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p class="card-text">Commands needed: <code class="docutils literal notranslate"><span class="pre">\infty</span></code>, <code class="docutils literal notranslate"><span class="pre">\sigma</span></code>, <code class="docutils literal notranslate"><span class="pre">\lambda</span></code>, <code class="docutils literal notranslate"><span class="pre">\mu</span></code>, <code class="docutils literal notranslate"><span class="pre">\Delta</span></code>, <code class="docutils literal notranslate"><span class="pre">\left|</span></code>, <code class="docutils literal notranslate"><span class="pre">\right|</span></code><br>
-Environment needed: <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span> <span class="pre">...</span> <span class="pre">\end{equation*}</span></code></p>
-</div>
-</div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Results</strong><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">This is how your rendered exercise should appear in Overleaf.
-<img alt="Results" src="../_images/math_exercises.png" /></p>
-</div>
-</details></div>
-</div>
-</div>
-</div>
-</div>
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 </section>
 </section>
 <section id="creating-bibliographies-in-latex">
-<h2>Creating Bibliographies in LaTeX<a class="headerlink" href="#creating-bibliographies-in-latex" title="Permalink to this headline">¶</a></h2>
+<h2>Creating Bibliographies in LaTeX<a class="headerlink" href="#creating-bibliographies-in-latex" title="Permalink to this headline">#</a></h2>
 <p><em>Objective: Learn the basic commands to create and edit in-text citations and bibliographies</em></p>
 <section id="getting-started-with-a-bib-file">
-<h3>Getting started with a .bib file<a class="headerlink" href="#getting-started-with-a-bib-file" title="Permalink to this headline">¶</a></h3>
+<h3>Getting started with a .bib file<a class="headerlink" href="#getting-started-with-a-bib-file" title="Permalink to this headline">#</a></h3>
 <p>In order to include in-text citations and a bibliography, the document needs to refer to a .bib file. <br>
 There are three ways to include a .bib file in a project in Overleaf.</p>
 <ol class="simple">
@@ -1309,12 +1235,12 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 <p>If you are working in a traditional LaTeX editor, locate the .bib file in the directory.</p>
 </section>
 <section id="what-does-a-citation-in-a-bib-file-look-like">
-<h3>What does a citation in a .bib file look like?<a class="headerlink" href="#what-does-a-citation-in-a-bib-file-look-like" title="Permalink to this headline">¶</a></h3>
+<h3>What does a citation in a .bib file look like?<a class="headerlink" href="#what-does-a-citation-in-a-bib-file-look-like" title="Permalink to this headline">#</a></h3>
 <p><img alt="bibkey" src="../_images/bibkey.png" /></p>
 </section>
 </section>
 <section id="bibliography-packages">
-<h2>Bibliography Packages<a class="headerlink" href="#bibliography-packages" title="Permalink to this headline">¶</a></h2>
+<h2>Bibliography Packages<a class="headerlink" href="#bibliography-packages" title="Permalink to this headline">#</a></h2>
 <p>LaTeX uses two common packages to generate in-text citations and bibliographies.</p>
 <ol class="simple">
 <li><p><strong>natbib</strong>: works best with author-year citations and numerical citations. This package works well for simple, short bibliographies, but is not supported and less commonly used.</p></li>
@@ -1329,7 +1255,7 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 <p>In the document, the command <code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code> inserts the bibliography, which will contain citations referenced in the text.</p>
 <p>Find more information here: <a class="reference external" href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX</a></p>
 <section id="in-text-citations">
-<h3>In-text citations<a class="headerlink" href="#in-text-citations" title="Permalink to this headline">¶</a></h3>
+<h3>In-text citations<a class="headerlink" href="#in-text-citations" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
@@ -1365,7 +1291,7 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 </tbody>
 </table>
 <section id="examples">
-<h4>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
+<h4>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Command</p></th>
@@ -1395,70 +1321,19 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 </section>
 </section>
 <section id="id2">
-<h3>Exercise<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text"><strong>Exercise 3: Adding a Bibliography</strong></p>
-</div>
-<div class="card-body docutils">
-<p class="card-text"><em>Objective: Learn to create, edit or upload a .bib file, use basic citation commands, and display a bibliography.</em></p>
-<p class="card-text"><strong>Create a .bib file and add references</strong></p>
-<ul class="simple">
-<li><p class="card-text">Create a new file within your Overleaf project (click on the paper icon in the upper left) and name it references.bib<br></p></li>
-</ul>
-<a class="reference internal image-reference" href="../_images/references.png"><img alt="Google Scholar screenshot" class="align-center" src="../_images/references.png" style="width: 400px;" /></a>
-<ul class="simple">
-<li><p class="card-text">Search for these three articles and books in Google Scholar and locate their BibTeX formatted citations.<br></p>
-<ul>
-<li><p class="card-text">10.1126/science.1214319</p></li>
-<li><p class="card-text">Hydraulic power system analysis</p></li>
-<li><p class="card-text">10.1103/PhysRevB.100.094418</p></li>
-</ul>
-</li>
-</ul>
-<a class="reference internal image-reference" href="../_images/scholar_bibtex.png"><img alt="Google Scholar screenshot" class="align-center" src="../_images/scholar_bibtex.png" style="width: 400px;" /></a>
-<ul class="simple">
-<li><p class="card-text">Paste each citation within your .bib file. (No preamble is needed).
-<br></p></li>
-</ul>
-<p class="card-text"><strong>Adding a bibliography</strong></p>
-<ul class="simple">
-<li><p class="card-text">To display bibliography in APA style, add package and style command to preamble:<br></p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">usepackage</span><span class="p">[</span><span class="n">backend</span><span class="o">=</span><span class="n">biber</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">authoryear</span><span class="p">]{</span><span class="n">biblatex</span><span class="p">}</span>
-\<span class="n">addbibresource</span><span class="p">{</span><span class="n">references</span><span class="o">.</span><span class="n">bib</span><span class="p">}</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p class="card-text">And use these commands within document:<br>
-<code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code><br>
-<code class="docutils literal notranslate"><span class="pre">\nocite{*}</span></code> <br></p></li>
-</ul>
-<p class="card-text"><strong>Citation commands</strong></p>
-<p class="card-text">Try using citation commands to recreate the sentence below:<br></p>
-<p class="card-text">In the example provided, Weber et al. 2012 describes the experiment, but Akers, Gassman, and Smith contradict these conclusions. <br></p>
-<p class="card-text"><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\cite{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\citeauthor{}</span></code></p>
-<p class="card-text">For additional examples and more information, please visit Overleaf’s page on <a class="reference external" href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">bibliography management in LaTeX</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<h3>Exercise<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 </section>
 </section>
 <section id="figures">
-<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h2>
+<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">#</a></h2>
 <section id="uploading-a-figure">
-<h3>Uploading a figure<a class="headerlink" href="#uploading-a-figure" title="Permalink to this headline">¶</a></h3>
+<h3>Uploading a figure<a class="headerlink" href="#uploading-a-figure" title="Permalink to this headline">#</a></h3>
 <p>Incorporating images and figures into your Overleaf project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.</p>
 <p>Click on the “upload” icon and navigate to the location of your figure.</p>
 <p><img alt="upload" src="../_images/tables_figure.png" /></p>
 </section>
 <section id="figure-placement">
-<h3>Figure Placement<a class="headerlink" href="#figure-placement" title="Permalink to this headline">¶</a></h3>
+<h3>Figure Placement<a class="headerlink" href="#figure-placement" title="Permalink to this headline">#</a></h3>
 <p>Use the following specifiers to adjust the placement of your figures.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1489,39 +1364,7 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 </table>
 </section>
 <section id="id3">
-<h3>Exercise<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text"><strong>Exercise 4: Uploading a Figure</strong></p>
-</div>
-<div class="card-body docutils">
-<p class="card-text"><em>Objective: Learn to upload and position figures in Overleaf.</em></p>
-<p class="card-text"><strong>Upload a figure</strong></p>
-<ul class="simple">
-<li><p class="card-text">To upload image, choose an image of your own, or find file at:<br>
-<a class="reference external" href="https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png">https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png</a> <br></p></li>
-<li><p class="card-text">Download keyboard_cat.png, and upload file to the Overleaf project.<br></p></li>
-<li><p class="card-text">Place image with these commands:<br>
-<code class="docutils literal notranslate"><span class="pre">\usepackage{graphicx}</span></code><br>
-<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.4\textwidth]{keyboard_cat}</span></code><br></p></li>
-</ul>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/keyboard_cat.png"><img alt="cat" class="bg-primary mb-1 align-center" src="../_images/keyboard_cat.png" style="width: 400px;" /></a>
-<p class="card-text"><strong>Designate figure position</strong><br>
-Use b, t, h to see where figure moves. You might need to add additional text in the document to see how the figure placement varies.<br></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">figure</span><span class="p">}[</span><span class="n">b</span><span class="p">]</span>
-\<span class="n">centering</span>
-\<span class="n">includegraphics</span><span class="p">[</span><span class="n">width</span><span class="o">=</span><span class="mf">0.6</span>\<span class="n">textwidth</span><span class="p">]{</span><span class="n">keyboard_cat</span><span class="p">}</span>
-\<span class="n">end</span><span class="p">{</span><span class="n">figure</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<h3>Exercise<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <div class="admonition-questions admonition">
 <p class="admonition-title">Questions?</p>
 <p>Compare your LaTeX code to the <a href="https://www.overleaf.com/read/hsjrcdzkndvd">exercise solutions</a> to troubleshoot.</p>
@@ -1552,9 +1395,11 @@ Use b, t, h to see where figure moves. You might need to add additional text in 
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="FAQs.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1562,24 +1407,24 @@ Use b, t, h to see where figure moves. You might need to add additional text in 
             <p class="prev-next-title">FAQs</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../Publishing/preprints.html" title="next page">
+    <a class='right-next' id="next-link" href="latex-cv-workshop.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Preprints</p>
+        <p class="prev-next-title">CV Workshop - Take your curriculum vitae to the next level with LaTeX</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      By Engineering & Physical Sciences Librarians<br/>
-    
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Engineering & Physical Sciences Librarians<br/>
+  
+    <div class="extra_footer">
+      <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -1588,16 +1433,20 @@ Use b, t, h to see where figure moves. You might need to add additional text in 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
