@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/latex_workshop.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CV Workshop - Take your curriculum vitae to the next level with LaTeX" href="latex-cv-workshop.html" />
+    <link rel="next" title="CV Workshop" href="latex-cv-workshop.html" />
     <link rel="prev" title="FAQs" href="FAQs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -320,7 +320,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="latex-cv-workshop.html">
-     CV Workshop - Take your curriculum vitae to the next level with LaTeX
+     CV Workshop
     </a>
    </li>
   </ul>
@@ -1068,6 +1068,50 @@ Change font designations in preamble. More information:<br>
 </section>
 <section id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Exercise 1: Basic LaTeX Commands</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em>Objective: Practice several basic LaTeX commands in a new project.</em></p>
+<ol class="simple">
+<li><p class="sd-card-text">Open a new project in <a class="reference external" href="https://www.overleaf.com/edu/berkeley">Overleaf</a>.</p></li>
+<li><p class="sd-card-text">Create Title</p>
+<ul class="simple">
+<li><p class="sd-card-text">After <code class="docutils literal notranslate"><span class="pre">\title</span></code>, add “VOLT LaTeX Basics Assignment”</p></li>
+<li><p class="sd-card-text">After <code class="docutils literal notranslate"><span class="pre">\author</span></code>, add your name</p></li>
+<li><p class="sd-card-text">Confirm that the date is correct or edit if needed</p></li>
+<li><p class="sd-card-text">Display <strong>Title</strong> using command <code class="docutils literal notranslate"><span class="pre">\maketitle</span></code> inserted after <code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code></p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Add a new section labeled “Practice” using the <code class="docutils literal notranslate"><span class="pre">\section*</span></code> command.</p></li>
+<li><p class="sd-card-text">Add the following paragraph under that section using “inline” math commands:</p></li>
+</ol>
+<p class="sd-card-text">We know the initial pressure <span class="math notranslate nohighlight">\(P_0 = 7.00 \times 10^5 Pa\)</span>, the initial temperature <span class="math notranslate nohighlight">\(T_0 = 18.0 ^{\circ}C\)</span>, and the final temperature <span class="math notranslate nohighlight">\(T_f = 35.0 ^{\circ}C\)</span>.</p>
+<ol class="simple">
+<li><p class="sd-card-text">Add a new section labeled “California Road Trip Destinations”</p></li>
+<li><p class="sd-card-text">Make a numbered list of four items, for example:<br />
+Yosemite <br/>
+Big Sur <br/>
+Lake Tahoe <br/>
+Death Valley<br/></p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p class="sd-card-text"><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\section*{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\times</span></code>, <code class="docutils literal notranslate"><span class="pre">$...$</span></code>, <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code>. Degree can be represented several ways such as <code class="docutils literal notranslate"><span class="pre">$^\circ$</span></code> or <code class="docutils literal notranslate"><span class="pre">\degree</span></code> (requires the <code class="docutils literal notranslate"><span class="pre">\usepackage{gensymb}</span></code>). Subscripts and superscripts are written using the symbols _ and ^.</p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Results</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">This is how your rendered exercise should appear in Overleaf.
+<img alt="Results" src="../_images/VOLT_Basic_Exercises.png" /></p>
+</div>
+</details></div>
+</div>
 <div class="admonition-questions admonition">
 <p class="admonition-title">Questions?</p>
 <p>Compare your LaTeX code to the <a href="https://www.overleaf.com/read/djdcymcpxcxq">solutions</a> to troubleshoot.</p>
@@ -1218,6 +1262,65 @@ To display a fraction, use the command <code class="docutils literal notranslate
 </section>
 <section id="id1">
 <h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Exercise 2: Mathematical Equations</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em>Objective: Experiment with mathematical notations in LaTeX.</em></p>
+<ol class="simple">
+<li><p class="sd-card-text">Recreate this text in your document:
+A quadratic equation is an equation of the form <span class="math notranslate nohighlight">\(ax^2 + bx + c = 0\)</span> and such equations can be solved using the quadratic formula:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p class="sd-card-text">Commands needed: <code class="docutils literal notranslate"><span class="pre">\frac{}{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\pm</span></code>, <code class="docutils literal notranslate"><span class="pre">\sqrt{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\[...\]</span></code> or <code class="docutils literal notranslate"><span class="pre">$$...$$</span></code><br></p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Additional challenges</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Recreate this equation in your document:</p>
+<div class="math notranslate nohighlight">
+\[
+i\hbar\frac{\partial}{\partial t}\psi = \hat{H}\psi
+\]</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p class="sd-card-text">Commands needed: <code class="docutils literal notranslate"><span class="pre">\partial</span></code>, <code class="docutils literal notranslate"><span class="pre">\psi</span></code>, <code class="docutils literal notranslate"><span class="pre">\hbar</span></code>, <code class="docutils literal notranslate"><span class="pre">\hat{H}</span></code><br>
+Packages needed: <code class="docutils literal notranslate"><span class="pre">\usepackage{amsmath}</span></code>, <code class="docutils literal notranslate"><span class="pre">\usepackage{amssymb}</span></code><br>
+Environment needed: <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span> <span class="pre">...</span> <span class="pre">\end{equation*}</span></code><br></p>
+</div>
+<p class="sd-card-text">Recreate this equation in your document:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\sigma}{d\lambda}= \left|\frac{2\mu}{\hbar^2}\int_{0}^{\infty}\frac{sin(\Delta kr)}{\Delta kr}V(r)r^2dr\right|^2
+\]</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p class="sd-card-text">Commands needed: <code class="docutils literal notranslate"><span class="pre">\infty</span></code>, <code class="docutils literal notranslate"><span class="pre">\sigma</span></code>, <code class="docutils literal notranslate"><span class="pre">\lambda</span></code>, <code class="docutils literal notranslate"><span class="pre">\mu</span></code>, <code class="docutils literal notranslate"><span class="pre">\Delta</span></code>, <code class="docutils literal notranslate"><span class="pre">\left|</span></code>, <code class="docutils literal notranslate"><span class="pre">\right|</span></code><br>
+Environment needed: <code class="docutils literal notranslate"><span class="pre">\begin{equation*}</span> <span class="pre">...</span> <span class="pre">\end{equation*}</span></code></p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Results</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">This is how your rendered exercise should appear in Overleaf.
+<img alt="Results" src="../_images/math_exercises.png" /></p>
+</div>
+</details></div>
+</div>
 </section>
 </section>
 <section id="creating-bibliographies-in-latex">
@@ -1322,6 +1425,51 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 </section>
 <section id="id2">
 <h3>Exercise<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Exercise 3: Adding a Bibliography</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em>Objective: Learn to create, edit or upload a .bib file, use basic citation commands, and display a bibliography.</em></p>
+<p class="sd-card-text"><strong>Create a .bib file and add references</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Create a new file within your Overleaf project (click on the paper icon in the upper left) and name it references.bib<br></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/references.png"><img alt="Google Scholar screenshot" class="align-center" src="../_images/references.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p class="sd-card-text">Search for these three articles and books in Google Scholar and locate their BibTeX formatted citations.<br></p>
+<ul>
+<li><p class="sd-card-text">10.1126/science.1214319</p></li>
+<li><p class="sd-card-text">Hydraulic power system analysis</p></li>
+<li><p class="sd-card-text">10.1103/PhysRevB.100.094418</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/scholar_bibtex.png"><img alt="Google Scholar screenshot" class="align-center" src="../_images/scholar_bibtex.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p class="sd-card-text">Paste each citation within your .bib file. (No preamble is needed).
+<br></p></li>
+</ul>
+<p class="sd-card-text"><strong>Adding a bibliography</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">To display bibliography in APA style, add package and style command to preamble:<br></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">usepackage</span><span class="p">[</span><span class="n">backend</span><span class="o">=</span><span class="n">biber</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">authoryear</span><span class="p">]{</span><span class="n">biblatex</span><span class="p">}</span>
+\<span class="n">addbibresource</span><span class="p">{</span><span class="n">references</span><span class="o">.</span><span class="n">bib</span><span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p class="sd-card-text">And use these commands within document:<br>
+<code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">\nocite{*}</span></code> <br></p></li>
+</ul>
+<p class="sd-card-text"><strong>Citation commands</strong></p>
+<p class="sd-card-text">Try using citation commands to recreate the sentence below:<br></p>
+<p class="sd-card-text">In the example provided, Weber et al. 2012 describes the experiment, but Akers, Gassman, and Smith contradict these conclusions. <br></p>
+<p class="sd-card-text"><em>Commands needed:</em> <code class="docutils literal notranslate"><span class="pre">\cite{}</span></code>, <code class="docutils literal notranslate"><span class="pre">\citeauthor{}</span></code></p>
+<p class="sd-card-text">For additional examples and more information, please visit Overleaf’s page on <a class="reference external" href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">bibliography management in LaTeX</a></p>
+</div>
+</div>
 </section>
 </section>
 <section id="figures">
@@ -1365,6 +1513,32 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 </section>
 <section id="id3">
 <h3>Exercise<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Exercise 4: Uploading a Figure</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em>Objective: Learn to upload and position figures in Overleaf.</em></p>
+<p class="sd-card-text"><strong>Upload a figure</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">To upload image, choose an image of your own, or find file at:<br>
+<a class="reference external" href="https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png">https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png</a> <br></p></li>
+<li><p class="sd-card-text">Download keyboard_cat.png, and upload file to the Overleaf project.<br></p></li>
+<li><p class="sd-card-text">Place image with these commands:<br>
+<code class="docutils literal notranslate"><span class="pre">\usepackage{graphicx}</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">\includegraphics[width=0.4\textwidth]{keyboard_cat}</span></code><br></p></li>
+</ul>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/keyboard_cat.png"><img alt="cat" class="bg-primary mb-1 align-center" src="../_images/keyboard_cat.png" style="width: 400px;" /></a>
+<p class="sd-card-text"><strong>Designate figure position</strong><br>
+Use b, t, h to see where figure moves. You might need to add additional text in the document to see how the figure placement varies.<br></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">figure</span><span class="p">}[</span><span class="n">b</span><span class="p">]</span>
+\<span class="n">centering</span>
+\<span class="n">includegraphics</span><span class="p">[</span><span class="n">width</span><span class="o">=</span><span class="mf">0.6</span>\<span class="n">textwidth</span><span class="p">]{</span><span class="n">keyboard_cat</span><span class="p">}</span>
+\<span class="n">end</span><span class="p">{</span><span class="n">figure</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="admonition-questions admonition">
 <p class="admonition-title">Questions?</p>
 <p>Compare your LaTeX code to the <a href="https://www.overleaf.com/read/hsjrcdzkndvd">exercise solutions</a> to troubleshoot.</p>
@@ -1410,7 +1584,7 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
     <a class='right-next' id="next-link" href="latex-cv-workshop.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CV Workshop - Take your curriculum vitae to the next level with LaTeX</p>
+        <p class="prev-next-title">CV Workshop</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

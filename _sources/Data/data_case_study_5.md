@@ -1,3 +1,5 @@
+<!-- #raw -->
+---
 # Data Case Study 5
 
 Take a look at the landing page for the dataset:<br>
@@ -27,26 +29,25 @@ With the information shown above, and using the link provided, answer the follow
 
 ## Citation
 
-````{panels}
+````{card}
 **Questions**
 
 1. How would you cite the data?
 2. Is there an example or recommendation?
----
 ```{dropdown} Result
-    :title: bg-primary text-white text-center font-weight-bold
 Kaplan, Jacob. California Department of Corrections Data . Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2021-01-16. https://doi.org/10.3886/E108602V2
 ```
 ````
 
 ## Licensing
 
-````{panels}
+````{card}
 **Questions**
 
 1. Are you allowed to reuse this dataset?
 2. How do you know?
----
+
+<!-- #endraw -->
 ```{dropdown} Result
     :title: bg-primary text-white text-center font-weight-bold
 ![License Example](./images/icpsr_license.png)

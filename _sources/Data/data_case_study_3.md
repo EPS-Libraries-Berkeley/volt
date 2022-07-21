@@ -26,14 +26,13 @@ With the information shown above, and using the link provided, answer the follow
 
 ## Citation
 
-````{panels}
+````{card}
 **Questions**
 
 1. How would you cite the data?
 2. Is there an example or recommendation?
----
+
 ```{dropdown} Result
-    :title: bg-primary text-white text-center font-weight-bold
 Cal Fire (2020), Top 20 largest California wildfires, Kaggle, Dataset, https://www.kaggle.com/annieichen/top-20-largest-california-wildfires
 ```
 ````
