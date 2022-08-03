@@ -678,6 +678,16 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-your-cv">
+   Downloading your CV
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#help-and-troubleshooting">
+   Help and Troubleshooting
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -784,6 +794,16 @@ title="Print to PDF"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-your-cv">
+   Downloading your CV
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#help-and-troubleshooting">
+   Help and Troubleshooting
+  </a>
  </li>
 </ul>
 
@@ -979,16 +999,13 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 <p><img alt="bibkey" src="../_images/cv_bibentry.png" /></p>
 <p>The top line following &#64; is the “key” which is the syntax you use to add the citation to your document.
 Your citation is only as good as its underlying data, so if something is misspelled or if you are missing a field in the .bib entry, errors will propagate. For example, if you would like to add a doi or url, you’ll need to add to the .bib entry in order for it to appear in the citation.</p>
+<p>Find more information on formats: <a class="reference external" href="https://www.bibtex.com/format/">https://www.bibtex.com/format/</a></p>
 </section>
 </section>
 <section id="bibliography-packages">
 <h2>Bibliography Packages<a class="headerlink" href="#bibliography-packages" title="Permalink to this headline">#</a></h2>
-<p>LaTeX uses two common packages to generate in-text citations and bibliographies.</p>
-<ol class="simple">
-<li><p><strong>natbib</strong>: works best with author-year citations and numerical citations. This package works well for simple, short bibliographies, but is not supported and less commonly used.</p></li>
-<li><p><strong>biblatex</strong>: the most flexible package for generating citations and the package that will be referred to in this document. We will use biblatex in this workshop.</p></li>
-</ol>
-<p><img alt="bibkey" src="../_images/biblatex.png" /></p>
+<p>We will use the <strong>biblatex</strong> package to generate in-text citations and bibliographies. <strong>Biblatex</strong> is a flexible package for generating citations.</p>
+<p>When adding a bibligraphy, or in this case, a list of publications and presentations, you will need to add commands to the preamble.</p>
 <p>Commands required for the <strong>preamble</strong>:</p>
 <p><code class="docutils literal notranslate"><span class="pre">\usepackage[backend=biber,style=apa]{biblatex}</span></code></p>
 <p>The above syntax calls in the biblatex package and the backend (biber), which acts as the interface between the .bib file and the LaTeX document. “Apa” denotes the citation style. This can be changed accordingly.</p>
@@ -1046,6 +1063,20 @@ Another option - if you have a Google Scholar profile, you can export your publi
 </div>
 </div>
 </section>
+</section>
+<section id="downloading-your-cv">
+<h2>Downloading your CV<a class="headerlink" href="#downloading-your-cv" title="Permalink to this headline">#</a></h2>
+<p>Once you’ve made your final edits, download a copy of your CV as a PDF.</p>
+<p><img alt="download" src="../_images/downloadpdf.png" /></p>
+</section>
+<section id="help-and-troubleshooting">
+<h2>Help and Troubleshooting<a class="headerlink" href="#help-and-troubleshooting" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.bibtex.com/format/">https://www.bibtex.com/format/</a></p></li>
+<li><p><a class="reference external" href="https://github.com/plk/biblatex-apa/blob/master/bibtex/bib/biblatex-apa-test-references.bib">https://github.com/plk/biblatex-apa/blob/master/bibtex/bib/biblatex-apa-test-references.bib</a></p></li>
+<li><p><a class="reference external" href="https://ctan.math.illinois.edu/macros/latex/contrib/biblatex/doc/biblatex.pdf">https://ctan.math.illinois.edu/macros/latex/contrib/biblatex/doc/biblatex.pdf</a></p></li>
+<li><p><a class="reference external" href="https://www.overleaf.com/learn/how-to/Using_bibliographies_on_Overleaf">https://www.overleaf.com/learn/how-to/Using_bibliographies_on_Overleaf</a></p></li>
+</ul>
 </section>
 </section>
 
