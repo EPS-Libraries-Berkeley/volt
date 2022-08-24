@@ -1367,23 +1367,19 @@ There are three ways to include a .bib file in a project in Overleaf.</p>
 </section>
 <section id="what-does-a-citation-in-a-bib-file-look-like">
 <h3>What does a citation in a .bib file look like?<a class="headerlink" href="#what-does-a-citation-in-a-bib-file-look-like" title="Permalink to this headline">#</a></h3>
-<p><img alt="bibkey" src="../_images/bibkey.png" /></p>
+<p><img alt="bibkey" src="../_images/cv_bibentry.png" /></p>
 </section>
 </section>
 <section id="bibliography-packages">
 <h2>Bibliography Packages<a class="headerlink" href="#bibliography-packages" title="Permalink to this headline">#</a></h2>
-<p>LaTeX uses two common packages to generate in-text citations and bibliographies.</p>
-<ol class="simple">
-<li><p><strong>natbib</strong>: works best with author-year citations and numerical citations. This package works well for simple, short bibliographies, but is not supported and less commonly used.</p></li>
-<li><p><strong>biblatex</strong>: the most flexible package for generating citations and the package that will be referred to in this document.</p></li>
-</ol>
-<p><img alt="bibkey" src="../_images/biblatex.png" /></p>
+<p>We will use the <strong>biblatex</strong> package to generate in-text citations and bibliographies. <strong>Biblatex</strong> is a flexible package for generating citations.</p>
+<p>When adding a bibligraphy, you will need to add commands to the preamble.</p>
 <p>Commands required for the <strong>preamble</strong>:</p>
-<p><code class="docutils literal notranslate"><span class="pre">\usepackage[backend=biber,style=authoryear]{biblatex}</span></code></p>
-<p>The above syntax calls in the biblatex package and the backend (biber), which acts as the interface between the .bib file and the LaTeX document. “Authoryear” denotes the citation style. This can be changed accordingly.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\usepackage[backend=biber,style=apa]{biblatex}</span></code></p>
+<p>The above syntax calls in the biblatex package and the backend (biber), which acts as the interface between the .bib file and the LaTeX document. The term “apa” denotes the citation style. This can be changed accordingly.</p>
 <p><code class="docutils literal notranslate"><span class="pre">\addbibresource{example.bib}</span></code></p>
 <p>The above command calls in the .bib file, which has the citation information for in-text citations and the bibliography.</p>
-<p>In the document, the command <code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code> inserts the bibliography, which will contain citations referenced in the text.</p>
+<p>In an article or book chapter, the command <code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code> inserts the bibliography, which will contain citations referenced in the text. We will take a slightly different approach in adding references to a CV.</p>
 <p>Find more information here: <a class="reference external" href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX</a></p>
 <section id="in-text-citations">
 <h3>In-text citations<a class="headerlink" href="#in-text-citations" title="Permalink to this headline">#</a></h3>
