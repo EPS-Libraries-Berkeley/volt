@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction to Latex &#8212; VOLT Virtual Online Library Tutorials</title>
+    <title>Tables and Figures &#8212; VOLT Virtual Online Library Tutorials</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,11 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/Intro_to_LaTeX.html" />
+    <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/LaTeX/Tables.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="LaTeX Basics" href="Basics.html" />
-    <link rel="prev" title="Reference Management and Citations" href="../Organizing/Reference_Management_and_Citations.html" />
+    <link rel="next" title="Figures" href="Figures.html" />
+    <link rel="prev" title="Equations and Formulas" href="Equations_and_Formulas.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -277,7 +277,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="Intro_to_LaTeX.html">
    Introduction to Latex
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -285,7 +285,7 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="Basics.html">
      LaTeX Basics
@@ -296,8 +296,8 @@ const thebe_selector_output = ".output, .cell_output"
      Equations and Formulas
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Tables.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Tables and Figures
     </a>
    </li>
@@ -462,7 +462,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/LaTeX/Intro_to_LaTeX.ipynb"
+        <a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/LaTeX/Tables.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -480,7 +480,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/LaTeX/Intro_to_LaTeX.ipynb"
+        <a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/LaTeX/Tables.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -536,7 +536,7 @@ title="Source repository"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/LaTeX/Intro_to_LaTeX.ipynb"
+        <a href="../_sources/LaTeX/Tables.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -596,13 +596,58 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-latex">
-   What is LaTeX?
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-creating-a-basic-two-column-table">
+     Example: Creating a basic two column table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-adding-vertical-and-horizontal-lines">
+     Example: Adding vertical and horizontal lines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-centering-and-adding-a-caption">
+     Example: Centering and adding a caption
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-basic-table">
+   <em>
+    Exercise 1: Basic Table
+   </em>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-to-latex-workshop">
-   Introduction to LaTeX Workshop
+  <a class="reference internal nav-link" href="#exercise-2-multirow-multicolumn-tables">
+   <em>
+    Exercise 2: Multirow, Multicolumn Tables
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-challenge-incorporating-bar-charts">
+   <em>
+    Exercise 3: Challenge - Incorporating Bar Charts
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-converting-a-pandas-table-into-latex">
+   <em>
+    Exercise 4: Converting a pandas table into LaTeX
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#information-sources">
+   Information sources
   </a>
  </li>
 </ul>
@@ -614,7 +659,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction to Latex</h1>
+                <h1>Tables and Figures</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -625,13 +670,58 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-latex">
-   What is LaTeX?
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-creating-a-basic-two-column-table">
+     Example: Creating a basic two column table
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-adding-vertical-and-horizontal-lines">
+     Example: Adding vertical and horizontal lines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-centering-and-adding-a-caption">
+     Example: Centering and adding a caption
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1-basic-table">
+   <em>
+    Exercise 1: Basic Table
+   </em>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-to-latex-workshop">
-   Introduction to LaTeX Workshop
+  <a class="reference internal nav-link" href="#exercise-2-multirow-multicolumn-tables">
+   <em>
+    Exercise 2: Multirow, Multicolumn Tables
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3-challenge-incorporating-bar-charts">
+   <em>
+    Exercise 3: Challenge - Incorporating Bar Charts
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4-converting-a-pandas-table-into-latex">
+   <em>
+    Exercise 4: Converting a pandas table into LaTeX
+   </em>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#information-sources">
+   Information sources
   </a>
  </li>
 </ul>
@@ -644,33 +734,171 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-latex">
-<h1>Introduction to Latex<a class="headerlink" href="#introduction-to-latex" title="Permalink to this headline">#</a></h1>
-<section id="what-is-latex">
-<h2>What is LaTeX?<a class="headerlink" href="#what-is-latex" title="Permalink to this headline">#</a></h2>
-<p>LaTeX is a typesetting system that allows you to focus on your content instead of formatting - formatting is done separately from entry.</p>
-<p>You tell LaTeX “what it is” not “how it looks.”</p>
-<p>The following sections will introduce you to:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tables-and-figures">
+<h1>Tables and Figures<a class="headerlink" href="#tables-and-figures" title="Permalink to this headline">#</a></h1>
+<p><em>Objective: Learn the basic commands to create and edit tables.</em></p>
+<section id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">#</a></h2>
+<p>Basic tables can be created with a combination of the commands below and the <strong>use package</strong>: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic Commands</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code></p></td>
+<td><p>column alignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>ampersand separates columns</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td><p>double backslash begins new row</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\hline</span></code></p></td>
+<td><p>horizontal line</p></td>
+</tr>
+<tr class="row-even"><td><p>|</p></td>
+<td><p>vertical line</p></td>
+</tr>
+</tbody>
+</table>
+<section id="example-creating-a-basic-two-column-table">
+<h3>Example: Creating a basic two column table<a class="headerlink" href="#example-creating-a-basic-two-column-table" title="Permalink to this headline">#</a></h3>
+<p><img alt="Basic" src="../_images/tables_basic.png" /></p>
+</section>
+<section id="example-adding-vertical-and-horizontal-lines">
+<h3>Example: Adding vertical and horizontal lines<a class="headerlink" href="#example-adding-vertical-and-horizontal-lines" title="Permalink to this headline">#</a></h3>
+<p><img alt="Lines" src="../_images/tables_lines.png" /></p>
+</section>
+<section id="example-centering-and-adding-a-caption">
+<h3>Example: Centering and adding a caption<a class="headerlink" href="#example-centering-and-adding-a-caption" title="Permalink to this headline">#</a></h3>
+<p>Note the addition the <code class="docutils literal notranslate"><span class="pre">\caption</span></code> and <code class="docutils literal notranslate"><span class="pre">\centering</span></code> commands.</p>
+<p><img alt="Caption" src="../_images/tables_caption.png" /></p>
+</section>
+</section>
+<section id="exercise-1-basic-table">
+<h2><em>Exercise 1: Basic Table</em><a class="headerlink" href="#exercise-1-basic-table" title="Permalink to this headline">#</a></h2>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">tabularx</span></code> package to create a simple table of the <a class="reference external" href="https://www.ussoccer.com/stories/2019/05/meet-the-usas-2019-fifa-womens-world-cup-team">US Women’s Soccer Team’s 2019 World Cup Starting Roster</a>.</p>
+<p>Begin with a header row and two columns.</p>
 <ul class="simple">
-<li><p>creating and editing basic documents in Overleaf</p></li>
-<li><p>creating tables, and inserting figures and images into your document</p></li>
-<li><p>using mathematical notation in LaTeX</p></li>
-<li><p>inserting citations and creating bibliographies</p></li>
+<li><p>Your two column headers will be: Position and Last Name – Left align the text of the left column</p></li>
+<li><p>Center the text of the right column</p></li>
+<li><p>Add vertical and horizontal lines</p></li>
+</ul>
+<p>Add a caption “2019 Team Roster” and center the table.<br />
+Note: Using the <code class="docutils literal notranslate"><span class="pre">\caption{}</span></code> command will add the phrase “Table 1” in front of caption.</p>
+<p>Use package needed: <code class="docutils literal notranslate"><span class="pre">tabularx</span></code></p>
+<p>Commands needed:<br />
+<code class="docutils literal notranslate"><span class="pre">&amp;</span></code> = column separator<br />
+<code class="docutils literal notranslate"><span class="pre">\\</span></code> = begin new row<br />
+<code class="docutils literal notranslate"><span class="pre">l,</span> <span class="pre">r,</span> <span class="pre">c</span></code> = column alignment</p>
+<p><img alt="Multiple Columns" src="../_images/table1.png" /></p>
+</section>
+<section id="exercise-2-multirow-multicolumn-tables">
+<h2><em>Exercise 2: Multirow, Multicolumn Tables</em><a class="headerlink" href="#exercise-2-multirow-multicolumn-tables" title="Permalink to this headline">#</a></h2>
+<p>Create a table like the one below with columns spanning multiple rows or rows spanning multiple columns.</p>
+<p><img alt="Multiple Columns" src="../_images/table2.png" /></p>
+<p>Packages needed:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">\usepackage{booktabs}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\usepackage{multirow}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\usepackage{tablenotes}</span></code></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a good example to see how additional packages can contradict each other. You may need to alter vertical spacing to center the 2011 - 2015 - 2019 row.</p>
+</div>
+<p>This is the style that many journals require. It will give you the basic stepping stones to create charts like:</p>
+<a class="reference internal image-reference" href="../_images/table-acton-2021.png"><img alt="Table from Acton 2021" class="align-center" src="../_images/table-acton-2021.png" style="width: 400px;" /></a>
+<p>from: Acton, Riley K. “Community college program choices in the wake of local job losses.” Journal of Labor Economics 39.4 (2021): 1129-1154. <a class="reference external" href="https://doi.org/10.1086/712555">https://doi.org/10.1086/712555</a></p>
+<p><em>Questions?</em><br />
+Consult the answer key in the Overleaf Project to troubleshoot: <a class="reference external" href="https://www.overleaf.com/read/zhytgdvnpsqx">https://www.overleaf.com/read/zhytgdvnpsqx</a></p>
+<p>More information sources:</p>
+<ul class="simple">
+<li><p>Roster: <a class="reference external" href="https://www.ussoccer.com/players">https://www.ussoccer.com/players</a></p></li>
+<li><p>Tables info: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
+<li><p>Multicolumn/Multirow: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
 </ul>
 </section>
-<section id="introduction-to-latex-workshop">
-<h2>Introduction to LaTeX Workshop<a class="headerlink" href="#introduction-to-latex-workshop" title="Permalink to this headline">#</a></h2>
-<p>Find slides from our Introduction to LaTeX Workshop below:</p>
-<style>
-.responsive-wrap iframe{ max-width: 100%;}
-</style>
-<div class="responsive-wrap">
-<!-- this is the embed code provided by Google -->
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6imTvmwF32f-dirXeuJVlCJZX7uXm2KpPURWJd-h4ETY2xiX7mYQ21v_iwdio99BFgrhWgJbgmDBg/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<!-- Google embed ends -->
-</div></section>
-<div class="toctree-wrapper compound">
+<section id="exercise-3-challenge-incorporating-bar-charts">
+<h2><em>Exercise 3: Challenge - Incorporating Bar Charts</em><a class="headerlink" href="#exercise-3-challenge-incorporating-bar-charts" title="Permalink to this headline">#</a></h2>
+<p>Let’s try to recreate <a class="reference external" href="https://www.economist.com/graphic-detail/2014/06/05/the-spectacle-of-sports">this figure</a> showing attendance at football events in 2013 from the Economist.</p>
+<a class="reference internal image-reference" href="../_images/examplechart.png"><img alt="Table from Acton 2021" class="align-center" src="../_images/examplechart.png" style="width: 400px;" /></a>
+<p>There are a number of ways to get started, but these are some of the steps you will need to take:</p>
+<ul class="simple">
+<li><p>Create a tabular enviroment</p></li>
+<li><p>Add the appropriate number of columns</p></li>
+<li><p>Start adding data to your rows</p></li>
+<li><p>Font - can you switch the default font?</p></li>
+<li><p>Row colors - how can you introduce row colors?</p></li>
+<li><p>Make the header row bold</p></li>
+<li><p>Can you adjust column width?</p></li>
+<li><p>How can you include a bar for scale?</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/table3.png"><img alt="Attempt at remaking a bar chart table" class="align-center" src="../_images/table3.png" style="width: 400px;" /></a>
+<p>Remember there are many ways to accomplish the same thing in LaTeX. Getting the results you want may take some trial and error.</p>
+</section>
+<section id="exercise-4-converting-a-pandas-table-into-latex">
+<h2><em>Exercise 4: Converting a pandas table into LaTeX</em><a class="headerlink" href="#exercise-4-converting-a-pandas-table-into-latex" title="Permalink to this headline">#</a></h2>
+<p>There are many ways to convert a table into LaTeX. One common scenario involves converting and exporting a Pandas Dataframe into a LaTeX formatted table.</p>
+<p>This can be accomplished using the command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">print(df.to_latex())</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">],</span>
+                  <span class="n">mountain</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Whitney&#39;</span><span class="p">,</span> <span class="s1">&#39;Elbert&#39;</span><span class="p">],</span>
+                  <span class="n">flower</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;poppy&#39;</span><span class="p">,</span> <span class="s1">&#39;columbine&#39;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>        state mountain     flower
+0  California  Whitney      poppy
+1    Colorado   Elbert  columbine
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">state</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;California&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">],</span>
+                  <span class="n">mountain</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Whitney&#39;</span><span class="p">,</span> <span class="s1">&#39;Elbert&#39;</span><span class="p">],</span>
+                  <span class="n">flower</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;poppy&#39;</span><span class="p">,</span> <span class="s1">&#39;columbine&#39;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_latex</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>\begin{tabular}{llll}
+\toprule
+{} &amp;       state &amp; mountain &amp;     flower \\
+\midrule
+0 &amp;  California &amp;  Whitney &amp;      poppy \\
+1 &amp;    Colorado &amp;   Elbert &amp;  columbine \\
+\bottomrule
+\end{tabular}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="information-sources">
+<h2>Information sources<a class="headerlink" href="#information-sources" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Soccer Roster: <a class="reference external" href="https://www.ussoccer.com/players">https://www.ussoccer.com/players</a></p></li>
+<li><p>General Table Information: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables">https://en.wikibooks.org/wiki/LaTeX/Tables</a></p></li>
+<li><p>Multicolumn/Multirow: <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Tables#Defining_multiple_columns">https://en.wikibooks.org/wiki/LaTeX/Tables#Defining_multiple_columns</a></p></li>
+<li><p>Bar charts within tables: <a class="reference external" href="https://tex.stackexchange.com/questions/173042/is-it-possible-to-create-a-barchart-in-a-table">https://tex.stackexchange.com/questions/173042/is-it-possible-to-create-a-barchart-in-a-table</a></p></li>
+<li><p>Pandas Conversion: {<a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_latex.html">https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_latex.html</a>}</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -700,17 +928,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../Organizing/Reference_Management_and_Citations.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Equations_and_Formulas.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Reference Management and Citations</p>
+            <p class="prev-next-title">Equations and Formulas</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Basics.html" title="next page">
+    <a class='right-next' id="next-link" href="Figures.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">LaTeX Basics</p>
+        <p class="prev-next-title">Figures</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
