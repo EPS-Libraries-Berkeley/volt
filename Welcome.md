@@ -8,7 +8,7 @@ The sections of this guide are designed to help you manage various aspects of th
 
 ## Meet your virtual team!
 
-```{image} ./Introduction/images/EPSLibrarians.png
+```{image} ./Introduction/images/WelcomeEPSLibs.png
 :alt: EPS Librarians
 :width: 600px
 ```  
@@ -20,23 +20,23 @@ The sections of this guide are designed to help you manage various aspects of th
 :alt: Sam's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/170858" target="_blank">Sam Teplitzky</a>  
+<a href="https://www.lib.berkeley.edu/help/staff-directory/sam-teplitzky" target="_blank">Sam Teplitzky</a>  
 **Open Science Librarian**  
-Subject Areas: Earth & Planetary Science, Geology and Geophysics  
+Subject Areas: Earth & Planetary Science, Geology and Geophysics, LBNL  
 
 ```{image} ./Introduction/images/BrianHeadshot.png
 :alt: Brian's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/171773" target="_blank">Brian Quigley</a>  
+<a href="https://www.lib.berkeley.edu/help/staff-directory/brian-quigley" target="_blank">Brian Quigley</a>  
 **Head, Engineering & Physical Sciences Division**  
-Subject Areas: Computer Science, Logic & the Methodology of Science, Mathematics, Statistics  
+Subject Areas: Mathematics, Bioengineering
 
 ```{image} ./Introduction/images/SusanHeadshot.png
 :alt: Susan's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1051849" target="_blank">Susan Powell</a>  
+<a href="https://www.lib.berkeley.edu/help/staff-directory/susan-powell" target="_blank">Susan Powell</a>  
 **GIS & Map Librarian**  
 Subject Areas: Geography, GIS & Maps  
 
@@ -44,17 +44,19 @@ Subject Areas: Geography, GIS & Maps
 :alt: Lisa's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/322671" target="_blank">Lisa Ngo</a>  
+<a href="https://www.lib.berkeley.edu/help/staff-directory/lisa-ngo" target="_blank">Lisa Ngo</a>  
 **Engineering Librarian**  
 Subject Areas: Applied Science and Technology, Civil and Environmental Engineering, Engineering, Environmental Engineering, Industrial Engineering & Operations Research, Mechanical Engineering, Nuclear Engineering, Ocean Engineering
 
-```{image} ./Introduction/images/KristenHeadshot.png
-:alt: Kristen's Bitmoji Headshot
+```{image} ./Introduction/images/MishaHeadshot.png
+:alt: Misha's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1695000" target="_blank">Kristen Greenland</a>  
-**Chemical & Physical Sciences Librarian**  
-Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engineering, Physics
+<a href="https://www.lib.berkeley.edu/help/staff-directory/misha-coleman" target="_blank">Misha Coleman</a>  
+**STEM Librarian**  
+Subject Areas: Computer Science, Electrical Engineering, Industrial Engineering & Operations Research, Statistics
+
+
 ### Contributors
 ```{image} ./Introduction/images/AnnaHeadshot.png
 :alt: Anna's Bitmoji Headshot
@@ -63,12 +65,19 @@ Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engi
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
 **Data Services Librarian**  
 
+```{image} ./Introduction/images/KristenHeadshot.png
+:alt: Kristen's Bitmoji Headshot
+:width: 100px
+```
+Kristen Greenland  
+**former Chemical & Physical Sciences Librarian**  
+
 ```{image} ./Introduction/images/EricaHeadshot.png
 :alt: Erica's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1118835" target="_blank">Erica Newcome</a>  
-**Technical Processing & Collection Projects Assistant**
+Erica Newcome  
+**former Technical Processing & Collection Projects Assistant**
 
 ```{image} ./Introduction/images/BonitaHeadshot.png
 :alt: Bonita's Bitmoji Headshot
@@ -77,3 +86,7 @@ Subject Areas: Astronomy & Astrophysics, Chemistry, Chemical & Biomolecular Engi
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>  
 **Circulation/Reserves Supervisor**
 <!-- #endregion -->
+
+```python
+
+```
