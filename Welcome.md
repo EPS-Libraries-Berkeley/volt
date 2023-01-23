@@ -8,7 +8,7 @@ The sections of this guide are designed to help you manage various aspects of th
 
 ## Meet your virtual team!
 
-```{image} ./Introduction/images/WelcomeEPSLibs.png
+```{image} ./Introduction/images/groupphoto2023.png
 :alt: EPS Librarians
 :width: 600px
 ```  
@@ -46,7 +46,7 @@ Subject Areas: Geography, GIS & Maps
 ```
 <a href="https://www.lib.berkeley.edu/help/staff-directory/lisa-ngo" target="_blank">Lisa Ngo</a>  
 **Engineering Librarian**  
-Subject Areas: Applied Science and Technology, Civil and Environmental Engineering, Engineering, Environmental Engineering, Industrial Engineering & Operations Research, Mechanical Engineering, Nuclear Engineering, Ocean Engineering
+Subject Areas: Applied Science and Technology, Civil and Environmental Engineering, Engineering, Environmental Engineering, Materials Science and Engineering, Mechanical Engineering, Nuclear Engineering, Ocean Engineering
 
 ```{image} ./Introduction/images/MishaHeadshot.png
 :alt: Misha's Bitmoji Headshot
@@ -62,7 +62,7 @@ Subject Areas: Computer Science, Electrical Engineering, Industrial Engineering 
 :alt: Anna's Bitmoji Headshot
 :width: 100px
 ```
-<a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1122193" target="_blank">Anna Sackmann</a>  
+<a href="https://www.lib.berkeley.edu/help/staff-directory/anna-sackmann" target="_blank">Anna Sackmann</a>  
 **Data Services Librarian**  
 
 ```{image} ./Introduction/images/KristenHeadshot.png
@@ -86,7 +86,3 @@ Erica Newcome
 <a href="https://www.lib.berkeley.edu/ldclient/#/fullworker/1121986" target="_blank">Bonita Dyess</a>  
 **Circulation/Reserves Supervisor**
 <!-- #endregion -->
-
-```python
-
-```
