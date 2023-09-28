@@ -1,811 +1,486 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>CrossRef API &#8212; VOLT Virtual Online Library Tutorials</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-3155703-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-3155703-1');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Search/crossref_library_module';</script>
     <link rel="canonical" href="https://eps-libraries-berkeley.github.io/volt/Search/crossref_library_module.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Understanding Data" href="../Data/understanding_data.html" />
     <link rel="prev" title="ArXiv API" href="arxiv_api.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-3155703-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../Welcome.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/EPS-Logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">VOLT Virtual Online Library Tutorials</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Introduction
- </span>
-</p>
+    
+    
+    <img src="../_static/EPS-Logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/EPS-Logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Introduction/eps_libraries.html">
-   EPS Libraries
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Introduction/research_workflows.html">
-   Research Workflows
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Introduction/question.html">
-   Ask us a question
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/eps_libraries.html">EPS Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/research_workflows.html">Research Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction/question.html">Ask us a question</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Searching
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Searching</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="searching_for_resources.html">
-   Searching for resources
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="exploring_article_databases.html">
-   Exploring article databases
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="dissertations.html">
-   Dissertations and Theses (Digitized)
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="apis.html">
-   Introduction to searching with APIs
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2">
-    <a class="reference internal" href="arxiv_api.html">
-     ArXiv API
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     CrossRef API
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="searching_for_resources.html">Searching for resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exploring_article_databases.html">Exploring article databases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dissertations.html">Dissertations and Theses (Digitized)</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="apis.html">Introduction to searching with APIs</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="arxiv_api.html">ArXiv API</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">CrossRef API</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Data
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Data/understanding_data.html">
-   Understanding Data
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/data_case_study_example.html">
-     Data Case Study Example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/data_case_study_1.html">
-     Data Case Study 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/data_case_study_2.html">
-     Data Case Study 2
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/data_case_study_3.html">
-     Data Case Study 3
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/data_case_study_4.html">
-     Data Case Study 4
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/data_case_study_5.html">
-     Data Case Study 5
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Data/Data_Management.html">
-   Data Management
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Data/What_is_a_repository.html">
-   Archival Repositories
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Data/Resources.html">
-   Repository Resources and Options
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Data/archiving_data.html">
-     Archiving and Sharing Data
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Organizing
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Organizing/Reference_Management_and_Citations.html">
-   Reference Management and Citations
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Data/understanding_data.html">Understanding Data</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Data/data_case_study_example.html">Data Case Study Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Data/data_case_study_1.html">Data Case Study 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Data/data_case_study_2.html">Data Case Study 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Data/data_case_study_3.html">Data Case Study 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Data/data_case_study_4.html">Data Case Study 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Data/data_case_study_5.html">Data Case Study 5</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Writing
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../LaTeX/Intro_to_LaTeX.html">
-   Introduction to Latex
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/Basics.html">
-     LaTeX Basics
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/Equations_and_Formulas.html">
-     Equations and Formulas
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/Tables.html">
-     Tables
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/Figures.html">
-     Figures
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/Bibliographies.html">
-     Creating Bibliographies in LaTeX
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/FAQs.html">
-     FAQs
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/latex_workshop.html">
-     Workshop - Introduction to LaTeX
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../LaTeX/latex-cv-workshop.html">
-     CV Workshop
-    </a>
-   </li>
-  </ul>
- </li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Data/Data_Management.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data/What_is_a_repository.html">Archival Repositories</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Data/Resources.html">Repository Resources and Options</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Data/archiving_data.html">Archiving and Sharing Data</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Publishing
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Publishing/preprints.html">
-   Preprints
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Publishing/escholarship.html">
-   eScholarship at UC Berkeley
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Publishing/oa.html">
-   Open Access
-  </a>
- </li>
+</li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Reproducibility
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organizing</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Reproducibility/dryad.html">
-   Data reuse from Dryad
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Reproducibility/zenodo.html">
-   Zenodo
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Organizing/Reference_Management_and_Citations.html">Reference Management and Citations</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Special Topics
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Writing</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Special_Topics/digital-mapping.html">
-   Digital Mapping
-  </a>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../LaTeX/Intro_to_LaTeX.html">Introduction to Latex</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/Basics.html">LaTeX Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/Equations_and_Formulas.html">Equations and Formulas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/Tables.html">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/Figures.html">Figures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/Bibliographies.html">Creating Bibliographies in LaTeX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/FAQs.html">FAQs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/latex_workshop.html">Workshop - Introduction to LaTeX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../LaTeX/latex-cv-workshop.html">CV Workshop</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  References
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Bibliography.html">
-   Bibliography
-  </a>
- </li>
+</li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  About
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Publishing</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   VOLT
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../Publishing/preprints.html">Preprints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Publishing/escholarship.html">eScholarship at UC Berkeley</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Publishing/oa.html">Open Access</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Reproducibility</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Reproducibility/dryad.html">Data reuse from Dryad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reproducibility/zenodo.html">Zenodo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Special Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Special_Topics/digital-mapping.html">Digital Mapping</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Bibliography.html">Bibliography</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">VOLT</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/Search/crossref_library_module.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/Search/crossref_library_module.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_binder.svg">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="btn__text-container">Binder</span>
 </a>
-
-      </li>
+</li>
       
-      <li>
-        <a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/Search/crossref_library_module.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/Search/crossref_library_module.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+<a href="https://github.com/EPS-Libraries-Berkeley/volt" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/EPS-Libraries-Berkeley/volt/"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
 
 </a>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/Search/crossref_library_module.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Search/crossref_library_module.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
-
-      </li>
+</li>
+      
+      
+      
       
       <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
   </span>
 
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-crossref">
-   What is Crossref?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-packages">
-   Installing Packages
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-using-crossref-api">
-   Analysis using Crossref API
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exploring-a-crossref-query">
-     Exploring a Crossref query
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#keys-indexes-metadata">
-     Keys, Indexes, Metadata
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#creating-tables">
-     Creating Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-retrieval">
-     Data Retrieval
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#more-on-searches">
-     More on Searches
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualization">
-   Visualization
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#grouping-and-sorting-by-journal">
-     Grouping and Sorting by Journal
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#counts">
-     Counts
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bar-charts">
-     Bar Charts
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#citations">
-   Citations
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#visualizing-the-number-of-citations">
-     Visualizing the Number of Citations
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#queries-over-time">
-     Queries Over Time
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bibliography-a-id-4-a">
-   Bibliography
-   <a id="4">
-   </a>
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CrossRef API</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-crossref">
-   What is Crossref?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installing-packages">
-   Installing Packages
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-using-crossref-api">
-   Analysis using Crossref API
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exploring-a-crossref-query">
-     Exploring a Crossref query
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#keys-indexes-metadata">
-     Keys, Indexes, Metadata
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#creating-tables">
-     Creating Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-retrieval">
-     Data Retrieval
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#more-on-searches">
-     More on Searches
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualization">
-   Visualization
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#grouping-and-sorting-by-journal">
-     Grouping and Sorting by Journal
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#counts">
-     Counts
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bar-charts">
-     Bar Charts
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#citations">
-   Citations
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#visualizing-the-number-of-citations">
-     Visualizing the Number of Citations
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#queries-over-time">
-     Queries Over Time
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#bibliography-a-id-4-a">
-   Bibliography
-   <a id="4">
-   </a>
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>CrossRef API</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-crossref">What is Crossref?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-packages">Installing Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-using-crossref-api">Analysis using Crossref API</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-a-crossref-query">Exploring a Crossref query</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keys-indexes-metadata">Keys, Indexes, Metadata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-tables">Creating Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-retrieval">Data Retrieval</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-on-searches">More on Searches</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">Visualization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-and-sorting-by-journal">Grouping and Sorting by Journal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#counts">Counts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-charts">Bar Charts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-number-of-citations">Visualizing the Number of Citations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#queries-over-time">Queries Over Time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography-a-id-4-a">Bibliography <a id="4"></a></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="crossref-api">
-<h1>CrossRef API<a class="headerlink" href="#crossref-api" title="Permalink to this headline">#</a></h1>
+<h1>CrossRef API<a class="headerlink" href="#crossref-api" title="Permalink to this heading">#</a></h1>
 <p>Searching for scientific articles using an API (application programming interface) allows you to extract data from publisher platforms and databases. With an API, you can create programmatic searches of a citation database, extract statistical data, or query and manipulate your results within a Notebook.</p>
 <p>In this module, we will learn to use the Crossref API to search for and analyze scientific articles.</p>
 <section id="what-is-crossref">
-<h2>What is Crossref?<a class="headerlink" href="#what-is-crossref" title="Permalink to this headline">#</a></h2>
+<h2>What is Crossref?<a class="headerlink" href="#what-is-crossref" title="Permalink to this heading">#</a></h2>
 <p>Crossref is a non-profit organization that helps to provides access to scientific literature. Crossref “makes research outputs easy to find, cite, link, and assess” (<a class="reference external" href="https://www.crossref.org/">https://www.crossref.org/</a>).</p>
 <p>Crossref data on scientific publications essentially consists of three elements:
 <br>
@@ -818,11 +493,11 @@ title="Print to PDF"
 <p>At present Crossref contains information on 80 million scientific publications including articles, books and book chapters.</p>
 </section>
 <section id="installing-packages">
-<h2>Installing Packages<a class="headerlink" href="#installing-packages" title="Permalink to this headline">#</a></h2>
+<h2>Installing Packages<a class="headerlink" href="#installing-packages" title="Permalink to this heading">#</a></h2>
 <p>First we will install packages that will be useful to us as we explore the Crossref API. When importing a package into Jupyter Notebook, we use the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">...</span></code> to download a package into Jupyter Notebook.</p>
 <p>We then use the command <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">(package</span> <span class="pre">name)</span></code> to use our new package in our code.</p>
 <div class="cell tag_hide-output docutils container">
-<div class="cell_input docutils container">
+<div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># just run this cell</span>
 
 <span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>habanero
@@ -838,6 +513,11 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: habanero in /opt/anaconda3/lib/python3.7/site-packages (0.7.4)
 Requirement already satisfied: requests&gt;=2.7.0 in /opt/anaconda3/lib/python3.7/site-packages (from habanero) (2.22.0)
@@ -851,15 +531,16 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 </section>
 <section id="analysis-using-crossref-api">
-<h2>Analysis using Crossref API<a class="headerlink" href="#analysis-using-crossref-api" title="Permalink to this headline">#</a></h2>
+<h2>Analysis using Crossref API<a class="headerlink" href="#analysis-using-crossref-api" title="Permalink to this heading">#</a></h2>
 <p>In the sections below, we will walk through the basics of Crossref.</p>
 <p>Data can be accessed using the python packages <code class="docutils literal notranslate"><span class="pre">habanero</span></code>, <code class="docutils literal notranslate"><span class="pre">crossrefapi</span></code>, and <code class="docutils literal notranslate"><span class="pre">crossref-commons</span></code> installed above. In this
 , we’ll be focusing on the functionality of the <strong>habanero</strong> package.</p>
 <section id="exploring-a-crossref-query">
-<h3>Exploring a Crossref query<a class="headerlink" href="#exploring-a-crossref-query" title="Permalink to this headline">#</a></h3>
+<h3>Exploring a Crossref query<a class="headerlink" href="#exploring-a-crossref-query" title="Permalink to this heading">#</a></h3>
 <p>In the cells below, we walk through using Crossref and exploring the data it gives us. To create an object that takes on the Crossref identity, we assign it to the variable <code class="docutils literal notranslate"><span class="pre">cr</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -902,7 +583,7 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
 </div>
 </section>
 <section id="keys-indexes-metadata">
-<h3>Keys, Indexes, Metadata<a class="headerlink" href="#keys-indexes-metadata" title="Permalink to this headline">#</a></h3>
+<h3>Keys, Indexes, Metadata<a class="headerlink" href="#keys-indexes-metadata" title="Permalink to this heading">#</a></h3>
 <p>A dictionary contains key-value pairs, and we can access the values by calling on the keys. In our <code class="docutils literal notranslate"><span class="pre">permafrost</span></code> dictionary, we can inspect the keys and take a look at the values that it contains.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -20245,7 +19926,7 @@ Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in 
 </div>
 </section>
 <section id="creating-tables">
-<h3>Creating Tables<a class="headerlink" href="#creating-tables" title="Permalink to this headline">#</a></h3>
+<h3>Creating Tables<a class="headerlink" href="#creating-tables" title="Permalink to this heading">#</a></h3>
 <p>When our data exists in dictionaries, it’s a little hard to explore and manipulate. In order to tackle this, we’ll create a dataframe of the information so that we can access it more easily.</p>
 <div class="cell tag_full-width docutils container">
 <div class="cell_input docutils container">
@@ -20512,7 +20193,7 @@ Name: publisher, dtype: object
 </div>
 </section>
 <section id="data-retrieval">
-<h3>Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this headline">#</a></h3>
+<h3>Data Retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this heading">#</a></h3>
 <p>We want to be able to retrieve more data from CrossRef. A single CrossRef query can return up to 1,000 results, and since our query has over 42,000 total results, we would need to make 43 queries. Remember at the beginning, we only had 20 results since we only grabbed the first page. The CrossRef API permits fetching results from multiple pages, so by setting <code class="docutils literal notranslate"><span class="pre">cursor</span></code> to <code class="docutils literal notranslate"><span class="pre">*</span></code> and <code class="docutils literal notranslate"><span class="pre">cursor_max</span></code> to 1000 we can grab 1000 queries at once. Querying all 42,000 results would take a long time, so for the purposes of this demonstration we are only using 1000. If you have more time, you could query more results, but be aware that it will take a long time.</p>
 <div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
@@ -20591,7 +20272,7 @@ Name: publisher, dtype: object
 </div>
 </section>
 <section id="more-on-searches">
-<h3>More on Searches<a class="headerlink" href="#more-on-searches" title="Permalink to this headline">#</a></h3>
+<h3>More on Searches<a class="headerlink" href="#more-on-searches" title="Permalink to this heading">#</a></h3>
 <p>You may be curious about the <code class="docutils literal notranslate"><span class="pre">cr.works</span></code> function that we’ve been using to get our data. This is the function that processes your topical “search”. There are different arguments, and we’ve seen how changing these arguments can help us get more search results than just the first 20.</p>
 <p>Also, before we asked you to limit your search term to a single word. This is not a hard restriction - we simply did this for simplicity. You can query terms that are more specific and include more words - try it out below! Keep in mind that the more specific your search query, the fewer results you may see. Feel free to play around with it.</p>
 <div class="cell docutils container">
@@ -20610,10 +20291,10 @@ Name: publisher, dtype: object
 </section>
 </section>
 <section id="visualization">
-<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">#</a></h2>
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this heading">#</a></h2>
 <p>Visualization is an important part of data analysis. Rather than looking at dictionaries and dataframes, we can see a visual summary of our data. In this section, we’ll go over different types of visualizations we can make based off of the different data we have. We’ll start by looking at the publishers. But first, we need to do some wrangling to get the data in a form that’s useful for us.</p>
 <section id="grouping-and-sorting-by-journal">
-<h3>Grouping and Sorting by Journal<a class="headerlink" href="#grouping-and-sorting-by-journal" title="Permalink to this headline">#</a></h3>
+<h3>Grouping and Sorting by Journal<a class="headerlink" href="#grouping-and-sorting-by-journal" title="Permalink to this heading">#</a></h3>
 <p>In an earlier section, we took our query results and converted them from a dictionary to a dataframe. Below, we will do this for our list of 1000 <code class="docutils literal notranslate"><span class="pre">permafrost_items</span></code>, and then we can use the dataframe methods of grouping and sorting to get the counts of articles published by each publisher. We can also group by other columns, such as <code class="docutils literal notranslate"><span class="pre">type</span></code> or <code class="docutils literal notranslate"><span class="pre">language</span></code>.</p>
 <p>In the cell below, we create a dataframe containing all 1000 of our permafrost query results.</p>
 <div class="cell tag_fulll-width docutils container">
@@ -20923,7 +20604,7 @@ Name: publisher, dtype: object
 </div>
 </section>
 <section id="counts">
-<h3>Counts<a class="headerlink" href="#counts" title="Permalink to this headline">#</a></h3>
+<h3>Counts<a class="headerlink" href="#counts" title="Permalink to this heading">#</a></h3>
 <p>We can take the value_count to determine the number of times a given journal or work appears in our results. This will help us determine where research on our topic is commonly published.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21028,7 +20709,7 @@ Name: publisher, dtype: object
 <p>The <code class="docutils literal notranslate"><span class="pre">journal</span></code> dataframe above shows us that we have about 300 different titles, and a lot of them published only a few articles. The journal that appears most often published about 130 articles on our topic.</p>
 </section>
 <section id="bar-charts">
-<h3>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">#</a></h3>
+<h3>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this heading">#</a></h3>
 <p>Now that we have a sorted dataframe with journal titles and the number of articles they each published on permafrost, we can use this dataframe to plot the journals with the 10 highest counts.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21050,7 +20731,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/crossref_library_module_65_0.png" src="../_images/crossref_library_module_65_0.png" />
+<img alt="../_images/bb61b373ff4c975e75f09a24a1fdb9195799c694148b541cb13751d0c5ee7f3a.png" src="../_images/bb61b373ff4c975e75f09a24a1fdb9195799c694148b541cb13751d0c5ee7f3a.png" />
 </div>
 </div>
 <p>Before, we grouped by journal title. Keep in mind that we can group by other tags as well, such as type of article (<code class="docutils literal notranslate"><span class="pre">type</span></code>) or the language the article was published in (<code class="docutils literal notranslate"><span class="pre">language</span></code>). In the cell below, we use another method to group by either <code class="docutils literal notranslate"><span class="pre">type</span></code> or <code class="docutils literal notranslate"><span class="pre">language</span></code> and plot the resulting bar chart. Remember to sort your dataframe as well.</p>
@@ -21174,7 +20855,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/crossref_library_module_68_0.png" src="../_images/crossref_library_module_68_0.png" />
+<img alt="../_images/bdb06a8d8fd2daece85ed983d9fc7569b3b0ab8268b1b3b0e7468e895682ddff.png" src="../_images/bdb06a8d8fd2daece85ed983d9fc7569b3b0ab8268b1b3b0e7468e895682ddff.png" />
 </div>
 </div>
 <p>If you’d like, you can use the cells below to create bar charts of <code class="docutils literal notranslate"><span class="pre">publisher</span></code>, <code class="docutils literal notranslate"><span class="pre">language</span></code>, or <code class="docutils literal notranslate"><span class="pre">type</span></code> for your own query by grouping and sorting your <code class="docutils literal notranslate"><span class="pre">query_df</span></code> dataframe! Feel free to reference the cells above for an example with <code class="docutils literal notranslate"><span class="pre">permafrost_df</span></code>.</p>
@@ -21214,7 +20895,7 @@ Name: publisher, dtype: object
 </section>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
 <p>In scientific literature, we are often also interested in the number of references a journal article has, or the number of times the article was cited. Let’s see which articles have been cited the most - we can do this by sorting our dataframe by the <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code> column. Our dataframe has 45 columns, but we’ll just focus on a few. We’ll look at the <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">is-referenced-by-count</span></code>, <code class="docutils literal notranslate"><span class="pre">publisher</span></code>, and <code class="docutils literal notranslate"><span class="pre">published-print</span></code> (the date it was published in print).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21465,7 +21146,7 @@ Name: publisher, dtype: object
 <p><strong>What is the most cited article, and when was it published? Do you think the date it was published has an effect on the number of times the article was referenced?</strong></p>
 <p><em>Replace this line with your answer</em></p>
 <section id="visualizing-the-number-of-citations">
-<h3>Visualizing the Number of Citations<a class="headerlink" href="#visualizing-the-number-of-citations" title="Permalink to this headline">#</a></h3>
+<h3>Visualizing the Number of Citations<a class="headerlink" href="#visualizing-the-number-of-citations" title="Permalink to this heading">#</a></h3>
 <p>When looking at our <code class="docutils literal notranslate"><span class="pre">most_cited</span></code> table, we can see that the most number of times an article was referenced was 181, and the least was 0. Using a type of visualization called a histogram, we can look at the distribution of time an article was referenced. We’ll do this in the cell below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -21479,7 +21160,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/crossref_library_module_79_0.png" src="../_images/crossref_library_module_79_0.png" />
+<img alt="../_images/8d9c575f3b878e319739db572a2267593184222d82c4854b0d8841add661accb.png" src="../_images/8d9c575f3b878e319739db572a2267593184222d82c4854b0d8841add661accb.png" />
 </div>
 </div>
 <p>We can see that this histogram is very skewed, with the majority of articles being cited fewer than 50 times. We can adjust the bins in order to see a better distribution, by specifying the sizes of the bins.</p>
@@ -21496,7 +21177,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/crossref_library_module_81_0.png" src="../_images/crossref_library_module_81_0.png" />
+<img alt="../_images/5095bd60bcc9bbd33783988b0c17357bdb5dc097bd5f2bb3c2652f7949ea625c.png" src="../_images/5095bd60bcc9bbd33783988b0c17357bdb5dc097bd5f2bb3c2652f7949ea625c.png" />
 </div>
 </div>
 <p>In the cells below, we’ve provided code to look at the number of times each article was cited for your <code class="docutils literal notranslate"><span class="pre">query_df</span></code>. In the following cell, try applying what you’ve just used to find the most cited article, the date it was published, and create a histogram showing the distribution for all articles.</p>
@@ -21526,7 +21207,7 @@ Name: publisher, dtype: object
 </div>
 </section>
 <section id="queries-over-time">
-<h3>Queries Over Time<a class="headerlink" href="#queries-over-time" title="Permalink to this headline">#</a></h3>
+<h3>Queries Over Time<a class="headerlink" href="#queries-over-time" title="Permalink to this heading">#</a></h3>
 <p>For our final visualization, we will look at 2 queries over time. To expand our searches to 2 words, we will look at queries for permafrost melt and arctic methane, and look at the number of articles that were published by year. Since running queries takes a long time, and ideally we want to have more years to compare over time, we pre-ran the queries and saved the results into a csv which we’ll load in the cell below.</p>
 <p>The following 8 cells show the code we used to generate the csv files.</p>
 <div class="cell tag_output-scroll docutils container">
@@ -21704,7 +21385,7 @@ Name: publisher, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/crossref_library_module_108_0.png" src="../_images/crossref_library_module_108_0.png" />
+<img alt="../_images/ca59d2fc9a2a978c398b08842d95b4e6bdd4610279d936cfca1d7ad566ce9368.png" src="../_images/ca59d2fc9a2a978c398b08842d95b4e6bdd4610279d936cfca1d7ad566ce9368.png" />
 </div>
 </div>
 <p>Our search results show a spike in articles related to methane in the arctic in 2008 and 2011, and a later set of spikes for articles about permafrost melt between 2016-2019. We would have to dig in a bit more to understand the implications of these peaks, but they do give you a place to start when exploring trending topics.</p>
@@ -21727,7 +21408,7 @@ Name: publisher, dtype: object
 </section>
 </section>
 <section id="bibliography-a-id-4-a">
-<h2>Bibliography <a id = '4'></a><a class="headerlink" href="#bibliography-a-id-4-a" title="Permalink to this headline">#</a></h2>
+<h2>Bibliography <a id = '4'></a><a class="headerlink" href="#bibliography-a-id-4-a" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Paul Oldham - Adapted CrossRef R guide to Python. <a class="reference external" href="https://poldham.github.io/abs/crossref.html#introduction">https://poldham.github.io/abs/crossref.html#introduction</a></p></li>
 </ul>
@@ -21749,7 +21430,7 @@ Name: publisher, dtype: object
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Search"
         },
         predefinedOutput: true
@@ -21757,38 +21438,106 @@ Name: publisher, dtype: object
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="arxiv_api.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">ArXiv API</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="arxiv_api.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">ArXiv API</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="../Data/understanding_data.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="../Data/understanding_data.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Understanding Data</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-crossref">What is Crossref?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-packages">Installing Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-using-crossref-api">Analysis using Crossref API</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-a-crossref-query">Exploring a Crossref query</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keys-indexes-metadata">Keys, Indexes, Metadata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-tables">Creating Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-retrieval">Data Retrieval</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-on-searches">More on Searches</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization">Visualization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-and-sorting-by-journal">Grouping and Sorting by Journal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#counts">Counts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-charts">Bar Charts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-number-of-citations">Visualizing the Number of Citations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#queries-over-time">Queries Over Time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography-a-id-4-a">Bibliography <a id="4"></a></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Engineering & Physical Sciences Librarians<br/>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Engineering & Physical Sciences Librarians
+</p>
+
+  </div>
   
-    <div class="extra_footer">
-      <p>
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
 <a rel="license" 
  href="http://creativecommons.org/licenses/by-nc/4.0/">
  <img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0" alt="CCBYNC"/>
@@ -21797,20 +21546,22 @@ Name: publisher, dtype: object
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
 </p>
 
-    </div>
-</p>
-        </footer>
-    </div>
-    
 </div>
+  </div>
+  
+</div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

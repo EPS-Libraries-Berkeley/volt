@@ -1,10 +1,10 @@
 # Data Case Study 2
 
 Take a look at the landing page for the dataset:<br>
-**Berkeley IGS Poll: Tabulations from an April 2020 Survey of California Registered Voters about COVID-19 and Farmworkers** <br>
-[https://doi.roper.center/?doi=10.25940/ROPER-31118024](https://doi.roper.center/?doi=10.25940/ROPER-31118024)
+**Axois/Ipsos/Telemundo Latino Survey** <br>
+[https://doi.roper.center/?doi=10.25940/ROPER-31120351](https://doi.roper.center/?doi=10.25940/ROPER-31120351)
 
-![roper](./images/roper.png)
+![roper](./images/roper_latino_survey.png)
 
 With the information shown above, and using the link provided, answer the following questions:
 
@@ -33,7 +33,7 @@ With the information shown above, and using the link provided, answer the follow
 2. Is there an example or recommendation?
 
 ```{dropdown} Result
-Berkeley Institute of Governmental Studies, University of California. (2020). Berkeley IGS Poll: Tabulations from an April 2020 Survey of California Registered Voters about COVID-19 and Farmworkers (Version 3) [Dataset]. Cornell University, Ithaca, NY: Roper Center for Public Opinion Research. doi:10.25940/ROPER-31118024
+Axios/Telemundo. (2023). Axios/Ipsos/Telemundo Latino Survey (Version 1) [Dataset]. Cornell University, Ithaca, NY: Roper Center for Public Opinion Research. doi:10.25940/ROPER-31120351
 ```
 ````
 
@@ -43,3 +43,7 @@ Berkeley Institute of Governmental Studies, University of California. (2020). Be
 
 1. Are you allowed to disseminate this dataset?
 2. How do you know?
+
+```python
+
+```
