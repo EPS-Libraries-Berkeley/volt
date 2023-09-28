@@ -1,10 +1,10 @@
 # Data Case Study 4
 
 Take a look at the landing page for the dataset:<br>
-**COVID-19 Vaccine Progress Dashboard Data** <br>
-[https://data.ca.gov/dataset/covid-19-vaccine-progress-dashboard-data](https://data.ca.gov/dataset/covid-19-vaccine-progress-dashboard-data)
+**Chemicals in Cosmetics** <br>
+[https://data.ca.gov/dataset/chemicals-in-cosmetics](https://data.ca.gov/dataset/chemicals-in-cosmetics)
 
-![california covid data](./images/ca_covid_data.png)
+![california chemicals in cosmetics](./images/ca_data_chemicals.png)
 
 With the information shown above, and using the link provided, answer the following questions:
 
@@ -33,7 +33,7 @@ With the information shown above, and using the link provided, answer the follow
 2. Is there an example or recommendation?
 
 ```{dropdown} Result
-California Department of Public Health (2021), COVID-19 Vaccine Progress Dashboard Data, California Open Data Portal, https://data.ca.gov/dataset/covid-19-vaccine-progress-dashboard-data
+California Safe Cosmetics Program (2023), Chemicals in Cosmetics, California Open Data Portal, https://data.ca.gov/dataset/chemicals-in-cosmetics
 ```
 ````
 ## Licensing
