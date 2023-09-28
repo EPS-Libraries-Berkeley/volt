@@ -275,55 +275,6 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="article-header-buttons">
 
 
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/EPS-Libraries-Berkeley/volt/main?urlpath=tree/Data/data_case_study_1.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/EPS-Libraries-Berkeley/volt/blob/main/Data/data_case_study_1.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
 <a href="https://github.com/EPS-Libraries-Berkeley/volt" target="_blank"
    class="btn btn-sm btn-source-repository-button"
    title="Source repository"
@@ -350,7 +301,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/Data/data_case_study_1.ipynb" target="_blank"
+      <li><a href="../_sources/Data/data_case_study_1.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -360,7 +311,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -442,18 +393,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publisher-host">Publisher / Host</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">Licensing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Questions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot">Plot</a></li>
 </ul>
             </nav>
         </div>
@@ -468,27 +411,26 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="data-case-study-1">
 <h1>Data Case Study 1<a class="headerlink" href="#data-case-study-1" title="Permalink to this heading">#</a></h1>
 <p>Take a look at the landing page for the dataset:<br>
-<strong>Snowpack, precipitation, and temperature measurements at the Central Sierra Snow Laboratory for water years 1970 to 2019</strong> <br>
-<a class="reference external" href="https://doi.org/10.6078/D1941T">https://doi.org/10.6078/D1941T</a></p>
-<p><img alt="dryad snow" src="../_images/dryad_snow.png" /></p>
+<strong>Hummingbird ingestion of low-concentration ethanol within artificial nectar</strong> <br>
+<a class="reference external" href="https://doi.org/10.6078/D1WM6T">https://doi.org/10.6078/D1WM6T</a></p>
+<p><img alt="dryad hummingbird data" src="../_images/dryad_hummingbird.png" /></p>
 <p>With the information shown above, and using the link provided, answer the following questions:</p>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
-<section id="questions">
-<h3>Questions<a class="headerlink" href="#questions" title="Permalink to this heading">#</a></h3>
+<p><strong>Questions</strong></p>
 <ol class="arabic simple">
 <li><p>Why was the data collected?</p></li>
 <li><p>What are the limitations of the data?</p></li>
 </ol>
 </section>
-</section>
 <section id="publisher-host">
 <h2>Publisher / Host<a class="headerlink" href="#publisher-host" title="Permalink to this heading">#</a></h2>
 <p><strong>Questions</strong></p>
 <ol class="arabic simple">
-<li><p>Where is the data hosted? (What is the name of the repository?)</p></li>
+<li><p>How do you access the dataset?</p></li>
 <li><p>Is there a theme or subject focus to the repository?</p></li>
 <li><p>What other types of data would you expect to find there?</p></li>
+<li><p>Find the “Transparency” tab in the dataset record. What does this information show and why might it be important?</p></li>
 </ol>
 </section>
 <section id="citation">
@@ -502,285 +444,23 @@ document.write(`
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Answer<div class="sd-summary-down docutils">
+Result<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Osterhuber, Randall; Schwartz, Andrew (2021), Snowpack, precipitation, and temperature measurements at the Central Sierra Snow Laboratory for water years 1971 to 2019, Dryad, Dataset, <a class="reference external" href="https://doi.org/10.6078/D1941T">https://doi.org/10.6078/D1941T</a></p>
+<p class="sd-card-text">Choi, Julia et al. (2023). Supplementary data for: Hummingbird ingestion of low-concentration ethanol within artificial nectar [Dataset]. Dryad. <a class="reference external" href="https://doi.org/10.6078/D1WM6T">https://doi.org/10.6078/D1WM6T</a></p>
 </div>
 </details></div>
 </div>
 </section>
 <section id="licensing">
 <h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Questions</strong></p>
+<p><strong>Questions</strong></p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">Are you allowed to reuse this dataset?</p></li>
-<li><p class="sd-card-text">How do you know?</p></li>
+<li><p>Are you allowed to disseminate this dataset?</p></li>
+<li><p>How do you know?</p></li>
 </ol>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Answer<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><img alt="License Example" src="../_images/dryad_license.png" /></p>
-</div>
-</details></div>
-</div>
-</section>
-<section id="data">
-<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
-<p>Take a look at Whole_WY_1980.csv, one of the 49 data files.</p>
-<section id="id1">
-<h3>Questions<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>How many rows of data are there? Why?</p></li>
-<li><p>What’s a <strong>Water Year</strong>? Can you tell when a Water Year starts?</p></li>
-<li><p>When was the first snowfall of the 1979-1980 Water Year?</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read in the data file from the 1980 water year</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">snow_data_1980</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./data/Whole_WY_1980.csv&#39;</span><span class="p">)</span>
-<span class="n">snow_data_1980</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Air Temp Max (C)</th>
-      <th>Air Temp Min (C)</th>
-      <th>24-hour Total Precip (mm)</th>
-      <th>Season Total Precip (mm)</th>
-      <th>% of Precip as Snow</th>
-      <th>% of Precip as Rain</th>
-      <th>New Snow (cm)</th>
-      <th>Season Total Snow (cm)</th>
-      <th>Snowpack depth (cm)</th>
-      <th>Snow Water Equivalent (cm)</th>
-      <th>Remarks</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1979-10-01</td>
-      <td>23.31</td>
-      <td>8.88</td>
-      <td>0</td>
-      <td>0.000</td>
-      <td>--</td>
-      <td>--</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1979-10-02</td>
-      <td>22.755</td>
-      <td>6.66</td>
-      <td>0</td>
-      <td>0.000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>changed charge</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1979-10-03</td>
-      <td>23.31</td>
-      <td>6.66</td>
-      <td>0</td>
-      <td>0.000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1979-10-04</td>
-      <td>23.31</td>
-      <td>5.55</td>
-      <td>0</td>
-      <td>0.000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1979-10-05</td>
-      <td>22.755</td>
-      <td>4.995</td>
-      <td>0</td>
-      <td>0.000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>361</th>
-      <td>1980-09-26</td>
-      <td>21.09</td>
-      <td>4.44</td>
-      <td>0</td>
-      <td>1968.794</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1083.3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>362</th>
-      <td>1980-09-27</td>
-      <td>20.535</td>
-      <td>2.775</td>
-      <td>0</td>
-      <td>1968.794</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1083.3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>363</th>
-      <td>1980-09-28</td>
-      <td>23.31</td>
-      <td>0.555</td>
-      <td>0</td>
-      <td>1968.794</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1083.3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>364</th>
-      <td>1980-09-29</td>
-      <td>25.53</td>
-      <td>6.105</td>
-      <td>0</td>
-      <td>1968.794</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1083.3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>365</th>
-      <td>1980-09-30</td>
-      <td>27.195</td>
-      <td>4.44</td>
-      <td>0</td>
-      <td>1968.794</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>1083.3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-<p>366 rows × 12 columns</p>
-</div></div></div>
-</div>
-</section>
-</section>
-<section id="plot">
-<h2>Plot<a class="headerlink" href="#plot" title="Permalink to this heading">#</a></h2>
-<p>What if you plotted the data? What could you see?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">snow_data_1980</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Season Total Snow (cm)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span> <span class="o">=</span> <span class="mi">45</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/2c5fd236be3edeadbe2ca663399ca30700ca76e5f20d3d49e7cdf7439a1da0f4.png" src="../_images/2c5fd236be3edeadbe2ca663399ca30700ca76e5f20d3d49e7cdf7439a1da0f4.png" />
-</div>
-</div>
-<div class="tip admonition">
-<p class="admonition-title">Final Thoughts</p>
-<p>What other questions could you explore with this data?</p>
-</div>
 </section>
 </section>
 
@@ -851,18 +531,10 @@ Answer<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publisher-host">Publisher / Host</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#licensing">Licensing</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Questions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot">Plot</a></li>
 </ul>
   </nav></div>
 

@@ -1,10 +1,10 @@
-# Data Case Study 2
+# Data Case Study 1
 
 Take a look at the landing page for the dataset:<br>
-**Axois/Ipsos/Telemundo Latino Survey** <br>
-[https://doi.roper.center/?doi=10.25940/ROPER-31120351](https://doi.roper.center/?doi=10.25940/ROPER-31120351)
+**Hummingbird ingestion of low-concentration ethanol within artificial nectar** <br>
+[https://doi.org/10.6078/D1WM6T](https://doi.org/10.6078/D1WM6T)
 
-![roper latino survey](./images/roper_latino_survey.png)
+![dryad hummingbird data](./images/dryad_hummingbird.png)
 
 With the information shown above, and using the link provided, answer the following questions:
 
@@ -33,7 +33,7 @@ With the information shown above, and using the link provided, answer the follow
 2. Is there an example or recommendation?
 
 ```{dropdown} Result
-Axios/Telemundo. (2023). Axios/Ipsos/Telemundo Latino Survey (Version 1) [Dataset]. Cornell University, Ithaca, NY: Roper Center for Public Opinion Research. doi:10.25940/ROPER-31120351
+Choi, Julia et al. (2023). Supplementary data for: Hummingbird ingestion of low-concentration ethanol within artificial nectar [Dataset]. Dryad. https://doi.org/10.6078/D1WM6T
 ```
 ````
 
