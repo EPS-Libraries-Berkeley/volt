@@ -462,6 +462,32 @@ document.write(`
 <p>To deposit your work as a UC Berkeley affiliate, click on the “Deposit” button and follow the instructions according to your affiliation.</p>
 <p><img alt="Deposit_by_affiliation" src="../_images/deposit.png" /></p>
 <div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2151</span><span class="o">/</span><span class="mf">309149808.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">requests</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">requests_html</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">requests_html</span> <span class="kn">import</span> <span class="n">HTMLSession</span>
+
+<span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.7.17</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">requests_html</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> 
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">fake_useragent</span> <span class="kn">import</span> <span class="n">UserAgent</span>
+<span class="ne">---&gt; </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">lxml.html.clean</span> <span class="kn">import</span> <span class="n">Cleaner</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="kn">import</span> <span class="nn">lxml</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+
+<span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.7.17</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">lxml</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">clean</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>         <span class="s2">&quot;lxml.html.clean module is now a separate project lxml_html_clean.</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>         <span class="s2">&quot;Install lxml[html_clean] or lxml_html_clean directly.&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">21</span>     <span class="p">)</span> <span class="kn">from</span> <span class="kc">None</span>
+
+<span class="ne">ImportError</span>: lxml.html.clean module is now a separate project lxml_html_clean.
+<span class="n">Install</span> <span class="n">lxml</span><span class="p">[</span><span class="n">html_clean</span><span class="p">]</span> <span class="ow">or</span> <span class="n">lxml_html_clean</span> <span class="n">directly</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
 </div>
 <section id="ten-most-recent-postprints-in-escholarship">
 <h2>Ten Most Recent Postprints in eScholarship<a class="headerlink" href="#ten-most-recent-postprints-in-escholarship" title="Permalink to this heading">#</a></h2>
@@ -505,63 +531,63 @@ document.write(`
   <tbody>
     <tr>
       <th>0</th>
-      <td>The major role of Listeria monocytogenes folic...</td>
-      <td>Mon, 20 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/5qk603s6</td>
+      <td>Capturing the Complex Histories of German Worl...</td>
+      <td>Wed, 30 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/48q30649</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Public-private partnerships in fostering outer...</td>
-      <td>Mon, 20 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/13b2f17s</td>
+      <td>A Co(II)-based Molecular Magnet with a 6 T Coe...</td>
+      <td>Mon, 28 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/7tt0n82b</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>CherryML: scalable maximum likelihood estimati...</td>
-      <td>Mon, 20 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/0m63895s</td>
+      <td>Background-free dual-mode optical and &lt;sup&gt;13&lt;...</td>
+      <td>Mon, 28 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/2q38g0g5</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Autonomous and dynamic precursor selection for...</td>
-      <td>Sat, 18 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/705697h8</td>
+      <td>Actinide tetra-N-heterocyclic carbene 'sandwic...</td>
+      <td>Thu, 24 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/2j8503k9</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Earth Mover’s Distance as a Metric to Evaluate...</td>
-      <td>Sat, 18 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/3wj4c4s5</td>
+      <td>Moat: Verifying confidentiality of enclave pro...</td>
+      <td>Thu, 24 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/0qg1g2nm</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Magic Numbers and Stabilities of Photoionized ...</td>
-      <td>Sat, 18 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/3jh2443h</td>
+      <td>Observing and Modeling the Sequential Pairwise...</td>
+      <td>Thu, 24 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/0mt7m53c</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Rearrangement of a carboxy-substituted spiro[4...</td>
-      <td>Sat, 18 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/28m3872v</td>
+      <td>At the intersection of immigration and welfare...</td>
+      <td>Wed, 23 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/7dp0m5v3</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Tracing cancer evolution and heterogeneity usi...</td>
-      <td>Fri, 17 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/7sj0k79h</td>
+      <td>Does State Unemployment Insurance Modernizatio...</td>
+      <td>Wed, 23 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/6fh4231d</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>Opportunities for youth participatory action r...</td>
-      <td>Fri, 17 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/45t1m0rx</td>
+      <td>Sterile neutrino dark matter and leptogenesis ...</td>
+      <td>Tue, 22 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/9h95x481</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>A positively tuned voltage indicator for exten...</td>
-      <td>Fri, 17 Nov 2023</td>
-      <td>https://escholarship.org/uc/item/19w26758</td>
+      <td>Predictions for axion couplings from ALP cogen...</td>
+      <td>Tue, 22 Jun 2021</td>
+      <td>https://escholarship.org/uc/item/436453p7</td>
     </tr>
   </tbody>
 </table>
