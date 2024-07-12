@@ -3,7 +3,7 @@ root: Welcome
 parts:
 - caption: Introduction
   chapters:
-  - file: Introduction/eps_libraries
+  - file: Introduction/science_libraries
   - file: Introduction/research_workflows
   - file: Introduction/question
 - caption: Searching

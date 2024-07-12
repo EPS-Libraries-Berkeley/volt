@@ -8,8 +8,6 @@ The sections of this guide are designed to help you manage various aspects of th
 
 ## Meet your virtual team!
 
-<br></br>
-
 ### Contact Us
 ### Science Librarians
 ```{image} ./Introduction/images/SamHeadshot.png
