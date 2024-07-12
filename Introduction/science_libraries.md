@@ -10,7 +10,7 @@ Sciences Division of the UC Berkeley Library includes five locations. Learn more
 :width: 400px
 ```  
 
-Building Location: 100 Evans Hall  
+Building Location: 2101 Valley Life Sciences Building  
 
 ## <a href="https://www.lib.berkeley.edu/visit/chemistry" target="_blank">Chemistry, Astronomy & Physics Library</a>  
 
