@@ -646,7 +646,7 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 </section>
 <section id="publications-lists-and-bibliographies-in-latex">
 <h2>Publications Lists and Bibliographies in LaTeX<a class="headerlink" href="#publications-lists-and-bibliographies-in-latex" title="Permalink to this heading">#</a></h2>
-<p><em>Objective: Learn the basic commands to create and edit a list of publications and presentations within a bibliogrpahy file</em></p>
+<p><em>Objective: Learn the basic commands to create and edit a list of publications and presentations within a bibliography file</em></p>
 <section id="getting-started-with-a-bib-file">
 <h3>Getting started with a .bib file<a class="headerlink" href="#getting-started-with-a-bib-file" title="Permalink to this heading">#</a></h3>
 <p>In order to include in-text citations and a bibliography, the document needs to refer to a .bib file. <br>
@@ -702,6 +702,7 @@ Another option - if you have a Google Scholar profile, you can export your publi
 <a class="reference internal image-reference" href="../_images/scholar_bibtex.png"><img alt="Google Scholar screenshot" class="align-center" src="../_images/scholar_bibtex.png" style="width: 400px;" /></a>
 <ul class="simple">
 <li><p class="sd-card-text">Paste the citation within your .bib file. (No preamble is needed).
+Generally .bib records are findable in Google Scholar or other article databases.
 <br></p></li>
 </ul>
 <p class="sd-card-text"><strong>Adding a bibliography</strong></p>
@@ -712,10 +713,32 @@ Another option - if you have a Google Scholar profile, you can export your publi
 \<span class="n">addbibresource</span><span class="p">{</span><span class="n">CV_references</span><span class="o">.</span><span class="n">bib</span><span class="p">}</span>
 </pre></div>
 </div>
-<p class="sd-card-text"><strong>Citation commands</strong></p>
+<p class="sd-card-text"><strong>Citation commands</strong>
+<strong>Publications</strong></p>
 <p class="sd-card-text">Use the following commands to insert a publication into your CV.<br></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">section</span><span class="p">{</span><span class="n">Publications</span><span class="p">}</span>
 \<span class="n">subsection</span><span class="p">{</span><span class="mi">2020</span><span class="o">-</span><span class="mi">2021</span><span class="p">}</span>
+\<span class="n">begin</span><span class="p">{</span><span class="n">verse</span><span class="p">}</span>
+\<span class="n">fullcite</span><span class="p">{</span><span class="n">teplitzky2021introducing</span><span class="p">}</span>
+\<span class="n">end</span><span class="p">{</span><span class="n">verse</span><span class="p">}</span>
+</pre></div>
+</div>
+<p class="sd-card-text"><strong>Presentations</strong></p>
+<p class="sd-card-text">Presentations are less likely to generate associated .bib entries. In your .bib file, you will need to create your own entry. Use this syntax as a model.<br></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@presentation</span><span class="p">{</span><span class="n">agu2023</span><span class="p">,</span>
+    <span class="n">author</span><span class="o">=</span><span class="p">{</span>\<span class="n">textbf</span><span class="p">{</span><span class="n">Last</span> <span class="n">name</span><span class="p">,</span> <span class="n">first</span> <span class="n">name</span><span class="p">}</span> <span class="ow">and</span> <span class="n">Author2Last</span><span class="p">,</span> <span class="n">Author2First</span> <span class="ow">and</span> <span class="n">Author3Last</span><span class="p">,</span> <span class="n">Author3First</span><span class="p">},</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="n">Title</span> <span class="n">of</span> <span class="n">your</span> <span class="n">presentation</span><span class="p">:</span> <span class="n">use</span> <span class="p">{</span><span class="n">Curly</span> <span class="n">Brackets</span><span class="p">}</span> <span class="n">to</span> <span class="n">capitalize</span> <span class="n">within</span> <span class="n">title</span><span class="p">},</span>
+    <span class="n">eventtitle</span><span class="o">=</span><span class="p">{</span><span class="n">AGU</span> <span class="n">Fall</span> <span class="n">Meeting</span> <span class="mi">2023</span><span class="p">},</span>
+    <span class="n">venue</span><span class="o">=</span><span class="p">{</span><span class="n">San</span> <span class="n">Francisco</span><span class="p">,</span> <span class="n">CA</span><span class="p">},</span>
+    <span class="n">eventdate</span><span class="o">=</span><span class="p">{</span><span class="mi">2023</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">12</span><span class="p">},</span>
+    <span class="n">url</span><span class="o">=</span><span class="p">{</span><span class="n">www</span><span class="o">.</span><span class="n">conferenceurl</span><span class="o">.</span><span class="n">com</span><span class="p">},</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+<p class="sd-card-text">Then use the following commands to insert a presentation into your CV.<br></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">section</span><span class="p">{</span><span class="n">Presentations</span><span class="p">}</span>
+\<span class="n">subsection</span><span class="p">{</span><span class="mi">2020</span><span class="o">-</span><span class="n">present</span><span class="p">}</span>
 \<span class="n">begin</span><span class="p">{</span><span class="n">verse</span><span class="p">}</span>
 \<span class="n">fullcite</span><span class="p">{</span><span class="n">teplitzky2021introducing</span><span class="p">}</span>
 \<span class="n">end</span><span class="p">{</span><span class="n">verse</span><span class="p">}</span>
