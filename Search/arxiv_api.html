@@ -505,16 +505,16 @@ document.write(`
   import sys
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Band-selective simulation of photoelectron intensity and converging Berry phase in trilayer graphene
-Symmetric n-and p-Type Sub-5-nm 1D Graphene Nanoribbon Transistors for Homogeneous CMOS Applications
-Improving the Electro-Optical Properties of MoS$_2$/rGO Hybrid Nanocomposites Using Liquid Crystals
-Tunable Doping and Mobility Enhancement in 2D Channel Field-Effect Transistors via Damage-Free Atomic Layer Deposition of AlOX Dielectrics
-Optical Control of Ultrafast Photocurrent in Graphene
-Stable magic angle in twisted Kane-Mele materials
-Monolayer Magnetic Metal with Scalable Conductivity
-Spreading of graphene oxide suspensions droplets on smooth surfaces
-A seamless graphene spin valve based on proximity to van der Waals magnet Cr$_2$Ge$_2$Te$_6$
-Quasiperiodic pairing in graphene quasicrystals
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Influence of dislocations in multilayer graphene stacks: A phase field crystal study
+How does Goldene Stack?
+Four loop elasticity renormalization of low temperature flat polymerized membranes
+Three-dimensional valley-contrasting sound
+Phonon Thermal Transport between Two in-Plane, Two-Dimensional Nanoribbons in the Extreme Near-Field Regime
+Probing band topology in ABAB and ABBA stacked twisted double bilayer graphene
+Direct Visualization of Relativistic Quantum Scars
+Beth-Uhlenbeck equation for the thermodynamics of fluctuations in a generalised 2+1D Gross-Neveu model
+Thermolectricity in irradiated bilayer graphene flakes
+Lattice Thermal Conductivity of Sun-Graphyne from Reverse Nonequilibrium Molecular Dynamics Simulations
 </pre></div>
 </div>
 </div>
@@ -539,6 +539,114 @@ Quasiperiodic pairing in graphene quasicrystals
 <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">results_generator</span><span class="p">:</span>
   <span class="c1"># You could do per-paper analysis here; for now, just collect them in a list.</span>
   <span class="n">quantum_dots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paper</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">UnexpectedEmptyPageError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">625</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">626</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__try_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">try_index</span><span class="o">=</span><span class="n">_try_index</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">627</span>         <span class="k">except</span> <span class="p">(</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">__try_parse_feed</span><span class="nt">(self, url, first_page, try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span>         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">feed</span><span class="o">.</span><span class="n">entries</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">first_page</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">667</span>             <span class="k">raise</span> <span class="n">UnexpectedEmptyPageError</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">try_index</span><span class="p">,</span> <span class="n">feed</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">668</span> 
+
+<span class="ne">UnexpectedEmptyPageError</span>: Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=%22quantum+dots%22&amp;id_list=&amp;sortBy=relevance&amp;sortOrder=descending&amp;start=8000&amp;max_results=1000)
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">UnexpectedEmptyPageError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">625</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">626</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__try_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">try_index</span><span class="o">=</span><span class="n">_try_index</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">627</span>         <span class="k">except</span> <span class="p">(</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">__try_parse_feed</span><span class="nt">(self, url, first_page, try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span>         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">feed</span><span class="o">.</span><span class="n">entries</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">first_page</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">667</span>             <span class="k">raise</span> <span class="n">UnexpectedEmptyPageError</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">try_index</span><span class="p">,</span> <span class="n">feed</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">668</span> 
+
+<span class="ne">UnexpectedEmptyPageError</span>: Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=%22quantum+dots%22&amp;id_list=&amp;sortBy=relevance&amp;sortOrder=descending&amp;start=8000&amp;max_results=1000)
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">UnexpectedEmptyPageError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">625</span>         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">626</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__try_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">try_index</span><span class="o">=</span><span class="n">_try_index</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">627</span>         <span class="k">except</span> <span class="p">(</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">__try_parse_feed</span><span class="nt">(self, url, first_page, try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span>         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">feed</span><span class="o">.</span><span class="n">entries</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">first_page</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">667</span>             <span class="k">raise</span> <span class="n">UnexpectedEmptyPageError</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">try_index</span><span class="p">,</span> <span class="n">feed</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">668</span> 
+
+<span class="ne">UnexpectedEmptyPageError</span>: Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=%22quantum+dots%22&amp;id_list=&amp;sortBy=relevance&amp;sortOrder=descending&amp;start=8000&amp;max_results=1000)
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">UnexpectedEmptyPageError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2172</span><span class="o">/</span><span class="mf">2762950194.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> 
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">quantum_dots</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ne">---&gt; </span><span class="mi">13</span> <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">results_generator</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>   <span class="c1"># You could do per-paper analysis here; for now, just collect them in a list.</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>   <span class="n">quantum_dots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paper</span><span class="p">)</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_results</span><span class="nt">(self, search, offset)</span>
+<span class="g g-Whitespace">    </span><span class="mi">598</span>                 <span class="k">break</span>
+<span class="g g-Whitespace">    </span><span class="mi">599</span>             <span class="n">page_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_format_url</span><span class="p">(</span><span class="n">search</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_size</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">600</span>             <span class="n">feed</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parse_feed</span><span class="p">(</span><span class="n">page_url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">601</span> 
+<span class="g g-Whitespace">    </span><span class="mi">602</span>     <span class="k">def</span> <span class="nf">_format_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">search</span><span class="p">:</span> <span class="n">Search</span><span class="p">,</span> <span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">page_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">632</span>             <span class="k">if</span> <span class="n">_try_index</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_retries</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">633</span>                 <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Got error (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">634</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">_try_index</span><span class="o">=</span><span class="n">_try_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">635</span>             <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Giving up (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">636</span>             <span class="k">raise</span> <span class="n">err</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">632</span>             <span class="k">if</span> <span class="n">_try_index</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_retries</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">633</span>                 <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Got error (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">634</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">_try_index</span><span class="o">=</span><span class="n">_try_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">635</span>             <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Giving up (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">636</span>             <span class="k">raise</span> <span class="n">err</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">632</span>             <span class="k">if</span> <span class="n">_try_index</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_retries</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">633</span>                 <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Got error (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">634</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">_try_index</span><span class="o">=</span><span class="n">_try_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">635</span>             <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Giving up (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">636</span>             <span class="k">raise</span> <span class="n">err</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">634</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parse_feed</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">_try_index</span><span class="o">=</span><span class="n">_try_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">635</span>             <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Giving up (try </span><span class="si">%d</span><span class="s2">): </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">_try_index</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">636</span>             <span class="k">raise</span> <span class="n">err</span>
+<span class="g g-Whitespace">    </span><span class="mi">637</span> 
+<span class="g g-Whitespace">    </span><span class="mi">638</span>     <span class="k">def</span> <span class="nf">__try_parse_feed</span><span class="p">(</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">_parse_feed</span><span class="nt">(self, url, first_page, _try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">624</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">625</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">626</span><span class="s2">             return self.__try_parse_feed(url, first_page=first_page, try_index=_try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">627</span><span class="s2">         except (</span>
+<span class="g g-Whitespace">    </span><span class="mi">628</span><span class="s2">             HTTPError,</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/arxiv/__init__.py</span> in <span class="ni">__try_parse_feed</span><span class="nt">(self, url, first_page, try_index)</span>
+<span class="g g-Whitespace">    </span><span class="mi">665</span><span class="s2">         feed = feedparser.parse(resp.content)</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span><span class="s2">         if len(feed.entries) == 0 and not first_page:</span>
+<span class="ne">--&gt; </span><span class="mi">667</span><span class="s2">             raise UnexpectedEmptyPageError(url, try_index, feed)</span>
+<span class="g g-Whitespace">    </span><span class="mi">668</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">669</span><span class="s2">         if feed.bozo:</span>
+
+<span class="ne">UnexpectedEmptyPageError</span>: Page of results was unexpectedly empty (https://export.arxiv.org/api/query?search_query=%22quantum+dots%22&amp;id_list=&amp;sortBy=relevance&amp;sortOrder=descending&amp;start=8000&amp;max_results=1000)
 </pre></div>
 </div>
 </div>
@@ -880,43 +988,43 @@ Quasiperiodic pairing in graphene quasicrystals
       <td>...</td>
     </tr>
     <tr>
-      <th>12363</th>
-      <td>Electric Field Control of Molecular Charge Sta...</td>
-      <td>2024-05-29 08:10:14+00:00</td>
-      <td>Dhaneesh Kumar</td>
-      <td>http://arxiv.org/abs/2405.18855v1</td>
+      <th>10761</th>
+      <td>Integrated photonics enables continuous-beam e...</td>
+      <td>2021-05-08 16:17:01+00:00</td>
+      <td>J. -W. Henke</td>
+      <td>http://arxiv.org/abs/2105.03729v2</td>
     </tr>
     <tr>
-      <th>12364</th>
-      <td>Experimental single-photon quantum key distrib...</td>
-      <td>2024-06-04 07:28:15+00:00</td>
-      <td>Yang Zhang</td>
-      <td>http://arxiv.org/abs/2406.02045v1</td>
+      <th>10762</th>
+      <td>Asymptotic entanglement sudden death in two at...</td>
+      <td>2021-05-12 14:29:44+00:00</td>
+      <td>Gehad Sadiek</td>
+      <td>http://arxiv.org/abs/2105.05694v1</td>
     </tr>
     <tr>
-      <th>12365</th>
-      <td>Assessment of error variation in high-fidelity...</td>
-      <td>2023-03-07 17:50:32+00:00</td>
-      <td>Tuomo Tanttu</td>
-      <td>http://arxiv.org/abs/2303.04090v3</td>
+      <th>10763</th>
+      <td>Engineering interfacial quantum states and ele...</td>
+      <td>2021-07-21 15:19:10+00:00</td>
+      <td>Ignacio Piquero-Zulaica</td>
+      <td>http://arxiv.org/abs/2107.10141v1</td>
     </tr>
     <tr>
-      <th>12366</th>
-      <td>Functional light diffusers based on hybrid CsP...</td>
-      <td>2023-07-12 14:36:29+00:00</td>
-      <td>Lena M. Saure</td>
-      <td>http://arxiv.org/abs/2307.06197v1</td>
+      <th>10764</th>
+      <td>Implementation of the SMART protocol for globa...</td>
+      <td>2021-08-02 12:46:49+00:00</td>
+      <td>Ingvild Hansen</td>
+      <td>http://arxiv.org/abs/2108.00836v3</td>
     </tr>
     <tr>
-      <th>12367</th>
-      <td>Interferometric Single-Shot Parity Measurement...</td>
-      <td>2024-01-17 19:05:29+00:00</td>
-      <td>Morteza Aghaee</td>
-      <td>http://arxiv.org/abs/2401.09549v4</td>
+      <th>10765</th>
+      <td>Indistinguishable single photons from spatiall...</td>
+      <td>2021-08-03 12:00:47+00:00</td>
+      <td>Jiefei Zhang</td>
+      <td>http://arxiv.org/abs/2108.01428v2</td>
     </tr>
   </tbody>
 </table>
-<p>12368 rows × 4 columns</p>
+<p>10766 rows × 4 columns</p>
 </div></div></div>
 </div>
 </section>
@@ -930,10 +1038,10 @@ Quasiperiodic pairing in graphene quasicrystals
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;published&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x12120d790&gt;
 </pre></div>
 </div>
-<img alt="../_images/e166c2087c222339e8190a48c8cd20c9e64678fafef97c92f96c866f1a6e61f3.png" src="../_images/e166c2087c222339e8190a48c8cd20c9e64678fafef97c92f96c866f1a6e61f3.png" />
+<img alt="../_images/5345cac0298587deafde50723d6f49cc9d936ee25a091a50fd9b625858f12360.png" src="../_images/5345cac0298587deafde50723d6f49cc9d936ee25a091a50fd9b625858f12360.png" />
 </div>
 </div>
 <p>Explore authors to see who is publishing your topic. Group by author, then sort and select the top 20 authors.</p>
@@ -947,25 +1055,25 @@ Quasiperiodic pairing in graphene quasicrystals
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>first_author
 Bing Dong                 27
-Constantine Yannouleas    23
 Y. Alhassid               20
+Constantine Yannouleas    18
 David M. -T. Kuo          16
-Akira Oguri               16
-Vidar Gudmundsson         16
-B. Szafran                16
+Akira Oguri               15
 Xuedong Hu                15
-Massimo Rontani           14
 Kicheon Kang              14
-Ulrich Hohenester         14
+B. Szafran                14
 Rafael Sánchez            14
-P. W. Brouwer             13
-David M T Kuo             13
+Massimo Rontani           14
+Ulrich Hohenester         14
 C. W. J. Beenakker        13
-Rui Li                    12
-Tetsufumi Tanamoto        12
+P. W. Brouwer             13
 O. Entin-Wohlman          12
 G. Giavaras               12
+Vidar Gudmundsson         12
 Piotr Trocha              12
+Arka Majumdar             11
+A. A. Aligia              11
+Ramin M. Abolfath         11
 Name: first_author, dtype: int64
 </pre></div>
 </div>
@@ -1009,84 +1117,84 @@ Name: first_author, dtype: int64
   </thead>
   <tbody>
     <tr>
-      <th>814</th>
+      <th>848</th>
       <td>Dicke-like effect in spin-polarized transport ...</td>
       <td>2007-11-22 16:11:11+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0711.3611v2</td>
     </tr>
     <tr>
-      <th>2489</th>
+      <th>2270</th>
       <td>Kondo-Dicke resonances in electronic transport...</td>
       <td>2008-03-28 15:49:07+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0803.4154v1</td>
     </tr>
     <tr>
-      <th>3625</th>
+      <th>3315</th>
       <td>Negative tunnel magnetoresistance and differen...</td>
       <td>2009-11-02 11:45:03+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/0911.0291v1</td>
     </tr>
     <tr>
-      <th>5808</th>
+      <th>5772</th>
       <td>Beating in electronic transport through quantu...</td>
       <td>2010-04-11 16:20:04+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1004.1819v2</td>
     </tr>
     <tr>
-      <th>2644</th>
+      <th>2391</th>
       <td>Orbital Kondo effect in double quantum dots</td>
       <td>2010-08-17 14:13:23+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1008.2902v2</td>
     </tr>
     <tr>
-      <th>2688</th>
+      <th>2428</th>
       <td>The influence of spin-flip scattering on the p...</td>
       <td>2011-05-08 20:12:41+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1105.1550v1</td>
     </tr>
     <tr>
-      <th>5968</th>
+      <th>5402</th>
       <td>Large enhancement of thermoelectric effects in...</td>
       <td>2011-08-11 14:49:51+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1108.2422v2</td>
     </tr>
     <tr>
-      <th>8518</th>
+      <th>7661</th>
       <td>The role of the indirect tunneling processes a...</td>
       <td>2011-09-12 20:51:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1109.2621v1</td>
     </tr>
     <tr>
-      <th>2898</th>
+      <th>2613</th>
       <td>Spin-polarized Andreev transport influenced by...</td>
       <td>2014-09-14 23:54:35+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1409.4122v1</td>
     </tr>
     <tr>
-      <th>8699</th>
+      <th>7789</th>
       <td>Spin-resolved Andreev transport through double...</td>
       <td>2015-08-24 19:02:49+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1508.05915v1</td>
     </tr>
     <tr>
-      <th>6490</th>
+      <th>6015</th>
       <td>Spin-dependent thermoelectric phenomena in a q...</td>
       <td>2017-05-02 14:55:38+00:00</td>
       <td>Piotr Trocha</td>
       <td>http://arxiv.org/abs/1705.01007v1</td>
     </tr>
     <tr>
-      <th>6785</th>
+      <th>6436</th>
       <td>Cross-correlations in a quantum dot Cooper pai...</td>
       <td>2018-07-23 22:28:01+00:00</td>
       <td>Piotr Trocha</td>
@@ -1101,11 +1209,6 @@ Name: first_author, dtype: int64
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Use the arxiv.Result object stored in the _result column to trigger a PDF download.</span>
 <span class="n">qd_Trocha_oldest</span> <span class="o">=</span> <span class="n">qd_Trocha_sorted</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">qd_Trocha_oldest</span><span class="o">.</span><span class="n">_result</span><span class="o">.</span><span class="n">download_pdf</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;./0711.3611v2.Dicke_like_effect_in_spin_polarized_transport_through_coupled_quantum_dots.pdf&#39;
 </pre></div>
 </div>
 </div>

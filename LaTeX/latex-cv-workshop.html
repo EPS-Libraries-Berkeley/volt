@@ -521,7 +521,7 @@ On the left side, the content is written in LaTeX. On the right side, the render
 <tbody>
 <tr class="row-even"><td><p>Command</p></td>
 <td><p>Control sequence which performs an action</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\newpage</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\section</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Preamble</p></td>
 <td><p>Block of commands that define the type of document you are writing,  the language you are writing in, the packages you would like to use. Comes before \begin{document}</p></td>
@@ -529,7 +529,7 @@ On the left side, the content is written in LaTeX. On the right side, the render
 </tr>
 <tr class="row-even"><td><p>Package</p></td>
 <td><p>Enable you to create bibliographies, insert images and figures, and write formulas.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\usepackage{amsmath}</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\usepackage{hyperref}</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>Environment</p></td>
 <td><p>Block of code with specific behavior depending on its type</p></td>
@@ -562,6 +562,28 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 <section id="lists">
 <h3>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h3>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">\begin{itemize}...\end{itemize}</span></code> environment to create unnumbered lists, useful for detailing job responsibilities or committee service.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">begin</span><span class="p">{</span><span class="n">itemize</span><span class="p">}</span>
+\<span class="n">item</span> <span class="n">Apples</span>
+\<span class="n">item</span> <span class="n">Cherries</span>
+\<span class="n">item</span> <span class="n">Oranges</span>
+\<span class="n">item</span> <span class="n">Peaches</span>
+\<span class="n">item</span> <span class="n">Watermelon</span>
+\<span class="n">end</span><span class="p">{</span><span class="n">itemize</span><span class="p">}</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p class="sd-card-text">This code results in:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Apples</p></li>
+<li><p class="sd-card-text">Cherries</p></li>
+<li><p class="sd-card-text">Oranges</p></li>
+<li><p class="sd-card-text">Peaches</p></li>
+<li><p class="sd-card-text">Watermelon</p></li>
+</ul>
+</div>
+</div>
 <p>Use the similar <code class="docutils literal notranslate"><span class="pre">\begin{enumerate}...\end{enumerate}</span></code> environment to create numbered lists.</p>
 </section>
 <section id="exercise">
@@ -574,7 +596,7 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 <p class="sd-card-text"><em>Objective: Learn to adapt and edit a LaTeX CV or Resume Template.</em></p>
 <ol class="arabic simple">
 <li><p class="sd-card-text">Visit <a class="reference external" href="https://www.overleaf.com/gallery/tagged/cv">Overleaf’s</a> gallery of CV templates to get a sense of the formats and discipline-specific variations available.</p></li>
-<li><p class="sd-card-text">In this workshop, we will use a template titled [Scismic’s Recommended CV Template for Biotech and Pharma Jobs] (<a class="reference external" href="https://www.overleaf.com/latex/templates/scismics-recommended-cv-template-for-biotech-and-pharma-jobs/hbnkjrjnnpjz">https://www.overleaf.com/latex/templates/scismics-recommended-cv-template-for-biotech-and-pharma-jobs/hbnkjrjnnpjz</a>)</p>
+<li><p class="sd-card-text">In this workshop, we will use a template titled <a class="reference external" href="https://www.overleaf.com/latex/templates/scismics-recommended-cv-template-for-biotech-and-pharma-jobs/hbnkjrjnnpjz">Scismic’s Recommended CV Template for Biotech and Pharma Jobs</a></p>
 <ul class="simple">
 <li><p class="sd-card-text">Choose the option: OPEN AS TEMPLATE</p></li>
 <li><p class="sd-card-text">Click Menu → Copy</p></li>
@@ -649,14 +671,14 @@ Certain symbols require a backslash to appear, like $, &amp;, #, and %.</p></li>
 <p><em>Objective: Learn the basic commands to create and edit a list of publications and presentations within a bibliography file</em></p>
 <section id="getting-started-with-a-bib-file">
 <h3>Getting started with a .bib file<a class="headerlink" href="#getting-started-with-a-bib-file" title="Permalink to this heading">#</a></h3>
-<p>In order to include in-text citations and a bibliography, the document needs to refer to a .bib file. <br>
+<p>One way to manage publications, presentations and other outputs, is to reference a .bib file which is also used to
+create in-text citations and bibliographies. <br>
 There are three ways to include a .bib file in a project in Overleaf.</p>
 <ol class="arabic simple">
 <li><p>Upload your own .bib file that you create or export from a citation manager.</p></li>
 <li><p>Link to a URL (.bib)</p></li>
 <li><p>Connect your Overleaf account with Mendeley or Zotero.</p></li>
 </ol>
-<p>If you are working in a traditional LaTeX editor, locate the .bib file in the directory.</p>
 </section>
 <section id="what-does-a-citation-in-a-bib-file-look-like">
 <h3>What does a citation in a .bib file look like?<a class="headerlink" href="#what-does-a-citation-in-a-bib-file-look-like" title="Permalink to this heading">#</a></h3>
@@ -709,7 +731,7 @@ Generally .bib records are findable in Google Scholar or other article databases
 <ul class="simple">
 <li><p class="sd-card-text">To display bibliography in APA style, add package and style command to preamble:<br></p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">usepackage</span><span class="p">[</span><span class="n">backend</span><span class="o">=</span><span class="n">biber</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">authoryear</span><span class="p">]{</span><span class="n">biblatex</span><span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">usepackage</span><span class="p">[</span><span class="n">backend</span><span class="o">=</span><span class="n">biber</span><span class="p">,</span><span class="n">style</span><span class="o">=</span><span class="n">apa</span><span class="p">]{</span><span class="n">biblatex</span><span class="p">}</span>
 \<span class="n">addbibresource</span><span class="p">{</span><span class="n">CV_references</span><span class="o">.</span><span class="n">bib</span><span class="p">}</span>
 </pre></div>
 </div>
