@@ -6,7 +6,7 @@ Take a look at the landing page for the dataset:<br>
 **David Leip: Atlas of the U.S. Presidential Elections** <br>
 [https://doi.org/10.60503/D3/HDZ6RW](https://doi.org/10.60503/D3/HDZ6RW)
 
-![california corrections data](./images/elections.png)
+![image of elections atlas](./images/elections.png)
 
 With the information shown above, and using the link provided, answer the following questions:
 
