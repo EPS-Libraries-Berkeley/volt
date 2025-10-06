@@ -1,7 +1,7 @@
 # Data Case Study 2
 
 Navigate to **Dewey Data** ([https://www.deweydata.io/](https://www.deweydata.io/)) and sign in using your Calnet username and passphrase.
-Locate Rental Data by RentHub; then locate the data documentation.
+Locate Rental Data by RentHub. Then locate the data documentation.
 
 ![Rental Data By RentHub](./images/renthub.png)
 
