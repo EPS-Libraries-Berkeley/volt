@@ -17,3 +17,4 @@ sphinxcontrib-bibtex>=2.6.5
 
 # Compatibility fix for recent Sphinx versions
 docutils<0.21
+
