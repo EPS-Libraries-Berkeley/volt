@@ -21,6 +21,8 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pip install --upgrade pip
+        pip install "docutils<0.21" "sphinxcontrib-bibtex>=2.6.5" "orderedset"
         pip install -r requirements.txt --use-deprecated=legacy-resolver
 
     # Build the book
