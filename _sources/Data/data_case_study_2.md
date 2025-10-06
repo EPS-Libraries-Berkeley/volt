@@ -1,10 +1,9 @@
 # Data Case Study 2
 
-Take a look at the landing page for the dataset:<br>
-**Axois/Ipsos/Telemundo Latino Survey** <br>
-[https://doi.roper.center/?doi=10.25940/ROPER-31120351](https://doi.roper.center/?doi=10.25940/ROPER-31120351)
+Navigate to **Dewey Data** ([https://www.deweydata.io/](https://www.deweydata.io/)) and sign in using your Calnet username and passphrase.
+Locate Rental Data by RentHub; then locate the data documentation.
 
-![roper latino survey](./images/roper_latino_survey.png)
+![Rental Data By RentHub](./images/renthub.png)
 
 With the information shown above, and using the link provided, answer the following questions:
 
@@ -12,17 +11,16 @@ With the information shown above, and using the link provided, answer the follow
 
 **Questions**
 
-1. Why was the data collected?
-2. What are the limitations of the data?
+1. How was the data collected?
+2. What are some possible limitations of the data?
 
 ## Publisher / Host
 
 **Questions**
 
 1. How do you access the dataset? 
-2. Is there a theme or subject focus to the repository?
-3. What other types of data would you expect to find there?
-4. Find the “Transparency” tab in the dataset record. What does this information show and why might it be important?
+2. Is there a theme or subject focus to Dewey Data?
+3. What other types of data would you expect to find?
 
 ## Citation
 
@@ -33,7 +31,7 @@ With the information shown above, and using the link provided, answer the follow
 2. Is there an example or recommendation?
 
 ```{dropdown} Result
-Axios/Telemundo. (2023). Axios/Ipsos/Telemundo Latino Survey (Version 1) [Dataset]. Cornell University, Ithaca, NY: Roper Center for Public Opinion Research. doi:10.25940/ROPER-31120351
+RentHub. (2022). Rental Data [Dataset]. Dewey Data. https://doi.org/10.82551/5MMV-7M10
 ```
 ````
 
@@ -41,5 +39,5 @@ Axios/Telemundo. (2023). Axios/Ipsos/Telemundo Latino Survey (Version 1) [Datase
 
 **Questions**
 
-1. Are you allowed to disseminate this dataset?
+1. Are you allowed to share this dataset? (hint: locate FAQs)
 2. How do you know?
