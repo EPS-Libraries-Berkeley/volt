@@ -8,4 +8,4 @@ datetime
 habanero
 jupyter-book
 sphinxcontrib-bibtex==1.0.0
-docutils<0.18
+docutils<0.21
