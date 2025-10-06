@@ -1,11 +1,20 @@
+# Core data and plotting libraries
 pandas
 numpy
 matplotlib
 scipy
+
+# Data sources and utilities
 arxiv>=1.4.0
 requests
 datetime
 habanero
+
+# Jupyter Book and Sphinx ecosystem
 jupyter-book
-sphinxcontrib-bibtex==1.0.0
-docutils<0.18
+sphinx<8
+sphinxcontrib-bibtex>=2.6.5
+
+# Compatibility fix for recent Sphinx versions
+docutils<0.21
+
