@@ -31,7 +31,7 @@ sphinx:
     bibtex_reference_style: author_year
     html_show_copyright: false 
 bibtex_bibfiles:
-  - /references.bib   
+  - references.bib   
 
 latex:
   latex_documents:
