@@ -51,4 +51,3 @@ For more information about archiving and publishing options, consult the section
 
 {cite}`d2017creative` 
 Data Biography and Data Analysis Images based on: Catherine D’Ignazio. Creative data literacy: bridging the gap between the data-haves and data-have nots. Information Design Journal, 23(1):6–18, 2017.
-
