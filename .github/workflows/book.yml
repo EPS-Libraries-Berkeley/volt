@@ -1,43 +1,49 @@
 name: deploy-book
 
-# Only run this when the master branch changes
 on:
   push:
     branches:
-    - main
+      - main
 
-# This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
     steps:
-    - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
 
-    # Install dependencies
-    - name: Set up Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: "3.12"
-        cache: pip
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
 
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip
-        pip install "docutils<0.21" "sphinxcontrib-bibtex>=2.6.5" "orderedset"
-        pip install -r requirements.txt --use-deprecated=legacy-resolver
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
 
-    # Build the book
-    - name: Build the book
-      run: |
-        jupyter-book build .
+          # Core Sphinx / Jupyter Book stack
+          pip install "docutils<0.21" "sphinx<8" jupyter-book
 
-    # Upload the book's HTML as an artifact
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v4
-      with:
-        path: _build/html
+          # Modern BibTeX stack (NO orderedset)
+          pip install pybtex>=0.25.1 pybtex-docutils>=1.0.3
+          pip install sphinxcontrib-bibtex==2.6.5 --no-deps
 
-    # Deploy the book's HTML to GitHub Pages
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+          # Project-specific deps
+          pip install -r requirements.txt
+
+      - name: Build the book
+        run: |
+          jupyter-book build .
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _build/html
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
