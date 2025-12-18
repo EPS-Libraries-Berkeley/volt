@@ -29,19 +29,12 @@ Building Location: 100 Hildebrand Hall
 ```  
 Building Location: 50 McCone Hall  
 
-## <a href="https://www.lib.berkeley.edu/visit/engineering" target="_blank">Engineering Library</a>  
+## <a href="https://www.lib.berkeley.edu/visit/engineering" target="_blank">Kresge Engineering & Mathematical Sciences Library</a>  
 
 ```{image} ./images/Bechtel.png
 :alt: Engineering Library Location
 :width: 400px
 ``` 
-Building Location: 110 Bechtel Engineering Center  
+Building Location: B120 Grimes Engineering Center  
 
-## <a href="https://www.lib.berkeley.edu/visit/math" target="_blank">Mathematics Statistics Library</a>  
-
-```{image} ./images/Evans.png
-:alt: Mathematics Statistics Library Location
-:width: 400px
-```  
-Building Location: 100 Evans Hall  
 
