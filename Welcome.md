@@ -1,7 +1,4 @@
----
-title: VOLT: Virtual Online Library Tutorials
-short_title: VOLT
----
+# VOLT: Virtual Online Library Tutorials
 
 ```{figure} scilib-logo.png
 :label: my-fig
@@ -9,7 +6,7 @@ short_title: VOLT
 :align: left
 ```
 
-# Welcome
+## Welcome
 
 Welcome to the UC Berkeley Sciences Libraries' Virtual Online Library Tutorials (VOLT). Whether you're searching for articles, streamlining your research workflows, or organizing data, citations and writing, we have expertise and resources to help you.
 

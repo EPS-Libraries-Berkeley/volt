@@ -59,6 +59,7 @@ project:
     
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+     favicon: favicon.ico
+     logo: scilib_logo.png
+     hide_myst_branding: true
