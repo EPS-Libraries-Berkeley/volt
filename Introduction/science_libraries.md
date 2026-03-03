@@ -1,7 +1,7 @@
 # Science Libraries
 
 
-Sciences Division of the UC Berkeley Library includes five locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>. Our libraries all include study space, printing and scanning, and public access computers.
+Sciences Division of the UC Berkeley Library includes four locations. Learn more about the features of each library location below and find them on the <a href="https://www.berkeley.edu/map" target="_blank">UC Berkeley Campus Map</a>. Our libraries all include study space, printing and scanning, and public access computers.
 
 ## <a href="https://www.lib.berkeley.edu/visit/bioscience" target="_blank">Bioscience, Natural Resources & Public Health Library</a>  
 
