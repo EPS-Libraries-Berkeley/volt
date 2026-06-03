@@ -48,7 +48,7 @@ project:
             - file: LaTeX/Figures.ipynb
             - file: LaTeX/Bibliographies.ipynb
             - file: LaTeX/FAQs.ipynb
-        - file: LaTeX/latex_workshop.ipynb
+        - file: LaTeX/latex_workshop.md
         - file: LaTeX/latex-cv-workshop.ipynb
     - title: References
       children:
