@@ -278,7 +278,10 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
 :::{hint}
 Commands needed: `\frac{}{}`, `\pm`, `\sqrt{}`, `\[...\]` or `$...$` \
-Degree can be represented several ways such as `$^\circ$` or `\degree` (requires the `\usepackage{gensymb}`). \ Subscripts and superscripts are written using the symbols _ and ^. 
+
+Degree can be represented several ways such as `^\circ` or `\degree` (requires the `\usepackage{gensymb}`).
+
+Subscripts and superscripts are written using the symbols _ and ^. 
 :::
 ::::
 
@@ -350,10 +353,9 @@ What does a citation in a `.bib` file look like?
 }
 ```
 
-KEY: The **citation key** is the internal label inside the `\cite{} command used to call in a citation or reference a source. \
-Example: `drachen2016sharing` or `fsci2021`
+**Key**: The **citation key** is the internal label inside the `\cite{}` command used to call in a citation or reference a source.
 
-To cite Drachen 2016 within your text, type `\cite{drachen2016sharing}`
+**Example:** To cite Drachen 2016 within your text, type `\cite{drachen2016sharing}`
 
 ### Bibliography Packages
 
@@ -448,9 +450,9 @@ For additional examples and more information, please visit Overleaf's page on [b
 
 :::
 
-## Figures
+## Figures and Images
 
-### Uploading a figure
+### Uploading a figure or images
 
 Incorporating images and figures into your Overleaf project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.
 
@@ -463,34 +465,22 @@ Click on the "upload" icon and navigate to the location of your figure.
 ``` 
 
 #### Image Placement
-Images and figures require a graphics package. Include `\usepackage{graphicx}` in the preamble of your document.
+Images and figures require a graphics package. 
 
-Within the text, place the image using the command `\includegraphics{filename.jpg}`.
+1. Include `\usepackage{graphicx}` in the preamble of your document.
+2. Within the text, place the image using the command `\includegraphics{filename.jpg}`.
 
 #### Image Description and Alt text
 Additional specifiers can be added to resize image and to add descriptive text.
 
 1. Express size a proportion of linewidth: `width=0.25\linewidth`
 2. Add description: `alt={image of cat typing on computer}`
-3. Put it all together: `\includegraphics[width=0.25\linewidth,alt={image of cat typing on computer}]{filename.jpg}
-
-#### Figure Placement
-
-Use the following specifiers to adjust the placement of your figures.
-
-| Specifier | Description |
-| --- |--- |
-|h|Place the float here: approximately, not exactly, at the same point it occurs in the source text|
-|t|Position at the top of the page|
-|b|Position at the bottom of the page|
-|p|Put on a special page for floats only|
-|!|Override internal parameters LaTeX uses for determining \"good\" float positions|
-|H|Places the float at precisely the location in the LaTeX code. Requires the float package. This is somewhat equivalent to h!|
+3. Put it all together: `\includegraphics[width=0.25\linewidth,alt={image of cat typing on computer}]{filename.jpg}`
 
 ### Exercise
 
 :::{hint} Exercise 4: Uploading an Image or Figure
-_Objective: Learn to upload and position figures in Overleaf._
+_Objective: Learn to upload figures in Overleaf._
 
 **Upload a figure**
 
@@ -506,17 +496,32 @@ _Objective: Learn to upload and position figures in Overleaf._
 :width: 400px
 :align: center
 ```
+:::
+
+:::{seealso} Figure Placement
+:class: dropdown
 
 **Designate figure position**
 Use b, t, h to see within the figure environment to determine or override placement. You might need to add additional text in the document to see how the figure placement varies.
 
+Use the following specifiers to adjust the placement of your figures.
+
+| Specifier | Description |
+| --- |--- |
+|h|Place the float here: approximately, not exactly, at the same point it occurs in the source text|
+|t|Position at the top of the page|
+|b|Position at the bottom of the page|
+|p|Put on a special page for floats only|
+|!|Override internal parameters LaTeX uses for determining \"good\" float positions|
+|H|Places the float at precisely the location in the LaTeX code. Requires the float package. This is somewhat equivalent to h!|
+
 ```
 \begin{figure}[b]
 \centering
+\caption{Gratuitous cat picture to demonstrate image commands}
 \includegraphics[width=0.6\linewidth]{keyboard_cat}
 \end{figure}
 ```
-
 :::
 
 Compare your LaTeX code to the solutions at:  [https://www.overleaf.com/read/hsjrcdzkndvd](https://www.overleaf.com/read/hsjrcdzkndvd) to troubleshoot. 
