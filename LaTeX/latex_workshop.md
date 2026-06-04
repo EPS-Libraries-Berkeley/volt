@@ -105,7 +105,7 @@ Instructions for accessibility requirements related to images or figures follow 
 
 ### Exercise
 
-::::{Hint} Exercise 1: Basic LaTeX Commands
+::::{hint} Exercise 1: Basic LaTeX Commands
 
 _Objective: Practice several basic LaTeX commands in a new project._
 
@@ -257,7 +257,7 @@ Use `\begin{equation*}` for unnumbered equations.
 ### Exercise
 
 ::::{hint} Exercise 2: Mathematical Equations
-_Objective: Experiment with mathematical notations in LaTeX._ \
+_Objective: Experiment with mathematical notations in LaTeX._ 
 
 1. Add the following paragraph under that section using "inline" math commands: 
 
@@ -266,13 +266,14 @@ _Objective: Experiment with mathematical notations in LaTeX._ \
 2. Recreate this text in your document:  
 A quadratic equation is an equation of the form $ax^2 + bx + c = 0$ and such equations can be solved using the quadratic formula:
 
-```{math}
-x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}
-```
+:::{math}
+:enumerated: false
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+:::
 
 :::{hint}
-Commands needed: `\\frac{}{}`, `\\pm`, `\\sqrt{}`, `\\[...\\]` or `$$...$$` \\
-Degree can be represented several ways such as `$^\circ$` or `\degree` (requires the `\usepackage{gensymb}`). Subscripts and superscripts are written using the symbols _ and ^. 
+Commands needed: `\frac{}{}`, `\pm`, `\sqrt{}`, `\[...\]` or `$...$` \
+Degree can be represented several ways such as `$^\circ$` or `\degree` (requires the `\usepackage{gensymb}`). \ Subscripts and superscripts are written using the symbols _ and ^. 
 :::
 ::::
 
@@ -280,50 +281,56 @@ Degree can be represented several ways such as `$^\circ$` or `\degree` (requires
 :class: dropdown
 
 Recreate this equation in your document: 
-```{math}
+:::{math}
+:enumerated: false
 i\hbar\frac{\partial}{\partial t}\psi = \hat{H}\psi 
-```
+:::
 
 :::{hint}
-Commands needed: `\partial`, `\psi`, `\hbar`, `\hat{H}` \ 
-Packages needed: `\usepackage{amsmath}`, `\usepackage{amssymb}` \ 
-Environment needed: `\begin{equation*} ... \end{equation*}` \ 
+- Commands needed: `\partial`, `\psi`, `\hbar`, `\hat{H}` 
+- Packages needed: `\usepackage{amsmath}`, `\usepackage{amssymb}` 
+- Environment needed: `\begin{equation*} ... \end{equation*}`  
 :::
 
 Recreate this equation in your document: 
-```{math}
+:::{math}
+:enumerated: false
 \frac{d\sigma}{d\lambda}= \left|\frac{2\mu}{\hbar^2}\int_{0}^{\infty}\frac{sin(\Delta kr)}{\Delta kr}V(r)r^2dr\right|^2
-```
+:::
     
 :::{hint} 
-Commands needed: `\infty`, `\sigma`, `\lambda`, `\mu`, `\\Delta`, `\left|`, `\right|` \
-Environment needed: `\begin{equation*} ... \end{equation*}` \
+- Commands needed: `\infty`, `\sigma`, `\lambda`, `\mu`, `\Delta`, `\left|`, `\right|` 
+- Environment needed: `\begin{equation*} ... \end{equation*}` 
 :::
 
 ::::
 
 :::{dropdown} **Results**
 This is how your rendered exercise should appear in Overleaf. 
-![Results](./images/math_exercises.png)
-:::
+```{image} ./images/math_exercises.png
+:alt: Results of math exercises as rendered in Overleaf
+:width: 500px
+:align: center
+```
 
 ## Creating Bibliographies in LaTeX
 
 _Objective: Learn the basic commands to create and edit in-text citations and bibliographies_
 
-### Getting started with a .bib file
+### Getting started with a `.bib` file
 In order to include in-text citations and a bibliography, the document needs to refer to a .bib file.
-There are three ways to include a .bib file in a project in Overleaf.
+There are three ways to include a `.bib` file in a project in Overleaf.
 
-1. Upload your own .bib file that you create or export from a citation manager.
-2. Link to a URL (.bib)
-3. Sync your Overleaf account with Zotero.\
-If you are working in a traditional LaTeX editor, locate the .bib file in the directory.
+1. Upload your own `.bib` file that you create or export from a citation manager.
+2. Link to a URL (`.bib`).
+3. Sync your Overleaf account with Zotero.
 
-What does a citation in a .bib file look like?
+If you are working in a traditional LaTeX editor, locate the `.bib` file in the directory.
 
-```
-@article{drachen2016sharing},
+What does a citation in a `.bib` file look like?
+
+```bibtex
+@article{drachen2016sharing,
   title = {Sharing data increases citations},
   author={Drachen, Thean and Ellegaard, Ole and Larsen,
   Asger and Dorch, S{\o}ren},
@@ -334,19 +341,19 @@ What does a citation in a .bib file look like?
   url={https://doi.org/10.18352/lq.10149},
 }
 
-@presentation{fsci2021,
+@misc{fsci2021,
   author={Teplitzky, Samantha, and Tranfield, Wynn},
   title={Introduction to Open and Reproducible Practices in 
   {Earth Sciences}},
   maintitle={Case Studies in the {Earth Sciences: Current} 
   Approaches to publishing, data and computation},
-  eventttitle={{Force 11 Scholary Communication Institute (FSCI)}},
+  eventtitle={{Force 11 Scholary Communication Institute (FSCI)}},
   venue={Virtual},
-  eventdate={2021-07-27/2021-08-03}
+  eventdate={2021-07-27/2021-08-03},
 }
 ```
 
-KEY = the syntax used in the cite command to call in a citation \
+KEY: The citation key is the internal label inside the `\cite{} command used to call in a citation or reference a source. \
 Example: *drachen2016sharing* or *fsci2021*
 
 ### Bibliography Packages
@@ -355,11 +362,13 @@ We will use the *biblatex* package to generate in-text citations and bibliograph
 
 When adding a bibligraphy, you will need to add commands to the preamble. \
 
-Commands required for the *preamble*: \
+Commands required for the *preamble*:
 
-`\usepackage[backend=biber,style=apa]{biblatex}` \
+`\usepackage[backend=biber,style=apa]{biblatex}`
 
-The above syntax calls in the biblatex package and the backend (biber), which acts as the interface between the .bib file and the LaTeX document. The term "apa" denotes the citation style. This can be changed accordingly. \
+- The above syntax calls in the biblatex package.
+- `backend=biber` defines *Biber* as the interface between the .bib data file and the LaTeX document. 
+- `style=apa` sets your citation rules to APS style (this can be swapped for `ieee`, `mla`, `nature`, etc.). 
 
 `\addbibresource{example.bib}`
 
@@ -367,11 +376,12 @@ The above command calls in the .bib file, which has the citation information for
 
 In an article or book chapter, the command \printbibliography inserts the bibliography, which will contain citations referenced in the text. 
 
-Find more information [go to the Overleaf page on bibliography management](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX).
+Find more information [visit the Overleaf page on bibliography management](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX).
 
 ### In-text citations
 
 | Command | Description |
+| --- | --- |
 | `\cite{}` | bare citation command (according to style) |
 |`\parencite{}` | parenthetical citation |
 |`\citeauthor{}`| prints author name(s) |
@@ -381,27 +391,28 @@ Find more information [go to the Overleaf page on bibliography management](https
 
 #### Examples
 | Command	|	Result |
+| --- | --- |
 | `\cite{knyazeva_duplex_2013}`	| Knyazeva and Pohl 2013 |
 | `\parencite{singh_2013}` | (Singh et al. 2013) |
-| `\citeauthor{campbell_how_2011}`	|	Campbell and Cabrera |
+| `\citeauthor{campbell_how_2011}` |	Campbell and Cabrera |
 | `\textcite{elsabbagh_microstructure_2014}`| Elsabbagh, Hamouda, and Taha (2014) |
 
 ### Exercise
 
-::::{Hint} Exercise 3: Adding a Bibliography
+:::{hint} Exercise 3: Adding a Bibliography
 
-_Objective: Learn to create, edit or upload a .bib file, use basic citation commands, and display a bibliography._
+_Objective: Learn to create, edit or upload a `.bib` file, use basic citation commands, and display a bibliography._
 
-*Create a .bib file and add references*
+*Step 1: Create a `.bib` file and add references*
 
-1. Create a new file within your Overleaf project (click on the paper icon in the upper left) and name it references.bib
+1. Create a new file within your Overleaf project (click on the *New file* paper icon in the upper left) and name it references.bib
 
 ```{image} ./images/references.png
-:alt: Google Scholar screenshot
+:alt: Overleaf document menu
 :width: 400px
 :align: center
 ```
-2. Search for these three articles and books in Google Scholar and locate their BibTeX formatted citations. \
+2. Search for these three articles and books in Google Scholar and locate their *BibTeX* formatted citations.
    - 10.1126/science.1214319
    - Hydraulic power system analysis
    - 10.1103/PhysRevB.100.094418
@@ -412,29 +423,30 @@ _Objective: Learn to create, edit or upload a .bib file, use basic citation comm
 :align: center
 ``` 
 
-3. Paste each citation within your .bib file. (No preamble is needed). \
+3. Paste each citation completely within your .bib file. (No preamble code is needed).
 
-*Adding a bibliography*
+*Step 2: Displaying the bibliography*
 
-- To display bibliography in APA style, add package and style command to preamble: \
+- To display bibliography in author-year style convention, add package and style command to preamble: \
 ```
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{references.bib}
 ```
-- And use these commands within document: \
+- And use these commands within document: 
+
 `\printbibliography`
 `\nocite{*}` 
 
-**Citation commands**
+*Step 3: Praciting citation commands*
 
-Try using citation commands to recreate the sentence below: \
+Try using citation commands to recreate the sentence below: 
 
-In the example provided, Weber et al. 2012 describes the experiment, but Akers, Gassman, and Smith contradict these conclusions. \
+"In the example provided, Weber et al. 2012 describes the experiment, but Akers, Gassman, and Smith contradict these conclusions." 
 
 Commands needed: `\cite{}`, `\citeauthor{}`
 
 For additional examples and more information, please visit Overleaf's page on [bibliography management in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
 
-::::
+:::
 
  
