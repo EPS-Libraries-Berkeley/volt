@@ -29,11 +29,11 @@ Look at the template below to get a sense of how Overleaf works. On the left sid
 
 | Term | Description | Example |
 |-|-|-|
-| Command | Control sequence which performs an action | `\\newpage`|
-| Preamble | Block of commands that define the type of document you are writing,  the language you are writing in, the packages you would like to use. Comes before \\begin{document}| `\\documentclass{article}`|
-| Package | Enable you to create bibliographies, insert images and figures, and write formulas. | `\\usepackage{amsmath}` |
-| Environment | Block of code with specific behavior depending on its type | `\\begin{}` & `\\end{}` |
-| Body | Content of document enclosed inside an environment | `\\begin{document}` |
+| Command | Control sequence which performs an action | `\newpage`|
+| Preamble | Block of commands that define the type of document you are writing,  the language you are writing in, the packages you would like to use. Comes before `\begin{document}`| `\documentclass{article}`|
+| Package | Enable you to create bibliographies, insert images and figures, and write formulas. | `\usepackage{amsmath}` |
+| Environment | Block of code with specific behavior depending on its type | `\begin{}` & `\end{}` |
+| Body | Content of document enclosed inside an environment | `\begin{document}` |
 
 :::{note}
 - Comments: Use % to create a comment. Nothing on the line after the % will be typeset.
@@ -46,18 +46,18 @@ Look at the template below to get a sense of how Overleaf works. On the left sid
 - {u}`Underline`: \underline{example}
 
 Font typefaces:
-Change font designations in preamble. More information:\
-https://v2.overleaf.com/learn/Font_typefaces
+Change font designations in preamble. More information about fonts and typefaces:
+[https://v2.overleaf.com/learn/Font_typefaces](https://v2.overleaf.com/learn/Font_typefaces)
 
 ### Make Title
-The simplest option for making a title is to use the \maketitle command which draws from the following declarations within the preamble:
-\author
-\date
-\thanks
-\title
+The simplest option for making a title is to use the `\maketitle` command which draws from the following declarations within the preamble:
+`\author`
+`\date`
+`\thanks`
+`\title`
 
 ### Lists
-Use the \begin{itemize}...\end{itemize} environment to create unnumbered lists.
+Use the `\begin{itemize}...\end{itemize}` environment to create unnumbered lists.
 
 :::{hint}
 
@@ -82,12 +82,17 @@ This code results in:
 
 :::
 
-Use the \begin{enumerate}...\end{enumerate} environment to create numbered lists.
+Use the `\begin{enumerate}...\end{enumerate}` environment to create numbered lists.
 
-### Packages and Accessible PDFs
+### Accessible PDFs
 
-The steps for creating an accessible PDF begin when you initiate a new project.
-Add the text below to enable tagging essential for an accessible PDF.
+Take steps to create an accessible PDF when you initiate a new project. The main considerations:
+- *Tagging* assists screen readers, differentiating elements like headers, body text, figures, and equations.
+- *Descriptions* are required for particular content elements.
+  - *Images*: provide alternative or alt-text for images and figures. More information follows below.
+  - *Tables*: add `\tagpdfsetup` to describe table structure before the `\tabular` environment.
+
+In this section, we introduce the text below to enable *tagging* essential for an accessible PDF. More content-specific information follows in later sections.
 
 ```
 \DocumentMetadata{tagging=on,
@@ -98,10 +103,9 @@ Add the text below to enable tagging essential for an accessible PDF.
 ```
 
 Read more:
-- Information from Overleaf on *Creating accessible PDFs in LaTeX*:\ https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs
-- More indepth documentation from the LaTeX Tagging Project:\ https://latex3.github.io/tagging-project/documentation/usage-instructions
+- [Information from Overleaf on *Creating accessible PDFs in LaTeX*:] (https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs)
+- [More in-depth documentation from the LaTeX Tagging Project:] (https://latex3.github.io/tagging-project/documentation/usage-instructions)
 
-Instructions for accessibility requirements related to images or figures follow below.
 
 ### Exercise
 
@@ -109,33 +113,27 @@ Instructions for accessibility requirements related to images or figures follow 
 
 _Objective: Practice several basic LaTeX commands in a new project._
 
-1. Open a new project in [Overleaf](https://www.overleaf.com/edu/berkeley). \
-2. Create Title \
-- After `\title`, add "VOLT LaTeX Basics Assignment" \
-- After `\author`, add your name \
-- Confirm that the date is correct or edit if needed\ 
-- Display **Title** using command `\maketitle` inserted after `\begin{document}` \
-3. Add a new section labeled "Practice" using the `\section*` command. \
-4. Add a new section labeled "California Road Trip Destinations"" \
-5. Make a numbered list of four items, for example: \
+1. Open a new project in [Overleaf](https://www.overleaf.com/edu/berkeley). 
+2. Create Title 
+- After `\title`, add "VOLT LaTeX Basics Assignment" 
+- After `\author`, add your name 
+- Confirm that the date is correct or edit if needed
+- Display **Title** using command `\maketitle` inserted after `\begin{document}`
+3. Add a new section labeled "Practice" using the `\section*` command. 
+4. Add a new section labeled "California Road Trip Destinations"
+5. Make a numbered list of four items, for example: 
   Yosemite \
   Big Sur \
   Lake Tahoe \
-  Death Valley \
+  Death Valley 
 
 :::{hint}
 *Commands needed:* `\section*{}`, `\begin{enumerate}...\end{enumerate}`.
 :::
 
-:::{note} Results
-:class: dropdown
-This is how your rendered exercise should appear in Overleaf.\
-![Results](./images/VOLT_Basic_Exercises.png)
-:::
-
 :::{note} Questions?
 :class: dropdown
-Compare your LaTeX code to the <a href=\"https://www.overleaf.com/read/djdcymcpxcxq\">solutions</a> to troubleshoot. 
+Compare your LaTeX code to the solutions document at  [https://www.overleaf.com/read/djdcymcpxcxq](https://www.overleaf.com/read/djdcymcpxcxq) to troubleshoot. 
 :::
 ::::
 
@@ -143,10 +141,10 @@ Compare your LaTeX code to the <a href=\"https://www.overleaf.com/read/djdcymcpx
 
 ### Simple Operators, Subscripts, Superscripts & More
 
-To render simple equations, you also need to know syntax and commands for operators, relations, subscripts, superscripts, and fractions.\
+To render simple equations, you also need to know syntax and commands for operators, relations, subscripts, superscripts, and fractions.
 
 #### Operators & Relations:
-+, -, =, >, < work as expected. Here are some other commands:\
++, -, =, >, < work as expected. Here are some other commands:
 
 | Command | Display | 
 | :---: | :---: | 
@@ -162,28 +160,29 @@ To render simple equations, you also need to know syntax and commands for operat
 ### Basic Math
 To display math inline with text, place formula or symbol in between $:
 
-`$x + y = z$` renders inline: $x + y = z$ \
+`$x + y = z$` renders inline: $x + y = z$ 
 
 Display mode `\[ x + y = z \]` or `$$ x + y = z $$` will center the equation on its own line: \
-x + y = z
+$$x + y = z$$
 
  
-**Subscript:** use the underscore (_) / **Superscript**: use the carret (^) \ 
+**Subscript:** use the underscore (_) / **Superscript**: use the carret (^)  
 
 If the subscript or superscript includes more than one character, enclose it in curly brackets--otherwise the command applies only to the first character. 
 
-**Example:** `$x^n+1$` gives $x^n+1$ but `$x^{n+1}$` gives $x^{n+1}$ \ 
+**Example:** `$x^n+1$` gives $x^n+1$ but `$x^{n+1}$` gives $x^{n+1}$  
 
 **Fractions:**  
 
-To display a fraction, use the command `\frac` followed by the numerator and denominator in curly brackets. \ 
+To display a fraction, use the command `\frac` followed by the numerator and denominator in curly brackets.
+
 **Example:** `\frac{1}{x}` gives $\frac{1}{x}$
 
 ### Next Steps: Greek Letters, Integrals & More
 
 #### Greek Letters
 
-Many equations and formulas use Greek letters. The command is simple - just the backslash and the name of the letter. Capitalize the command to get the capital letter. Here are some examples: \ 
+Many equations and formulas use Greek letters. The command is simple - just the backslash and the name of the letter. Capitalize the command to get the capital letter. Here are some examples:  
 
 | Command | Display | Command | Display | Command | Display |
 | --- | --- | --- | --- | --- | --- |
@@ -196,12 +195,12 @@ Many equations and formulas use Greek letters. The command is simple - just the 
 Greek letters that are the same in English are an exception, for example, use A for Alpha, B for Beta, Z for Zeta. For more commands, see the Overleaf [list of Greek letters](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols#Greek_letters).
 
 :::{seealso} More help with Greek letters and Symbols
-Apart from hand-coding Greek letters and other symbols, Berkeley's premium subscription allows us to take advantage of the [Overleaf Symbol Palette](https://www.overleaf.com/blog/new-feature-find-symbols-quicker-with-our-new-symbol-palette-for-premium). The Symbol Palette helps you quickly find commonly used symbols, and will also tell you which packages you need to use them. \ 
+Apart from hand-coding Greek letters and other symbols, Berkeley's premium subscription allows us to take advantage of the [Overleaf Symbol Palette](https://www.overleaf.com/blog/new-feature-find-symbols-quicker-with-our-new-symbol-palette-for-premium). The Symbol Palette helps you quickly find commonly used symbols, and will also tell you which packages you need to use them.  
 :::
 
 ### Limits & Integrals
 
-There are also commands for common operations that take upper and lower bounds:\ 
+There are also commands for common operations that take upper and lower bounds: 
 
 **Limits:**
 
@@ -212,7 +211,10 @@ lim_{x \to \infty} f(x)
 ``` 
 results in 
 
-$$ lim_{x \to \infty} f(x) $$ 
+:::{math}
+:enumerated: false
+lim_{x \to \infty} f(x)
+:::
 
 **Integrals:**
 
@@ -222,8 +224,11 @@ $$ lim_{x \to \infty} f(x) $$
 \]  
 ```
 
-results in \ 
-$$ \int_{a}^{b} x^2 dx $$
+results in  
+:::{math}
+:enumerated: false
+\int_{a}^{b} x^2 dx
+:::
 
 ### More Advanced: Math Packages
 
@@ -245,10 +250,10 @@ Use the `\begin{equation}...\end{equation}` command to include a numbered equati
 \end{equation}
 ```
 results in
-```{math}
-:label: partial equation example
-\frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t}\ 
-```
+:::{math}
+:enumerated: false
+\frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t} 
+:::
 
 :::{note} 
 Use `\begin{equation*}` for unnumbered equations.
@@ -302,16 +307,8 @@ Recreate this equation in your document:
 - Commands needed: `\infty`, `\sigma`, `\lambda`, `\mu`, `\Delta`, `\left|`, `\right|` 
 - Environment needed: `\begin{equation*} ... \end{equation*}` 
 :::
-
 ::::
 
-:::{dropdown} **Results**
-This is how your rendered exercise should appear in Overleaf. 
-```{image} ./images/math_exercises.png
-:alt: Results of math exercises as rendered in Overleaf
-:width: 500px
-:align: center
-```
 
 ## Creating Bibliographies in LaTeX
 
@@ -353,26 +350,28 @@ What does a citation in a `.bib` file look like?
 }
 ```
 
-KEY: The citation key is the internal label inside the `\cite{} command used to call in a citation or reference a source. \
-Example: *drachen2016sharing* or *fsci2021*
+KEY: The **citation key** is the internal label inside the `\cite{} command used to call in a citation or reference a source. \
+Example: `drachen2016sharing` or `fsci2021`
+
+To cite Drachen 2016 within your text, type `\cite{drachen2016sharing}`
 
 ### Bibliography Packages
 
-We will use the *biblatex* package to generate in-text citations and bibliographies. *Biblatex* is a flexible package for generating citations.
+We will use the **biblatex** package to generate in-text citations and bibliographies. **Biblatex** is a flexible package for generating citations.
 
-When adding a bibligraphy, you will need to add commands to the preamble. \
+When adding a bibligraphy, you will need to add commands to the preamble. 
 
-Commands required for the *preamble*:
+Commands required for the **preamble**:
 
 `\usepackage[backend=biber,style=apa]{biblatex}`
 
 - The above syntax calls in the biblatex package.
 - `backend=biber` defines *Biber* as the interface between the .bib data file and the LaTeX document. 
-- `style=apa` sets your citation rules to APS style (this can be swapped for `ieee`, `mla`, `nature`, etc.). 
+- `style=apa` sets your citation rules to APA style (this can be swapped for `ieee`, `mla`, `nature`, etc.). 
 
 `\addbibresource{example.bib}`
 
-The above command calls in the .bib file, which has the citation information for in-text citations and the bibliography. \
+The above command calls in the .bib file, which has the citation information for in-text citations and the bibliography. 
 
 In an article or book chapter, the command \printbibliography inserts the bibliography, which will contain citations referenced in the text. 
 
@@ -408,17 +407,17 @@ _Objective: Learn to create, edit or upload a `.bib` file, use basic citation co
 1. Create a new file within your Overleaf project (click on the *New file* paper icon in the upper left) and name it references.bib
 
 ```{image} ./images/references.png
-:alt: Overleaf document menu
+:alt: Overleaf document menu highlighting create new file
 :width: 400px
 :align: center
 ```
-2. Search for these three articles and books in Google Scholar and locate their *BibTeX* formatted citations.
+2. Search for these three articles and books in Google Scholar and locate their *BibTeX* formatted citations by clicking on the quotations marks and then selecting **BibTeX**.
    - 10.1126/science.1214319
    - Hydraulic power system analysis
    - 10.1103/PhysRevB.100.094418
    
 ```{image} ./images/scholar_bibtex.png
-:alt: Google Scholar screenshot
+:alt: Google Scholar cite menu screenshot
 :width: 400px
 :align: center
 ``` 
@@ -427,7 +426,7 @@ _Objective: Learn to create, edit or upload a `.bib` file, use basic citation co
 
 *Step 2: Displaying the bibliography*
 
-- To display bibliography in author-year style convention, add package and style command to preamble: \
+- To display bibliography in author-year style convention, add package and style command to preamble: 
 ```
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{references.bib}
@@ -437,7 +436,7 @@ _Objective: Learn to create, edit or upload a `.bib` file, use basic citation co
 `\printbibliography`
 `\nocite{*}` 
 
-*Step 3: Praciting citation commands*
+*Step 3: Practicing citation commands*
 
 Try using citation commands to recreate the sentence below: 
 
@@ -449,4 +448,76 @@ For additional examples and more information, please visit Overleaf's page on [b
 
 :::
 
+## Figures
+
+### Uploading a figure
+
+Incorporating images and figures into your Overleaf project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.
+
+Click on the "upload" icon and navigate to the location of your figure.
+
+```{image} ./images/tables_figure.png
+:alt: Overleaf menu to upload images
+:width: 400px
+:align: center
+``` 
+
+#### Image Placement
+Images and figures require a graphics package. Include `\usepackage{graphicx}` in the preamble of your document.
+
+Within the text, place the image using the command `\includegraphics{filename.jpg}`.
+
+#### Image Description and Alt text
+Additional specifiers can be added to resize image and to add descriptive text.
+
+1. Express size a proportion of linewidth: `width=0.25\linewidth`
+2. Add description: `alt={image of cat typing on computer}`
+3. Put it all together: `\includegraphics[width=0.25\linewidth,alt={image of cat typing on computer}]{filename.jpg}
+
+#### Figure Placement
+
+Use the following specifiers to adjust the placement of your figures.
+
+| Specifier | Description |
+| --- |--- |
+|h|Place the float here: approximately, not exactly, at the same point it occurs in the source text|
+|t|Position at the top of the page|
+|b|Position at the bottom of the page|
+|p|Put on a special page for floats only|
+|!|Override internal parameters LaTeX uses for determining \"good\" float positions|
+|H|Places the float at precisely the location in the LaTeX code. Requires the float package. This is somewhat equivalent to h!|
+
+### Exercise
+
+:::{hint} Exercise 4: Uploading an Image or Figure
+_Objective: Learn to upload and position figures in Overleaf._
+
+**Upload a figure**
+
+- To upload image, choose an image of your own, or find file at: \
+[https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png](https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png)
+- Download keyboard_cat.png or image of your choice, and upload file to the Overleaf project.
+- Place image with these commands:
+  - Add to preamble: `\usepackage{graphicx}`
+  - Add to main document: `\includegraphics[width=0.4\linewidth,alt={photo of cat from above with left paw near keyboard}]{keyboard_cat}`
+
+```{image} ./images/keyboard_cat.png
+:alt: cat with paw near keyboard
+:width: 400px
+:align: center
+```
+
+**Designate figure position**
+Use b, t, h to see within the figure environment to determine or override placement. You might need to add additional text in the document to see how the figure placement varies.
+
+```
+\begin{figure}[b]
+\centering
+\includegraphics[width=0.6\linewidth]{keyboard_cat}
+\end{figure}
+```
+
+:::
+
+Compare your LaTeX code to the solutions at:  [https://www.overleaf.com/read/hsjrcdzkndvd](https://www.overleaf.com/read/hsjrcdzkndvd) to troubleshoot. 
  
