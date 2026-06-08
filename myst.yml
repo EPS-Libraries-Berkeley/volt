@@ -59,6 +59,7 @@ project:
     
 site:
   template: book-theme
+  title: VOLT: Virtual Online Library Tutorials
   options:
      favicon: favicon.ico
      logo: scilib_logo.png
