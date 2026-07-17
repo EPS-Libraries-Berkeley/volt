@@ -20,6 +20,7 @@ project:
     - title: Searching
       children:
         - file: Search/searching_for_resources.ipynb
+        - file: Search/stem-101-test.md
         - file: Search/exploring_article_databases.ipynb
         - file: Search/dissertations.ipynb
         - file: Search/apis.ipynb
