@@ -38,7 +38,7 @@ project:
         - file: Data/data_case_study_5.md
     - title: Organizing
       children:
-        - file: Organizing/Reference_Management_and_Citations.ipynb
+        - file: Organizing/reference_management_and_citations.md
     - title: Writing
       children:
         - file: LaTeX/Intro_to_LaTeX.ipynb
