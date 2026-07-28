@@ -17,6 +17,9 @@ project:
         - file: Introduction/science_libraries.md
         - file: Introduction/research_workflows.md
         - file: Introduction/question.ipynb
+    - title: STEM 101
+      children:
+        - file: STEM 101/resource-types.md
     - title: Searching
       children:
         - file: Search/searching_for_resources.ipynb
