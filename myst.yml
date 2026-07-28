@@ -20,6 +20,7 @@ project:
     - title: STEM 101
       children:
         - file: STEM 101/resource-types.md
+        - file: STEM 101/quiz_1.html
     - title: Searching
       children:
         - file: Search/searching_for_resources.ipynb
@@ -63,6 +64,8 @@ project:
     
 site:
   template: book-theme
+  static:
+    - STEM 101/quiz_1.html
   options:
      logo_text: "VOLT: Virtual Online Library Tutorials"
      favicon: favicon.ico
