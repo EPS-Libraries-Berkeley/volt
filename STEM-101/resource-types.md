@@ -1,6 +1,8 @@
 # Types of Resources
 
-_When doing research in STEM fields, you will come across many different types of publications and resources. You may have already seen some of the more common types - scholarly journal articles, conference papers, books - but there are also some uncommon ones that can be useful in your research. Different types of publications can be written for different audiences and can provide different types of information; becoming familiar with publication types can help you find the information you need faster. Below you’ll learn about primary, secondary, and tertiary sources in the sciences and how to find them._ 
+_When doing research in STEM fields, you will come across many different types of publications and resources. You may have already seen some of the more common types - scholarly journal articles, conference papers, books - but there are also some uncommon ones that can be useful in your research. Different types of publications can be written for different audiences and can provide different types of information; becoming familiar with publication types can help you find the information you need faster._ 
+
+_Below you’ll learn about primary, secondary, and tertiary sources in the sciences and how to find them._ 
 
 ## Primary and secondary sources in STEM
 ### Primary literature
@@ -16,6 +18,10 @@ Examples of primary literature in the sciences include:
 - technical reports
 - conference proceedings
 
+Less common:
+- physical maps
+- datasets
+
 | Publication type | Definition | Characteristics | Limitations |
 | :---- | :---- | :---- | :---- |
 | Journal articles | Research papers published in scientific journals detailing original empirical studies, methodologies, or novel theoretical work; typically peer reviewed by experts in the field | - Standardized structure (Abstract, Intro, Methods, Results, Discussion).\ - Rigorously vetted by independent expert peers | - Publication delays can be long (often 6–18 months).\ - Access may be limited behind paywalls.\ - Negative or null results are often underrepresented.\ - Highly focused within particular scientific disciplines |
@@ -23,7 +29,62 @@ Examples of primary literature in the sciences include:
 | Data (Census, data, GIS data, etc.) | Raw or processed observational measurements, geospatial datasets, or public statistics made available for reuse and secondary analysis | Machine readable Often published in open data repositories Trusted, often long running series | May require specialized software or programming skills to analyze Might have uneven geographic or date coverage |
 | Technical Reports |  |  |  |
 
-**Grey Literature:** Dissertations and theses, technical reports, conference presentations, and other documents are considered **grey literature** (or **gray literature**), defined by [GreyNet](http://www.greynet.org/home/aboutgreynet.html) as "multiple document types produced on all levels of government, academics, business, and \[other\] organization\[s\] in electronic and print formats. . .where publishing is not the primary activity of the producing body." Grey literature may have editorial or committee oversight, but does not necessarily undergo the process of peer review. Nonetheless, it may have significant scientific value.
+::::{tab-set}
+
+:::{tab-item} Primary Sources
+**Focus:** Original research & raw empirical data
+
+- **Journal Articles:** Standardized empirical studies (Abstract, Intro, Methods, Results, Discussion).
+- **Conference Papers:** Fast dissemination of cutting-edge findings (crucial in CS & AI).
+- **Datasets:** Raw or processed observational measurements and GIS data.
+- **Grey Literature:** Government agency reports (e.g., NASA, USGS) and dissertations.
+:::
+
+:::{tab-item} Secondary Sources
+**Focus:** Synthesis & critique of primary research
+
+- **Literature Reviews:** Comprehensive summaries analyzing trends across dozens of primary papers.
+- **Monographs:** In-depth books or chapters focused on a specific specialized research topic.
+:::
+
+:::{tab-item} Tertiary Sources
+**Focus:** Broad, foundational background facts
+
+- **Textbooks:** Curated, well-established discipline knowledge.
+- **Encyclopedias & Handbooks:** Quick reference material for definitions and standard protocols.
+:::
+
+::::{grid} 1 2 3 3
+:gutter: 3
+
+:::{grid-item-card} 📄 Primary
+:class-header: bg-light
+**First-hand Research**
+***
+Includes peer-reviewed journal papers, field datasets, and conference proceedings. Best for methodological depth.
+:::
+
+:::{grid-item-card} 📚 Secondary
+:class-header: bg-light
+**Overview & Synthesis**
+***
+Includes literature reviews and monographs. Best for understanding broad research trends and finding citations.
+:::
+
+:::{grid-item-card} 📖 Tertiary
+:class-header: bg-light
+**Foundational Knowledge**
+***
+Includes textbooks, handbooks, and encyclopedias. Best for quick background facts and established principles.
+:::
+
+::::
+
+::::
+
+## Emerging and Ephemeral Formats
+
+**Grey Literature** refers to dissertations and theses, technical reports, conference presentations, and other documents produced at all levels of government, academics, business, and \[other\] organization\[s\] in electronic and print formats "where publishing is not the primary activity of the producing body." (cite) Grey literature may have editorial or committee oversight, but does not necessarily undergo the process of peer review. Nonetheless, it may have significant scientific value.
 
 ::::{hint} What about...?
 
@@ -87,7 +148,7 @@ Examples of tertiary literature in the sciences include:
 
 ## Assessment
 
-```{admonition} Assessment
+```{exercise} Assessment
 :class: question
 
 **Scenario:** You have developed a novel machine-learning algorithm that improves early wildfire detection by 35%. You need to communicate findings to three distinct groups: 
@@ -103,7 +164,8 @@ Which combination of communication formats best matches these audiences in order
 * D. Technical Report → Substack Newsletter → Conference Slide Deck
 ```
 
-```{dropdown} Click to check the correct answer & explanation
+```{solution} Click to reveal solution and explanation
+:class: dropdown
 :color: primary
 
 **Correct Answer: B**
@@ -113,7 +175,6 @@ Which combination of communication formats best matches these audiences in order
 - **Emergency Directors:** Require concise, actionable **Policy Briefs** for deployment.
 - **General Public:** Benefit from accessible audio media like a **Podcast Interview**.
 
-*(Option C is incorrect because informal conversational platforms like Reddit lack the structural depth needed for formal scientific replication).*
 ```
 
 
