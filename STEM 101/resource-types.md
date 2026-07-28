@@ -87,38 +87,61 @@ Examples of tertiary literature in the sciences include:
 
 ## Assessment
 
-```{raw} html
-<link rel="stylesheet" href="[https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.css](https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.css)">
-<script src="[https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.js](https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.js)"></script>
+```{admonition} Assessment
+:class: question
 
-<div id="quiz-wildfire"></div>
+**Scenario:** You have developed a novel machine-learning algorithm that improves early wildfire detection by 35%. You need to communicate findings to three distinct groups: 
+1. Computer science researchers who want to reproduce the model structure.
+2. Emergency management directors who need actionable deployment advice.
+3. The general public interested in local wildfire risk.
+
+Which combination of communication formats best matches these audiences in order?
+
+* A. Webinar Presentation → Interactive GIS Web App → Peer-Reviewed Paper
+* B. Peer-Reviewed Journal Article → Policy Brief → Podcast Interview
+* C. Reddit Thread AMA → Technical White Paper → Open-Access Dataset
+* D. Technical Report → Substack Newsletter → Conference Slide Deck
+```
+
+```{dropdown} Click to check the correct answer & explanation
+:color: primary
+
+**Correct Answer: B**
+
+**Explanation:** 
+* **Researchers** require the full methodological depth of a peer-reviewed journal article for model reproduction.
+* **Emergency Directors** need actionable, streamlined policy briefs for real-world deployment.
+* **The General Public** benefits from accessible audio/visual media like podcasts.
+
+*(Option C is incorrect because informal conversational platforms like Reddit lack the structural depth needed for formal scientific replication).*
+```
+
+```{raw} html
+<div class="quizdown">
+# Assessment
+
+## Which sequence of formats best matches the target audiences?
+
+You have developed a novel wildfire detection algorithm. You must communicate findings to computer science researchers (for replication), emergency directors (for deployment), and the general public.
+
+- [ ] A. Webinar Presentation → Interactive GIS Web App → Peer-Reviewed Paper
+  > Incorrect. A webinar presentation lacks full methodological depth.
+
+- [x] B. Peer-Reviewed Journal Article → Policy Brief → Podcast Interview
+  > Correct! Researchers require methodological depth, practitioners need policy briefs, and the public benefits from podcasts.
+
+- [ ] C. Reddit Thread AMA → Technical White Paper → Open-Access Dataset
+  > Incorrect. Reddit is an informal platform unsuitable for formal replication.
+
+- [ ] D. Technical Report → Substack Newsletter → Conference Slide Deck
+  > Incorrect. A technical report lacks peer-reviewed rigor.
+</div>
 
 <script>
-const quiz_data = [{
-  "question": "You have developed a novel wildfire detection algorithm...",
-  "type": "multiple_choice",
-  "answers": [
-    { "answer": "A. Webinar Presentation → Interactive GIS Web App → Peer-Reviewed Paper", "correct": false, "feedback": "Incorrect..." },
-    { "answer": "B. Peer-Reviewed Journal Article → Policy Brief → Podcast Interview", "correct": true, "feedback": "Correct!..." },
-    { "answer": "C. Reddit Thread AMA → Technical White Paper → Open-Access Dataset", "correct": false, "feedback": "Incorrect..." },
-    { "answer": "D. Technical Report → Substack Newsletter → Conference Slide Deck", "correct": false, "feedback": "Incorrect..." }
-  ]
-}];
-jupyterquiz.showQuiz(quiz_data, "quiz-wildfire");
+  // Initialize quizdown once the DOM is loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    quizdown.init();
+  });
 </script>
-```
-
-```{admonition} Question
-:class: question
-Which sequence of formats best matches these audiences?
-* A. Webinar → GIS Web App → Peer-Reviewed Paper
-* B. Peer-Reviewed Article → Policy Brief → Podcast Interview
-* C. Reddit AMA → Technical White Paper → Open-Access Dataset
-```
-
-```{dropdown} Check Answer
-:color: primary
-**Correct Answer: B**
-Researchers require journal articles for replication, emergency directors need policy briefs, and the public benefits from podcasts.
 ```
 
