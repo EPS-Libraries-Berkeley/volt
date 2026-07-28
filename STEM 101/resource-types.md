@@ -109,39 +109,15 @@ Which combination of communication formats best matches these audiences in order
 **Correct Answer: B**
 
 **Explanation:** 
-* **Researchers** require the full methodological depth of a peer-reviewed journal article for model reproduction.
-* **Emergency Directors** need actionable, streamlined policy briefs for real-world deployment.
-* **The General Public** benefits from accessible audio/visual media like podcasts.
+- **Computer Science Researchers:** Require the full methodological depth of a **Peer-Reviewed Journal Article** for replication.
+- **Emergency Directors:** Require concise, actionable **Policy Briefs** for deployment.
+- **General Public:** Benefit from accessible audio media like a **Podcast Interview**.
 
 *(Option C is incorrect because informal conversational platforms like Reddit lack the structural depth needed for formal scientific replication).*
 ```
 
-```{raw} html
-<div class="quizdown">
-# Assessment
-
-## Which sequence of formats best matches the target audiences?
-
-You have developed a novel wildfire detection algorithm. You must communicate findings to computer science researchers (for replication), emergency directors (for deployment), and the general public.
-
-- [ ] A. Webinar Presentation → Interactive GIS Web App → Peer-Reviewed Paper
-  > Incorrect. A webinar presentation lacks full methodological depth.
-
-- [x] B. Peer-Reviewed Journal Article → Policy Brief → Podcast Interview
-  > Correct! Researchers require methodological depth, practitioners need policy briefs, and the public benefits from podcasts.
-
-- [ ] C. Reddit Thread AMA → Technical White Paper → Open-Access Dataset
-  > Incorrect. Reddit is an informal platform unsuitable for formal replication.
-
-- [ ] D. Technical Report → Substack Newsletter → Conference Slide Deck
-  > Incorrect. A technical report lacks peer-reviewed rigor.
-</div>
-
-<script>
-  // Initialize quizdown once the DOM is loaded
-  document.addEventListener("DOMContentLoaded", function() {
-    quizdown.init();
-  });
-</script>
+```{iframe} quiz_1.html
+:width: 100%
+:height: 250px
 ```
 

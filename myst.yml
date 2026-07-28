@@ -68,7 +68,4 @@ site:
      favicon: favicon.ico
      logo: scilib_logo.png
      hide_myst_branding: true
-     
-     # Add quizdown JS scripts here:
-    html_js:
-      - https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js
+
