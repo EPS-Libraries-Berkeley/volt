@@ -87,48 +87,38 @@ Examples of tertiary literature in the sciences include:
 
 ## Assessment
 
-```{code-cell} python
-:tags: [hide-input]
+```{raw} html
+<link rel="stylesheet" href="[https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.css](https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.css)">
+<script src="[https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.js](https://cdn.jsdelivr.net/npm/jupyterquiz@2.7.0/jupyterquiz.js)"></script>
 
-from jupyterquiz import display_quiz
+<div id="quiz-wildfire"></div>
 
-question_1 = [
-{
-        "question": (
-            "Scenario: You have developed a novel machine-learning algorithm "
-            "that improves early wildfire detection by 35%. You need to communicate "
-            "your findings to three distinct groups:\n"
-            "1. Computer science researchers who want to reproduce the model structure.\n"
-            "2. Emergency management directors who need actionable deployment advice.\n"
-            "3. The general public interested in local wildfire risk.\n"
-            "Which combination of communication formats best matches these audiences in order?"
-        ),
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "A. Webinar Presentation → Interactive GIS Web App → Peer-Reviewed Paper",
-                "correct": False,
-                "feedback": "Incorrect. A webinar presentation lacks the structured, full methodological depth needed by researchers for model replication."
-            },
-            {
-                "answer": "B. Peer-Reviewed Journal Article → Policy Brief → Podcast Interview",
-                "correct": True,
-                "feedback": "Correct! Researchers require the methodological depth of a journal article, while practitioners need actionable policy briefs, and the public benefits from accessible audio formats like podcasts."
-            },
-            {
-                "answer": "C. Reddit Thread AMA → Technical White Paper → Open-Access Dataset",
-                "correct": False,
-                "feedback": "Incorrect. This uses an informal conversational platform for the initial expert communication, which lacks the structural depth needed for model reproduction."
-            },
-            {
-                "answer": "D. Technical Report → Substack Newsletter → Conference Slide Deck",
-                "correct": False,
-                "feedback": "Incorrect. A technical report may lack external peer-reviewed rigor for researchers, and a slide deck is suboptimal for broad public engagement."
-            }
-        ]
-    }
-]
-
-# Render the interactive quiz
-display_quiz(question_wildfire)
+<script>
+const quiz_data = [{
+  "question": "You have developed a novel wildfire detection algorithm...",
+  "type": "multiple_choice",
+  "answers": [
+    { "answer": "A. Webinar Presentation → Interactive GIS Web App → Peer-Reviewed Paper", "correct": false, "feedback": "Incorrect..." },
+    { "answer": "B. Peer-Reviewed Journal Article → Policy Brief → Podcast Interview", "correct": true, "feedback": "Correct!..." },
+    { "answer": "C. Reddit Thread AMA → Technical White Paper → Open-Access Dataset", "correct": false, "feedback": "Incorrect..." },
+    { "answer": "D. Technical Report → Substack Newsletter → Conference Slide Deck", "correct": false, "feedback": "Incorrect..." }
+  ]
+}];
+jupyterquiz.showQuiz(quiz_data, "quiz-wildfire");
+</script>
 ```
+
+```{admonition} Question
+:class: question
+Which sequence of formats best matches these audiences?
+* A. Webinar → GIS Web App → Peer-Reviewed Paper
+* B. Peer-Reviewed Article → Policy Brief → Podcast Interview
+* C. Reddit AMA → Technical White Paper → Open-Access Dataset
+```
+
+```{dropdown} Check Answer
+:color: primary
+**Correct Answer: B**
+Researchers require journal articles for replication, emergency directors need policy briefs, and the public benefits from podcasts.
+```
+
