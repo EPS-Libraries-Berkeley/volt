@@ -116,8 +116,4 @@ Which combination of communication formats best matches these audiences in order
 *(Option C is incorrect because informal conversational platforms like Reddit lack the structural depth needed for formal scientific replication).*
 ```
 
-```{iframe} /_static/quiz_1.html
-:width: 100%
-:height: 250px
-```
 
