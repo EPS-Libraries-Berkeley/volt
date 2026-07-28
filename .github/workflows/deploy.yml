@@ -35,22 +35,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18.x
-      # --- 1. Set up Python for Jupyter kernel execution ---
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      # --- 2. Install jupyterquiz and ipykernel ---
-      - name: Install Python Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install jupyterquiz ipykernel
           
       - name: Install Jupyter Book (via myst)
         run: npm install -g jupyter-book
       - name: Build HTML Assets
-        run: jupyter-book build --html --execute
+        run: jupyter-book build --html 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
