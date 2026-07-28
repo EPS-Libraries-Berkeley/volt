@@ -30,7 +30,6 @@ Less common:
 | Technical Reports |  |  |  |
 
 ::::{tab-set}
-
 :::{tab-item} Primary Sources
 **Focus:** Original research & raw empirical data
 
@@ -53,6 +52,7 @@ Less common:
 - **Textbooks:** Curated, well-established discipline knowledge.
 - **Encyclopedias & Handbooks:** Quick reference material for definitions and standard protocols.
 :::
+::::
 
 ::::{grid} 1 2 3 3
 :gutter: 3
@@ -77,8 +77,6 @@ Includes literature reviews and monographs. Best for understanding broad researc
 ***
 Includes textbooks, handbooks, and encyclopedias. Best for quick background facts and established principles.
 :::
-
-::::
 
 ::::
 
@@ -148,8 +146,8 @@ Examples of tertiary literature in the sciences include:
 
 ## Assessment
 
-```{exercise} Assessment
-:class: question
+```{exercise} 
+:label: exercise-1
 
 **Scenario:** You have developed a novel machine-learning algorithm that improves early wildfire detection by 35%. You need to communicate findings to three distinct groups: 
 1. Computer science researchers who want to reproduce the model structure.
@@ -164,7 +162,8 @@ Which combination of communication formats best matches these audiences in order
 * D. Technical Report → Substack Newsletter → Conference Slide Deck
 ```
 
-```{solution} Click to reveal solution and explanation
+```{solution} exercise-1
+:label: solution-1
 :class: dropdown
 :color: primary
 
