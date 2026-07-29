@@ -4,9 +4,15 @@ _When doing research in STEM fields, you will come across many different types o
 
 _Below you’ll learn about primary, secondary, and tertiary sources in the sciences and how to find them._ 
 
-## Primary and secondary sources in STEM
-### Primary literature
+## Primary, secondary, and tertiary sources in STEM
 
+::::{grid} 1 2 3 3
+:gutter: 3
+
+:::{grid-item-card} 📄 Primary literature
+:class-header: bg-light
+**First-hand Research**
+***
 In the sciences, the primary literature:
 - presents or comments upon the first-hand results of research activities
 - often includes analyses of data collected in the field or the laboratory
@@ -20,7 +26,46 @@ Examples of primary literature in the sciences include:
 
 Less common:
 - physical maps
-- datasets
+- datasets:::
+
+:::{grid-item-card} 📚 Secondary literature
+:class-header: bg-light
+**Overview & Synthesis**
+***
+The secondary literature is a good place to start when you are investigating a new topic, because secondary sources:
+
+- **summarize** and **synthesize** the primary literature  
+- are useful for getting an **overview** of a research area  
+- are useful for **finding citations** to more information on a topic  
+- are both **broader** and **less current** than the primary literature.
+
+Examples of secondary literature in the sciences include:
+
+- **literature reviews** (or review articles)  
+- **monographs** (books or book chapters dealing with a specific area of research in the sciences)
+:::
+
+:::{grid-item-card} 📖 Tertiary literature
+:class-header: bg-light
+**Foundational Knowledge**
+***
+The tertiary literature:
+- deals with broad, discipline-level topics in the sciences (like biochemistry or evolution)
+- is a useful starting point for background information on a research topic
+- reports well-established findings in the scientific literature
+- is often not as thoroughly referenced as primary or secondary literature
+
+Examples of tertiary literature in the sciences include:
+- encyclopedias
+- textbooks
+- handbooks
+:::
+
+::::
+
+::::{tab-set}
+:::{tab-item} Primary Sources
+**Focus:** Original research & raw empirical data
 
 | Publication type | Definition | Characteristics | Limitations |
 | :---- | :---- | :---- | :---- |
@@ -29,21 +74,17 @@ Less common:
 | Data (Census, data, GIS data, etc.) | Raw or processed observational measurements, geospatial datasets, or public statistics made available for reuse and secondary analysis | Machine readable Often published in open data repositories Trusted, often long running series | May require specialized software or programming skills to analyze Might have uneven geographic or date coverage |
 | Technical Reports |  |  |  |
 
-::::{tab-set}
-:::{tab-item} Primary Sources
-**Focus:** Original research & raw empirical data
-
-- **Journal Articles:** Standardized empirical studies (Abstract, Intro, Methods, Results, Discussion).
-- **Conference Papers:** Fast dissemination of cutting-edge findings (crucial in CS & AI).
-- **Datasets:** Raw or processed observational measurements and GIS data.
-- **Grey Literature:** Government agency reports (e.g., NASA, USGS) and dissertations.
 :::
 
 :::{tab-item} Secondary Sources
 **Focus:** Synthesis & critique of primary research
 
-- **Literature Reviews:** Comprehensive summaries analyzing trends across dozens of primary papers.
-- **Monographs:** In-depth books or chapters focused on a specific specialized research topic.
+| Publication type | Definition | Characteristics | Limitations |
+| :---- | :---- | :---- | :---- |
+| Physical maps | Spatial visualizations of geographic, geologic or other scientific feature | - Visual representation of spatial relationships. \ - Serves as a reference tool across multiple disciplines (geology, ecology, urban planning). | - Static once printed.\ - Subject to interpretive biases.\ - Scale and resolution limited to original representation. |
+| Standards | Formally agreed-upon documents establishing precise technical specifications, measurement protocols, safety guidelines, or operational rules. | - Rigorously developed by technical committees and industry experts.\ - Focuses on consistency, interoperability, and reproducible quality.\ - Serves as an authoritative benchmark for engineering, life sciences, and IT. | - Expensive to access.\ - Slow to update due to lengthy consensus-building processes.\ - Dictates how to measure or implement rather than presenting raw research findings. |
+| Podcasts & social media | Digital audio, video, or social media commentary used by researchers or science communicators to discuss ideas, papers, or trends | - Rapid dissemination and high audience reach.\ - Makes complex scientific concepts accessible through conversational style.\ Facilitates immediate public or peer reaction and real-time commentary. | - Low editorial oversight.\ - Risk of oversimplification, sensationalism, or missing context.\ -Ephemeral.|
+| Technical Reports |  |  |  |
 :::
 
 :::{tab-item} Tertiary Sources
@@ -54,31 +95,6 @@ Less common:
 :::
 ::::
 
-::::{grid} 1 2 3 3
-:gutter: 3
-
-:::{grid-item-card} 📄 Primary
-:class-header: bg-light
-**First-hand Research**
-***
-Includes peer-reviewed journal papers, field datasets, and conference proceedings. Best for methodological depth.
-:::
-
-:::{grid-item-card} 📚 Secondary
-:class-header: bg-light
-**Overview & Synthesis**
-***
-Includes literature reviews and monographs. Best for understanding broad research trends and finding citations.
-:::
-
-:::{grid-item-card} 📖 Tertiary
-:class-header: bg-light
-**Foundational Knowledge**
-***
-Includes textbooks, handbooks, and encyclopedias. Best for quick background facts and established principles.
-:::
-
-::::
 
 ## Emerging and Ephemeral Formats
 
@@ -103,40 +119,9 @@ What other formats do you encounter? In addition to grey literature, you may enc
 
 ::::
 
-### Secondary literature
-The secondary literature is a good place to start when you are investigating a new topic, because secondary sources:
 
-- **summarize** and **synthesize** the primary literature  
-- are useful for getting an **overview** of a research area  
-- are useful for **finding citations** to more information on a topic  
-- are both **broader** and **less current** than the primary literature.
 
-Examples of secondary literature in the sciences include:
 
-- **literature reviews** (or review articles)  
-- **monographs** (books or book chapters dealing with a specific area of research in the sciences)
-
-| Publication type | Definition | Characteristics | Limitations | 
-|---|---|---|---|
-|||||
-|||||
-
-### Tertiary literature
-The tertiary literature:
-- deals with broad, discipline-level topics in the sciences (like biochemistry or evolution)
-- is a useful starting point for background information on a research topic
-- reports well-established findings in the scientific literature
-- is often not as thoroughly referenced as primary or secondary literature
-
-Examples of tertiary literature in the sciences include:
-- encyclopedias
-- textbooks
-- handbooks
-
-| Publication type | Definition | Characteristics | Limitations | 
-|---|---|---|---|
-|||||
-|||||
 
 ## Diversifying your sources
 
