@@ -170,12 +170,12 @@ Examples of tertiary literature in the sciences include:
 ## Evaluating Resources
 Before using any sources in your work, you should be prepared to evaluate its relevancy for your information needs. Consider the following questions for any source:
 
-Authority - Who is the author? What is their point of view? 
-Purpose - Why was the source created? Who is the intended audience?
-Publication & format - Where was it published? In what medium?
-Relevance - How is it relevant to your research? What is its scope?
-Date of publication - When was it written? Has it been updated?
-Documentation - Did they cite their sources? Who did they cite?
+- **Authority** - Who is the author? What is their point of view? 
+- **Purpose** - Why was the source created? Who is the intended audience?
+- **Publication & format** - Where was it published? In what medium?
+- **Relevance** - How is it relevant to your research? What is its scope?
+- **Date of publication** - When was it written? Has it been updated?
+- **Documentation** - Did they cite their sources? Who did they cite?
 
 For a deeper dive on source evaluation, see our [Evaluating Resources Guide](https://guides.lib.berkeley.edu/evaluating-resources).
 
