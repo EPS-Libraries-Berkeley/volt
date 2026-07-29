@@ -179,7 +179,7 @@ Before using any sources in your work, you should be prepared to evaluate its re
 
 For a deeper dive on source evaluation, see our [Evaluating Resources Guide](https://guides.lib.berkeley.edu/evaluating-resources).
 
-::::{hint} Evaluation in action: let’s review a Wikipedia article using these basic standards.
+::::{tip} Evaluation in action: let’s review a Wikipedia article using these basic standards.
 
 You are working on a botanical gardens research assignment and need to find some sources about ferns. Let's look at this Wikipedia article and use our evaluation questions to assess whether this resource would be appropriate to use for your assignment. 
 
