@@ -26,7 +26,8 @@ Examples of primary literature in the sciences include:
 
 Less common:
 - physical maps
-- datasets:::
+- datasets
+:::
 
 :::{grid-item-card} 📚 Secondary literature
 :class-header: bg-light
@@ -69,10 +70,10 @@ Examples of tertiary literature in the sciences include:
 
 | Publication type | Definition | Characteristics | Limitations |
 | :---- | :---- | :---- | :---- |
-| Journal articles | Research papers published in scientific journals detailing original empirical studies, methodologies, or novel theoretical work; typically peer reviewed by experts in the field | - Standardized structure (Abstract, Intro, Methods, Results, Discussion).\ - Rigorously vetted by independent expert peers | - Publication delays can be long (often 6–18 months).\ - Access may be limited behind paywalls.\ - Negative or null results are often underrepresented.\ - Highly focused within particular scientific disciplines |
+| Journal articles | Research papers published in scientific journals detailing original empirical studies, methodologies, or novel theoretical work; typically peer reviewed by experts in the field | - Standardized structure (Abstract, Intro, Methods, Results, Discussion). <br />- Rigorously vetted by independent expert peers | - Publication delays can be long (often 6–18 months). <br />- Access may be limited behind paywalls.<br />- Negative or null results are often underrepresented. <br />- Highly focused within particular scientific disciplines |
 | Conference papers | Ideas in progress, presented at scientific conferences, often compiled into published "proceedings." Typically undergo a peer or editorial review process. | Fast dissemination of cutting-edge findings. Valued in rapidly evolving fields (e.g., Computer Science, AI). Often shorter and more focused on current work | Often brief, leaving out detailed background or complete methodology. Findings may be preliminary or replaced by later journal articles. Rigor of peer review can vary |
 | Data (Census, data, GIS data, etc.) | Raw or processed observational measurements, geospatial datasets, or public statistics made available for reuse and secondary analysis | Machine readable Often published in open data repositories Trusted, often long running series | May require specialized software or programming skills to analyze Might have uneven geographic or date coverage |
-| Technical Reports |  |  |  |
+| Technical Reports | Report detailing the process and/or results of a study; may include data and analysis. Written for project sponsors as the primary audience and does not typically undergo a peer or editorial review process. | - Commonly produced for governmental agencies sponsoring research or academic departments as a record of research. <br />- Can be referred to by report title or report number (e.g. NACA-TR-23). |- Due to the narrow intended audience, technical reports are not widely distributed and can be difficult to locate.<br />- Are often very technical and require readers to have some subject expertise.  |
 
 :::
 
@@ -81,10 +82,9 @@ Examples of tertiary literature in the sciences include:
 
 | Publication type | Definition | Characteristics | Limitations |
 | :---- | :---- | :---- | :---- |
-| Physical maps | Spatial visualizations of geographic, geologic or other scientific feature | - Visual representation of spatial relationships. \ - Serves as a reference tool across multiple disciplines (geology, ecology, urban planning). | - Static once printed.\ - Subject to interpretive biases.\ - Scale and resolution limited to original representation. |
-| Standards | Formally agreed-upon documents establishing precise technical specifications, measurement protocols, safety guidelines, or operational rules. | - Rigorously developed by technical committees and industry experts.\ - Focuses on consistency, interoperability, and reproducible quality.\ - Serves as an authoritative benchmark for engineering, life sciences, and IT. | - Expensive to access.\ - Slow to update due to lengthy consensus-building processes.\ - Dictates how to measure or implement rather than presenting raw research findings. |
-| Podcasts & social media | Digital audio, video, or social media commentary used by researchers or science communicators to discuss ideas, papers, or trends | - Rapid dissemination and high audience reach.\ - Makes complex scientific concepts accessible through conversational style.\ Facilitates immediate public or peer reaction and real-time commentary. | - Low editorial oversight.\ - Risk of oversimplification, sensationalism, or missing context.\ -Ephemeral.|
-| Technical Reports |  |  |  |
+| Physical maps | Spatial visualizations of geographic, geologic or other scientific feature | - Visual representation of spatial relationships. <br />- Serves as a reference tool across multiple disciplines (geology, ecology, urban planning). | - Static once printed.<br />- Subject to interpretive biases.<br />- Scale and resolution limited to original representation. |
+| Standards | Formally agreed-upon documents establishing precise technical specifications, measurement protocols, safety guidelines, or operational rules. | - Rigorously developed by technical committees and industry experts.<br />- Focuses on consistency, interoperability, and reproducible quality.<br />- Serves as an authoritative benchmark for engineering, life sciences, and IT. | - Expensive to access.<br />- Slow to update due to lengthy consensus-building processes.<br />- Dictates how to measure or implement rather than presenting raw research findings. |
+| Podcasts & social media | Digital audio, video, or social media commentary used by researchers or science communicators to discuss ideas, papers, or trends | - Rapid dissemination and high audience reach.<br />- Makes complex scientific concepts accessible through conversational style.<br />- Facilitates immediate public or peer reaction and real-time commentary. | - Low editorial oversight.<br />- Risk of oversimplification, sensationalism, or missing context.<br />- Ephemeral.|
 :::
 
 :::{tab-item} Tertiary Sources
