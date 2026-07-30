@@ -21,6 +21,9 @@ project:
     - title: STEM 101
       children:
         - file: STEM-101/resource-types.md
+        - file: STEM-101/databases-1.md
+        - file: STEM-101/databases-2.md
+        - file: STEM-101/databases-3.md
     - title: Searching
       children:
         - file: Search/searching_for_resources.ipynb
