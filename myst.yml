@@ -8,6 +8,8 @@ project:
   # keywords: []
   # authors: []
   github: https://github.com/EPS-Libraries-Berkeley/volt
+  execute:
+    execute_notebooks: force
   
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
   toc:
