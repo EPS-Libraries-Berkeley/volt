@@ -23,6 +23,7 @@ project:
     - title: STEM 101
       children:
         - file: STEM-101/resource-types.md
+        - file: STEM-101/resource-types-2.md
         - file: STEM-101/databases-1.md
         - file: STEM-101/databases-2.md
         - file: STEM-101/databases-3.md
