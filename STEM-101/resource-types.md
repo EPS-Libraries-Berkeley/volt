@@ -227,4 +227,8 @@ Which combination of communication formats best matches these audiences in order
 
 ```
 
+## Assessment 2
+```{raw} html
+<iframe src="quiz_module.html" width="100%" height="600px" style="border:none;" title="Knowledge Check"></iframe>
+
 
