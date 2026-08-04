@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Quiz Module</title>
+    <!-- Use Tailwind CSS for styling via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for animations and specific states */
+        .option-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .option-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .correct {
+            background-color: #d1fae5; /* emerald-100 */
+            border-color: #10b981; /* emerald-500 */
+            color: #065f46; /* emerald-900 */
+        }
+        .incorrect {
+            background-color: #fee2e2; /* red-100 */
+            border-color: #ef4444; /* red-500 */
+            color: #991b1b; /* red-900 */
+        }
+        .selected {
+            background-color: #bfdbfe; /* blue-200 */
+            border-color: #3b82f6; /* blue-500 */
+        }
+       
+        /* Ensure it looks good within an iframe or shadow DOM if Jupyter Book uses one */
+        body {
+            background-color: transparent; /* Match host document background */
+            margin: 0;
+            padding: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+       
+        #quiz-container {
+            max-width: 48rem; /* max-w-3xl */
+            margin: 0 auto;
+        }
+
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="quiz-container" class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+       
+        <!-- Header -->
+        <div class="bg-gray-50 px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+            <h2 class="text-lg font-semibold text-gray-800 m-0" id="quiz-title">Knowledge Check</h2>
+            <span class="text-sm font-medium text-gray-500 bg-gray-200 px-3 py-1 rounded-full" id="progress-indicator">Question 1 of 3</span>
+        </div>
+
+
+        <!-- Question Area -->
+        <div class="p-6">
+            <div id="question-text" class="text-lg text-gray-800 mb-6 font-medium">
+                <!-- Question will be injected here -->
+            </div>
+
+
+            <!-- Options -->
+            <div id="options-container" class="space-y-3">
+                <!-- Options will be injected here -->
+            </div>
+
+
+            <!-- Feedback Area (Hidden initially) -->
+            <div id="feedback-area" class="mt-6 p-4 rounded-lg hidden fade-in">
+                <div class="flex items-start">
+                    <div id="feedback-icon" class="flex-shrink-0 mt-0.5 mr-3">
+                        <!-- Icon injected based on correctness -->
+                    </div>
+                    <div>
+                        <h3 id="feedback-title" class="text-sm font-bold"></h3>
+                        <p id="feedback-text" class="text-sm mt-1"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer / Navigation -->
+        <div class="bg-gray-50 px-6 py-4 border-t border-gray-200 flex justify-end">
+            <button id="check-btn" class="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed hidden">
+                Check Answer
+            </button>
+            <button id="next-btn" class="px-6 py-2 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 transition-colors hidden ml-3">
+                Next Question
+            </button>
+            <button id="restart-btn" class="px-6 py-2 bg-gray-200 text-gray-800 font-medium rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 transition-colors hidden">
+                Restart Quiz
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Results Area (Hidden initially) -->
+    <div id="results-container" class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hidden max-w-3xl mx-auto mt-4 text-center p-8 fade-in">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Quiz Complete!</h2>
+        <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-blue-100 text-blue-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+        </div>
+        <p class="text-xl text-gray-600 mb-1">Your score:</p>
+        <p class="text-4xl font-extrabold text-gray-900 mb-6" id="final-score">0 / 0</p>
+        <p class="text-gray-500 mb-6" id="final-message"></p>
+        <button id="results-restart-btn" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+            Try Again
+        </button>
+    </div>
+
+
+    <script>
+        // --- QUIZ DATA ---
+        // Replace this data array with your actual questions.
+        // This format is easy to generate programmatically or edit manually.
+        const quizData = {
+            title: "STEM 101 Quiz",
+            questions: [
+                {
+                    question: "You have developed a novel machine-learning algorithm that improves early wildfire detection by 35%. You need to communicate findings to emergency management directors who need actionable deployment advice. Which format would be best suited to communicate with this group?",
+                    options: [
+                        { id: 'a', text: "Substack newsletter" },
+                        { id: 'b', text: "Policy brief" },
+                        { id: 'c', text: "Peer-reviewed journal article" },
+                        { id: 'd', text: "Conference slide deck" }
+                    ],
+                    correctAnswer: 'b',
+                    explanation: "Substack newsletters are usually written to convey information to a general audience. Peer-reviewed journal articles and conference slide decks are usually created and written to convey experimental results to fellow researchers."
+                },
+                {
+                    question: "In a Jupyter Notebook, what is the keyboard shortcut to run the current cell and select the cell below it?",
+                    options: [
+                        { id: 'a', text: "Shift + Enter" },
+                        { id: 'b', text: "Ctrl + Enter" },
+                        { id: 'c', text: "Alt + Enter" },
+                        { id: 'd', text: "Cmd + Enter" }
+                    ],
+                    correctAnswer: 'a',
+                    explanation: "Shift + Enter runs the current cell and moves focus to the next one. Ctrl + Enter runs the cell but keeps focus on the current cell. Alt + Enter runs the cell and inserts a new one below."
+                },
+                {
+                    question: "What does the `df.head()` function do in pandas?",
+                    options: [
+                        { id: 'a', text: "Returns the column names of the DataFrame." },
+                        { id: 'b', text: "Returns the last 5 rows of the DataFrame." },
+                        { id: 'c', text: "Returns the first 5 rows of the DataFrame." },
+                        { id: 'd', text: "Calculates the statistical summary of the DataFrame." }
+                    ],
+                    correctAnswer: 'c',
+                    explanation: "By default, `df.head()` returns the first 5 rows. `df.tail()` returns the last 5 rows, `df.columns` returns column names, and `df.describe()` provides a statistical summary."
+                }
+            ]
+        };
+
+
+        // --- STATE VARIABLES ---
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedOption = null;
+        let hasAnswered = false;
+
+
+        // --- DOM ELEMENTS ---
+        const ui = {
+            quizTitle: document.getElementById('quiz-title'),
+            progressIndicator: document.getElementById('progress-indicator'),
+            questionText: document.getElementById('question-text'),
+            optionsContainer: document.getElementById('options-container'),
+            feedbackArea: document.getElementById('feedback-area'),
+            feedbackIcon: document.getElementById('feedback-icon'),
+            feedbackTitle: document.getElementById('feedback-title'),
+            feedbackText: document.getElementById('feedback-text'),
+            checkBtn: document.getElementById('check-btn'),
+            nextBtn: document.getElementById('next-btn'),
+            quizContainer: document.getElementById('quiz-container'),
+            resultsContainer: document.getElementById('results-container'),
+            finalScore: document.getElementById('final-score'),
+            finalMessage: document.getElementById('final-message'),
+            restartBtn: document.getElementById('restart-btn'),
+            resultsRestartBtn: document.getElementById('results-restart-btn')
+        };
+
+
+        // --- SVG ICONS ---
+        const icons = {
+            success: `<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
+            error: `<svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`
+        };
+
+
+        // --- INITIALIZATION ---
+        function initQuiz() {
+            ui.quizTitle.textContent = quizData.title;
+            currentQuestionIndex = 0;
+            score = 0;
+            ui.quizContainer.classList.remove('hidden');
+            ui.resultsContainer.classList.add('hidden');
+            loadQuestion();
+        }
+
+
+        function loadQuestion() {
+            const question = quizData.questions[currentQuestionIndex];
+            hasAnswered = false;
+            selectedOption = null;
+           
+            // Update UI state
+            ui.progressIndicator.textContent = `Question ${currentQuestionIndex + 1} of ${quizData.questions.length}`;
+            ui.questionText.textContent = question.question;
+           
+            // Hide feedback and reset buttons
+            ui.feedbackArea.classList.add('hidden');
+            ui.checkBtn.classList.remove('hidden');
+            ui.checkBtn.disabled = true; // Disabled until selection
+            ui.nextBtn.classList.add('hidden');
+
+
+            // Render options
+            ui.optionsContainer.innerHTML = '';
+            question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.className = `option-btn w-full text-left p-4 rounded-lg border-2 border-gray-200 bg-white text-gray-700 focus:outline-none`;
+                button.innerHTML = `
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-gray-300 mr-3 text-sm font-medium bg-gray-50 uppercase">${option.id}</span>
+                        <span>${option.text}</span>
+                    </div>
+                `;
+                button.onclick = () => selectOption(option.id, button);
+                button.dataset.id = option.id;
+                ui.optionsContainer.appendChild(button);
+            });
+        }
+
+
+        // --- INTERACTION ---
+        function selectOption(id, buttonElement) {
+            if (hasAnswered) return; // Prevent changing answer after checking
+
+
+            selectedOption = id;
+            ui.checkBtn.disabled = false;
+
+
+            // Reset all styles
+            const allOptions = ui.optionsContainer.querySelectorAll('button');
+            allOptions.forEach(btn => {
+                btn.className = `option-btn w-full text-left p-4 rounded-lg border-2 border-gray-200 bg-white text-gray-700 focus:outline-none`;
+                btn.querySelector('span.rounded-full').className = 'w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-gray-300 mr-3 text-sm font-medium bg-gray-50 uppercase';
+            });
+
+
+            // Apply selected style
+            buttonElement.classList.add('selected', 'border-blue-500');
+            buttonElement.classList.remove('border-gray-200', 'bg-white');
+            buttonElement.querySelector('span.rounded-full').classList.replace('bg-gray-50', 'bg-blue-500');
+            buttonElement.querySelector('span.rounded-full').classList.replace('text-gray-700', 'text-white');
+            buttonElement.querySelector('span.rounded-full').classList.replace('border-gray-300', 'border-blue-500');
+        }
+
+
+        function checkAnswer() {
+            if (!selectedOption || hasAnswered) return;
+           
+            hasAnswered = true;
+            ui.checkBtn.classList.add('hidden');
+            ui.nextBtn.classList.remove('hidden');
+
+
+            const question = quizData.questions[currentQuestionIndex];
+            const isCorrect = selectedOption === question.correctAnswer;
+           
+            if (isCorrect) score++;
+
+
+            // Style options to show correct/incorrect
+            const allOptions = ui.optionsContainer.querySelectorAll('button');
+            allOptions.forEach(btn => {
+                btn.disabled = true; // Disable further clicking
+                const optId = btn.dataset.id;
+                const badge = btn.querySelector('span.rounded-full');
+
+
+                if (optId === question.correctAnswer) {
+                    // Highlight correct answer
+                    btn.classList.add('correct');
+                    btn.classList.remove('selected', 'border-gray-200');
+                    badge.className = 'w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-emerald-500 mr-3 text-sm font-medium bg-emerald-500 text-white uppercase';
+                } else if (optId === selectedOption && !isCorrect) {
+                    // Highlight selected incorrect answer
+                    btn.classList.add('incorrect');
+                    btn.classList.remove('selected');
+                     badge.className = 'w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-red-500 mr-3 text-sm font-medium bg-red-500 text-white uppercase';
+                } else {
+                    // Fade out unselected incorrect options slightly
+                    btn.classList.add('opacity-50');
+                }
+            });
+
+
+            // Show feedback
+            ui.feedbackArea.classList.remove('hidden', 'bg-emerald-50', 'bg-red-50', 'text-emerald-800', 'text-red-800');
+            ui.feedbackTitle.classList.remove('text-emerald-800', 'text-red-800');
+            ui.feedbackText.classList.remove('text-emerald-700', 'text-red-700');
+
+
+            if (isCorrect) {
+                ui.feedbackArea.classList.add('bg-emerald-50');
+                ui.feedbackIcon.innerHTML = icons.success;
+                ui.feedbackTitle.textContent = "Correct!";
+                ui.feedbackTitle.classList.add('text-emerald-800');
+                ui.feedbackText.classList.add('text-emerald-700');
+            } else {
+                ui.feedbackArea.classList.add('bg-red-50');
+                ui.feedbackIcon.innerHTML = icons.error;
+                ui.feedbackTitle.textContent = "Incorrect";
+                ui.feedbackTitle.classList.add('text-red-800');
+                ui.feedbackText.classList.add('text-red-700');
+            }
+           
+            ui.feedbackText.textContent = question.explanation || "No explanation provided.";
+
+
+            // If it's the last question, change Next to Finish
+            if (currentQuestionIndex === quizData.questions.length - 1) {
+                ui.nextBtn.textContent = "Finish Quiz";
+                ui.nextBtn.classList.replace('bg-gray-800', 'bg-blue-600');
+                ui.nextBtn.classList.replace('hover:bg-gray-900', 'hover:bg-blue-700');
+            }
+        }
+
+
+        function nextQuestion() {
+            if (currentQuestionIndex < quizData.questions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+
+        function showResults() {
+            ui.quizContainer.classList.add('hidden');
+            ui.resultsContainer.classList.remove('hidden');
+           
+            ui.finalScore.textContent = `${score} / ${quizData.questions.length}`;
+           
+            const percentage = (score / quizData.questions.length) * 100;
+            if (percentage === 100) {
+                ui.finalMessage.textContent = "Perfect! You've mastered this topic.";
+            } else if (percentage >= 70) {
+                ui.finalMessage.textContent = "Great job! You have a solid understanding.";
+            } else {
+                ui.finalMessage.textContent = "Good try! Consider reviewing the material and trying again.";
+            }
+
+
+            // Reset button styles for next time
+            ui.nextBtn.textContent = "Next Question";
+            ui.nextBtn.classList.replace('bg-blue-600', 'bg-gray-800');
+            ui.nextBtn.classList.replace('hover:bg-blue-700', 'hover:bg-gray-900');
+        }
+
+
+        // --- EVENT LISTENERS ---
+        ui.checkBtn.addEventListener('click', checkAnswer);
+        ui.nextBtn.addEventListener('click', nextQuestion);
+        ui.restartBtn.addEventListener('click', initQuiz);
+        ui.resultsRestartBtn.addEventListener('click', initQuiz);
+
+
+        // Start the quiz on load
+        document.addEventListener('DOMContentLoaded', initQuiz);
+    </script>
+</body>
+</html>
