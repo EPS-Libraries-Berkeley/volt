@@ -114,14 +114,15 @@ Read more:
 _Objective: Practice several basic LaTeX commands in a new project._
 
 1. Open a new project in [Overleaf](https://www.overleaf.com/edu/berkeley). 
-2. Create Title 
+2. Add syntax required to recreate an [accessible PDF](https://eps-libraries-berkeley.github.io/volt/latex-workshop/#accessible-pdfs) on **line 1** of the main.tex file
+3. Create Title 
 - After `\title`, add "VOLT LaTeX Basics Assignment" 
 - After `\author`, add your name 
 - Confirm that the date is correct or edit if needed
 - Display **Title** using command `\maketitle` inserted after `\begin{document}`
-3. Add a new section labeled "Practice" using the `\section*` command. 
-4. Add a new section labeled "California Road Trip Destinations"
-5. Make a numbered list of four items, for example: 
+4. Add a new section labeled "Practice" using the `\section*` command. 
+5. Add a new section labeled "California Road Trip Destinations"
+6. Make a numbered list of four items, for example: 
   Yosemite \
   Big Sur \
   Lake Tahoe \
@@ -133,7 +134,7 @@ _Objective: Practice several basic LaTeX commands in a new project._
 
 :::{note} Questions?
 :class: dropdown
-Compare your LaTeX code to the solutions document at  [https://www.overleaf.com/read/djdcymcpxcxq](https://www.overleaf.com/read/djdcymcpxcxq) to troubleshoot. 
+Compare your LaTeX code to the solutions document at  [https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9](https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9) to troubleshoot. 
 :::
 ::::
 
@@ -277,9 +278,9 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 :::
 
 :::{hint}
-Commands needed: `\frac{}{}`, `\pm`, `\sqrt{}`, `\[...\]` or `$...$` \
+Commands needed: `\qty`, `\degree C`, `\frac{}{}`, `\pm`, `\sqrt{}`, `\[...\]` or `$...$` \
 
-Degree can be represented several ways such as `^\circ` or `\degree` (requires the `\usepackage{gensymb}`).
+In LaTeX, there is often more than one way to typeset a concept. For example, **degree** can be represented several ways such as `^\circ` or `\degree`. Compatability with accessibility packages requires the `\usepackage{siunitx}` and the joint commands: `\qty{number}{\degree C}`.
 
 Subscripts and superscripts are written using the symbols _ and ^. 
 :::
@@ -524,5 +525,5 @@ Use the following specifiers to adjust the placement of your figures.
 ```
 :::
 
-Compare your LaTeX code to the solutions at:  [https://www.overleaf.com/read/hsjrcdzkndvd](https://www.overleaf.com/read/hsjrcdzkndvd) to troubleshoot. 
+Compare your LaTeX code to the solutions at:  [https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9](https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9) to troubleshoot. 
  
