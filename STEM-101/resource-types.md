@@ -227,3 +227,12 @@ Which combination of communication formats best matches these audiences in order
 
 ```
 
+:::{multiple-choice} Which of the following is a primary literature source?
+:a: A review article summarizing 50 years of research
+:b: A journal article detailing original seismic lab measurements
+:c: An encyclopedia entry about mineral structures
+:correct: b
+:explanation: Primary sources contain original research data.
+:::
+
+
