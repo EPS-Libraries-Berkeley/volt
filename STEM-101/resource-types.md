@@ -227,12 +227,16 @@ Which combination of communication formats best matches these audiences in order
 
 ```
 
-:::{multiple-choice} Which of the following is a primary literature source?
-:a: A review article summarizing 50 years of research
-:b: A journal article detailing original seismic lab measurements
-:c: An encyclopedia entry about mineral structures
-:correct: b
-:explanation: Primary sources contain original research data.
+::::{admonition} Which of the following is a primary literature source?
+:class: dropdown open
+- A) A review article summarizing 50 years of research
+- B) A journal article detailing original seismic lab measurements
+- C) An encyclopedia entry about mineral structures
+:::{dropdown} Check Answer
+Correct Answer: B
+Why B is correct: Primary sources present original experimental results or raw field data collected by the authors.
+Why A & C are incorrect: Review articles and encyclopedias synthesize existing research, making them secondary or tertiary sources.
 :::
+::::
 
 
