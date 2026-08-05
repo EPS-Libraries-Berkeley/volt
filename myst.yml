@@ -8,8 +8,6 @@ project:
   # keywords: []
   # authors: []
   github: https://github.com/EPS-Libraries-Berkeley/volt
-  plugins:
-    - ./plugins/quiz.mjs
   execute:
     execute_notebooks: force
   
