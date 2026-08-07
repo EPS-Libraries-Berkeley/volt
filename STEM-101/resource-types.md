@@ -2,8 +2,7 @@
 
 When doing research in STEM fields, you will come across many different types of publications and resources. You may have already seen some of the more common types - scholarly journal articles, conference papers, books - but there are also some uncommon ones that can be useful in your research. 
 
-Different types of publications can be written for different audiences and can provide different types of information. Becoming familiar with publication types and when they are produced during the research lifecycle can help you find the information you need faster.
-
+Publications can be written for distinct audiences and provide different types of information. Becoming familiar with publication types and when they are produced during the research lifecycle can help you find the information you need faster.
 ## Timeline of a development of a topic
 
 Scientific publication types often align with an initial event, discovery or idea proposal. Publication proceeds on different timelines with some initial findings being presented over weeks or months, and longer term studies or analysis occurring over years. Ultimately this is also a **cyclical** process with idea, data and findings reimagined as new information becomes available.
@@ -140,21 +139,21 @@ Before using any sources in your work, you should be prepared to evaluate its re
 For a deeper dive on source evaluation, see our [Evaluating Resources Guide](https://guides.lib.berkeley.edu/evaluating-resources).
 
 ::::{tip} Evaluation in action: let’s review a Wikipedia article using these basic standards.
-You are working on a botanical gardens research assignment and need to find some sources about ferns. Let's look at [this Wikipedia article](http://en.wikipedia.org/wiki/Fern) and use our evaluation questions to assess whether this resource would be appropriate to use for your assignment. 
+You are working in a wildfire research laboratory and are looking for information on the history of the development of wildland-urban interface zones to support a literature review. Let’s look at [this Wikipedia article](https://en.wikipedia.org/wiki/Wildland%E2%80%93urban_interface#) and use our evaluation questions to assess whether this resource would be appropriate to use as a citation in your paper. 
 
-```{image} ./images/wikipedia-fern.png
-:alt: brief view of first two paragraphs of the wikipedia entry on ferns
+```{image} ./images/wikipedia-wui.png
+:alt: brief view of first two paragraphs of the wikipedia entry on wildland urban interface
 :width: 500px
 :align: center
 ```
 
-[Wikipedia "Fern" article](http://en.wikipedia.org/wiki/Fern)
 :::{dropdown} See Evaluation Breakdown
 
 * ❌ **Authorship:** Openly and anonymously edited. Expertise cannot be verified.
-* ❌ **Publisher:** Wikipedia is a non-profit that explicitly does not vouch for content accuracy.
-* ⚠️ **Accuracy:** Mixes well-supported facts with unsourced claims.
-* ✅ **Timeliness:** Actively maintained with recent edit timestamps.
+* ❌ **Purpose:** Intended for a general audience.
+* ❌ **Publication & format:** Wikipedia is a non-profit that explicitly does not vouch for content accuracy.
+* ⚠️ **Relevance:** Mixes well-supported facts with unsourced claims.
+* ✅ **Date of publication:** Actively maintained with recent edit timestamps.
 * ✅ **Documentation:** Includes an extensive list of external primary citations.
 
 **Verdict:** **Do not cite directly.** While useful for preliminary orientation and finding primary citations at the bottom of the page, Wikipedia fails the authority requirement. (See [Wikipedia's guide on academic use](https://en.wikipedia.org/wiki/Wikipedia:Academic_use)).
@@ -165,19 +164,34 @@ You are working on a botanical gardens research assignment and need to find some
 ## Assessment
 Assess your knowledge by expanding and responding to the questions below.
 
-::::{attention} Knowledge Check 1: Primary Sources
+::::{attention} Knowledge Check 1: Resource types
 :class: dropdown open
-Which of the following is a **primary source**?
-- A) A review article summarizing 50 years of research
-- B) A journal article detailing original seismic lab measurements
-- C) An encyclopedia entry about mineral structures
-:::{dropdown} Check Answer
-**Correct Answer: B**
+Match the information need with the publication type where you’re most likely to find the information.  
 
-Why B is correct: Primary sources present original experimental results or raw field data collected by the authors.<br />
-Why A & C are incorrect: Review articles and encyclopedias synthesize existing research, making them secondary or tertiary sources.
+::::{grid} 1 2 2 2
+
+:::{grid-item-card} Information need
+1. **Summary and synthesis of papers** published about wildfire risk in wildland-urban interface zones.
+2. **Description of an experimental study** to optimize fire evacuation routes in Los Angeles County.
+3. **Parcel data** for homes in the Altadena community of Los Angeles County.
+:::
+
+:::{grid-item-card} Publication Type
+A. Literature reviews
+B. Datasets and GIS Data 
+C. Journal articles
 :::
 ::::
+
+:::{dropdown} Check Answer
+**Correct Answer: 1A, 2C, 3B**
+
+**Explanation:** 
+- **Literature reviews:** provide critical evaluation and synthesis of multiple primary papers. 
+- **Journal articles:** provide detailed reports of original empirical studies or theoretical work.
+- **Datasets and GIS Data:** provide raw or processed observational measurements and spatial data. 
+:::
+:::::
 
 :::::{attention} Knowledge Check 2: Audiences 
 :class: dropdown open
@@ -188,13 +202,13 @@ Why A & C are incorrect: Review articles and encyclopedias synthesize existing r
 :::{grid-item-card} Audience
 1. **Computer science researchers** who want to reproduce the model structure.
 2. **Emergency management directors** who need actionable deployment advice.
-3. The general public interested in local wildfire risk.
+3. The **general public** interested in local wildfire risk.
 :::
 
 :::{grid-item-card} Publication Type
-- A. Policy brief
-- B. Podcast interview
-- C. Peer-Reviewed Journal Article
+A. Policy brief
+B. Podcast interview
+C. Peer-Reviewed Journal Article
 :::
 ::::
 
@@ -210,30 +224,20 @@ Why A & C are incorrect: Review articles and encyclopedias synthesize existing r
 
 :::::{attention} Knowledge Check 3: Evaluation
 :class: dropdown open
-**Scenario:** You have developed a novel machine-learning algorithm that improves early wildfire detection by 35%. You need to communicate findings to three distinct groups. Match the audience with the most appropriate publication type.
+Which criteria would you **not** use when evaluating a source for relevancy?
 
-::::{grid} 1 2 2 2
-
-:::{grid-item-card} Audience
-1. **Computer science researchers** who want to reproduce the model structure.
-2. **Emergency management directors** who need actionable deployment advice.
-3. The general public interested in local wildfire risk.
-:::
-
-:::{grid-item-card} Publication Type
-- A. Policy brief
-- B. Podcast interview
-- C. Peer-Reviewed Journal Article
-:::
-::::
+A. Authority
+B. Length
+C. Purpose
+D. Date of publication
+E. Documentation
 
 :::{dropdown} Check Answer
-**Correct Answer: 1C, 2A, 3B**
+**Correct Answer: B**
 
 **Explanation:** 
-- **Computer Science Researchers:** Require the full methodological depth of a **Peer-Reviewed Journal Article** for replication.
-- **Emergency Directors:** Require concise, actionable **Policy Briefs** for deployment.
-- **General Public:** Benefit from accessible audio media like a **Podcast Interview**.
+**Authority, purpose, date of publication, and documentation** should be considered, along with **publication & format**, when evaluating a source for relevancy. The **length** of the source does not provide any helpful indication of relevancy. 
+
 :::
 :::::
 
