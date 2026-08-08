@@ -164,7 +164,7 @@ You are working in a wildfire research laboratory and are looking for informatio
 ## Assessment
 Assess your knowledge by expanding and responding to the questions below.
 
-::::{attention} Knowledge Check 1: Resource types
+:::::{attention} Knowledge Check 1: Resource types
 :class: dropdown open
 Match the information need with the publication type where you’re most likely to find the information.  
 
@@ -177,9 +177,9 @@ Match the information need with the publication type where you’re most likely 
 :::
 
 :::{grid-item-card} Publication Type
-A. Literature reviews
-B. Datasets and GIS Data 
-C. Journal articles
+A. Literature reviews  
+B. Datasets and GIS Data    
+C. Journal articles  
 :::
 ::::
 
@@ -206,9 +206,9 @@ C. Journal articles
 :::
 
 :::{grid-item-card} Publication Type
-A. Policy brief
-B. Podcast interview
-C. Peer-Reviewed Journal Article
+A. Policy brief  
+B. Podcast interview  
+C. Peer-Reviewed Journal Article  
 :::
 ::::
 
@@ -226,16 +226,16 @@ C. Peer-Reviewed Journal Article
 :class: dropdown open
 Which criteria would you **not** use when evaluating a source for relevancy?
 
-A. Authority
-B. Length
-C. Purpose
-D. Date of publication
-E. Documentation
+A. Authority  
+B. Length  
+C. Purpose  
+D. Date of publication  
+E. Documentation  
 
 :::{dropdown} Check Answer
 **Correct Answer: B**
 
-**Explanation:** 
+**Explanation:**   
 **Authority, purpose, date of publication, and documentation** should be considered, along with **publication & format**, when evaluating a source for relevancy. The **length** of the source does not provide any helpful indication of relevancy. 
 
 :::
