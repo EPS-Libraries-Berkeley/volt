@@ -34,7 +34,12 @@ All the information you need: Author names and affiliations, publication details
 :::
 ::::
 
-### What to know about other search tools
+:::{note} Tip
+A **database platform** is the software interface used to search and access one or multiple databases at once. Platform names are posted prominently above database titles and article titles. Examples: EBSCO, Elsevier, ProQuest.
+:::
+
+
+### Other search tools
 
 What about UC Library Search, Google Scholar, or generative AI? There are many differences between these approaches, including what sources they pull from and how much control you have over the search process.
 
@@ -42,13 +47,6 @@ What about UC Library Search, Google Scholar, or generative AI? There are many d
 :class: dropdown
 
 Use **UC Library Search** to find a variety of materials (books, media, archival collections, and many journal articles), or to look up a specific title. Searches across UC Berkeley Library holdings, other UC campus libraries, the California Digital Library (CDL), and more. Filter by “resource type” or “peer-reviewed journals”. However, UC Library Search is not as in-depth as a subject-specific database search. 
-
-:::
-
-:::{hint} What is a database platform?
-:class: dropdown
-
-A **database platform** is the software interface used to search and access one or multiple databases at once. Platform names are posted prominently above database titles and article titles. Examples: EBSCO, Elsevier, ProQuest.
 :::
 
 :::{hint} What to know about search engines & generative AI
@@ -74,20 +72,19 @@ Issues to Consider:
 
 ### Finding Databases
 
-### Searching A-Z Databases:
+### Searching A-Z Databases
 
-:::{tip}**Get Full Text**
-When you find a good article, click "Get It at UC" to get the online PDF. If Berkeley doesn't have it, use "interlibrary loan" to request that we borrow it from another library.
-
-For more information:
-- [UC Library Search user guide](https://guides.lib.berkeley.edu/uclibrarysearch)
-- [Interlibrary Loan](https://www.lib.berkeley.edu/find/interlibrary-loan)
-:::
+Insert Tip: Get Full text
 
 ## Tracing Citations
 
 If an article is relevant to your topic, you will want to look at the research it is built on and has cited (backward citation). But it can often be very helpful to see more recent work that has cited the article (forward citation). There are several different ways to do this, and the results will overlap -- no single method is comprehensive.
 
+```{image} ./images/citation-tracing.png
+:alt: Research Timeline comparison between different types of scientific resources
+:width: 500px
+:align: center
+```
 [Google Scholar](http://scholar.google.com/) provides forward citations for most sources. It has a broader range of documents included (not just peer reviewed journals, but reports, pre-prints, etc.) and doesn't eliminate self citation or de-duplicate the results.
 
 [Web of Science](https://libproxy.berkeley.edu/login?qurl=http://webofknowledge.com/WOS) is a vast, multidisciplinary database, which includes the Science and the Social Science Citation Indexes. This index allows you to do a "Cited Reference" search if you select that tab. This will retrieve other articles (from a prestigious list of peer reviewed journals) which have cited the target article, and it also shows the references for the original article... both forward and backward citation.
