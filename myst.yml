@@ -62,9 +62,6 @@ project:
             - file: LaTeX/FAQs.ipynb
         - file: LaTeX/latex_workshop.md
         - file: LaTeX/latex-cv-workshop.ipynb
-    - title: References
-      children:
-        - file: Bibliography.md
     - file: cite.md
     
 site:
@@ -74,4 +71,5 @@ site:
      favicon: favicon.ico
      logo: scilib_logo.png
      hide_myst_branding: true
+     analytics_google: UA-3155703
 
