@@ -23,7 +23,7 @@ Anandakuttan, K., Hanson, M., Ngo, L., Nunnally, K., Smith E., \& Teplitzky, S. 
 
 ```bibtex
 @collection{volt-stem-2026,
-  author    = {Anandakuttan, Krista and Hanson, Margot and Ngo, Lisa and Nunnally, Kathryn, and Smith, Elliott, and                    Teplitzky, Samantha},
+  author    = {Anandakuttan, Krista and Hanson, Margot and Ngo, Lisa and Nunnally, Kathryn, and Smith, Elliott, and Teplitzky, Samantha},
   title     = {STEM Research 101},
   booktitle = {VOLT: Virtual Online Library Tutorials},
   year      = {2026},
