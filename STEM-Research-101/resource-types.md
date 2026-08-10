@@ -59,7 +59,7 @@ Select a tab below to learn more.
 | **Conference Papers** | Works-in-progress presented at scientific conferences | Fast dissemination; crucial for fast-moving fields (e.g., AI/CS) | May lack complete methodology; findings can be preliminary |
 | **Datasets & GIS Data** | Raw or processed observational measurements and spatial data | Machine-readable; published in open repositories | Requires specialized software/code to analyze |
 | **Technical Reports** | Detailed research progress/results for project sponsors | Produced for funding agencies; includes raw technical depth | Hard to locate due to limited distribution; highly specialized |
-| **Patents** | add | add | add |
+| **Patents** | Legal rights give by the government to inventors | Covers function, purpose and process of an invention | Difficult to read; not connected to product names; not peer reviewed |
 :::
 
 :::{tab-item} Secondary Sources
