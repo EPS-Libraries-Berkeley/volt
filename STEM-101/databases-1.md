@@ -116,4 +116,61 @@ Why B is correct: Biomedicine and health are subject areas relevant to the topic
 Why A is incorrect: Although the subject area, medical and health sciences, is relevant, preprints are articles posted before undergoing peer review.
 :::
 ::::
-## IV.Assessment Questions....
+
+:::::{attention} Knowledge Check 2: Resource types
+:class: dropdown
+Match the type of resource with the A-Z Databases resource where you're most likely to find that resource type.  
+
+::::{grid} 1 2 2 2
+
+:::{grid-item-card} Type of resource
+1. **Methods and protocols** for working with citizen scientists on a wildfire recovery project.
+2. **Standards** for fire hazard assessment of insulating materials in electrical power systems.
+3. **Journal articles** on wildfire ecology.
+:::
+
+:::{grid-item-card} Database
+A. BIOSIS Previews  
+B. Springer Nature Experiments    
+C. IEEE Xplore  
+:::
+::::
+
+:::{attention .simple .dropdown icon=false open=false} Check Answer
+**Correct Answer: 1B, 2C, 3A**
+
+**Explanation:**
+
+- **Methods and protocols** The A-Z Databases description of Springer Nature Experiments (choice B) includes experimental procedures (including those involving contributions from citizen scientists). 
+- **Standards** The A-Z Databases description of IEEE Xplore (choice C) indicates that it includes electrical engineering standards.
+- **Journal articles:** The A-Z Databases description of BIOSIS Previews (choice A) indicates that it includes journal articles on biological topics.
+:::
+:::::
+
+:::::{attention} Knowledge Check 3: Tracing citations
+:class: dropdown
+**Scenario** you have found a highly relevant article on wildfire risk assessment published in 2019.
+Match the numbered goal with the letter of the appropriate action.  
+
+::::{grid} 1 2 2 2
+
+:::{grid-item-card} Type of resource
+1. Explore the previous work on which the 2019 study was built.
+2. Find articles that may be related to the 2019 study that were published afterwards.
+:::
+
+:::{grid-item-card} Database
+A. Perform a search for citing articles in a resource such as Google Scholar or Web of Science.  
+B. Look at the reference list of the 2019 study.
+:::
+::::
+
+:::{attention .simple .dropdown icon=false open=false} Check Answer
+**Correct Answer: 1B, 2A**
+
+**Explanation:**
+
+- The reference list of the 2019 study includes the sources which the authors drew from in designing and carrying out their study.
+- Performing a search for articles that have cited the 2019 study will retrieve articles published after 2019 that included the original study in their reference lists.
+:::
+:::::
