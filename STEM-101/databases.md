@@ -117,7 +117,7 @@ Boolean operators are not supported in keyword searching. Searching on “biomed
 
 ```{image} ./images/A-to-Z-2
 :class: border border-secondary 
-:alt: A-Z Databases Interface with "Statistics and Numeric Data" selected from the "sources" dropdown list
+:alt: A-Z Databases Interface with "Public Health" selected from the "Subjects" dropdown list and "Statistics and Numeric Data" selected from the "types" dropdown list
 :class: framed
 :width: 800px
 :align: center
@@ -127,7 +127,7 @@ Boolean operators are not supported in keyword searching. Searching on “biomed
 
 ```{image} ./images/A-to-Z-3
 :class: border border-secondary 
-:alt: A-Z Databases Interface with "Biological Sciences" selected from the "Subjects" dropdown list and "Images" and "Videos" selected from the "sources" dropdown list
+:alt: A-Z Databases Interface with "Biological Sciences" selected from the "Subjects" dropdown list and "Images" and "Videos" selected from the "types" dropdown list
 :class: framed
 :width: 800px
 :align: center
