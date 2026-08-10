@@ -80,10 +80,9 @@ Insert Tip: Get Full text
 
 If an article is relevant to your topic, you will want to look at the research it is built on and has cited (backward citation). But it can often be very helpful to see more recent work that has cited the article (forward citation). There are several different ways to do this, and the results will overlap -- no single method is comprehensive.
 
-```{image} ./images/citation-tracing.png
-:alt: Research Timeline comparison between different types of scientific resources
-:class: border
-:width: 500px
+```{image} ./images/Citation-tracing
+:alt: Starting with an article from 2022, look backwards and forwards to find additional relevant articles. 
+:width: 800px
 :align: center
 ```
 [Google Scholar](http://scholar.google.com/) provides forward citations for most sources. It has a broader range of documents included (not just peer reviewed journals, but reports, pre-prints, etc.) and doesn't eliminate self citation or de-duplicate the results.
