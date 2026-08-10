@@ -2,7 +2,7 @@
 title: Scientific Databases
 ---
 
-## Overview of databases
+## Overview
 
 An **academic database** is recommended for research because it is an organized collection of published scholarly materials which supports efficient, reproducible searching, often at a subject-specific level. At UC Berkeley, the Library provides access to over 1000 different databases.
 ### Why use an academic database
@@ -32,7 +32,7 @@ All the information you need: Author names and affiliations, publication details
 :::
 ::::
 
-:::{note} Tip
+:::{hint} Database Platform
 A **database platform** is a software interface used to search and access one or multiple databases at once. Platform names are posted prominently above database titles and article titles. Examples include EBSCO, Elsevier, and ProQuest.
 :::
 
@@ -44,6 +44,8 @@ What about UC Library Search, Google Scholar, or generative AI? There are many d
 :class: dropdown
 
 Use **UC Library Search (UCLS)** to find a variety of materials (books, media, archival collections, and many journal articles), or to look up a specific title. Here, you may search across UC Berkeley Library holdings, other UC campus libraries, the California Digital Library (CDL), and more. You may also filter by “resource type” or “peer-reviewed journals”. However, UC Library Search is not as in-depth as a subject-specific database search. 
+
+For more information, visit the [UC Library Search](https://guides.lib.berkeley.edu/uclibrarysearch) user guide.
 :::
 
 :::{hint} What to know about search engines & generative AI
@@ -68,7 +70,7 @@ A-Z Databases is a descriptive list of databases and other resources that will h
 
 ### Access
 A-Z Databases can be accessed from the UC Library Search Databases tab. 
-```{image} ./images/ucls-databases
+```{image} ./images/stem101-ucls-databases
 :alt: UC Library Search Interface with the "Databases" banner tab highlighted
 :class: framed
 :width: 800px
@@ -138,11 +140,10 @@ Boolean operators are not supported in keyword searching. Searching on “biomed
 
 Searches may not be comprehensive, depending on how the search terms match with the way the databases have been described and categorized (example: many of the resources in the “medicine” category would likely also be relevant to the “biomedicine” category).
 
-**[Add transition into accessing Full Text??]**
 :::{hint}**Access: Get Full Text**
 When you find a good article, click "Get It at UC" to get the online PDF. If Berkeley doesn't have it, use "interlibrary loan" to request that we borrow it from another library.
 
-```{image} ./images/Get-It-At-UC-Logo
+```{image} ./images/getitatuc-logo
 :alt: Get it at UC Logo
 :width: 300px
 :align: center
@@ -158,7 +159,7 @@ If an article is relevant to your topic, you will want to look at the research i
 
 ```{image} ./images/Citation-tracing
 :class: framed 
-:alt: Graphic showing how 3 sample articles are interconnected through backward and forward citation.
+:alt: 3 sample articles are interconnected through backward and forward citation.
 :width: 800px
 :align: center
 ```
@@ -174,7 +175,7 @@ Assess your knowledge by expanding and responding to the questions below.
 
 ::::{attention} Knowledge Check 1: Selecting relevant resources
 :class: dropdown
-**Scenario:** You are seeking peer-reviewed articles on the health effects of wildfire smoke exposure. From the following A-Z Databases descriptions, Choose the best database to search:
+**Scenario:** You are seeking peer-reviewed articles on the health effects of wildfire smoke exposure. From the following A-Z Databases descriptions, choose the best database to search:
 
 A. **medRxiv**: A preprint service for medical, clinical, and health sciences. Preprints "should not be relied on to guide clinical practice or health-related behavior and should not be reported in news media as established information." 
 
@@ -220,7 +221,7 @@ C. IEEE Xplore
 
 :::::{attention} Knowledge Check 3: Tracing citations
 :class: dropdown
-**Scenario** you have found a highly relevant article on wildfire risk assessment published in 2019.
+**Scenario:** You have found a highly relevant article on wildfire risk assessment published in 2019.
 Match the numbered goal with the letter of the appropriate action.  
 
 ::::{grid} 1 2 2 2
