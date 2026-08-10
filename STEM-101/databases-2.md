@@ -82,6 +82,7 @@ If an article is relevant to your topic, you will want to look at the research i
 
 ```{image} ./images/citation-tracing.png
 :alt: Research Timeline comparison between different types of scientific resources
+:class: border
 :width: 500px
 :align: center
 ```

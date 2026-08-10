@@ -68,8 +68,9 @@ A-Z Databases is a descriptive list of databases and other resources that will h
 
 ### Access
 A-Z Databases can be accessed from the UC Library Search Databases tab. 
-```{image} ./images/UCLS-Databases
+```{image} ./images/ucls-databases
 :alt: UC Library Search Interface with the "Databases" banner tab highlighted
+:class: framed
 :width: 800px
 :align: center
 ```
@@ -123,6 +124,7 @@ Boolean operators are not supported in keyword searching. Searching on “biomed
 ```{image} ./images/A-to-Z-3
 :class: border border-secondary 
 :alt: A-Z Databases Interface with "Biological Sciences" selected from the "Subjects" dropdown list and "Images" and "Videos" selected from the "sources" dropdown list
+:class: framed
 :width: 800px
 :align: center
 ```
