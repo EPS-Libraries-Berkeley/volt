@@ -6,7 +6,7 @@ project:
   subtitle: Virtual Online Library Tutorials
   # description: VOLT is a series of tutorials and modules offered by the Science Libraries of UC Berkeley
   # keywords: []
-  # authors: []
+  # authors:
   github: https://github.com/EPS-Libraries-Berkeley/volt
   execute:
     execute_notebooks: force
@@ -63,9 +63,7 @@ project:
     - title: References
       children:
         - file: Bibliography.md
-    - title: About
-      children:
-        - file: README.md
+    - file: cite.md
     
 site:
   template: book-theme

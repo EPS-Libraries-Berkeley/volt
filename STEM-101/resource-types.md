@@ -1,4 +1,11 @@
-# Types of Resources
+---
+title: STEM Research 101 
+subtitle: Types of Resources
+authors:
+  - name: Lisa Ngo
+  - name: Sam Teplitzky
+  - name: Margot Hanson
+---
 
 When doing research in STEM fields, you will come across many different types of publications and resources. You may have already seen some of the more common types - scholarly journal articles, conference papers, books - but there are also some uncommon ones that can be useful in your research. 
 
@@ -147,7 +154,7 @@ You are working in a wildfire research laboratory and are looking for informatio
 :align: center
 ```
 
-:::{dropdown} See Evaluation Breakdown
+:::{tip .simple .dropdown icon=false open=false} See Evaluation Breakdown
 
 * ❌ **Authorship:** Openly and anonymously edited. Expertise cannot be verified.
 * ❌ **Purpose:** Intended for a general audience.
@@ -183,7 +190,7 @@ C. Journal articles
 :::
 ::::
 
-:::{dropdown} Check Answer
+:::{attention .simple .dropdown icon=false open=false} Check Answer
 **Correct Answer: 1A, 2C, 3B**
 
 **Explanation:** 
@@ -212,7 +219,7 @@ C. Peer-Reviewed Journal Article
 :::
 ::::
 
-:::{dropdown} Check Answer
+:::{attention .simple .dropdown icon=false open=false} Check Answer
 **Correct Answer: 1C, 2A, 3B**
 
 **Explanation:** 
@@ -232,7 +239,7 @@ C. Purpose
 D. Date of publication  
 E. Documentation  
 
-:::{dropdown} Check Answer
+:::{attention .simple .dropdown icon=false open=false} Check Answer
 **Correct Answer: B**
 
 **Explanation:**   
@@ -241,4 +248,4 @@ E. Documentation
 :::
 :::::
 
-
+{cite}`volt-stem-2026`
