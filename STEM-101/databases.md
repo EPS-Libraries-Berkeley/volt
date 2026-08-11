@@ -180,7 +180,7 @@ Assess your knowledge by expanding and responding to the questions below.
 A. **medRxiv**: A preprint service for medical, clinical, and health sciences. Preprints "should not be relied on to guide clinical practice or health-related behavior and should not be reported in news media as established information." 
 
 B. **PubMed**: Citations and abstracts [from journals] in the fields of biomedicine and health, as well as portions of the life sciences, behavioral sciences, chemical sciences, and bioengineering.
-:::{dropdown} Check Answer
+:::{attention .simple .dropdown icon=false open=false} Check Answer
 **Correct answer: B**
 
 Why B is correct: Biomedicine and health are subject areas relevant to the topic of the health effects of wildfire smoke, and scientific journals in the fields of biomedicine and health indexed in PubMed are peer-reviewed.
