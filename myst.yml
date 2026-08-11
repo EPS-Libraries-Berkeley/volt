@@ -20,15 +20,11 @@ project:
         - file: Introduction/science_libraries.md
         - file: Introduction/research_workflows.md
         - file: Introduction/question.ipynb
-    - title: STEM 101
+    - title: STEM Research 101
       children:
-        - file: STEM-101/stemresearch101.md
-        - file: STEM-101/resource-types.md
-        - file: STEM-101/resource-types-2.md
-        - file: STEM-101/databases.md
-        - file: STEM-101/databases-1.md
-        - file: STEM-101/databases-2.md
-        - file: STEM-101/databases-3.md
+        - file: STEM-Research-101/stemresearch101.md
+        - file: STEM-Research-101/resource-types.md
+        - file: STEM-Research-101/databases.md
     - title: Searching
       children:
         - file: Search/searching_for_resources.ipynb
@@ -72,4 +68,3 @@ site:
      logo: scilib_logo.png
      hide_myst_branding: true
      analytics_google: UA-3155703
-
