@@ -32,10 +32,6 @@ All the information you need: Author names and affiliations, publication details
 :::
 ::::
 
-:::{hint} Database Platform
-A **database platform** is a software interface used to search and access one or multiple databases at once. Platform names are posted prominently above database titles and article titles. Examples include EBSCO, Elsevier, and ProQuest.
-:::
-
 ### Other search tools
 
 What about UC Library Search, Google Scholar, or generative AI? There are many differences between these approaches, including what sources they pull from and how much control you have over the search process.
@@ -43,9 +39,9 @@ What about UC Library Search, Google Scholar, or generative AI? There are many d
 :::{hint} When to use the library catalog: UC Library Search 
 :class: dropdown
 
-Use **UC Library Search (UCLS)** to find a variety of materials (books, media, archival collections, and many journal articles), or to look up a specific title. Here, you may search across UC Berkeley Library holdings, other UC campus libraries, the California Digital Library (CDL), and more. You may also filter by “resource type” or “peer-reviewed journals”. However, UC Library Search is not as in-depth as a subject-specific database search. 
+Use [UC Library Search (UCLS)](https://search.lib.berkeley.edu/discovery/search?vid=01UCS_BER:UCB) to find a variety of materials (books, media, archival collections, and many journal articles), or to look up a specific title. Here, you may search across UC Berkeley Library holdings, other UC campus libraries, the California Digital Library (CDL), and more. You may also filter by “resource type” or “peer-reviewed journals”. However, UC Library Search is not as in-depth as a subject-specific database search. 
 
-For more information, visit the [UC Library Search](https://guides.lib.berkeley.edu/uclibrarysearch) user guide.
+For more information, visit the [UC Library Search User Guide](https://guides.lib.berkeley.edu/uclibrarysearch)
 :::
 
 :::{hint} What to know about search engines & generative AI
@@ -60,13 +56,15 @@ A **generative AI** tool may seem like a quick way to find some information onli
 - Potential bias: AI tools may reflect biases or errors in their training process or source material (particularly if they are trained on or searching the open web).
 - Ineffective prompts: AI tools generally provide better answers when prompts are more specific and precise. At the beginning of a research project it can be difficult to formulate precise queries because you are just beginning to learn about a domain.
 - Generality: AI tools may provide better answers when the LLM has specifically been trained or draws on a relevant corpus (as in Retrieval-Augmented Generation, or RAG). ChatGPT, Gemini, and many other general generative AI tools are trained on text scraped from the open web, which is not domain-specific and includes misleading, biased, false, and harmful information.
-- Not reproducible: Search results will vary between users, searches, and devices. 
+- Not reproducible: Search results will vary between users, searches, and devices.
+
+**For more information:** [Critical Generative AI Literacy](https://guides.lib.berkeley.edu/GenAI)
 :::
 
-## A-Z Databases for finding and selecting databases
+## A-Z Databases list for finding and selecting databases
 
 ### Introduction
-A-Z Databases is a descriptive list of databases and other resources that will help you find the most relevant and reliable information sources for your research. It’s the best way to find databases because you can search categories and descriptions.
+[A-Z Databases](https://guides.lib.berkeley.edu/az/databases) is a descriptive list of databases and other resources that will help you find the most relevant and reliable information sources for your research. It’s the best way to find databases because you can search categories and descriptions.
 
 ### Access
 A-Z Databases can be accessed from the UC Library Search Databases tab. 
@@ -141,7 +139,9 @@ Boolean operators are not supported in keyword searching. Searching on “biomed
 Searches may not be comprehensive, depending on how the search terms match with the way the databases have been described and categorized (example: many of the resources in the “medicine” category would likely also be relevant to the “biomedicine” category).
 
 :::{hint}**Access: Get Full Text**
-When you find a good article, click "Get It at UC" to get the online PDF. If Berkeley doesn't have it, use "interlibrary loan" to request that we borrow it from another library.
+:class: dropdown
+
+Most library-subscribed databases contain citation information about journal articles and other sources, but only some of them contain full text. When full text is not included in a database, click "Get It at UC" to get online access to the article through UC library Search. If the library doesn't subscribe to an article you need, use the "Request through interlibrary loan" link in UC Library Search to ask us to get a copy from another library.
 
 ```{image} ./images/getitatuc-logo
 :alt: Get it at UC Logo
@@ -153,9 +153,9 @@ See [Interlibrary Loan](https://www.lib.berkeley.edu/find/interlibrary-loan) for
 
 :::
 
-## Tracing Citations
+## Databases for Citation Tracing
 
-If an article is relevant to your topic, you will want to look at the research it is built on and has cited (backward citation). But it can often be very helpful to see more recent work that has cited the article (forward citation). There are several different ways to do this, and the results will overlap -- no single method is comprehensive.
+Once you've found an article that is relevant to your topic, you may be able to find additional relevant sources by looking at the research it is built on and has cited in its reference list (backward citation). It can also be very helpful to see more recent work that has cited the article you found (forward citation). There are several different databases you can use to do this, and the results will overlap -- no single database is comprehensive.
 
 ```{image} ./images/Citation-tracing
 :class: framed 
@@ -191,7 +191,7 @@ Why A is incorrect: Although the subject area, medical and health sciences, is r
 
 :::::{attention} Knowledge Check 2: Finding resource types
 :class: dropdown
-Match the type of resource with the database where you're most likely to find it.  
+Check A-Z databases to match the type of resource with the database where you're most likely to find it.  
 
 ::::{grid} 1 2 2 2
 
