@@ -141,13 +141,15 @@ Searches may not be comprehensive, depending on how the search terms match with 
 :::{hint}**Access: Get Full Text**
 :class: dropdown
 
-Most library-subscribed databases contain citation information about journal articles and other sources, but only some of them contain full text. When full text is not included in a database, click "Get It at UC" to get online access to the article through UC library Search. If the library doesn't subscribe to an article you need, use the "Request through interlibrary loan" link in UC Library Search to ask us to get a copy from another library.
+Most library-subscribed databases contain citation information about journal articles and other sources, but only some databases contain full text. When full text is not included in a database, click "Get It at UC" to get online access to the article through UC Library Search.
 
 ```{image} ./images/getitatuc-logo
 :alt: Get it at UC Logo
 :width: 300px
 :align: center
 ```
+
+If the library doesn't subscribe to an article you need, use the "Request through interlibrary loan" link in UC Library Search to ask us to get a copy from another library.
 
 See [Interlibrary Loan](https://www.lib.berkeley.edu/find/interlibrary-loan) for more information.
 
@@ -179,7 +181,7 @@ Assess your knowledge by expanding and responding to the questions below.
 
 A. **medRxiv**: A preprint service for medical, clinical, and health sciences. Preprints "should not be relied on to guide clinical practice or health-related behavior and should not be reported in news media as established information." 
 
-B. **PubMed**: Citations and abstracts [from journals] in the fields of biomedicine and health, as well as portions of the life sciences, behavioral sciences, chemical sciences, and bioengineering.
+B. **PubMed**: Citations and abstracts from journals in the fields of biomedicine and health, as well as portions of the life sciences, behavioral sciences, chemical sciences, and bioengineering.
 :::{attention .simple .dropdown icon=false open=false} Check Answer
 **Correct answer: B**
 
