@@ -5,7 +5,7 @@ title: Types of Resources
 When doing research in STEM fields, you will come across many different types of publications and resources. You may have already seen some of the more common types - scholarly journal articles, conference papers, books - but there are also some uncommon ones that can be useful in your research. 
 
 Publications can be written for distinct audiences and provide different types of information. Becoming familiar with publication types and when they are produced during the research lifecycle can help you find the information you need faster.
-## Timeline of a development of a topic
+## Timeline of research and publication
 
 Scientific publication types often align with an initial event, discovery or idea proposal. Publication proceeds on different timelines with some initial findings being presented over weeks or months, and longer term studies or analysis occurring over years. Ultimately this is also a **cyclical** process with idea, data and findings reimagined as new information becomes available.
 
@@ -55,11 +55,12 @@ Select a tab below to learn more.
 
 | Format | Definition | Key Characteristics | Limitations |
 | :--- | :--- | :--- | :--- |
-| **Journal Articles** | Detailed reports of original empirical studies or theoretical work | Standardized structure (IMRAD); rigorously peer-reviewed | Publication delays (6–18 months); paywalls; publication bias toward positive results |
-| **Conference Papers** | Works-in-progress presented at scientific conferences | Fast dissemination; crucial for fast-moving fields (e.g., AI/CS) | May lack complete methodology; findings can be preliminary |
+| **Journal Articles** | Detailed reports of original empirical studies or theoretical work | Standardized structure; rigorously peer-reviewed | Publication delays (6–18 months); paywalls; publication bias toward positive results |
+| **Conference Papers** | Works-in-progress presented at scientific conferences | Fast dissemination; crucial for fast-moving fields (e.g., artificial intelligence; computer science) | May lack complete methodology; findings can be preliminary |
 | **Datasets & GIS Data** | Raw or processed observational measurements and spatial data | Machine-readable; published in open repositories | Requires specialized software/code to analyze |
 | **Technical Reports** | Detailed research progress/results for project sponsors | Produced for funding agencies; includes raw technical depth | Hard to locate due to limited distribution; highly specialized |
 | **Patents** | Legal rights give by the government to inventors | Covers function, purpose and process of an invention | Difficult to read; not connected to product names; not peer reviewed |
+| **Preprints** | Openly available research papers posted online, often on preprint servers, before they have undergone peer review | Authors can release ideas without waiting for lengthy peer-review process; a preprint may exist online alongside a final, peer-reviewed journal version | Not peer reviewed; not edited |
 :::
 
 :::{tab-item} Secondary Sources
