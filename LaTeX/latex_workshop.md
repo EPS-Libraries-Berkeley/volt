@@ -103,11 +103,11 @@ In this section, we introduce the text below to enable *tagging* essential for a
 ```
 
 Read more:
-- [Information from Overleaf on *Creating accessible PDFs in LaTeX*:] (https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs)
-- [More in-depth documentation from the LaTeX Tagging Project:] (https://latex3.github.io/tagging-project/documentation/usage-instructions)
+- Information from Overleaf on *Creating accessible PDFs in LaTeX*:[https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs] (https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs)
+- More in-depth documentation from the LaTeX Tagging Project: [https://latex3.github.io/tagging-project/documentation/usage-instructions](https://latex3.github.io/tagging-project/documentation/usage-instructions)
 
 
-### Exercise
+### Exercise 1
 
 ::::{hint} Exercise 1: Basic LaTeX Commands
 
@@ -260,7 +260,7 @@ results in
 Use `\begin{equation*}` for unnumbered equations.
 :::
 
-### Exercise
+### Exercise 2
 
 ::::{hint} Exercise 2: Mathematical Equations
 _Objective: Experiment with mathematical notations in LaTeX._ 
@@ -399,7 +399,7 @@ Find more information [visit the Overleaf page on bibliography management](https
 | `\citeauthor{campbell_how_2011}` |	Campbell and Cabrera |
 | `\textcite{elsabbagh_microstructure_2014}`| Elsabbagh, Hamouda, and Taha (2014) |
 
-### Exercise
+### Exercise 3
 
 :::{hint} Exercise 3: Adding a Bibliography
 
@@ -478,7 +478,7 @@ Additional specifiers can be added to resize image and to add descriptive text.
 2. Add description: `alt={image of cat typing on computer}`
 3. Put it all together: `\includegraphics[width=0.25\linewidth,alt={image of cat typing on computer}]{filename.jpg}`
 
-### Exercise
+### Exercise 4
 
 :::{hint} Exercise 4: Uploading an Image or Figure
 _Objective: Learn to upload figures in Overleaf._
