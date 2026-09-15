@@ -1,12 +1,13 @@
-<!-- #raw -->
----
 # Data Case Study 5
 
 Take a look at the landing page for the dataset:<br>
-**David Leip: Atlas of the U.S. Presidential Elections** <br>
-[https://doi.org/10.60503/D3/HDZ6RW](https://doi.org/10.60503/D3/HDZ6RW)
+[David Leip: Atlas of the U.S. Presidential Elections](https://datasets.lib.berkeley.edu/file.xhtml?fileId=36936&version=3.2) <br>
 
-![image of elections atlas](./images/elections.png)
+```{image} ./images/elections.png
+:alt: Landing page of Leip 2024 Atlas of US Presidential Elections dataset
+:width: 800px
+:align: center
+```
 
 With the information shown above, and using the link provided, answer the following questions:
 
@@ -24,8 +25,7 @@ With the information shown above, and using the link provided, answer the follow
 1. Where is the data hosted?
 2. Is there a theme or subject focus to the repository?
 3. What other types of data would you expect to find there?
-4. What does the following file tell you about the data?
-- [Pres_Election_Data_1912.tab](https://datasets.lib.berkeley.edu/file.xhtml?fileId=36936&version=3.2)
+4. What does the following file tell you about the data: [Pres_Election_Data_1912](https://datasets.lib.berkeley.edu/file.xhtml?fileId=36936&version=3.2)?
 
 ## Citation
 

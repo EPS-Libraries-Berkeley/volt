@@ -4,7 +4,11 @@ Take a look at the landing page for the dataset:<br>
 **Top 20 Largest California Wildfires: 20 wildfires from 1932 to 2018 that burned the most acres in California** <br>
 [https://www.kaggle.com/annieichen/top-20-largest-california-wildfires](https://www.kaggle.com/annieichen/top-20-largest-california-wildfires)
 
-![kaggle wildfire](./images/kaggle_wildfire.png)
+```{image} ./images/kaggle_wildfire.png
+:alt: Screenshot of Kaggle California wildfire dataset
+:width: 800px
+:align: center
+```
 
 With the information shown above, and using the link provided, answer the following questions:
 
