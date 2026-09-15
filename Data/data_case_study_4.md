@@ -4,7 +4,11 @@ Take a look at the landing page for the dataset:<br>
 **Chemicals in Cosmetics** <br>
 [https://data.ca.gov/dataset/chemicals-in-cosmetics](https://data.ca.gov/dataset/chemicals-in-cosmetics)
 
-![california chemicals in cosmetics](./images/ca_data_chemicals.png)
+```{image} ./images/ca_data_chemicals.png
+:alt: Landing page of Chemicals in Cosmetics dataset
+:width: 600px
+:align: center
+```
 
 With the information shown above, and using the link provided, answer the following questions:
 

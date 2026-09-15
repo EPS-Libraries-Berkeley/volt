@@ -3,7 +3,11 @@
 Navigate to **Dewey Data** ([https://www.deweydata.io/](https://www.deweydata.io/)) and sign in using your Calnet username and passphrase.
 Locate Rental Data by RentHub. Then locate the data documentation.
 
-![Rental Data By RentHub](./images/renthub.png)
+```{image} ./images/renthub.png
+:alt: Screenshot of RentHub rental data landing page
+:width: 600px
+:align: center
+```
 
 With the information shown above, and using the link provided, answer the following questions:
 
@@ -31,7 +35,7 @@ With the information shown above, and using the link provided, answer the follow
 2. Is there an example or recommendation?
 
 ```{dropdown} Result
-RentHub. (2022). Rental Data [Dataset]. Dewey Data. https://doi.org/10.82551/5MMV-7M10
+RentHub. (2022). Rental Data [Dataset]. Dewey Data. `https://doi.org/10.82551/5MMV-7M10`
 ```
 ````
 

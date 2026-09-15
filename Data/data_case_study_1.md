@@ -1,11 +1,13 @@
 # Data Case Study 1
 
 Take a look at the landing page for the dataset:<br>
-**Hummingbird ingestion of low-concentration ethanol within artificial nectar** <br>
-[https://doi.org/10.6078/D1WM6T](https://doi.org/10.6078/D1WM6T)
+[**Hummingbird ingestion of low-concentration ethanol within artificial nectar**](https://doi.org/10.6078/D1WM6T) <br>
 
-![dryad hummingbird data](./images/dryad_hummingbird.png)
-
+```{image} ./images/dryad_hummingbird.png
+:alt: Screenshot of Dryad record for Hummingbird data
+:width: 600px
+:align: center
+```
 With the information shown above, and using the link provided, answer the following questions:
 
 ## Background
@@ -22,7 +24,6 @@ With the information shown above, and using the link provided, answer the follow
 1. How do you access the dataset? 
 2. Is there a theme or subject focus to the repository?
 3. What other types of data would you expect to find there?
-4. Find the “Transparency” tab in the dataset record. What does this information show and why might it be important?
 
 ## Citation
 
@@ -33,7 +34,7 @@ With the information shown above, and using the link provided, answer the follow
 2. Is there an example or recommendation?
 
 ```{dropdown} Result
-Choi, Julia et al. (2023). Supplementary data for: Hummingbird ingestion of low-concentration ethanol within artificial nectar [Dataset]. Dryad. https://doi.org/10.6078/D1WM6T
+Choi, Julia; Lee, Lilianne; Maro, Aleksey et al. (2023). Supplementary data for: Hummingbird ingestion of low-concentration ethanol within artificial nectar [Dataset]. Dryad. `https://doi.org/10.6078/D1WM6T`
 ```
 ````
 
