@@ -16,7 +16,7 @@ You tell LaTeX “what it is” not “how it looks.”
 - Sync with other tools in your research workflow
 - Pro account with your *berkeley.edu* address
 
-### Example
+### Example template
 Look at the template below to get a sense of how Overleaf works. On the left side, the content is written in LaTeX. On the right side, the rendered document.
 
 ```{image} ./images/template.png
@@ -62,7 +62,10 @@ The UC Berkeley Accessible Thesis Template also includes a section for metadata 
 ### Lists
 Use the `\begin{itemize}...\end{itemize}` environment to create unnumbered lists.
 
-:::{hint}
+::::{grid} 1 1 2 2
+
+:::{card}
+:header: List syntax
 
 ```
 \begin{itemize}
@@ -73,10 +76,10 @@ Use the `\begin{itemize}...\end{itemize}` environment to create unnumbered lists
 \item Watermelon
 \end{itemize}
 ```
----
+:::
 
-This code results in:
-
+:::{card}
+:header: Formatted List
 - Apples
 - Cherries
 - Oranges
@@ -84,6 +87,8 @@ This code results in:
 - Watermelon
 
 :::
+::::
+
 
 Use the `\begin{enumerate}...\end{enumerate}` environment to create numbered lists.
 
@@ -146,7 +151,7 @@ Read more about accessibility:
 _Objective: Practice several basic LaTeX commands in a new project._
 
 1. Open a new project in [Overleaf](https://www.overleaf.com/edu/berkeley). 
-2. Add syntax required to recreate an [accessible PDF](https://eps-libraries-berkeley.github.io/volt/latex-workshop/#accessible-pdfs) on **line 1** of the main.tex file
+2. Add syntax required to create an [accessible PDF](https://eps-libraries-berkeley.github.io/volt/latex-workshop/#accessible-pdfs) on **line 1** of the main.tex file
 3. Create Title 
 - After `\title`, add "VOLT LaTeX Basics Assignment" 
 - After `\author`, add your name 
@@ -172,79 +177,79 @@ Compare your LaTeX code to the solutions document at  [https://www.overleaf.com/
 
 ## Mathematics and Equations
 
-### Simple Operators, Subscripts, Superscripts & More
-
 To render simple equations, you also need to know syntax and commands for operators, relations, subscripts, superscripts, and fractions.
 
-#### Operators & Relations:
+### Operators & Relations
 +, -, =, >, < work as expected. Here are some other commands:
 
-| Command | Display | 
-| :---: | :---: | 
-| `\times` | $\times$ | 
-| `\div` | $\div$ | 
-| `\geq` | $\geq$ |
-| `\neq` | $\neq$ |
-| `\pm` | $\pm$ |
-| `\leq` | $\leq$ |
-| `\cdot` | $\cdot$ | 
-| `\approx` | $\approx$ |
+| Command | Display | Command | Display | 
+| :---: | :---: | :---: | :---: | 
+| `\times` | $\times$ | `\leq` | $\leq$ |
+| `\div` | $\div$ | `\pm` | $\pm$ |
+| `\geq` | $\geq$ |`\approx` | $\approx$ |
+| `\neq` | $\neq$ |`\cdot` | $\cdot$ |
 
-### Basic Math
-To display math inline with text, place formula or symbol in between $:
+### Math Modes
+1. **Inline Mode**: Enclose math in `$...$` to display equation or formula inline with text:
 
 `$x + y = z$` renders inline: $x + y = z$ 
 
-Display mode `\[ x + y = z \]` or `$$ x + y = z $$` will center the equation on its own line: \
+2. **Display mode**: `\[ x + y = z \]` or `$$ x + y = z $$` will center the equation on its own line: \
 $$x + y = z$$
 
- 
-**Subscript:** use the underscore (_) / **Superscript**: use the carret (^)  
+### Math Syntax
 
-If the subscript or superscript includes more than one character, enclose it in curly brackets--otherwise the command applies only to the first character. 
+#### Subscripts/Superscripts
 
-**Example:** `$x^n+1$` gives $x^n+1$ but `$x^{n+1}$` gives $x^{n+1}$  
+- **Subscript:** use the underscore ( _ )
+- **Superscript**: use the carret (^)  
+- If the subscript or superscript includes more than one character, enclose it in curly brackets--otherwise the command applies only to the first character.<br>
+  **Example:** `$x^n+1$` gives $x^n+1$ but `$x^{n+1}$` gives $x^{n+1}$  
 
-**Fractions:**  
+#### Fractions
 
 To display a fraction, use the command `\frac` followed by the numerator and denominator in curly brackets.
 
 **Example:** `\frac{1}{x}` gives $\frac{1}{x}$
 
 :::{seealso} Help with Greek letters and Symbols
-For Greek letter commands, see the Overleaf [list of Greek letters](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols#Greek_letters).
-
-Apart from hand-coding Greek letters and other symbols, Berkeley's premium subscription allows us to take advantage of the [Overleaf Symbol Palette](https://www.overleaf.com/blog/new-feature-find-symbols-quicker-with-our-new-symbol-palette-for-premium). The Symbol Palette helps you quickly find commonly used symbols, and will also tell you which packages you need to use them.  
+For Greek letter commands, see the Overleaf [list of Greek letters](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols#Greek_letters) or take advantage of Berkeley's premium subscription to use the [Overleaf Symbol Palette](https://www.overleaf.com/blog/new-feature-find-symbols-quicker-with-our-new-symbol-palette-for-premium). 
 :::
 
 ### More Advanced: Math Packages
 
-### *amsmath* & *amssymb* Packages
+#### *amsmath* & *amssymb* Packages
 
-LaTeX has many packages that you can use to extend its capabilities. The *amsmath* and *amssymb* packages provide you with additional symbols and commands for structuring equations.
+The *amsmath* and *amssymb* packages provide you with additional symbols and commands for structuring equations.
 
 To include them, add these commands to the preamble of your LaTeX document: 
 `\usepackage{amsmath}` \
 `\usepackage{amssymb}` 
 
-### *amsmath*: Equations Environment
+#### *amsmath*: Equations Environment
 
-Use the `\begin{equation}...\end{equation}` command to include a numbered equation in display mode. 
+Use the `\begin{equation}...\end{equation}` command to include a numbered equation in display mode. Use `\begin{equation*}` for unnumbered equations.
 
+::::{grid} 1 1 4 4
+
+:::{grid-item}
+:columns: 3
 ```
-\begin{equation}
+\begin{equation*}
 \frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t}
 \end{equation}
 ```
-results in
-:::{math}
-:enumerated: false
-\frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t} 
 :::
 
-:::{note} 
-Use `\begin{equation*}` for unnumbered equations.
+:::{grid-item}
+:columns: 1
+results in <br>
+```{math}
+:enumerated: false
+\frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t} 
+```
 :::
+::::
 
 ### Exercise 2
 
@@ -264,11 +269,9 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 :::
 
 :::{hint}
-Commands needed: `\qty`, `\degree C`, `\frac{}{}`, `\pm`, `\sqrt{}`, `\[...\]` or `$...$` \
+Commands needed: `\qty`, `\degree C`, `\frac{}{}`, `\pm`, `\sqrt{}`, `\[...\]` or `$...$`, `_`, `^`
 
 In LaTeX, there is often more than one way to typeset a concept. For example, **degree** can be represented several ways such as `^\circ` or `\degree`. Compatability with accessibility packages requires the `\usepackage{siunitx}` and the joint commands: `\qty{number}{\degree C}`.
-
-Subscripts and superscripts are written using the symbols _ and ^. 
 :::
 ::::
 
@@ -300,21 +303,19 @@ Recreate this equation in your document:
 ::::
 
 ## Tables
-Basic tables can be created with a combination of the commands below, and the utilization of appropriate tagging. 
-
-:::{note}
-To comply with PDF-tagging, the header row of the table is declared to `LaTeX`'s PDF-tagging code through `table/header-rows={1}` in `setup.tex` in the Thesis Template, so it is tagged as a real table header (`<TH>`) rather than hidden as an artifact.
-:::
+Tables use the `table` environment for positioning and captions. The `table` environment is wrapped around the tabular environment to layout the actual data/cell grid.
 
 | Basic Commands | Description |
 | --- | --- |
 | `l, r, c` | column alignment |
-| \`&` | ampersand separates columns |
+| `&` | ampersand separates columns |
 | `\\` | double backslash begins new row |
 | `\hline` or `\toprule` `\bottomrule`| horizontal line |
 | `\|` | vertical line | 
-| `table` | table environment: creates the "wrapper" that treats the table as a floating object |
-|`tabular`| tabular environment: creates the actual grid of data |
+
+:::{note}
+To comply with PDF-tagging, the header row of the table is declared to `LaTeX`'s PDF-tagging code through `table/header-rows={1}` in `setup.tex` in the **Thesis Template**, so it is tagged as a real table header (`<TH>`) rather than hidden as an artifact.
+:::
 
 ### Example: Two column table
 
@@ -323,11 +324,12 @@ To comply with PDF-tagging, the header row of the table is declared to `LaTeX`'s
 :::{card}
 :header: Table syntax
 
-```python
+```
 \usepackage{tabularx}
 ....
 \begin{table}
 \caption{Inventory}
+\tagpdfsetup{table/header-rows={1}} 
 \begin{tabular}{lc}
 Item & Quantity 
 \hline
@@ -360,8 +362,8 @@ Cable & 3 \\
 
 _Objective: Create a two column table._
 
-1. Using the 2026 [Golden State Valkyries](https://stats.wnba.com/team/1611661331/players-traditional/?sort=PTS&dir=1) roster create a table showing the top 5 scorers.
-2. Like the example below, create two columns with the headers: player and total points.
+1. Using the 2026 [Golden State Valkyries](https://stats.wnba.com/team/1611661331/players-traditional/?sort=PTS&dir=1) roster create a two-column table listing the top 5 scorers.
+2. Designation the headers: player and total points.
 3. Include a caption for the table
 
 | Player | Total Points |
@@ -379,9 +381,10 @@ _Objective: Create a two column table._
 
 ### Uploading a figure or images
 
-Incorporating images and figures into your Overleaf project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.
+Incorporating images and figures into your project is best accomplished by creating your figures, particularly graphs and plots, outside of Overleaf and then importing them into Overleaf.
 
-Click on the "upload" icon and navigate to the location of your figure.
+1. Add `\usepackage{graphicx}` in the preamble of your document.
+2. Upload images using the "upload" icon and navigate to the location of your figure.
 
 ```{image} ./images/tables_figure.png
 :alt: Overleaf menu to upload images
@@ -389,28 +392,16 @@ Click on the "upload" icon and navigate to the location of your figure.
 :align: center
 ``` 
 
-#### Image Placement
-*Most documents*: Uploading images and figures requires a graphics package. 
-
-1. Include `\usepackage{graphicx}` in the preamble of your document.
-2. Within the text, place the image using the command `\includegraphics{filename.jpg}`.
+3. Within the text, place the image using the command `\includegraphics{filename.jpg}`
+4. Or use the the `figure` environment for proper positioning, alt text, and captioning.
 
 :::{note}
-*UC Berkeley Thesis Template*: In addition to the `\includegraphics` command, the template uses the `\begin{figure}... \end{figure}` to act as a floating container that assists with document layout as well as referring to the figure within the document.
+*UC Berkeley Thesis Template*: In addition to the `\includegraphics` command, the template uses the `\begin{figure}...\end{figure}` to act as a floating container that assists with document layout as well as referencing the figure within the document.
 :::
 
-#### Image Description and Alt text
-Additional specifiers can be added to resize image and to add descriptive text.
-
-1. Express size a proportion of linewidth: `width=0.25\linewidth`
-2. Add description: `alt={image of cat typing on computer}`
-3. Put it all together: `\includegraphics[width=0.25\linewidth,alt={image of cat typing on computer}]{filename.jpg}`
-
-OR
-
-4. Use the `figure` environment:
+#### Example syntax
 ```
-\begin{figure}
+\begin{figure}[ ]
 \centering
 \includegraphics[width=0.5\linewidth,
   alt={photo of cat from above with left paw near keyboard.}]{keyboard_cat.png}
@@ -419,69 +410,61 @@ OR
 \end{figure}
 ```
 
+:::{seealso} Figure Placement
+:class: dropdown
+
+**Designate figure position with specifiers**
+Pass position arguments to control floating behavior: [h] (here), [t] (top), [b] (bottom), or [p] (separate page).
+
+```
+\begin{figure}[b]
+\centering
+\includegraphics[width=0.5\linewidth,
+  alt={photo of cat from above with left paw near keyboard.}]{keyboard_cat.png}
+\caption{Cat sitting at keyboard.}
+\label{fig:keyboard_cat}
+\end{figure}
+```
+:::
+
 ### Exercise 4
 
-:::{hint} Exercise 4: Uploading an Image or Figure
+::::{hint} Exercise 4: Uploading an Image or Figure
 _Objective: Learn to upload figures in Overleaf._
 
 **Upload a figure**
 
-- To upload image, choose an image of your own, or find file at: \
+- To upload image, choose an image of your own, or find example file at: \
 [https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png](https://github.com/EPS-Libraries-Berkeley/LaTeX/blob/master/keyboard_cat.png)
-- Download keyboard_cat.png or image of your choice, and upload file to the Overleaf project.
-- Place image with these commands:
-  - Add to preamble: `\usepackage{graphicx}`
-  - Add to the figure to main document with commands shown above.
+- Upload file to the Overleaf project.
+- Place image with appropriate commands
 
 ```{image} ./images/keyboard_cat.png
 :alt: cat with paw near keyboard
 :width: 400px
 :align: center
 ```
+:::{hint}
+*Commands needed:* `\includegraphics`, `\begin{figure}...\end{figure}`, `\usepackage{graphicx}`
 :::
-
-:::{seealso} Figure Placement
-:class: dropdown
-
-**Designate figure position**
-Use b, t, h to see within the figure environment to determine or override placement. You might need to add additional text in the document to see how the figure placement varies.
-
-Use the following specifiers to adjust the placement of your figures.
-
-| Specifier | Description |
-| --- |--- |
-|h|Place the float here: approximately, not exactly, at the same point it occurs in the source text|
-|t|Position at the top of the page|
-|b|Position at the bottom of the page|
-|p|Put on a special page for floats only|
-|!|Override internal parameters LaTeX uses for determining \"good\" float positions|
-|H|Places the float at precisely the location in the LaTeX code. Requires the float package. This is somewhat equivalent to h!|
-
-```
-\begin{figure}[b]
-\centering
-\caption{Gratuitous cat picture to demonstrate image commands}
-\includegraphics[width=0.4\linewidth,alt={photo of cat from above with left paw near keyboard}]{keyboard_cat}
-\end{figure}
-```
-:::
+::::
 
 
 ## Creating Bibliographies in LaTeX
 
 _Objective: Learn the basic commands to create and edit in-text citations and bibliographies_
 
-### Getting started with a `.bib` file
-In order to include in-text citations and a bibliography, the document needs to refer to a .bib file.
+### Step 1: Getting started with a `.bib` file
+In order to include in-text citations and a bibliography, the document needs to reference a .bib file.
 There are three ways to include a `.bib` file in a project in Overleaf.
 
-1. Upload your own `.bib` file that you create or export from a citation manager.
-2. Link to a URL (`.bib`).
-3. Sync your Overleaf account with Zotero.
+- Upload your own `.bib` file that you create or export from a citation manager.
+- Link to a URL (`.bib`).
+- [Sync your Overleaf account with Zotero](https://docs.overleaf.com/integrations-and-add-ons/reference-manager-integrations/zotero).
 
-If you are working in a traditional LaTeX editor, locate the `.bib` file in the directory.
+We will follow the **first option**.
 
-What does a citation in a `.bib` file look like?
+### Step 2: Populate the .bib file, following the example code below
 
 ```bibtex
 @article{drachen2016sharing,
@@ -507,33 +490,35 @@ What does a citation in a `.bib` file look like?
 }
 ```
 
-**Key**: The **citation key** is the internal label inside the `\cite{}` command used to call in a citation or reference a source.
+### Step 3: Configure the preamble & body
 
-**Example:** To cite Drachen 2016 within your text, type `\cite{drachen2016sharing}`
-
-### Bibliography Packages
+#### Bibliography Packages
 
 We will use the **biblatex** package to generate in-text citations and bibliographies. **Biblatex** is a flexible package for generating citations.
 
-When adding a bibligraphy, you will need to add commands to the preamble. 
+|Commands required for the **preamble**| Explanation |
+|---|---|
+|`\usepackage[backend=biber,style=apa]{biblatex}` | calls in the biblatex package |
+| --> `backend=biber` | defines *Biber* as the interface between the .bib data file and the LaTeX document |
+| --> `style=apa` | sets your citation rules to APA style (this can be swapped for `ieee`, `mla`, `nature`, etc.) |
+| `\addbibresource{example.bib}`| calls in the .bib file, which has the citation information for in-text citations and the bibliography |
 
-Commands required for the **preamble**:
+| Commands required for the **body** | Explanation |
+|---|---|
+| `\printbibliography` | inserts the bibliography, which will contain citations referenced in the text |
+|`\nocite{*}`| prints all publications in bibliography without a citation | 
 
-`\usepackage[backend=biber,style=apa]{biblatex}` calls in the biblatex package.
-- `backend=biber` defines *Biber* as the interface between the .bib data file and the LaTeX document. 
-- `style=apa` sets your citation rules to APA style (this can be swapped for `ieee`, `mla`, `nature`, etc.). 
-
-`\addbibresource{example.bib}` calls in the .bib file, which has the citation information for in-text citations and the bibliography. 
-
-`\printbibliography` inserts the bibliography, which will contain citations referenced in the text. 
+Find more information [visit the Overleaf page on bibliography management](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX).
 
 :::{note}
 *UC Berkeley Thesis Template*: These elements are all present but come together differently due the template's more complex structure.
 :::
 
-Find more information [visit the Overleaf page on bibliography management](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX).
-
 ### In-text citations
+
+**Key**: The **citation key** is the internal label inside the `\cite{}` command used to call in a citation or reference a source.
+
+**Example:** To cite Drachen 2016 within your text, type `\cite{drachen2016sharing}`
 
 | Command | Description | Example |
 | --- | --- | --- |
@@ -541,7 +526,6 @@ Find more information [visit the Overleaf page on bibliography management](https
 |`\parencite{}` | parenthetical citation | (Singh et al. 2013) |
 |`\citeauthor{}`| prints author name(s) | Campbell and Cabrera |
 |`\textcite{}`| prints authors followed by a citation label enclosed in ()| Elsabbagh, Hamouda, and Taha (2014) |
-|`\nocite{*}`| prints publication in bibliography without a citation | |
 
 ### Exercise 5
 
@@ -580,12 +564,14 @@ _Objective: Learn to create, edit or upload a `.bib` file, use basic citation co
 ```
 - And use these commands within document: 
 
-`\printbibliography`
-`\nocite{*}` 
+```
+\printbibliography
+\nocite{*}
+```
 
 *Step 3: Practicing citation commands*
 
-Try using citation commands to recreate the sentence below: 
+Use citation commands to recreate the sentence below: 
 
 "In the example provided, Weber et al. 2012 describes the experiment, but Akers, Gassman, and Smith contradict these conclusions." 
 
@@ -594,7 +580,6 @@ Commands needed: `\cite{}`, `\citeauthor{}`
 For additional examples and more information, please visit Overleaf's page on [bibliography management in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
 
 :::
-
 
 
 Compare your LaTeX code to the solutions at:  [https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9](https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9) to troubleshoot. 
