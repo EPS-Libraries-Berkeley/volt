@@ -132,7 +132,7 @@ As you work on your research topic, invest some time to consider the variety of 
 - What groups or individuals are impacted by this topic?
 - Where can I find information that represents a variety of perspectives?
 
-Research indicates that women, and Black, Indigenous, and People of Color (BIPoC) scholars are cited less frequently than their white, male counterparts ([Dworkin et al., 2020](http://doi.org/10.1016/j.neuron.2020.05.011); [Kozlowski et al, 2022](https://www.pnas.org/doi/full/10.1073/pnas.2113067119)). However, diversity in who we cite increases the diversity in who is doing research, which increases scientific innovation.
+Research indicates that scholars from historically marginalized groups, such as women, and Black, Indigenous, and other scholars of color (BIPoC) are cited less frequently than their white, male counterparts ([Dworkin et al., 2020](http://doi.org/10.1016/j.neuron.2020.05.011); [Kozlowski et al, 2022](https://www.pnas.org/doi/full/10.1073/pnas.2113067119)). However, diversity in who we cite increases the diversity in who is doing research, which increases scientific innovation.
 
 ```{image} ./images/citation-justice-andrea-miller-nesbitt.jpg
 :alt: Diversity in who we cite increases the diversity in who is doing research, which increases scientific innovation
@@ -143,17 +143,23 @@ Research indicates that women, and Black, Indigenous, and People of Color (BIPoC
 
 Citations assign intellectual value, legitimacy, and authority to scholars and their work. The degree to which a scholar is cited has real-world impacts including hiring, promotion, tenure, and funding opportunities. 
 
-The more a source gets cited, the more it will continue to be cited. This effect is intensified by increasing reliance on AI-driven citation analysis. In order to have conversations where diverse perspectives are present, we need to critically examine our citations and intentionally ensure a wide variety of voices are represented.
+The more a source gets cited, the more it will continue to be cited. This effect is intensified by increasing reliance on AI-driven citation analysis. In order to have conversations where diverse perspectives are present, we as individual scholars can critically examine our citations and intentionally ensure a wide variety of voices are represented.
 
-Take a moment for this thought exercise: **Imagine what a room filled with your authors would look like.** There are many resources to analyze your own citations and diversify the representation in your sources - try them out!
+There are many resources to analyze your own citations and diversify the representation in your sources - try them out! Here are a few to get started, and you can explore the links below for additional guidance and ideas.
+- Take a moment for this thought exercise: **Imagine what a room filled with your authors would look like.**
+- Where are the gaps in the research on your topic? What are the main viewpoints on this topic and in this field? What’s missing? How could you include historically marginalized points of view?
+- Research authors: Who are you citing? Check faculty bio pages, Google Scholar profiles, and other sites online. How do the authors self-identify, and which communities are they engaged with? Who has the author been cited by, and who do they cite?
+- Seek output from scientific conferences, organizations or databases highlighting scholarly diversity in your disciple. For example, explore this [list](https://libraryguides.mcgill.ca/citation_justice/how_to#s-lg-box-16839945) from McGill Library of interdisciplinary and subject-specific resources, such as: [SACNAS Biography Project](https://www.sacnas.org/sacnas-biography-project), [Astroindigenous](https://www.astrodigenous.ca/), [Diversify Chemistry](https://diversifychemistry.com/), [National Society of Black Engineers](https://nsbe.org/about/), [Indigenous Health Researchers Database](https://www.nccih.ca/512/Indigenous_Health_Researchers.nccah), and many more…
+- Consider other ways of knowing that might not be included in the scholarly conversation, such as those from indigenous communities or traditional ecological knowledge.
+- Is peer-review always the most useful format for every project? What are some other options and other places to look? For example, primary resources from a member of the relevant community.
 
-:::{note} Thanks to these excellent guides:
-:class: dropdown
+:::{seealso} Thanks to these excellent guides:
 - [Teaching Citation Justice](https://www.wocandlib.org/features/2024/9/24/teaching-citation-justice). Jasmine Thomas. WOC + Lib.
 - [Cite Black Women Collective](http://www.citeblackwomencollective.org/our-story.html). Christen A. Smith.
 - [Thinking Critically About Citations](https://guides.library.utoronto.ca/c.php?g=251103&p=5297972). University of Toronto Libraries.
 - [Citation Justice in STEMM](https://libraryguides.mcgill.ca/citation_justice/home). Andrea Miller-Nesbitt. McGill Libraries.
 - [Citation justice: A critical look at citation practices](https://libguides.uvic.ca/critical-citation). Jessica Mussell. University of Victoria Libraries.
+- [The importance of citational justice](https://lib.arizona.edu/tutorials/citational-justice/#/lessons/YiyiaZyL65dGKTp8G-o15XR521-C9uhq). Nicole Pagowsky. University of Arizona Libraries.
 - MacLeod, Lorisia. 2021. “More Than Personal Communication: Templates For Citing Indigenous Elders and Knowledge Keepers”. KULA: Knowledge Creation, Dissemination, and Preservation Studies 5 (1). [https://doi.org/10.18357/kula.135](https://doi.org/10.18357/kula.135).
 :::
 
