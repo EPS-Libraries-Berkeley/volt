@@ -1,5 +1,7 @@
 # LaTeX for Dissertations
 
+{button}`Access Berkeley Dissertation Template<https://www.overleaf.com/latex/templates/uc-berkeley-thesis-template-accessible/zmfmywbvmshw>`
+
 ## LaTeX Basics
 
 ### Introduction
@@ -7,7 +9,7 @@ LaTeX is a typesetting system that allows you to focus on your content instead o
 
 You tell LaTeX “what it is” not “how it looks.”
 
-### LaTeX using Overleaf
+### LaTeX using [Overleaf](https://www.overleaf.com)
 - Create documents via a cloud based account
 - Source code or rich text format
 - Collaborating and sharing documents
@@ -42,7 +44,7 @@ Look at the template below to get a sense of how Overleaf works. On the left sid
 
 
 ### Document Metadata
-#### Generic Document Metadata + Titling
+#### Generic Document Metadata + Titles
 The simplest option for making a title is to use the `\maketitle` command which draws from the following metadata declarations within the preamble: \
 `\author` \
 `\date` \
@@ -96,7 +98,13 @@ Use the `\begin{enumerate}...\end{enumerate}` environment to create numbered lis
 
 Take steps to create an accessible PDF when you initiate any new project. 
 
-1. Enable basic *tagging* essential for an accessible PDF in the document's metadata. *Tagging* assists screen readers, differentiating elements like headers, body text, figures, and equations.
+1. Enable basic *tagging* essential for an accessible PDF in the document's metadata with the syntax below. *Tagging* assists screen readers, differentiating elements like headers, body text, figures, and equations.
+
+::::{grid} 1 1 2 2
+
+:::{card}
+
+**PDF tagging syntax for general documents**
 
 ```
 \DocumentMetadata{tagging=on,
@@ -105,20 +113,10 @@ Take steps to create an accessible PDF when you initiate any new project.
     lang=en-US
 }
 ```
+:::
 
-2. **Descriptions** or alternative text are required for particular content elements:
-- **Images**: provide alternative or alt-text for images and figures. 
-- **Tables**: add `\tagpdfsetup` to describe table structure before the `\tabular` environment.
-3.  **Artifacts for decorative content**: Mark purely decorative or duplicative graphics so assistive technology skips them.
-4. Following the export and download of your PDF, **verify the tag structure** in Adobe Acrobat.
-
-:::{important} UC Berkeley's Accessible Thesis Template
-Created in 2026 by Chrystal Chern (UCB PhD '24) and Claudio Perez (UCB PhD '26), and adapted from the UC Berkeley thesis template maintained by Professor Paul Vojta, the **UC Berkeley Accessible Thesis Template** complies with current WCAG 2.1 AA Accessibility requirements, and preserves the Graduate Division's required formatting and layout while supporting LaTeX PDF tagging. 
-
-Find the template hosted on Overleaf at: 
-[https://www.overleaf.com/latex/templates/uc-berkeley-thesis-template-accessible/zmfmywbvmshw](https://www.overleaf.com/latex/templates/uc-berkeley-thesis-template-accessible/zmfmywbvmshw)
-
-The syntax below is used in the Dissertation Template to create an accessible PDF from your dissertation manuscript:
+:::{card}
+**PDF tagging syntax for Dissertation Template**
 
 ```
 \DocumentMetadata{
@@ -132,16 +130,59 @@ The syntax below is used in the Dissertation Template to create an accessible PD
   }
 }
 ```
+:::
+::::
 
-Find more information about formatting your dissertation from the UC Berkeley Graduate Division at: 
+2. **Descriptions** or alternative text are required for particular content elements:
+  - **Images**: provide alternative or alt-text for images and figures. 
+  - **Tables**: add `\tagpdfsetup` to describe table structure before the `\tabular` environment.
+3.  **Artifacts for decorative content**: Mark purely decorative or duplicative graphics so assistive technology skips them.
+4. Following the export and download of your PDF, **verify the tag structure** in Adobe Acrobat.
 
-[https://grad.berkeley.edu/academics/degree-progress/dissertation/#formatting-your-manuscript](https://grad.berkeley.edu/academics/degree-progress/dissertation/#formatting-your-manuscript)
+:::{important} UC Berkeley's Accessible Thesis Template
+Created in 2026 by Chrystal Chern (UCB PhD '24) and Claudio Perez (UCB PhD '26), and adapted from the UC Berkeley thesis template maintained by Professor Paul Vojta, the **UC Berkeley Accessible Thesis Template** complies with current WCAG 2.1 AA Accessibility requirements, and preserves the Graduate Division's required formatting and layout while supporting LaTeX PDF tagging. 
+
+Find the template on Overleaf: 
+[https://www.overleaf.com/latex/templates/uc-berkeley-thesis-template-accessible/zmfmywbvmshw](https://www.overleaf.com/latex/templates/uc-berkeley-thesis-template-accessible/zmfmywbvmshw)
+
+Information about formatting your dissertation from the [UC Berkeley Graduate Division](https://grad.berkeley.edu/academics/degree-progress/dissertation/#formatting-your-manuscript)
 
 :::
 
 Read more about accessibility:
-- Information from Overleaf on *Creating accessible PDFs in LaTeX*:[https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs] (https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs)
-- More in-depth documentation from the LaTeX Tagging Project: [https://latex3.github.io/tagging-project/documentation/usage-instructions](https://latex3.github.io/tagging-project/documentation/usage-instructions)
+- [Information from Overleaf on *Creating accessible PDFs in LaTeX*](https://docs.overleaf.com/writing-and-editing/creating-accessible-pdfs)
+- [In-depth documentation from the LaTeX Tagging Project](https://latex3.github.io/tagging-project/documentation/usage-instructions)
+
+### Structuring your dissertation chapters
+
+You may choose to compose your thesis or dissertation in one file (`main.tex`), but it can be advantageous to split your chapters into separate files to better organize your project, particularly if your chapters will act as standalone articles. Find instructions below for creating individual chapter files in the template.
+
+:::{note} Instructions for creating chapters
+:class: dropdown
+1. Copy the template: Click "Open as a Template" to create your own copy of the [UC Berkeley Accessible Thesis Template](https://www.overleaf.com/latex/templates/uc-berkeley-thesis-template-accessible/zmfmywbvmshw)
+2. Create a **Chapters** Folder: In the left-hand file pane of your Overleaf project, click the New Folder icon and name this folder Chapters.
+3. Create individual files for each chapter: Select your new Chapters folder, then click the New File icon to create a .tex file for each chapter.<br> **Tip**: Number chapters so they sort logically in the file tree (ex. 01_introduction.tex, 02_lit_review.tex, 03_methods.tex).
+4. Write content: Add content to a new chapter file, but do not add document preambles. Begin with: <br>
+```
+\chapter{Introduction}
+\label{ch:introduction}
+```
+5. Link the Chapters in `main.tex`: Open `main.tex` in the file directory. Scroll down to the line right after `\end{frontmatter}`. Replace the template's placeholder chapters (starting at `\chapter{About This Template}`) with `\include{}` commands pointing to your new files:
+```
+%% ===========================================================================
+%% DISSERTATION CHAPTERS
+%% ===========================================================================
+\include{Chapters/01_introduction}
+\include{Chapters/02_lit_review}
+\include{Chapters/03_methods}
+```
+
+**Tip for Faster Compiling**: Compiling the whole PDF can take a long time as the dissertation lengthens. Using the `\include{}` command, you can compile just the chapter you are currently writing while keeping all your page numbers, table of contents, and references intact. To do this, add the `\includeonly{}` command to the preamble of main.tex (anywhere before `\begin{document}`)
+```
+\includeonly{Chapters/01_introduction} % Only this file will compile
+\begin{document}
+```
+:::
 
 
 ### Exercise 1
@@ -159,7 +200,7 @@ _Objective: Practice several basic LaTeX commands in a new project._
 - Display **Title** using command `\maketitle` inserted after `\begin{document}`
 4. Add a new section labeled "Practice" using the `\section*` command. 
 5. Add a new section labeled "California Road Trip Destinations"
-6. Make a numbered list of four items, for example: 
+6. Make a numbered list of four items, for example: <br>
   Yosemite \
   Big Sur \
   Lake Tahoe \
@@ -303,7 +344,7 @@ Recreate this equation in your document:
 ::::
 
 ## Tables
-Tables use the `table` environment for positioning and captions. The `table` environment is wrapped around the tabular environment to layout the actual data/cell grid.
+Tables use the `table` environment for positioning and captions. The `table` environment is wrapped around the tabular environment to layout the actual data/cell grid. We will also introduce the package `booktabs` in the preamble to enable more formatting options.
 
 | Basic Commands | Description |
 | --- | --- |
@@ -325,14 +366,14 @@ To comply with PDF-tagging, the header row of the table is declared to `LaTeX`'s
 :header: Table syntax
 
 ```
-\usepackage{tabularx}
+\usepackage{booktabs}
 ....
 \begin{table}
 \caption{Inventory}
 \tagpdfsetup{table/header-rows={1}} 
 \begin{tabular}{lc}
 Item & Quantity 
-\hline
+\midrule
 Widget & 1 \\
 Gadget & 2 \\
 Cable & 3 \\
@@ -362,7 +403,7 @@ Cable & 3 \\
 
 _Objective: Create a two column table._
 
-1. Using the 2026 [Golden State Valkyries](https://stats.wnba.com/team/1611661331/players-traditional/?sort=PTS&dir=1) roster create a two-column table listing the top 5 scorers.
+1. Using the 2026 [Golden State Valkyries](https://stats.wnba.com/team/1611661331/players-traditional/?sort=PTS&dir=1) roster create a two-column table listing the top 5 regular season scorers.
 2. Designation the headers: player and total points.
 3. Include a caption for the table
 
@@ -404,8 +445,8 @@ Incorporating images and figures into your project is best accomplished by creat
 \begin{figure}[ ]
 \centering
 \includegraphics[width=0.5\linewidth,
-  alt={photo of cat from above with left paw near keyboard.}]{keyboard_cat.png}
-\caption{Cat sitting at keyboard.}
+  alt={photo of cat from above with left paw near keyboard}]{keyboard_cat.png}
+\caption{Cat sitting at keyboard}
 \label{fig:keyboard_cat}
 \end{figure}
 ```
@@ -583,4 +624,6 @@ For additional examples and more information, please visit Overleaf's page on [b
 
 
 Compare your LaTeX code to the solutions at:  [https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9](https://www.overleaf.com/read/hfbmjwstnbwh#f2e2e9) to troubleshoot. 
+
+Link to this workshop: [https://ucblib.link/volt-latex-dissertation](https://ucblib.link/volt-latex-dissertation)
  
