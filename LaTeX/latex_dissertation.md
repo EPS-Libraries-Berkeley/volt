@@ -403,15 +403,15 @@ Cable & 3 \\
 
 _Objective: Create a two column table._
 
-1. Using the 2026 [Golden State Valkyries](https://stats.wnba.com/team/1611661331/players-traditional/?sort=PTS&dir=1) roster create a two-column table listing the top 5 regular season scorers.
-2. Designation the headers: player and total points.
+1. Using the 2026 [Golden State Valkyries](https://stats.wnba.com/team/1611661331/players-traditional/?sort=PTS&dir=1) roster create a two-column table listing several players and a statistic of your choice.
+2. Designate the headers: Player and Total Playoff Points (or your statistic).
 3. Include a caption for the table
 
-| Player | Total Points |
+| Player | Total Playoff Points |
 | --- | --- |
-| Williams | 560 |
-| Burton | 536 |
-| Salaun | 509 |
+| Williams | 273 |
+| Hayes | 162 |
+| Burton | 120 |
 
 :::{hint}
 *Commands needed:* `&`, `\\`, `\caption`, `\begin{table}...\end{table}`, `\begin{tabular}...\end{tabular}`
